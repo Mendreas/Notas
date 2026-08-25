@@ -9,6 +9,7 @@
   <link rel="icon" href="/assets/icon.svg">
   <link rel="apple-touch-icon" href="/assets/icon.svg">
   <link rel="stylesheet" href="/app.css">
+  <link rel="stylesheet" href="/viewer.css">
   <title>Notas do Mundo</title>
 </head>
 <body>
@@ -27,7 +28,7 @@
         <button class="nav-item" data-nav="about">ⓘ <span>Sobre</span></button>
       </nav>
       <div class="sidebar-foot">
-        <small>v0.5 · 25 ago 2026</small>
+        <small>v0.5.1 · 25 ago 2026</small>
         <span>Imagens oficiais em integração</span>
       </div>
     </aside>
@@ -53,6 +54,20 @@
     <div class="modal-panel">
       <button class="modal-close" data-close-modal>×</button>
       <div id="modalBody"></div>
+    </div>
+  </div>
+
+  <div class="image-viewer hidden" id="imageViewer" aria-hidden="true">
+    <div class="image-viewer-backdrop" data-close-viewer></div>
+    <div class="image-viewer-shell">
+      <div class="image-viewer-bar">
+        <strong id="imageViewerTitle">Nota</strong>
+        <button class="image-viewer-close" data-close-viewer aria-label="Fechar imagem">×</button>
+      </div>
+      <div class="image-viewer-stage">
+        <img id="imageViewerImg" alt="">
+      </div>
+      <div class="image-viewer-help">Use dois dedos para ampliar no iPhone/iPad.</div>
     </div>
   </div>
 
