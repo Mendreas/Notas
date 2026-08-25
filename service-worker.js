@@ -1,4 +1,4 @@
-const CACHE="notas-mundo-v063";
+const CACHE="notas-mundo-v064";
 const CORE=["/","/index.html","/manifest.webmanifest","/assets/icon.svg"];
 
 self.addEventListener("install",event=>{
