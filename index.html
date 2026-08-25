@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="pt">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#08111b">
+  <meta name="description" content="Notas do Mundo — atlas visual das notas de banco e moedas do mundo.">
+  <link rel="manifest" href="/manifest.webmanifest">
+  <link rel="icon" href="/assets/icon.svg">
+  <link rel="apple-touch-icon" href="/assets/icon.svg">
+  <link rel="stylesheet" href="/app.css">
+  <title>Notas do Mundo</title>
+</head>
+<body>
+  <div id="app">
+    <aside class="sidebar" id="sidebar">
+      <div class="brand" data-nav="home">
+        <div class="brand-icon">◎</div>
+        <div><strong>Notas do Mundo</strong><small>Atlas monetário visual</small></div>
+      </div>
+      <nav>
+        <button class="nav-item active" data-nav="home">◉ <span>Mapa</span></button>
+        <button class="nav-item" data-nav="countries">◎ <span>Países</span></button>
+        <button class="nav-item" data-nav="notes">▣ <span>Notas</span></button>
+        <button class="nav-item" data-nav="exchange">⇄ <span>Câmbio</span></button>
+        <button class="nav-item" data-nav="favorites">♡ <span>Favoritos</span></button>
+        <button class="nav-item" data-nav="about">ⓘ <span>Sobre</span></button>
+      </nav>
+      <div class="sidebar-foot">
+        <small>v0.4 · 25 ago 2026</small>
+        <span>Dados demonstrativos verificados</span>
+      </div>
+    </aside>
+
+    <main>
+      <header class="topbar">
+        <button class="menu-btn" id="menuBtn" aria-label="Abrir menu">☰</button>
+        <div class="breadcrumbs" id="breadcrumbs">Mundo</div>
+        <div class="search-wrap">
+          <span>⌕</span>
+          <input id="searchInput" placeholder="Buscar país, moeda ou nota…" autocomplete="off">
+          <div class="search-results" id="searchResults"></div>
+        </div>
+      </header>
+      <section id="view"></section>
+    </main>
+  </div>
+
+  <div class="compare-bar hidden" id="compareBar"></div>
+
+  <div class="modal hidden" id="noteModal" aria-hidden="true">
+    <div class="modal-backdrop" data-close-modal></div>
+    <div class="modal-panel">
+      <button class="modal-close" data-close-modal>×</button>
+      <div id="modalBody"></div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+  <script src="https://cdn.jsdelivr.net/npm/topojson-client@3"></script>
+  <script src="/app.js"></script>
+</body>
+</html>
