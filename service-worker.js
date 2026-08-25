@@ -1,4 +1,4 @@
-const CACHE="notas-mundo-v04";
+const CACHE="notas-mundo-v05";
 const CORE=["/","/index.html","/app.css","/app.js","/manifest.webmanifest","/data/countries.json","/data/currencies.json","/data/notes.json","/data/iso-map.json","/assets/icon.svg"];
 self.addEventListener("install",e=>e.waitUntil(caches.open(CACHE).then(c=>c.addAll(CORE))));
 self.addEventListener("activate",e=>e.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(k=>k!==CACHE).map(k=>caches.delete(k))))));
