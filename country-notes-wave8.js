@@ -14,6 +14,30 @@
     100:{front:'/assets/notes/sgd/sgd-100-front.jpeg',back:'/assets/notes/sgd/sgd-100-back.png'},
     1000:{front:'/assets/notes/sgd/sgd-1000-front.png',back:'/assets/notes/sgd/sgd-1000-back.png'}
   };
+  const CNY_META={
+    1:{series:'1999 series · current design',material:'Papel',dimensions:'130 × 63 mm'},
+    5:{series:'2020 issue',material:'Papel',dimensions:'135 × 63 mm'},
+    10:{series:'2019 issue',material:'Papel',dimensions:'140 × 70 mm'},
+    20:{series:'2019 issue',material:'Papel',dimensions:'145 × 70 mm'},
+    50:{series:'2019 issue',material:'Papel',dimensions:'150 × 70 mm'},
+    100:{series:'2015 issue',material:'Papel',dimensions:'155 × 77 mm'}
+  };
+  const MXN_META={
+    20:{series:'Familia G',material:'Polímero',dimensions:'120 × 65 mm'},
+    50:{series:'Familia G',material:'Polímero',dimensions:'125 × 65 mm'},
+    100:{series:'Familia G',material:'Polímero',dimensions:'132 × 65 mm'},
+    200:{series:'Familia G',material:'Papel',dimensions:'139 × 65 mm'},
+    500:{series:'Familia G',material:'Papel',dimensions:'146 × 65 mm'},
+    1000:{series:'Familia G',material:'Papel',dimensions:'153 × 65 mm'}
+  };
+  const HKD_META={
+    10:{series:'Government HK$10 issue',material:'Papel / polímero'},
+    20:{series:'2018 Series',material:'Papel'},
+    50:{series:'2018 Series',material:'Papel'},
+    100:{series:'2018 Series',material:'Papel'},
+    500:{series:'2018 Series',material:'Papel'},
+    1000:{series:'2018 Series',material:'Papel'}
+  };
   const nativeFetch=window.fetch.bind(window);
   window.fetch=async(...args)=>{
     const req=args[0],url=typeof req==='string'?req:req?.url||'';
@@ -31,14 +55,14 @@
           if(Number(value)===1000){n.status='legal-tender-legacy';n.statusLabel='Curso legal · emissão cessada';}
           const local=SGD_LOCAL[value];
           if(local){
-            n.front=local.front;
-            n.back=local.back;
-            n.imageStatus='official-reproduction';
-            n.imageSource='Monetary Authority of Singapore · Portrait Series · SPECIMEN';
-            n.imageSourceUrl=cfg.url;
+            n.front=local.front;n.back=local.back;n.imageStatus='official-reproduction';
+            n.imageSource='Monetary Authority of Singapore · Portrait Series · SPECIMEN';n.imageSourceUrl=cfg.url;
             delete n.restrictionText;
           }
         }
+        if(currency==='CNY')Object.assign(n,CNY_META[value]||{});
+        if(currency==='MXN')Object.assign(n,MXN_META[value]||{});
+        if(currency==='HKD')Object.assign(n,HKD_META[value]||{});
       }
     }
     return new Response(JSON.stringify(notes),{status:response.status,statusText:response.statusText,headers:{'Content-Type':'application/json; charset=utf-8'}});
