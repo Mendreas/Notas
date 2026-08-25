@@ -30,7 +30,8 @@ function bindChrome(){
  $("#menuBtn").onclick=()=>$("#sidebar").classList.toggle("open");
  $$("[data-nav]").forEach(el=>el.onclick=()=>navigate(el.dataset.nav));
  $("#searchInput").addEventListener("input",search);
- document.addEventListener("click",e=>{if(e.target.matches("[data-close-modal]"))closeModal();if(!e.target.closest(".search-wrap"))$("#searchResults").classList.remove("show")});
+ document.addEventListener("click",e=>{if(e.target.matches("[data-close-modal]"))closeModal();if(e.target.matches("[data-close-viewer]"))closeImageViewer();if(!e.target.closest(".search-wrap"))$("#searchResults").classList.remove("show")});
+ document.addEventListener("keydown",e=>{if(e.key==="Escape"){if(!$("#imageViewer").classList.contains("hidden"))closeImageViewer();else if(!$("#noteModal").classList.contains("hidden"))closeModal();}});
 }
 
 function currentLocation(){
@@ -234,12 +235,26 @@ function bindNoteCards(){
 }
 function openNote(code,value){
  const n=DB.notes.find(x=>x.currency===code&&x.value===value),c=DB.currencies[code],k=key(code,value),countries=DB.countries.filter(x=>x.currency===code);
+ const sourceLine=n.imageStatus==="official" ? `<div class="notice" style="margin-top:16px"><strong>Imagem oficial.</strong> Fonte: ${n.imageSource||n.source}.${code==="EUR"?" A marca SPECIMEN é exigida pelo BCE para reproduções digitais integrais.":""}</div>` : `<div class="notice" style="margin-top:16px"><strong>Imagem demonstrativa.</strong> Esta denominação ainda aguarda substituição por um asset oficial/licenciado.</div>`;
  $("#modalBody").innerHTML=`<div class="note-detail-head"><div><span class="mini-badge">${code}</span><h2>${c.symbol}${value} · ${c.name}</h2></div><div class="note-detail-actions"><button class="ghost-btn" id="modalFav">${favorites.has(k)?"♥ Favorita":"♡ Favorito"}</button><button class="ghost-btn" id="modalCompare">≍ Comparar</button></div></div>
- <div class="modal-note-grid"><div class="modal-note-side"><h4>Frente</h4><img src="${n.front}" alt="Frente"></div><div class="modal-note-side"><h4>Verso</h4><img src="${n.back}" alt="Verso"></div></div>
- <div class="modal-facts"><div class="stat"><small>Valor</small><strong>${c.symbol}${value}</strong></div><div class="stat"><small>Estado</small><strong>${n.statusLabel}</strong></div><div class="stat"><small>Material</small><strong>${n.material}</strong></div><div class="stat"><small>Emissor</small><strong>${n.source}</strong></div><div class="stat"><small>País(es)</small><strong>${countries.map(x=>x.flag).join(" ")}</strong></div><div class="stat"><small>Equivalência EUR*</small><strong>≈ €${(value/c.rate).toLocaleString("pt-PT",{maximumFractionDigits:2})}</strong></div></div>
- <div class="notice" style="margin-top:16px"><strong>v0.2:</strong> os visuais continuam deliberadamente demonstrativos. A funcionalidade, escala, frente/verso e organização dos assets já simulam o produto final.</div>`;
+ <div class="modal-note-grid"><div class="modal-note-side"><h4>Frente</h4><button class="note-image-button" data-full-image="${n.front}" data-full-label="${c.symbol}${value} · Frente"><img src="${n.front}" alt="Frente"></button><small class="tap-hint">Toque na imagem para ampliar</small></div><div class="modal-note-side"><h4>Verso</h4><button class="note-image-button" data-full-image="${n.back}" data-full-label="${c.symbol}${value} · Verso"><img src="${n.back}" alt="Verso"></button><small class="tap-hint">Toque na imagem para ampliar</small></div></div>
+ <div class="modal-facts"><div class="stat"><small>Valor</small><strong>${c.symbol}${value}</strong></div><div class="stat"><small>Estado</small><strong>${n.statusLabel}</strong></div><div class="stat"><small>Material</small><strong>${n.material}</strong></div><div class="stat"><small>Emissor</small><strong>${n.source}</strong></div><div class="stat"><small>País(es)</small><strong>${countries.map(x=>x.flag).join(" ")}</strong></div><div class="stat"><small>Equivalência EUR*</small><strong>≈ €${(value/c.rate).toLocaleString("pt-PT",{maximumFractionDigits:2})}</strong></div>${n.dimensions?`<div class="stat"><small>Dimensões</small><strong>${n.dimensions}</strong></div>`:""}</div>
+ ${sourceLine}`;
  $("#modalFav").onclick=()=>{toggleFav(code,value);openNote(code,value)};$("#modalCompare").onclick=()=>{toggleCompare(code,value);closeModal()};
+ $$("[data-full-image]").forEach(btn=>btn.onclick=()=>openImageViewer(btn.dataset.fullImage,btn.dataset.fullLabel));
  $("#noteModal").classList.remove("hidden");$("#noteModal").setAttribute("aria-hidden","false");
+}
+function openImageViewer(src,label="Nota"){
+ const viewer=$("#imageViewer"),img=$("#imageViewerImg"),title=$("#imageViewerTitle");
+ img.src=src;img.alt=label;title.textContent=label;
+ viewer.classList.remove("hidden");viewer.setAttribute("aria-hidden","false");
+ document.body.classList.add("viewer-open");
+}
+function closeImageViewer(){
+ const viewer=$("#imageViewer");
+ viewer.classList.add("hidden");viewer.setAttribute("aria-hidden","true");
+ $("#imageViewerImg").src="";
+ document.body.classList.remove("viewer-open");
 }
 function closeModal(){$("#noteModal").classList.add("hidden");$("#noteModal").setAttribute("aria-hidden","true")}
 function showComparison(){
