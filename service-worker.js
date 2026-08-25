@@ -1,4 +1,4 @@
-const CACHE="notas-mundo-v073";
+const CACHE="notas-mundo-v074";
 const CORE=["/","/index.html","/manifest.webmanifest","/assets/icon.svg"];
 self.addEventListener("install",event=>{self.skipWaiting();event.waitUntil(caches.open(CACHE).then(cache=>cache.addAll(CORE)))});
 self.addEventListener("activate",event=>{event.waitUntil((async()=>{const keys=await caches.keys();await Promise.all(keys.filter(key=>key!==CACHE).map(key=>caches.delete(key)));await self.clients.claim()})())});
