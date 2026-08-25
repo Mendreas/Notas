@@ -31,6 +31,22 @@
       imageStatus: "official",
       imageSource: "Bank of Japan",
       imageSourceUrl: "https://www.boj.or.jp/en/note_tfjgs/note/valid/issue.htm"
+    },
+    "USD:50": {
+      front: "https://commons.wikimedia.org/wiki/Special:Redirect/file/50_USD_Series_2004_Note_Front.jpg",
+      back: "https://commons.wikimedia.org/wiki/Special:Redirect/file/50_USD_Series_2004_Note_Back.jpg",
+      dimensions: "156 × 66 mm",
+      imageStatus: "public-domain",
+      imageSource: "U.S. Treasury / Wikimedia Commons",
+      imageSourceUrl: "https://commons.wikimedia.org/wiki/File:50_USD_Series_2004_Note_Front.jpg"
+    },
+    "USD:100": {
+      front: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Series_2013_%24100_bill_front.jpg",
+      back: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Series_2013_%24100_bill_back.jpg",
+      dimensions: "156 × 66 mm",
+      imageStatus: "public-domain",
+      imageSource: "U.S. currency scan / Wikimedia Commons",
+      imageSourceUrl: "https://commons.wikimedia.org/wiki/File:Series_2013_$100_bill_front.jpg"
     }
   };
 
