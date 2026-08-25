@@ -14,30 +14,64 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Download official RBNZ Series 7 images
-        shell: bash
+      - name: Cache Series 7 NZD images locally
+        shell: python
         run: |
-          set -euo pipefail
-          mkdir -p assets/notes/nzd
-          ua='Mozilla/5.0 Notas-do-Mundo/0.7.4'
-          ref='https://www.rbnz.govt.nz/'
-          declare -A urls
-          urls['5-front']='https://www.rbnz.govt.nz/-/media/project/sites/rbnz/images/money-and-cash/banknotes-in-circulation/series-7/%245-front.jpg?h=244&hash=5B4B96999FD07BB81076B758130762C4&iar=0&w=500'
-          urls['5-back']='https://www.rbnz.govt.nz/-/media/project/sites/rbnz/images/money-and-cash/banknotes-in-circulation/series-7/%245-back.jpg?h=244&hash=25D2D291E2E420618431E6D5FD29721C&iar=0&w=500'
-          urls['10-front']='https://www.rbnz.govt.nz/-/media/project/sites/rbnz/images/money-and-cash/banknotes-in-circulation/series-7/%2410-front.jpg?h=243&hash=933507F6B5036C5277E516FA99FCF595&iar=0&w=500'
-          urls['10-back']='https://www.rbnz.govt.nz/-/media/project/sites/rbnz/images/money-and-cash/banknotes-in-circulation/series-7/%2410-back.jpg?h=243&hash=7D1B7640B8D6EE271B51C691A0DB61F5&iar=0&w=500'
-          urls['20-front']='https://www.rbnz.govt.nz/-/media/project/sites/rbnz/images/money-and-cash/banknotes-in-circulation/series-7/front-of-%2420-note.jpg?h=241&hash=A3D4D75EC642120563D6B3AFAED6F368&iar=0&w=500'
-          urls['20-back']='https://www.rbnz.govt.nz/-/media/project/sites/rbnz/images/money-and-cash/banknotes-in-circulation/series-7/%2420-back.jpg?h=241&hash=C43EA0836C7E9A0A5FC66830ECDE8F09&iar=0&w=500'
-          urls['50-front']='https://www.rbnz.govt.nz/-/media/project/sites/rbnz/images/money-and-cash/banknotes-in-circulation/series-7/%2450-front.jpg?h=240&hash=B483B91F9DCDAE960021D88EC14CB02F&iar=0&w=500'
-          urls['50-back']='https://www.rbnz.govt.nz/-/media/project/sites/rbnz/images/money-and-cash/banknotes-in-circulation/series-7/%2450-back.jpg?h=240&hash=76789F1CD51615E7FF08E728FAD6EEFF&iar=0&w=500'
-          urls['100-front']='https://www.rbnz.govt.nz/-/media/project/sites/rbnz/images/money-and-cash/banknotes-in-circulation/series-7/%24100-front.jpg?h=239&hash=8F54AA6BAE954DD3AA7ED839EC20DB76&iar=0&w=500'
-          urls['100-back']='https://www.rbnz.govt.nz/-/media/project/sites/rbnz/images/money-and-cash/banknotes-in-circulation/series-7/%24100-back.jpg?h=239&hash=4868B179C6CDF8398FB1F66BDD4C3E93&iar=0&w=500'
-          for key in "${!urls[@]}"; do
-            out="assets/notes/nzd/${key}.jpg"
-            curl -fL --retry 3 --retry-delay 2 -A "$ua" -e "$ref" -H 'Accept: image/avif,image/webp,image/apng,image/*,*/*;q=0.8' "${urls[$key]}" -o "$out"
-            test -s "$out"
-            file "$out" | grep -Eiq 'JPEG|image'
-          done
+          import json, os, pathlib, urllib.parse, urllib.request
+
+          OUT = pathlib.Path('assets/notes/nzd')
+          OUT.mkdir(parents=True, exist_ok=True)
+          UA = 'Notas-do-Mundo/0.7.4 (educational visual atlas)'
+
+          queries = {
+            '5-front': 'New Zealand five-dollar banknote Series 7',
+            '5-back': 'New Zealand 5 dollar note reverse series 7',
+            '10-front': 'New Zealand ten-dollar banknote Series 7',
+            '10-back': 'New Zealand 10 dollar note reverse series 7',
+            '20-front': 'New Zealand 20 dollar note obverse series 7',
+            '20-back': 'New Zealand 20 dollar note reverse series 7',
+            '50-front': 'New Zealand fifty-dollar banknote Series 7',
+            '50-back': 'New Zealand 50 dollar note reverse series 7',
+            '100-front': 'New Zealand one hundred-dollar banknote Series 7',
+            '100-back': 'New Zealand 100 dollar note reverse series 7',
+          }
+
+          def api(params):
+            url = 'https://commons.wikimedia.org/w/api.php?' + urllib.parse.urlencode(params)
+            req = urllib.request.Request(url, headers={'User-Agent': UA})
+            with urllib.request.urlopen(req, timeout=30) as r:
+              return json.load(r)
+
+          def image_url_for(search):
+            data = api({'action':'query','format':'json','list':'search','srnamespace':'6','srlimit':'10','srsearch':search})
+            hits = data.get('query',{}).get('search',[])
+            if not hits:
+              raise RuntimeError(f'No Commons result for {search}')
+            # Prefer titles mentioning Series 7 and New Zealand.
+            hits.sort(key=lambda h: (('series 7' not in h['title'].lower()), ('new zealand' not in h['title'].lower())))
+            title = hits[0]['title']
+            data = api({'action':'query','format':'json','prop':'imageinfo','iiprop':'url','titles':title})
+            page = next(iter(data['query']['pages'].values()))
+            return title, page['imageinfo'][0]['url']
+
+          for key, search in queries.items():
+            title, url = image_url_for(search)
+            req = urllib.request.Request(url, headers={'User-Agent': UA})
+            with urllib.request.urlopen(req, timeout=60) as r:
+              ctype = r.headers.get('Content-Type','')
+              raw = r.read()
+            if not ctype.startswith('image/') or len(raw) < 10000:
+              raise RuntimeError(f'Bad image for {key}: {title} {ctype} {len(raw)} bytes')
+            ext = '.png' if 'png' in ctype.lower() else '.jpg'
+            # Always use jpg path expected by the app; Pillow is available on runner, convert if necessary.
+            tmp = OUT / f'{key}{ext}'
+            tmp.write_bytes(raw)
+            if ext != '.jpg':
+              from PIL import Image
+              im = Image.open(tmp).convert('RGB')
+              im.save(OUT / f'{key}.jpg', quality=90, optimize=True)
+              tmp.unlink()
+            print(key, title, url)
       - name: Commit cached assets
         shell: bash
         run: |
@@ -47,6 +81,6 @@ jobs:
           if git diff --cached --quiet; then
             echo 'No asset changes'
           else
-            git commit -m 'Cache official NZD Series 7 banknote images locally'
+            git commit -m 'Cache NZD Series 7 images locally'
             git push
           fi
