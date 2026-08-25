@@ -34,16 +34,16 @@ jobs:
             '100-back':'File:New Zealand 100 dollar note reverse series 7.jpg',
           }
           def api(params):
-            url='https://commons.wikimedia.org/w/api.php?'+urllib.parse.urlencode(params)
+            url='https://en.wikipedia.org/w/api.php?'+urllib.parse.urlencode(params)
             req=urllib.request.Request(url,headers={'User-Agent':UA})
             with urllib.request.urlopen(req,timeout=30) as r:return json.load(r)
           for key,title in titles.items():
             data=api({'action':'query','format':'json','prop':'imageinfo','iiprop':'url','titles':title})
             page=next(iter(data['query']['pages'].values()))
             if 'missing' in page or not page.get('imageinfo'):
-              raise RuntimeError(f'Missing Commons file for {key}: {title}')
+              raise RuntimeError(f'Missing Wikipedia file for {key}: {title}')
             url=page['imageinfo'][0]['url']
-            req=urllib.request.Request(url,headers={'User-Agent':UA})
+            req=urllib.request.Request(url,headers={'User-Agent':UA,'Referer':'https://en.wikipedia.org/'})
             with urllib.request.urlopen(req,timeout=60) as r:
               ctype=r.headers.get('Content-Type',''); raw=r.read()
             if not ctype.startswith('image/') or len(raw)<10000:
