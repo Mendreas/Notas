@@ -1,0 +1,4 @@
+.brl-repro{position:relative;overflow:hidden}
+.brl-repro::after{content:"SEM VALOR";position:absolute;left:50%;top:50%;transform:translate(-50%,-50%) rotate(-27deg);z-index:8;color:rgba(140,15,25,.72);font-weight:900;font-size:clamp(20px,4vw,54px);letter-spacing:.12em;white-space:nowrap;pointer-events:none;text-shadow:0 1px 1px rgba(255,255,255,.35)}
+.note-card .brl-repro::after{font-size:clamp(18px,2.4vw,34px)}
+.image-viewer-stage.brl-repro::after{font-size:clamp(44px,9vw,120px)}
