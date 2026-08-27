@@ -1,7 +1,7 @@
 (() => {
   const overrides = {
     "CAD:5":{front:"https://www.bankofcanada.ca/wp-content/uploads/2015/09/5_front.png",back:"https://www.bankofcanada.ca/wp-content/uploads/2015/09/5_back.png",dimensions:"152.4 × 69.85 mm",imageStatus:"official",imageSource:"Bank of Canada"},
-    "CAD:10":{front:"/assets/notes/cad/cad-10-front.png",back:"/assets/notes/cad/cad-10-back.png",dimensions:"152.4 × 69.85 mm",imageStatus:"local-reproduction",imageSource:"Imagem fornecida pelo utilizador"},
+    "CAD:10":{front:"https://www.bankofcanada.ca/wp-content/uploads/2018/01/196440.png",back:"https://www.bankofcanada.ca/wp-content/uploads/2018/01/196441.png",dimensions:"152.4 × 69.85 mm",imageStatus:"official",imageSource:"Bank of Canada"},
     "CAD:20":{front:"https://www.bankofcanada.ca/wp-content/uploads/2015/09/20_front.png",back:"https://www.bankofcanada.ca/wp-content/uploads/2015/09/20_back.png",dimensions:"152.4 × 69.85 mm",imageStatus:"official",imageSource:"Bank of Canada"},
     "CAD:50":{front:"https://www.bankofcanada.ca/wp-content/uploads/2015/09/50_front.png",back:"https://www.bankofcanada.ca/wp-content/uploads/2015/09/50_back.png",dimensions:"152.4 × 69.85 mm",imageStatus:"official",imageSource:"Bank of Canada"},
     "CAD:100":{front:"https://www.bankofcanada.ca/wp-content/uploads/2015/09/100_front.png",back:"https://www.bankofcanada.ca/wp-content/uploads/2015/09/100_back.png",dimensions:"152.4 × 69.85 mm",imageStatus:"official",imageSource:"Bank of Canada"}
