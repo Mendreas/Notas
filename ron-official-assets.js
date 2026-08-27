@@ -11,6 +11,12 @@
     200:['200 lei. Romania, 2006 a.jpg','200 lei. Romania, 2006 b.jpg'],
     500:['500 lei. Romania, 2005 a.jpg','500 lei. Romania, 2005 b.jpg']
   };
+  const direct={
+    100:{
+      front:'https://commons.wikimedia.org/wiki/Special:Redirect/file/100%20lei.%20Romania%2C%202005%20a.jpg',
+      back:'https://commons.wikimedia.org/wiki/Special:Redirect/file/100%20lei.%20Romania%2C%202005%20b.jpg'
+    }
+  };
   const dims={1:'120 × 62 mm',5:'127 × 67 mm',10:'133 × 72 mm',20:'136 × 77 mm',50:'140 × 77 mm',100:'147 × 82 mm',200:'150 × 82 mm',500:'153 × 82 mm'};
   const previousFetch=window.fetch.bind(window);
   window.fetch=async(...args)=>{
@@ -21,7 +27,8 @@
     Object.entries(files).forEach(([value,pair])=>{
       let n=notes.find(x=>x.currency==='RON'&&Number(x.value)===Number(value));
       if(!n){n={currency:'RON',value:Number(value)};notes.push(n);}
-      Object.assign(n,{front:commons(pair[0]),back:commons(pair[1]),dimensions:dims[value],status:'circulating',statusLabel:'Em circulação',source:'Banca Națională a României',material:'Polímero',series:Number(value)===20?'Emissão 2021 · série atual':'Série atual',imageStatus:'reference-reproduction',imageSource:'Banca Națională a României / Wikimedia Commons',imageSourceUrl:PAGE});
+      const image=direct[value]||{front:commons(pair[0]),back:commons(pair[1])};
+      Object.assign(n,{front:image.front,back:image.back,dimensions:dims[value],status:'circulating',statusLabel:'Em circulação',source:'Banca Națională a României',material:'Polímero',series:Number(value)===20?'Emissão 2021 · série atual':'Série atual',imageStatus:'reference-reproduction',imageSource:'Banca Națională a României / Wikimedia Commons',imageSourceUrl:PAGE});
     });
     return new Response(JSON.stringify(notes),{status:response.status,statusText:response.statusText,headers:{'Content-Type':'application/json; charset=utf-8'}});
   };
