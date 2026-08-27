@@ -4,7 +4,7 @@
   const files={
     1:['1 leu. Romania, 2005 a.jpg','1 leu. Romania, 2005 b.jpg'],
     5:['5 lei. Romania, 2005 a.jpg','5 lei. Romania, 2005 b.jpg'],
-    10:['10 lei. Romania, 2005 a.jpg','10 lei. Romania, 2005 b.jpg'],
+    10:['10 lei. Romania, 2008 a.jpg','10 lei. Romania, 2008 b.jpg'],
     20:['20 lei. Romania, 2021 a.jpg','20 lei. Romania, 2021 b.jpg'],
     50:['50 lei. Romania, 2005 a.jpg','50 lei. Romania, 2005 b.jpg'],
     100:['100 lei. Romania, 2005 a.jpg','100 lei. Romania, 2005 b.jpg'],
