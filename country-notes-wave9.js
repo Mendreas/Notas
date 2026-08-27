@@ -1,8 +1,14 @@
 (() => {
- const base='/.netlify/functions/official-source-image';
  const O={};
  const nokDims={50:'126 × 70 mm',100:'133 × 70 mm',200:'140 × 70 mm',500:'147 × 70 mm',1000:'154 × 70 mm'};
- [50,100,200,500,1000].forEach(v=>O[`NOK:${v}`]={front:`${base}?source=norges&value=${v}&side=front`,back:`${base}?source=norges&value=${v}&side=back`,dimensions:nokDims[v],imageStatus:'official-reproduction',imageSource:'Norges Bank · Series VIII',imageSourceUrl:'https://www.norges-bank.no/en/topics/notes-and-coins/legal-tender-notes-coins/'});
+ const nok={
+  50:['https://www.norges-bank.no/contentassets/eb814597ebb2476a962ba65632445030/50front_viii_specimen.jpg?height=450&mode=crop&v=24022026090737&width=800','https://www.norges-bank.no/contentassets/c512480665b74c2aa8a16838f4001175/50back_viii_specimen.jpg?height=450&mode=crop&v=24022026090814&width=800'],
+  100:['https://www.norges-bank.no/contentassets/af09e2c1bc39400ea8637df900c36ba7/100front_viii_specimen.jpg?height=450&mode=crop&v=24022026104245&width=800','https://www.norges-bank.no/contentassets/b035f0210ab14556a929fe104350bc54/100back_viii_specimen.jpg?height=450&mode=crop&v=24022026104312&width=800'],
+  200:['https://www.norges-bank.no/contentassets/17c5319dddb84bd98555698a6b6fcd1e/200front_viii_specimen.jpg?height=450&mode=crop&v=24022026104558&width=800','https://www.norges-bank.no/contentassets/a6756f40bb444362a73bf936054aa1ae/200back_viii_specimen.jpg?height=450&mode=crop&v=24022026104617&width=800'],
+  500:['https://www.norges-bank.no/contentassets/5cd10153600a41be9c5a4c86171304c4/500front_viii_specimen.jpg?height=450&mode=crop&v=24022026104842&width=800','https://www.norges-bank.no/contentassets/340b96a04ef64f20b25c8ed1331c1eb5/500back_viii_specimen.jpg?height=450&mode=crop&v=24022026104919&width=800'],
+  1000:['https://www.norges-bank.no/contentassets/76f94e07b2ba4d539832ba0c82423c25/1000f_specimen.jpg?height=450&mode=crop&v=24022026105325&width=800','https://www.norges-bank.no/contentassets/b22eec5ac2f8457eb8c2279c04a57a16/1000b_specimen.jpg?height=450&mode=crop&v=24022026105344&width=800']
+ };
+ [50,100,200,500,1000].forEach(v=>O[`NOK:${v}`]={front:nok[v][0],back:nok[v][1],dimensions:nokDims[v],imageStatus:'official-reproduction',imageSource:'Norges Bank · Series VIII',imageSourceUrl:`https://www.norges-bank.no/en/topics/notes-and-coins/legal-tender-notes-coins/${v}-krone-note/`});
  const nzdDims={5:'135 × 66 mm',10:'140 × 68 mm',20:'145 × 70 mm',50:'150 × 72 mm',100:'155 × 74 mm'};
  [5,10,20,50,100].forEach(v=>O[`NZD:${v}`]={front:`/assets/notes/nzd/${v}-front.jpg`,back:`/assets/notes/nzd/${v}-back.jpg`,dimensions:nzdDims[v],imageStatus:'local-reference',imageSource:'Reserve Bank of New Zealand · Series 7 / Wikipedia reference image',imageSourceUrl:`https://www.rbnz.govt.nz/money-and-cash/banknotes-and-coins/banknotes-in-circulation/${v}-banknote`});
  const nativeFetch=window.fetch.bind(window);
