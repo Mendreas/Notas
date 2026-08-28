@@ -1,4 +1,5 @@
 (() => {
+  const commons=f=>'https://commons.wikimedia.org/wiki/Special:Redirect/file/'+encodeURIComponent(f);
   const placeholder=(code,value)=>'data:image/svg+xml;charset=UTF-8,'+encodeURIComponent(`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 320"><rect width="720" height="320" rx="18" fill="#0c1824"/><rect x="18" y="18" width="684" height="284" rx="14" fill="none" stroke="#526170" stroke-width="2"/><text x="360" y="118" text-anchor="middle" fill="#d7e2ea" font-family="Arial,sans-serif" font-size="42" font-weight="700">${code} ${value}</text><text x="360" y="175" text-anchor="middle" fill="#90a1ae" font-family="Arial,sans-serif" font-size="24">IMAGEM NÃO INCORPORADA</text><text x="360" y="216" text-anchor="middle" fill="#6f8392" font-family="Arial,sans-serif" font-size="18">VER FONTE OFICIAL</text></svg>`);
 
   const countries=[
@@ -10,39 +11,62 @@
   ];
 
   const currencies={
-    RUB:{name:'Rublo russo',symbol:'₽',group:'Rússia',source:'Bank of Russia',rate:91,material:'Papel',notes:[5,10,50,100,200,500,1000,2000,5000],countries:['RUS'],officialUrl:'https://www.cbr.ru/cash_circulation/banknotes/'},
+    RUB:{name:'Rublo russo',symbol:'₽',group:'Rússia',source:'Bank of Russia',rate:91,material:'Papel',notes:[5,10,50,100,200,500,1000,2000,5000],countries:['RUS'],officialUrl:'https://www.cbr.ru/cash_circulation/'},
     GEL:{name:'Lari georgiano',symbol:'₾',group:'Geórgia',source:'National Bank of Georgia',rate:3.2,material:'Papel',notes:[5,10,20,50,100],countries:['GEO'],officialUrl:'https://nbg.gov.ge/en/georgian-money/banknotes'},
     AMD:{name:'Dram arménio',symbol:'֏',group:'Arménia',source:'Central Bank of Armenia',rate:450,material:'Compósito / papel',notes:[1000,2000,5000,10000,20000,50000],countries:['ARM'],officialUrl:'https://www.cba.am/en/banknotes-in-circulation'},
     AZN:{name:'Manat azeri',symbol:'₼',group:'Azerbaijão',source:'Central Bank of the Republic of Azerbaijan',rate:1.99,material:'Papel',notes:[1,5,10,20,50,100,200],countries:['AZE'],officialUrl:'https://www.cbar.az/moneymarks/banknotes/index?category=1&language=en'}
+  };
+
+  const images={
+    RUB:{
+      5:['Banknote 5 rubles (1997) front.jpg','Banknote 5 rubles (1997) back.jpg'],
+      10:['Banknote 10 rubles 2004 front.jpg','Banknote 10 rubles 2004 back.jpg'],
+      50:['Banknote 50 rubles 2004 front.jpg','Banknote 50 rubles 2004 back.jpg'],
+      100:['100 rubles obverse 2022.jpg','100 rubles reverse 2022.jpg'],
+      200:['200 rubles 2017 obverse.jpg','200 rubles 2017 reverse.jpg'],
+      500:['Banknote 500 rubles 2010 front.jpg','Banknote 500 rubles 2010 back.jpg'],
+      1000:['1000 rubles obverse 2025.png','1000 rubles reverse 2025.png'],
+      2000:['2000 rubles 2017 obverse.jpg','2000 rubles 2017 reverse.jpg'],
+      5000:['5000 rubles obverse 2023.jpg','5000 rubles reverse 2023.jpg']
+    },
+    GEL:{
+      5:['5LariObverse.png','5LariReverse2017.png'],
+      10:['Upgraded-10-lari.png','10-lari-banknote-back-side.png'],
+      20:['20 lari. Georgia, 2016 a.png','20 lari. Georgia, 2016 b.jpg'],
+      50:['50 lari. Georgia, 2016 a.png','50 lari. Georgia, 2016 b.jpg'],
+      100:['100 lari. Georgia, 2016 a.png','100 lari. Georgia, 2016 b.jpg']
+    },
+    AMD:{
+      1000:['1000 dram 2018 Obverse.jpg','1000 dram 2018 Reverse.jpg'],
+      2000:['2000 dram 2018 Obverse.jpg','2000 dram 2018 Reverse.jpg'],
+      5000:['5000 dram 2018 Obverse.jpg','5000 dram 2018 Reverse.jpg'],
+      10000:['10000 dram 2018 Obverse.jpg','10000 dram 2018 Reverse.jpg'],
+      20000:['20000 dram 2018 Obverse.jpg','20000 dram 2018 Reverse.jpg'],
+      50000:['50000 dram 2018 Obverse.jpg','50000 dram 2018 Reverse.jpg']
+    }
   };
 
   const previousFetch=window.fetch.bind(window);
   window.fetch=async(...args)=>{
     const req=args[0],url=typeof req==='string'?req:req?.url||'';
     const response=await previousFetch(...args);
-
     if(url.includes('/data/countries.json')){
-      const data=await response.clone().json();
-      countries.forEach(c=>{if(!data.some(x=>x.id===c.id))data.push(c);});
+      const data=await response.clone().json();countries.forEach(c=>{if(!data.some(x=>x.id===c.id))data.push(c);});
       return new Response(JSON.stringify(data),{status:response.status,statusText:response.statusText,headers:{'Content-Type':'application/json; charset=utf-8'}});
     }
-
     if(url.includes('/data/currencies.json')){
-      const data=await response.clone().json();
-      if(data.CHF && !data.CHF.countries.includes('LIE')) data.CHF.countries.push('LIE');
-      Object.entries(currencies).forEach(([code,c])=>{if(!data[code])data[code]={name:c.name,symbol:c.symbol,group:c.group,source:c.source,rate:c.rate,material:c.material,notes:c.notes,countries:c.countries,focus:false};});
+      const data=await response.clone().json();if(data.CHF&&!data.CHF.countries.includes('LIE'))data.CHF.countries.push('LIE');Object.entries(currencies).forEach(([code,c])=>{if(!data[code])data[code]={name:c.name,symbol:c.symbol,group:c.group,source:c.source,rate:c.rate,material:c.material,notes:c.notes,countries:c.countries,focus:false};});
       return new Response(JSON.stringify(data),{status:response.status,statusText:response.statusText,headers:{'Content-Type':'application/json; charset=utf-8'}});
     }
-
     if(url.includes('/data/notes.json')){
-      const data=await response.clone().json();
-      Object.entries(currencies).forEach(([code,c])=>c.notes.forEach(value=>{
-        if(data.some(n=>n.currency===code&&Number(n.value)===Number(value))) return;
-        data.push({currency:code,value:Number(value),front:placeholder(code,value),back:placeholder(code,value),status:'circulating',statusLabel:'Em circulação',source:c.source,material:c.material,imageStatus:'official-link',imageSource:c.source,imageSourceUrl:c.officialUrl,officialUrl:c.officialUrl,officialLabel:`Ver ${code} ${value} na fonte oficial`});
+      const data=await response.clone().json();Object.entries(currencies).forEach(([code,c])=>c.notes.forEach(value=>{
+        let n=data.find(x=>x.currency===code&&Number(x.value)===Number(value));if(!n){n={currency:code,value:Number(value)};data.push(n);}
+        const pair=images[code]?.[value];Object.assign(n,{status:'circulating',statusLabel:'Em circulação',source:c.source,material:c.material,imageSourceUrl:c.officialUrl,officialUrl:c.officialUrl,officialLabel:`Ver ${code} ${value} na fonte oficial`});
+        if(pair){Object.assign(n,{front:commons(pair[0]),back:commons(pair[1]),imageStatus:'reference-reproduction',imageSource:`${c.source} / Wikimedia Commons`});}
+        else{Object.assign(n,{front:placeholder(code,value),back:placeholder(code,value),imageStatus:'official-link',imageSource:c.source});}
       }));
       return new Response(JSON.stringify(data),{status:response.status,statusText:response.statusText,headers:{'Content-Type':'application/json; charset=utf-8'}});
     }
-
     return response;
   };
 })();
