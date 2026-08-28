@@ -11,55 +11,27 @@
     EGP:{values:[5,10,20,50,100,200],source:'Central Bank of Egypt',material:'Papel / polímero',url:'https://www.cbe.org.eg/en/banknote/banknote-issuance/denominations'}
   };
 
-  const DKK={
-    50:'https://www.nationalbanken.dk/media/3qmnzfp1/2009a-seddelserie-50kr.png',
-    100:'https://www.nationalbanken.dk/media/rrplhbpz/2009a-seddelserie-100kr.png',
-    200:'https://www.nationalbanken.dk/media/nxlf3s5q/2009a-seddelserie-200kr.png',
-    500:'https://www.nationalbanken.dk/media/yurncwyo/2009a-seddelserie-500kr.png'
+  const DKK={50:'https://www.nationalbanken.dk/media/3qmnzfp1/2009a-seddelserie-50kr.png',100:'https://www.nationalbanken.dk/media/rrplhbpz/2009a-seddelserie-100kr.png',200:'https://www.nationalbanken.dk/media/nxlf3s5q/2009a-seddelserie-200kr.png',500:'https://www.nationalbanken.dk/media/yurncwyo/2009a-seddelserie-500kr.png'};
+  const MAD={20:['20 dirham 2013 averse.jpg','20 dirham 2013 reverse.jpg'],50:['50 dirham 2013 (averse).jpg','50 dirham 2013 (reverse).jpg'],100:['100 dirham 2013 (averse).jpg','100 dirham 2013 (reverse).jpg'],200:['200 dirham 2013 (averse).jpg','200 dirham 2013 (reverse).jpg']};
+  /* Commons currently exposes complete 2019 pairs only for KES 1000. For 50/100/200/500 use the verified scan pairs available in the category rather than invented KENW2019 filenames. */
+  const KES={
+    50:['KENW0052-2024o.jpg','Kenya 50 Shilling banknote, reverse.jpg'],
+    100:['KENW0053-2024o.jpg','KENW0053-2024r.jpg'],
+    200:['KENW0054-2024o.jpg','KENW0054-2024r.jpg'],
+    500:['Kenyan currency(500Ksh) 01.jpg','Kenyan currency(500Ksh) 02.jpg'],
+    1000:['KENW2019-1000o.jpg','KENW2019-1000r.jpg']
   };
-  const MAD={
-    20:['20 dirham 2013 averse.jpg','20 dirham 2013 reverse.jpg'],
-    50:['50 dirham 2013 (averse).jpg','50 dirham 2013 (reverse).jpg'],
-    100:['100 dirham 2013 (averse).jpg','100 dirham 2013 (reverse).jpg'],
-    200:['200 dirham 2013 (averse).jpg','200 dirham 2013 (reverse).jpg']
-  };
-  const KES={};
-  [50,100,200,500,1000].forEach(v=>KES[v]=[`KENW2019-${v}o.jpg`,`KENW2019-${v}r.jpg`]);
-  const EGP={
-    5:['5 EGP obverse 2011-5-19.jpg','5 EGP reverse 2011-5-19.jpg'],
-    10:['10 EGP obverse 2014-8-13.jpg','10 EGP reverse 2014-8-13.jpg'],
-    20:['20 EGP 2022 Polymer - front 01.jpg','20 EGP 2022 Polymer - rear.jpg'],
-    50:['50 EGP obverse 2011-5-4.jpg','50 EGP reverse 2011-5-4.jpg'],
-    100:['100 EGP obverse 2014-1-26.jpg','100 EGP reverse 2014-1-26.jpg'],
-    200:['200 EGP obverse 2010-1-2.jpg','200 EGP reverse 2010-1-2.jpg']
-  };
+  const EGP={5:['5 EGP obverse 2011-5-19.jpg','5 EGP reverse 2011-5-19.jpg'],10:['10 EGP obverse 2014-8-13.jpg','10 EGP reverse 2014-8-13.jpg'],20:['20 EGP 2022 Polymer - front 01.jpg','20 EGP 2022 Polymer - rear.jpg'],50:['50 EGP obverse 2011-5-4.jpg','50 EGP reverse 2011-5-4.jpg'],100:['100 EGP obverse 2014-1-26.jpg','100 EGP reverse 2014-1-26.jpg'],200:['200 EGP obverse 2010-1-2.jpg','200 EGP reverse 2010-1-2.jpg']};
 
   const previousFetch=window.fetch.bind(window);
   window.fetch=async(...args)=>{
-    const req=args[0],url=typeof req==='string'?req:req?.url||'';
-    const response=await previousFetch(...args);
-    if(!url.includes('/data/notes.json'))return response;
-    const notes=await response.clone().json();
-    for(const [currency,c] of Object.entries(cfg)){
-      for(const value of c.values){
-        let n=notes.find(x=>x.currency===currency&&Number(x.value)===Number(value));
-        if(!n){n={currency,value:Number(value)};notes.push(n);}
-        Object.assign(n,{status:'circulating',statusLabel:'Em circulação',source:c.source,material:c.material,imageSource:c.source,imageSourceUrl:c.url,officialUrl:c.url,officialLabel:`Ver ${currency} ${value} na fonte oficial`});
-        if(c.dims?.[value])n.dimensions=c.dims[value];
-        if(currency==='DKK'){
-          n.front=DKK[value];n.back=DKK[value];n.series='2009A · atual';n.imageStatus='official-combined-reference';n.imageSource='Danmarks Nationalbank · imagem oficial SPECIMEN (frente + verso)';
-        }else if(currency==='MAD'){
-          n.front=commons(MAD[value][0]);n.back=commons(MAD[value][1]);n.series='Série 2013';n.imageStatus='reference-reproduction';n.imageSource='Bank Al-Maghrib / Wikimedia Commons';
-        }else if(currency==='KES'){
-          n.front=commons(KES[value][0]);n.back=commons(KES[value][1]);n.series='Nova geração 2019 / atualização 2024';n.imageStatus='reference-reproduction';n.imageSource='Central Bank of Kenya / Wikimedia Commons';
-        }else if(currency==='EGP'){
-          n.front=commons(EGP[value][0]);n.back=commons(EGP[value][1]);n.imageStatus='public-domain';n.imageSource='Central Bank of Egypt / Wikimedia Commons';
-          if(value===20){n.series='Polímero 2022';n.material='Polímero';}
-        }else{
-          n.front=placeholder(currency,value);n.back=placeholder(currency,value);n.imageStatus='official-link';
-          n.restrictionText=currency==='ARS'?'As notas argentinas atuais permanecem ligadas à fonte oficial; a reprodução de desenhos recentes requer cautela quanto a direitos de autor.':'O Banco Central de Chile declara deter os direitos sobre os desenhos das notas atuais e proíbe a reprodução total ou parcial sem consentimento.';
-        }
-      }
+    const req=args[0],url=typeof req==='string'?req:req?.url||'';const response=await previousFetch(...args);if(!url.includes('/data/notes.json'))return response;const notes=await response.clone().json();
+    for(const [currency,c] of Object.entries(cfg))for(const value of c.values){let n=notes.find(x=>x.currency===currency&&Number(x.value)===Number(value));if(!n){n={currency,value:Number(value)};notes.push(n);}Object.assign(n,{status:'circulating',statusLabel:'Em circulação',source:c.source,material:c.material,imageSource:c.source,imageSourceUrl:c.url,officialUrl:c.url,officialLabel:`Ver ${currency} ${value} na fonte oficial`});if(c.dims?.[value])n.dimensions=c.dims[value];
+      if(currency==='DKK'){n.front=DKK[value];n.back=DKK[value];n.series='2009A · atual';n.imageStatus='official-combined-reference';n.imageSource='Danmarks Nationalbank · imagem oficial SPECIMEN (frente + verso)';}
+      else if(currency==='MAD'){n.front=commons(MAD[value][0]);n.back=commons(MAD[value][1]);n.series='Série 2013';n.imageStatus='reference-reproduction';n.imageSource='Bank Al-Maghrib / Wikimedia Commons';}
+      else if(currency==='KES'){n.front=commons(KES[value][0]);n.back=commons(KES[value][1]);n.series=value===1000?'Nova geração 2019':'Nova geração 2019 / atualização 2024';n.imageStatus='reference-reproduction';n.imageSource='Central Bank of Kenya / Wikimedia Commons';}
+      else if(currency==='EGP'){n.front=commons(EGP[value][0]);n.back=commons(EGP[value][1]);n.imageStatus='public-domain';n.imageSource='Central Bank of Egypt / Wikimedia Commons';if(value===20){n.series='Polímero 2022';n.material='Polímero';}}
+      else{n.front=placeholder(currency,value);n.back=placeholder(currency,value);n.imageStatus='official-link';n.restrictionText=currency==='ARS'?'As notas argentinas atuais permanecem ligadas à fonte oficial; a reprodução de desenhos recentes requer cautela quanto a direitos de autor.':'O Banco Central de Chile declara deter os direitos sobre os desenhos das notas atuais e proíbe a reprodução total ou parcial sem consentimento.';}
     }
     return new Response(JSON.stringify(notes),{status:response.status,statusText:response.statusText,headers:{'Content-Type':'application/json; charset=utf-8'}});
   };
