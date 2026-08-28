@@ -38,6 +38,7 @@
     'ALL:500':['https://www.bankofalbania.org/rc/img/ALB_500_R_CMJN_300_copy_20215.jpg','https://www.bankofalbania.org/rc/img/ALB_500_V_CMJN_300_copy_20216.jpg'],
     'ALL:2000':['https://www.bankofalbania.org/rc/img/Albania_2000_front_1200dpi_copy_20217.jpg','https://www.bankofalbania.org/rc/img/Albania_2000_back_1200dpi_copy_20218.jpg']
   };
+  const mkdValues=[10,50,100,200,500,1000,2000];
   const previousFetch=window.fetch.bind(window);
   window.fetch=async(...args)=>{
     const request=args[0],url=typeof request==='string'?request:request?.url||'';
@@ -55,6 +56,11 @@
       const n=notes.find(x=>x.currency===currency&&Number(x.value)===Number(value));
       if(!n)return;
       Object.assign(n,{front,back,imageStatus:'official-source',imageSource:'Bank of Albania',imageSourceUrl:'https://www.bankofalbania.org/Currency/Banknotes_in_circulation/'});
+    });
+    mkdValues.forEach(value=>{
+      const n=notes.find(x=>x.currency==='MKD'&&Number(x.value)===value);
+      if(!n)return;
+      Object.assign(n,{front:`/assets/notes/mkd/${value}-front.jpg`,back:`/assets/notes/mkd/${value}-back.jpg`,imageStatus:'official-source',imageSource:'National Bank of the Republic of North Macedonia',imageSourceUrl:'https://www.nbrm.mk/knizhni_pari_vo_optiek-en.nspx'});
     });
     return new Response(JSON.stringify(notes),{status:response.status,statusText:response.statusText,headers:{'Content-Type':'application/json; charset=utf-8'}});
   };
