@@ -12,6 +12,12 @@
   };
 
   const DKK={50:'https://www.nationalbanken.dk/media/3qmnzfp1/2009a-seddelserie-50kr.png',100:'https://www.nationalbanken.dk/media/rrplhbpz/2009a-seddelserie-100kr.png',200:'https://www.nationalbanken.dk/media/nxlf3s5q/2009a-seddelserie-200kr.png',500:'https://www.nationalbanken.dk/media/yurncwyo/2009a-seddelserie-500kr.png'};
+  const MAD_LOCAL={
+    20:['/assets/notes/mad/20-front.jpg','/assets/notes/mad/20-back.jpg'],
+    50:['/assets/notes/mad/50-front.jpg','/assets/notes/mad/50-back.jpg'],
+    100:['/assets/notes/mad/100-front.jpg','/assets/notes/mad/100-back.jpg'],
+    200:['/assets/notes/mad/200-front.jpg','/assets/notes/mad/200-back.jpg']
+  };
   const MAD_OFFICIAL={
     20:'https://www.bkam.ma/en/Banknotes-and-coins/Cash-lifecycle/Banknotes-in-circulation/2023-series/20-dh-banknote',
     50:'https://www.bkam.ma/en/Banknotes-and-coins/Cash-lifecycle/Banknotes-in-circulation/2023-series',
@@ -33,8 +39,7 @@
     for(const [currency,c] of Object.entries(cfg))for(const value of c.values){let n=notes.find(x=>x.currency===currency&&Number(x.value)===Number(value));if(!n){n={currency,value:Number(value)};notes.push(n);}Object.assign(n,{status:'circulating',statusLabel:'Em circulação',source:c.source,material:c.material,imageSource:c.source,imageSourceUrl:c.url,officialUrl:c.url,officialLabel:`Ver ${currency} ${value} na fonte oficial`});if(c.dims?.[value])n.dimensions=c.dims[value];
       if(currency==='DKK'){n.front=DKK[value];n.back=DKK[value];n.series='2009A · atual';n.imageStatus='official-combined-reference';n.imageSource='Danmarks Nationalbank · imagem oficial SPECIMEN (frente + verso)';}
       else if(currency==='MAD'){
-        n.front=placeholder('MAD',value);n.back=placeholder('MAD',value);n.series='Série 2023';n.imageStatus='official-link';n.imageSource='Bank Al-Maghrib';n.imageSourceUrl=MAD_OFFICIAL[value];n.officialUrl=MAD_OFFICIAL[value];n.officialLabel=`Ver MAD ${value} na fonte oficial`;
-        n.restrictionText='O site oficial do Bank Al-Maghrib bloqueia carregamento automatizado das imagens nesta app. A ficha mantém ligação direta à série 2023 para evitar imagens quebradas.';
+        n.front=MAD_LOCAL[value][0];n.back=MAD_LOCAL[value][1];n.series='Série 2023';n.imageStatus='local-reference';n.imageSource='Imagem fornecida pelo utilizador · referência Bank Al-Maghrib';n.imageSourceUrl=MAD_OFFICIAL[value];n.officialUrl=MAD_OFFICIAL[value];n.officialLabel=`Ver MAD ${value} na fonte oficial`;delete n.restrictionText;
       }
       else if(currency==='KES'){
         const local=value===500;
