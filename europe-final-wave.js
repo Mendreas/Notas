@@ -25,7 +25,7 @@
       100:['100 rubles obverse 2022.jpg','100 rubles reverse 2022.jpg'],
       200:['200 rubles 2017 obverse.jpg','200 rubles 2017 reverse.jpg'],
       500:['Banknote 500 rubles 2010 front.jpg','Banknote 500 rubles 2010 back.jpg'],
-      1000:['1000 rubles obverse 2025.png','1000 rubles reverse 2025.png'],
+      1000:['1000 rubles obverse 2023.jpg','1000 rubles reverse 2025.png'],
       2000:['2000 rubles 2017 obverse.jpg','2000 rubles 2017 reverse.jpg'],
       5000:['5000 rubles obverse 2023.jpg','5000 rubles reverse 2023.jpg']
     },
