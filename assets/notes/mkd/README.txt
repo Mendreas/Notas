@@ -1,0 +1,1 @@
+MKD banknote image assets sourced from official National Bank of the Republic of North Macedonia pages. Images provided by the project owner from the official NBRM site.
