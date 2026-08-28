@@ -1,7 +1,19 @@
 (() => {
   const placeholder=(code,value)=>'data:image/svg+xml;charset=UTF-8,'+encodeURIComponent(`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 320"><rect width="720" height="320" rx="18" fill="#0c1824"/><rect x="18" y="18" width="684" height="284" rx="14" fill="none" stroke="#526170" stroke-width="2"/><text x="360" y="118" text-anchor="middle" fill="#d7e2ea" font-family="Arial,sans-serif" font-size="42" font-weight="700">${code} ${value}</text><text x="360" y="175" text-anchor="middle" fill="#90a1ae" font-family="Arial,sans-serif" font-size="24">IMAGEM EM PREPARAÇÃO</text><text x="360" y="216" text-anchor="middle" fill="#6f8392" font-family="Arial,sans-serif" font-size="18">VER FONTE OFICIAL</text></svg>`);
-  const countries=[{id:'COL',name:'Colômbia',flag:'🇨🇴',continent:'South America',currency:'COP',capital:'Bogotá',population:'≈ 53 milhões',language:'Espanhol',history:[['1837–hoje','Peso colombiano (COP)']]},{id:'PER',name:'Peru',flag:'🇵🇪',continent:'South America',currency:'PEN',capital:'Lima',population:'≈ 34 milhões',language:'Espanhol',history:[['1991–hoje','Sol peruano (PEN)']]},{id:'BOL',name:'Bolívia',flag:'🇧🇴',continent:'South America',currency:'BOB',capital:'Sucre',population:'≈ 12,5 milhões',language:'Espanhol e línguas indígenas',history:[['1987–hoje','Boliviano (BOB)']]}];
-  const currencies={COP:{name:'Peso colombiano',symbol:'$',group:'Colômbia',source:'Banco de la República',rate:4300,material:'Papel',notes:[2000,5000,10000,20000,50000,100000],countries:['COL'],officialUrl:'https://www.banrep.gov.co/es/billetes-monedas/billetes-en-circulacion'},PEN:{name:'Sol peruano',symbol:'S/',group:'Peru',source:'Banco Central de Reserva del Perú',rate:4.1,material:'Algodão',notes:[10,20,50,100,200],countries:['PER'],officialUrl:'https://www.bcrp.gob.pe/billetes-y-monedas/billetes.html'},BOB:{name:'Boliviano',symbol:'Bs',group:'Bolívia',source:'Banco Central de Bolivia',rate:8.0,material:'Papel',notes:[10,20,50,100,200],countries:['BOL'],officialUrl:'https://www.bcb.gob.bo/?q=primera-familia-de-billetes'}};
+  const countries=[
+    {id:'COL',name:'Colômbia',flag:'🇨🇴',continent:'South America',currency:'COP',capital:'Bogotá',population:'≈ 53 milhões',language:'Espanhol',history:[['1837–hoje','Peso colombiano (COP)']]},
+    {id:'PER',name:'Peru',flag:'🇵🇪',continent:'South America',currency:'PEN',capital:'Lima',population:'≈ 34 milhões',language:'Espanhol',history:[['1991–hoje','Sol peruano (PEN)']]},
+    {id:'BOL',name:'Bolívia',flag:'🇧🇴',continent:'South America',currency:'BOB',capital:'Sucre',population:'≈ 12,5 milhões',language:'Espanhol e línguas indígenas',history:[['1987–hoje','Boliviano (BOB)']]},
+    {id:'PRY',name:'Paraguai',flag:'🇵🇾',continent:'South America',currency:'PYG',capital:'Assunção',population:'≈ 7 milhões',language:'Espanhol e guarani',history:[['1944–hoje','Guarani paraguaio (PYG)']]},
+    {id:'URY',name:'Uruguai',flag:'🇺🇾',continent:'South America',currency:'UYU',capital:'Montevidéu',population:'≈ 3,4 milhões',language:'Espanhol',history:[['1993–hoje','Peso uruguaio (UYU)']]}
+  ];
+  const currencies={
+    COP:{name:'Peso colombiano',symbol:'$',group:'Colômbia',source:'Banco de la República',rate:4300,material:'Papel',notes:[2000,5000,10000,20000,50000,100000],countries:['COL'],officialUrl:'https://www.banrep.gov.co/es/billetes-monedas/billetes-en-circulacion'},
+    PEN:{name:'Sol peruano',symbol:'S/',group:'Peru',source:'Banco Central de Reserva del Perú',rate:4.1,material:'Algodão',notes:[10,20,50,100,200],countries:['PER'],officialUrl:'https://www.bcrp.gob.pe/billetes-y-monedas/billetes.html'},
+    BOB:{name:'Boliviano',symbol:'Bs',group:'Bolívia',source:'Banco Central de Bolivia',rate:8.0,material:'Papel',notes:[10,20,50,100,200],countries:['BOL'],officialUrl:'https://www.bcb.gob.bo/?q=primera-familia-de-billetes'},
+    PYG:{name:'Guarani paraguaio',symbol:'₲',group:'Paraguai',source:'Banco Central del Paraguay',rate:7800,material:'Papel / polímero',notes:[2000,5000,10000,20000,50000,100000],countries:['PRY'],officialUrl:'https://www.bcp.gov.py/en/billetes-y-monedas-en-circulacion-'},
+    UYU:{name:'Peso uruguaio',symbol:'$',group:'Uruguai',source:'Banco Central del Uruguay',rate:47,material:'Papel / polímero',notes:[20,50,100,200,500,1000,2000],countries:['URY'],officialUrl:'https://www.bcu.gub.uy/Billetes-Monedas/Paginas/Billetes-y-Monedas.aspx'}
+  };
   const bob={};[10,20,50,100,200].forEach(v=>{const folder=String(v*1000);bob[v]=[`https://www.bcb.gob.bo/webdocs/nfb/billetes/nfb/img/${folder}/anverso${folder}.jpg`,`https://www.bcb.gob.bo/webdocs/nfb/billetes/nfb/img/${folder}/reverso${folder}.jpg`]});
   const cop={
     2000:['https://www.banrep.gov.co/billetes/2-mil/images/2000/anverso2000.jpg','https://www.banrep.gov.co/billetes/2-mil/images/2000/reverso2000.jpg'],
@@ -11,13 +23,7 @@
     50000:['https://www.banrep.gov.co/billetes/50-mil/images/50000/anverso50000.png','https://www.banrep.gov.co/billetes/50-mil/images/50000/reverso50000.png'],
     100000:['https://www.banrep.gov.co/docum/billetes/images/100000/anverso100000.jpg','https://www.banrep.gov.co/docum/billetes/images/100000/reverso100000.jpg']
   };
-  const penOfficial={
-    10:'https://www.bcrp.gob.pe/docs/Transparencia/Notas-Informativas/2021/nota-informativa-2021-07-22.pdf',
-    20:'https://multimedia.bcrp.gob.pe/temp/billetes-2022/billete-20.html',
-    50:'https://multimedia.bcrp.gob.pe/temp/billetes-2022/billete-50.html',
-    100:'https://multimedia.bcrp.gob.pe/docs/billetes/billete-100.html',
-    200:'https://multimedia.bcrp.gob.pe/temp/billetes-2023/billete-200.html'
-  };
+  const penOfficial={10:'https://www.bcrp.gob.pe/docs/Transparencia/Notas-Informativas/2021/nota-informativa-2021-07-22.pdf',20:'https://multimedia.bcrp.gob.pe/temp/billetes-2022/billete-20.html',50:'https://multimedia.bcrp.gob.pe/temp/billetes-2022/billete-50.html',100:'https://multimedia.bcrp.gob.pe/docs/billetes/billete-100.html',200:'https://multimedia.bcrp.gob.pe/temp/billetes-2023/billete-200.html'};
   const previousFetch=window.fetch.bind(window);window.fetch=async(...args)=>{const req=args[0],url=typeof req==='string'?req:req?.url||'';const response=await previousFetch(...args);
     if(url.includes('/data/countries.json')){const data=await response.clone().json();countries.forEach(c=>{if(!data.some(x=>x.id===c.id))data.push(c)});return new Response(JSON.stringify(data),{status:response.status,statusText:response.statusText,headers:{'Content-Type':'application/json; charset=utf-8'}})}
     if(url.includes('/data/currencies.json')){const data=await response.clone().json();Object.entries(currencies).forEach(([code,c])=>{if(!data[code])data[code]={name:c.name,symbol:c.symbol,group:c.group,source:c.source,rate:c.rate,material:c.material,notes:c.notes,countries:c.countries,focus:false}});return new Response(JSON.stringify(data),{status:response.status,statusText:response.statusText,headers:{'Content-Type':'application/json; charset=utf-8'}})}
