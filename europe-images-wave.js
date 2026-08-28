@@ -13,12 +13,20 @@
     'ALL:200':['https://www.bankofalbania.org/rc/img/Albania_200_July_2019_front_600dpi_15271.jpg','https://www.bankofalbania.org/rc/img/Albania_200_July_2019_back_600dpi_15272.jpg'],'ALL:500':['https://www.bankofalbania.org/rc/img/ALB_500_R_CMJN_300_copy_20215.jpg','https://www.bankofalbania.org/rc/img/ALB_500_V_CMJN_300_copy_20216.jpg'],'ALL:2000':['https://www.bankofalbania.org/rc/img/Albania_2000_front_1200dpi_copy_20217.jpg','https://www.bankofalbania.org/rc/img/Albania_2000_back_1200dpi_copy_20218.jpg'],
     'HUF:5000':['https://upload.wikimedia.org/wikipedia/commons/7/73/5000_HUF_2017_ob.jpg','https://upload.wikimedia.org/wikipedia/commons/e/e9/5000_HUF_2017_rev.jpg']
   };
+  const iskOfficial={
+    500:'https://cb.is/payments/banknotes-and-coin/valid-banknotes-in-circulation/five-hundred-kr-banknote/',
+    1000:'https://cb.is/payments/banknotes-and-coin/valid-banknotes-in-circulation/one-thousand-kr-banknote/',
+    2000:'https://cb.is/payments/banknotes-and-coin/valid-banknotes-in-circulation/two-thousand-kr-banknote/',
+    5000:'https://cb.is/payments/banknotes-and-coin/valid-banknotes-in-circulation/five-thousand-kr-banknote/',
+    10000:'https://cb.is/payments/banknotes-and-coin/valid-banknotes-in-circulation/ten-thousand-kr-banknote/'
+  };
   const mkdValues=[10,50,100,200,500,1000,2000];
   const previousFetch=window.fetch.bind(window);
   window.fetch=async(...args)=>{
     const request=args[0],url=typeof request==='string'?request:request?.url||'';const response=await previousFetch(...args);if(!url.includes('/data/notes.json'))return response;const notes=await response.clone().json();
     Object.entries(pairs).forEach(([key,[frontFile,backFile]])=>{const [currency,value]=key.split(':');const n=notes.find(x=>x.currency===currency&&Number(x.value)===Number(value));if(!n)return;const isMDL=currency==='MDL',isBAM=currency==='BAM';Object.assign(n,{front:commons(frontFile),back:commons(backFile),imageStatus:'reference-reproduction',imageSource:isMDL?'National Bank of Moldova / Wikimedia Commons':isBAM?'Central Bank of Bosnia and Herzegovina / Wikimedia Commons':'Wikimedia Commons · referência de circulação',imageSourceUrl:isMDL?'https://www.bnm.md/en/content/banknotes':isBAM?'https://www.cbbh.ba/Content/Read/19':n.imageSourceUrl});});
     Object.entries(official).forEach(([key,[front,back]])=>{const [currency,value]=key.split(':');const n=notes.find(x=>x.currency===currency&&Number(x.value)===Number(value));if(!n)return;const isHUF=currency==='HUF';Object.assign(n,{front,back,imageStatus:isHUF?'reference-reproduction':'official-source',imageSource:isHUF?'Magyar Nemzeti Bank · via Wikimedia Commons':'Bank of Albania',imageSourceUrl:isHUF?'https://www.mnb.hu/en/banknotes-and-coins/banknotes':'https://www.bankofalbania.org/Currency/Banknotes_in_circulation/'});});
+    Object.entries(iskOfficial).forEach(([value,sourceUrl])=>{const n=notes.find(x=>x.currency==='ISK'&&Number(x.value)===Number(value));if(!n)return;Object.assign(n,{imageStatus:'restricted-official',imageSource:'Central Bank of Iceland',imageSourceUrl:sourceUrl,officialUrl:sourceUrl,officialLabel:`Ver ISK ${value} na fonte oficial`});});
     mkdValues.forEach(value=>{const n=notes.find(x=>x.currency==='MKD'&&Number(x.value)===value);if(!n)return;Object.assign(n,{front:`/assets/notes/mkd/${value}-front.jpg`,back:`/assets/notes/mkd/${value}-back.jpg`,imageStatus:'official-source',imageSource:'National Bank of the Republic of North Macedonia',imageSourceUrl:'https://www.nbrm.mk/knizhni_pari_vo_optiek-en.nspx'});});
     return new Response(JSON.stringify(notes),{status:response.status,statusText:response.statusText,headers:{'Content-Type':'application/json; charset=utf-8'}});
   };
