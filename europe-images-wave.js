@@ -21,7 +21,6 @@
     'HUF:500':['500 forint elolap.png','500 forint hatlap.png'],
     'HUF:1000':['HUF 1000 2018 obverse.png','HUF 1000 2018 reverse.png'],
     'HUF:2000':['2000 HUF 2017 ob.jpg','2000 HUF 2017 rev.jpg'],
-    'HUF:5000':['5000 HUF 2017 ob.jpg','5000 HUF 2017 rev.jpg'],
     'HUF:10000':['10000 HUF 2014 ob.jpg','10000 HUF 2014 rev.jpg'],
     'HUF:20000':['20000 HUF 2015 ob.png','20000 HUF 2015 rev.png'],
     'ALL:1000':['ALBW2019-01000o.jpg','1000lek-768x383.png'],
@@ -36,7 +35,9 @@
   const official={
     'ALL:200':['https://www.bankofalbania.org/rc/img/Albania_200_July_2019_front_600dpi_15271.jpg','https://www.bankofalbania.org/rc/img/Albania_200_July_2019_back_600dpi_15272.jpg'],
     'ALL:500':['https://www.bankofalbania.org/rc/img/ALB_500_R_CMJN_300_copy_20215.jpg','https://www.bankofalbania.org/rc/img/ALB_500_V_CMJN_300_copy_20216.jpg'],
-    'ALL:2000':['https://www.bankofalbania.org/rc/img/Albania_2000_front_1200dpi_copy_20217.jpg','https://www.bankofalbania.org/rc/img/Albania_2000_back_1200dpi_copy_20218.jpg']
+    'ALL:2000':['https://www.bankofalbania.org/rc/img/Albania_2000_front_1200dpi_copy_20217.jpg','https://www.bankofalbania.org/rc/img/Albania_2000_back_1200dpi_copy_20218.jpg'],
+    'MDL:500':['https://bnm.md/files/styles/coin/public/coin/500_avers_web1_0.jpg?itok=zMa0wrar','https://bnm.md/files/styles/coin/public/coin/500_revers_web1_0.jpg?itok=aGbZhUI0'],
+    'HUF:5000':['https://upload.wikimedia.org/wikipedia/commons/9/9f/5000_HUF_2017_ob.jpg','https://upload.wikimedia.org/wikipedia/commons/7/73/5000_HUF_2017_rev.jpg']
   };
   const mkdValues=[10,50,100,200,500,1000,2000];
   const previousFetch=window.fetch.bind(window);
@@ -55,7 +56,9 @@
       const [currency,value]=key.split(':');
       const n=notes.find(x=>x.currency===currency&&Number(x.value)===Number(value));
       if(!n)return;
-      Object.assign(n,{front,back,imageStatus:'official-source',imageSource:'Bank of Albania',imageSourceUrl:'https://www.bankofalbania.org/Currency/Banknotes_in_circulation/'});
+      const isMDL=currency==='MDL';
+      const isHUF=currency==='HUF';
+      Object.assign(n,{front,back,imageStatus:isMDL?'official-source':'reference-reproduction',imageSource:isMDL?'National Bank of Moldova':isHUF?'Magyar Nemzeti Bank · via Wikimedia Commons':'Bank of Albania',imageSourceUrl:isMDL?'https://bnm.md/en/content/500-lei':isHUF?'https://www.mnb.hu/en/banknotes-and-coins/banknotes':'https://www.bankofalbania.org/Currency/Banknotes_in_circulation/'});
     });
     mkdValues.forEach(value=>{
       const n=notes.find(x=>x.currency==='MKD'&&Number(x.value)===value);
