@@ -6,13 +6,18 @@
     DKK:{values:[50,100,200,500],source:'Danmarks Nationalbank',material:'Papel',url:'https://www.nationalbanken.dk/en/what-we-do/notes-and-coins',dims:{50:'125 × 72 mm',100:'135 × 72 mm',200:'145 × 72 mm',500:'155 × 72 mm'}},
     ARS:{values:[1000,2000,10000,20000],source:'Banco Central de la República Argentina',material:'Papel',url:'https://www.bcra.gob.ar/billetes-y-monedas/'},
     CLP:{values:[1000,2000,5000,10000,20000],source:'Banco Central de Chile',material:'Papel / polímero',url:'https://www.bcentral.cl/web/banco-central/areas/billetes-y-monedas'},
-    MAD:{values:[20,50,100,200],source:'Bank Al-Maghrib',material:'Papel',url:'https://www.bkam.ma/en/Banknotes-and-coins/Banknotes',dims:{20:'130 × 70 mm',50:'137 × 70 mm',100:'144 × 70 mm',200:'151 × 70 mm'}},
+    MAD:{values:[20,50,100,200],source:'Bank Al-Maghrib',material:'Papel',url:'https://www.bkam.ma/fr/Billets-et-monnaies/Billets-et-pieces-en-circulation/Billets-en-circulation',dims:{20:'131 × 70 mm',50:'138 × 70 mm',100:'145 × 70 mm',200:'151 × 70 mm'}},
     KES:{values:[50,100,200,500,1000],source:'Central Bank of Kenya',material:'Papel',url:'https://www.centralbank.go.ke/currency-services/',dims:{50:'123 × 62 mm',100:'128 × 64 mm',200:'133 × 66 mm',500:'138 × 68 mm',1000:'143 × 70 mm'}},
     EGP:{values:[5,10,20,50,100,200],source:'Central Bank of Egypt',material:'Papel / polímero',url:'https://www.cbe.org.eg/en/banknote/banknote-issuance/denominations'}
   };
 
   const DKK={50:'https://www.nationalbanken.dk/media/3qmnzfp1/2009a-seddelserie-50kr.png',100:'https://www.nationalbanken.dk/media/rrplhbpz/2009a-seddelserie-100kr.png',200:'https://www.nationalbanken.dk/media/nxlf3s5q/2009a-seddelserie-200kr.png',500:'https://www.nationalbanken.dk/media/yurncwyo/2009a-seddelserie-500kr.png'};
-  const MAD={20:['20 dirham 2013 averse.jpg','20 dirham 2013 reverse.jpg'],50:['50 dirham 2013 (averse).jpg','50 dirham 2013 (reverse).jpg'],100:['100 dirham 2013 (averse).jpg','100 dirham 2013 (reverse).jpg'],200:['200 dirham 2013 (averse).jpg','200 dirham 2013 (reverse).jpg']};
+  const MAD={
+    20:['https://upload.wikimedia.org/wikipedia/commons/1/13/20_dirham_2013_averse.jpg','https://upload.wikimedia.org/wikipedia/commons/f/f7/20_dirham_2013_reverse.jpg'],
+    50:['https://upload.wikimedia.org/wikipedia/commons/0/0b/50_dirham_2013_%28averse%29.jpg','https://upload.wikimedia.org/wikipedia/commons/e/ef/50_dirham_2013_%28reverse%29.jpg'],
+    100:['https://upload.wikimedia.org/wikipedia/commons/7/77/100_dirham_2013_%28averse%29.jpg','https://upload.wikimedia.org/wikipedia/commons/0/0c/100_dirham_2013_%28reverse%29.jpg'],
+    200:['https://upload.wikimedia.org/wikipedia/commons/e/eb/200_dirham_2013_%28averse%29.jpg','https://upload.wikimedia.org/wikipedia/commons/d/dd/200_dirham_2013_%28reverse%29.jpg']
+  };
   const KES={
     50:['KENW0052-2024o.jpg','Kenya 50 Shilling banknote, reverse.jpg'],
     100:['KENW0053-2024o.jpg','KENW0053-2024r.jpg'],
@@ -27,7 +32,7 @@
     const req=args[0],url=typeof req==='string'?req:req?.url||'';const response=await previousFetch(...args);if(!url.includes('/data/notes.json'))return response;const notes=await response.clone().json();
     for(const [currency,c] of Object.entries(cfg))for(const value of c.values){let n=notes.find(x=>x.currency===currency&&Number(x.value)===Number(value));if(!n){n={currency,value:Number(value)};notes.push(n);}Object.assign(n,{status:'circulating',statusLabel:'Em circulação',source:c.source,material:c.material,imageSource:c.source,imageSourceUrl:c.url,officialUrl:c.url,officialLabel:`Ver ${currency} ${value} na fonte oficial`});if(c.dims?.[value])n.dimensions=c.dims[value];
       if(currency==='DKK'){n.front=DKK[value];n.back=DKK[value];n.series='2009A · atual';n.imageStatus='official-combined-reference';n.imageSource='Danmarks Nationalbank · imagem oficial SPECIMEN (frente + verso)';}
-      else if(currency==='MAD'){n.front=commons(MAD[value][0]);n.back=commons(MAD[value][1]);n.series='Série 2013';n.imageStatus='reference-reproduction';n.imageSource='Bank Al-Maghrib / Wikimedia Commons';}
+      else if(currency==='MAD'){n.front=MAD[value][0];n.back=MAD[value][1];n.series='Série 2013';n.imageStatus='reference-reproduction';n.imageSource='Bank Al-Maghrib / Wikimedia Commons';}
       else if(currency==='KES'){
         const local=value===500;
         n.front=local?KES[value][0]:commons(KES[value][0]);n.back=local?KES[value][1]:commons(KES[value][1]);
