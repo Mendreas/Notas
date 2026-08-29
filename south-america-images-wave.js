@@ -11,6 +11,15 @@
     }
   };
   const partial={
+    VES:{
+      5:{front:commons('Billete de 5 Bolívares.jpg')},
+      10:{front:commons('Billete de 10 Bolívares, Venezuela.jpg')},
+      20:{front:commons('Billete de 20 Bolìvares.jpg')},
+      50:{front:commons('Billete de 50 Bolìvares.jpg')},
+      100:{front:commons('Billete de 100 Bolìvares.jpg')},
+      200:{front:commons('Billete de 200 Bolìvares.jpg')},
+      500:{front:commons('Billete de 500 Bolìvares.jpg')}
+    },
     SRD:{
       5:{front:commons('Suriname 5 Dollar observe.jpg')},
       20:{front:commons('20surinamedollar.jpg')}
@@ -18,6 +27,7 @@
   };
   const sources={
     GYD:'https://bankofguyana.org.gy/bog3/core-functions/issuance-of-currency/notes',
+    VES:'https://commons.wikimedia.org/wiki/Category:Banknotes_of_Venezuela',
     SRD:'https://commons.wikimedia.org/wiki/Category:Banknotes_of_Suriname'
   };
   const previousFetch=window.fetch.bind(window);
