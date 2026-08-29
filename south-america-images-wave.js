@@ -3,9 +3,16 @@
   const images={
     VES:{
       50:[commons('50-Bolívares-anverso.jpg'),commons('50-Bolívares-reverso.jpg')]
+    },
+    GYD:{
+      20:['https://bankofguyana.org.gy/bog/images/operations/banking/notescoins/20_fr3_small.jpg','https://bankofguyana.org.gy/bog/images/operations/banking/notescoins/20_bk3_small.jpg'],
+      50:['https://bankofguyana.org.gy/bog/images/operations/banking/notescoins/50-specimen-front.jpg','https://bankofguyana.org.gy/bog/images/operations/banking/notescoins/50-specimen-back.jpg'],
+      100:['https://bankofguyana.org.gy/bog/images/operations/banking/notescoins/100_front_specimen.jpg','https://bankofguyana.org.gy/bog/images/operations/banking/notescoins/100_back_specimen.jpg'],
+      1000:['https://bankofguyana.org.gy/bog/images/operations/banking/notescoins/1000_2019_front.jpg','https://bankofguyana.org.gy/bog/images/operations/banking/notescoins/1000_2019_back.jpg'],
+      2000:['https://bankofguyana.org.gy/bog/images/2000-frontsmall.png','https://bankofguyana.org.gy/bog/images/2000-backsmall.png']
     }
   };
-  const source='https://commons.wikimedia.org/wiki/Category:Banknotes_of_Venezuela';
+  const sources={VES:'https://commons.wikimedia.org/wiki/Category:Banknotes_of_Venezuela',GYD:'https://bankofguyana.org.gy/bog3/core-functions/issuance-of-currency/notes'};
   const previousFetch=window.fetch.bind(window);
   window.fetch=async(...args)=>{
     const req=args[0],url=typeof req==='string'?req:req?.url||'';
@@ -15,7 +22,8 @@
     Object.entries(images).forEach(([code,values])=>Object.entries(values).forEach(([value,pair])=>{
       const n=data.find(x=>x.currency===code&&Number(x.value)===Number(value));
       if(!n)return;
-      Object.assign(n,{front:pair[0],back:pair[1],imageStatus:'commons-reusable',imageSource:'Wikimedia Commons',imageSourceUrl:source});
+      const official=code==='GYD';
+      Object.assign(n,{front:pair[0],back:pair[1],imageStatus:official?'official-source':'commons-reusable',imageSource:official?'Bank of Guyana':'Wikimedia Commons',imageSourceUrl:sources[code]});
     }));
     return new Response(JSON.stringify(data),{status:response.status,statusText:response.statusText,headers:{'Content-Type':'application/json; charset=utf-8'}});
   };
