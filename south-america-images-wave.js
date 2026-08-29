@@ -20,8 +20,8 @@
       20:vesPair('Billete de 20 Bolìvares.jpg'),
       50:vesPair('Billete de 50 Bolìvares.jpg'),
       100:vesPair('Billete de 100 Bolìvares.jpg'),
-      200:vesPair('Billete de 200 Bolìvares.jpg'),
-      500:vesPair('Billete de 500 Bolìvares.jpg')
+      200:['/assets/notes/ves/200-front.jpg','/assets/notes/ves/200-back.jpg'],
+      500:['/assets/notes/ves/500-front.jpg','/assets/notes/ves/500-back.jpg']
     }
   };
   const partial={
@@ -45,7 +45,8 @@
       const n=data.find(x=>x.currency===code&&Number(x.value)===Number(value));
       if(!n)return;
       const isVes=code==='VES';
-      Object.assign(n,{front:pair[0],back:pair[1],imageStatus:isVes?'commons-reusable-cropped':'official-source',imageSource:isVes?'Wikimedia Commons · Rjcastillo · CC BY-SA 4.0':'Bank of Guyana',imageSourceUrl:sources[code]});
+      const localVes=isVes&&(Number(value)===200||Number(value)===500);
+      Object.assign(n,{front:pair[0],back:pair[1],imageStatus:localVes?'commons-reusable-local':isVes?'commons-reusable-cropped':'official-source',imageSource:isVes?'Wikimedia Commons · Rjcastillo · CC BY-SA 4.0':'Bank of Guyana',imageSourceUrl:sources[code]});
     }));
     Object.entries(partial).forEach(([code,values])=>Object.entries(values).forEach(([value,parts])=>{
       const n=data.find(x=>x.currency===code&&Number(x.value)===Number(value));
