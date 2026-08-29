@@ -39,13 +39,22 @@
       50:['/assets/notes/pen/50-front.jpg','/assets/notes/pen/50-back.jpg'],
       100:['/assets/notes/pen/100-front.jpg','/assets/notes/pen/100-back.jpg'],
       200:['/assets/notes/pen/200-front.jpg','/assets/notes/pen/200-back.jpg']
+    },
+    PYG:{
+      2000:['/assets/notes/pyg/2000-front.jpg','/assets/notes/pyg/2000-back.jpg'],
+      5000:['/assets/notes/pyg/5000-front.jpg','/assets/notes/pyg/5000-back.jpg'],
+      10000:['/assets/notes/pyg/10000-front.jpg','/assets/notes/pyg/10000-back.jpg'],
+      20000:['/assets/notes/pyg/20000-front.jpg','/assets/notes/pyg/20000-back.jpg'],
+      50000:['/assets/notes/pyg/50000-front.jpg','/assets/notes/pyg/50000-back.jpg'],
+      100000:['/assets/notes/pyg/100000-front.jpg','/assets/notes/pyg/100000-back.jpg']
     }
   };
   const sources={
     GYD:'https://bankofguyana.org.gy/bog3/core-functions/issuance-of-currency/notes',
     VES:'https://commons.wikimedia.org/wiki/Category:Banknotes_of_Venezuela',
-    SRD:'https://www.cbvs.sr/financieel-systeem/munten-en-biljetten-in-circulatie',
-    PEN:'https://www.bcrp.gob.pe/billetes-y-monedas/familia-de-billetes.html'
+    SRD:'https://www.cbvs.sr/financieel-sistema/munten-en-biljetten-in-circulatie',
+    PEN:'https://www.bcrp.gob.pe/billetes-y-monedas/familia-de-billetes.html',
+    PYG:'https://www.bcp.gov.py/'
   };
   const previousFetch=window.fetch.bind(window);
   window.fetch=async(...args)=>{
@@ -57,7 +66,7 @@
       const n=data.find(x=>x.currency===code&&Number(x.value)===Number(value));
       if(!n)return;
       const isVes=code==='VES';
-      const isLocalUser=['SRD','PEN'].includes(code);
+      const isLocalUser=['SRD','PEN','PYG'].includes(code);
       const localVes=isVes&&[5,200,500].includes(Number(value));
       const localGyd=code==='GYD'&&Number(value)===5000;
       Object.assign(n,{
