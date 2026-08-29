@@ -15,7 +15,7 @@
       2000:['https://bankofguyana.org.gy/bog/images/2000-frontsmall.png','https://bankofguyana.org.gy/bog/images/2000-backsmall.png']
     },
     VES:{
-      5:vesPair('Billete de 5 Bolívares.jpg'),
+      5:['/assets/notes/ves/5-front.jpg','/assets/notes/ves/5-back.jpg'],
       10:vesPair('Billete de 10 Bolívares, Venezuela.jpg'),
       20:vesPair('Billete de 20 Bolìvares.jpg'),
       50:vesPair('Billete de 50 Bolìvares.jpg'),
@@ -45,7 +45,7 @@
       const n=data.find(x=>x.currency===code&&Number(x.value)===Number(value));
       if(!n)return;
       const isVes=code==='VES';
-      const localVes=isVes&&(Number(value)===200||Number(value)===500);
+      const localVes=isVes&&[5,200,500].includes(Number(value));
       Object.assign(n,{front:pair[0],back:pair[1],imageStatus:localVes?'commons-reusable-local':isVes?'commons-reusable-cropped':'official-source',imageSource:isVes?'Wikimedia Commons · Rjcastillo · CC BY-SA 4.0':'Bank of Guyana',imageSourceUrl:sources[code]});
     }));
     Object.entries(partial).forEach(([code,values])=>Object.entries(values).forEach(([value,parts])=>{
