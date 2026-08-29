@@ -1,5 +1,10 @@
 (() => {
-  const commons=(name)=>`https://commons.wikimedia.org/wiki/Special:Redirect/file/${encodeURIComponent(name)}?width=1200`;
+  const commons=(name)=>`https://commons.wikimedia.org/wiki/Special:Redirect/file/${encodeURIComponent(name)}?width=1600`;
+  const netlifyCrop=(source,position)=>`/.netlify/images?url=${encodeURIComponent(source)}&w=1200&h=540&fit=cover&position=${position}&fm=webp&q=90`;
+  const vesPair=(name)=>{
+    const source=commons(name);
+    return [netlifyCrop(source,'top'),netlifyCrop(source,'bottom')];
+  };
   const images={
     GYD:{
       20:['https://bankofguyana.org.gy/bog/images/operations/banking/notescoins/20_fr3_small.jpg','https://bankofguyana.org.gy/bog/images/operations/banking/notescoins/20_bk3_small.jpg'],
@@ -8,18 +13,18 @@
       500:['https://bankofguyana.org.gy/bog/images/operations/banking/notescoins/500_fr1_small.jpg','https://bankofguyana.org.gy/bog/images/operations/banking/notescoins/500_bk1_small.jpg'],
       1000:['https://bankofguyana.org.gy/bog/images/operations/banking/notescoins/1000_2019_front.jpg','https://bankofguyana.org.gy/bog/images/operations/banking/notescoins/1000_2019_back.jpg'],
       2000:['https://bankofguyana.org.gy/bog/images/2000-frontsmall.png','https://bankofguyana.org.gy/bog/images/2000-backsmall.png']
+    },
+    VES:{
+      5:vesPair('Billete de 5 Bolívares.jpg'),
+      10:vesPair('Billete de 10 Bolívares, Venezuela.jpg'),
+      20:vesPair('Billete de 20 Bolìvares.jpg'),
+      50:vesPair('Billete de 50 Bolìvares.jpg'),
+      100:vesPair('Billete de 100 Bolìvares.jpg'),
+      200:vesPair('Billete de 200 Bolìvares.jpg'),
+      500:vesPair('Billete de 500 Bolìvares.jpg')
     }
   };
   const partial={
-    VES:{
-      5:{front:commons('Billete de 5 Bolívares.jpg')},
-      10:{front:commons('Billete de 10 Bolívares, Venezuela.jpg')},
-      20:{front:commons('Billete de 20 Bolìvares.jpg')},
-      50:{front:commons('Billete de 50 Bolìvares.jpg')},
-      100:{front:commons('Billete de 100 Bolìvares.jpg')},
-      200:{front:commons('Billete de 200 Bolìvares.jpg')},
-      500:{front:commons('Billete de 500 Bolìvares.jpg')}
-    },
     SRD:{
       5:{front:commons('Suriname 5 Dollar observe.jpg')},
       20:{front:commons('20surinamedollar.jpg')}
@@ -39,7 +44,8 @@
     Object.entries(images).forEach(([code,values])=>Object.entries(values).forEach(([value,pair])=>{
       const n=data.find(x=>x.currency===code&&Number(x.value)===Number(value));
       if(!n)return;
-      Object.assign(n,{front:pair[0],back:pair[1],imageStatus:'official-source',imageSource:'Bank of Guyana',imageSourceUrl:sources[code]});
+      const isVes=code==='VES';
+      Object.assign(n,{front:pair[0],back:pair[1],imageStatus:isVes?'commons-reusable-cropped':'official-source',imageSource:isVes?'Wikimedia Commons · Rjcastillo · CC BY-SA 4.0':'Bank of Guyana',imageSourceUrl:sources[code]});
     }));
     Object.entries(partial).forEach(([code,values])=>Object.entries(values).forEach(([value,parts])=>{
       const n=data.find(x=>x.currency===code&&Number(x.value)===Number(value));
