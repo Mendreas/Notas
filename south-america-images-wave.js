@@ -12,7 +12,8 @@
       100:['https://bankofguyana.org.gy/bog/images/operations/banking/notescoins/100_front_specimen.jpg','https://bankofguyana.org.gy/bog/images/operations/banking/notescoins/100_back_specimen.jpg'],
       500:['https://bankofguyana.org.gy/bog/images/operations/banking/notescoins/500_fr1_small.jpg','https://bankofguyana.org.gy/bog/images/operations/banking/notescoins/500_bk1_small.jpg'],
       1000:['https://bankofguyana.org.gy/bog/images/operations/banking/notescoins/1000_2019_front.jpg','https://bankofguyana.org.gy/bog/images/operations/banking/notescoins/1000_2019_back.jpg'],
-      2000:['https://bankofguyana.org.gy/bog/images/2000-frontsmall.png','https://bankofguyana.org.gy/bog/images/2000-backsmall.png']
+      2000:['https://bankofguyana.org.gy/bog/images/2000-frontsmall.png','https://bankofguyana.org.gy/bog/images/2000-backsmall.png'],
+      5000:['/assets/notes/gyd/5000-front.png','/assets/notes/gyd/5000-back.png']
     },
     VES:{
       5:['/assets/notes/ves/5-front.jpg','/assets/notes/ves/5-back.jpg'],
@@ -46,7 +47,8 @@
       if(!n)return;
       const isVes=code==='VES';
       const localVes=isVes&&[5,200,500].includes(Number(value));
-      Object.assign(n,{front:pair[0],back:pair[1],imageStatus:localVes?'commons-reusable-local':isVes?'commons-reusable-cropped':'official-source',imageSource:isVes?'Wikimedia Commons · Rjcastillo · CC BY-SA 4.0':'Bank of Guyana',imageSourceUrl:sources[code]});
+      const localGyd=code==='GYD'&&Number(value)===5000;
+      Object.assign(n,{front:pair[0],back:pair[1],imageStatus:localVes?'commons-reusable-local':localGyd?'local-source':isVes?'commons-reusable-cropped':'official-source',imageSource:localGyd?'International Bank Note Society (IBNS)':isVes?'Wikimedia Commons · Rjcastillo · CC BY-SA 4.0':'Bank of Guyana',imageSourceUrl:localGyd?'https://www.theibns.org/joomla/index.php?option=com_content&view=article&id=882&catid=13&Itemid=51':sources[code]});
     }));
     Object.entries(partial).forEach(([code,values])=>Object.entries(values).forEach(([value,parts])=>{
       const n=data.find(x=>x.currency===code&&Number(x.value)===Number(value));
