@@ -8,8 +8,10 @@
       20:['https://bankofguyana.org.gy/bog/images/operations/banking/notescoins/20_fr3_small.jpg','https://bankofguyana.org.gy/bog/images/operations/banking/notescoins/20_bk3_small.jpg'],
       50:['https://bankofguyana.org.gy/bog/images/operations/banking/notescoins/50-specimen-front.jpg','https://bankofguyana.org.gy/bog/images/operations/banking/notescoins/50-specimen-back.jpg'],
       100:['https://bankofguyana.org.gy/bog/images/operations/banking/notescoins/100_front_specimen.jpg','https://bankofguyana.org.gy/bog/images/operations/banking/notescoins/100_back_specimen.jpg'],
+      500:['https://bankofguyana.org.gy/bog/images/operations/banking/notescoins/500_fr1_small.jpg','https://bankofguyana.org.gy/bog/images/operations/banking/notescoins/500_bk1_small.jpg'],
       1000:['https://bankofguyana.org.gy/bog/images/operations/banking/notescoins/1000_2019_front.jpg','https://bankofguyana.org.gy/bog/images/operations/banking/notescoins/1000_2019_back.jpg'],
-      2000:['https://bankofguyana.org.gy/bog/images/2000-frontsmall.png','https://bankofguyana.org.gy/bog/images/2000-backsmall.png']
+      2000:['https://bankofguyana.org.gy/bog/images/2000-frontsmall.png','https://bankofguyana.org.gy/bog/images/2000-backsmall.png'],
+      5000:['https://bankofguyana.org.gy/bog/images/operations/banking/notescoins/5000front.jpg','https://bankofguyana.org.gy/bog/images/operations/banking/notescoins/5000back.jpg']
     }
   };
   const sources={VES:'https://commons.wikimedia.org/wiki/Category:Banknotes_of_Venezuela',GYD:'https://bankofguyana.org.gy/bog3/core-functions/issuance-of-currency/notes'};
