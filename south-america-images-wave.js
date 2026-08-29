@@ -16,13 +16,14 @@
   };
   const partial={
     SRD:{
-      5:{front:commons('Suriname 5 Dollar observe.jpg')}
+      5:{front:commons('Suriname 5 Dollar observe.jpg')},
+      20:{front:commons('20surinamedollar.jpg')}
     }
   };
   const sources={
     VES:'https://commons.wikimedia.org/wiki/Category:Banknotes_of_Venezuela',
     GYD:'https://bankofguyana.org.gy/bog3/core-functions/issuance-of-currency/notes',
-    SRD:'https://commons.wikimedia.org/wiki/File:Suriname_5_Dollar_observe.jpg'
+    SRD:'https://commons.wikimedia.org/wiki/Category:Banknotes_of_Suriname'
   };
   const previousFetch=window.fetch.bind(window);
   window.fetch=async(...args)=>{
