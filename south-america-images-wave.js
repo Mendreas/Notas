@@ -23,18 +23,21 @@
       100:vesPair('Billete de 100 Bolìvares.jpg'),
       200:['/assets/notes/ves/200-front.jpg','/assets/notes/ves/200-back.jpg'],
       500:['/assets/notes/ves/500-front.jpg','/assets/notes/ves/500-back.jpg']
-    }
-  };
-  const partial={
+    },
     SRD:{
-      5:{front:commons('Suriname 5 Dollar observe.jpg')},
-      20:{front:commons('20surinamedollar.jpg')}
+      5:['/assets/notes/srd/5-front.jpg','/assets/notes/srd/5-back.jpg'],
+      10:['/assets/notes/srd/10-front.jpg','/assets/notes/srd/10-back.jpg'],
+      20:['/assets/notes/srd/20-front.jpg','/assets/notes/srd/20-back.jpg'],
+      50:['/assets/notes/srd/50-front.jpg','/assets/notes/srd/50-back.jpg'],
+      100:['/assets/notes/srd/100-front.jpg','/assets/notes/srd/100-back.jpg'],
+      200:['/assets/notes/srd/200-front.jpg','/assets/notes/srd/200-back.jpg'],
+      500:['/assets/notes/srd/500-front.jpg','/assets/notes/srd/500-back.jpg']
     }
   };
   const sources={
     GYD:'https://bankofguyana.org.gy/bog3/core-functions/issuance-of-currency/notes',
     VES:'https://commons.wikimedia.org/wiki/Category:Banknotes_of_Venezuela',
-    SRD:'https://commons.wikimedia.org/wiki/Category:Banknotes_of_Suriname'
+    SRD:'https://www.cbvs.sr/financieel-systeem/munten-en-biljetten-in-circulatie'
   };
   const previousFetch=window.fetch.bind(window);
   window.fetch=async(...args)=>{
@@ -46,16 +49,15 @@
       const n=data.find(x=>x.currency===code&&Number(x.value)===Number(value));
       if(!n)return;
       const isVes=code==='VES';
+      const isSrd=code==='SRD';
       const localVes=isVes&&[5,200,500].includes(Number(value));
       const localGyd=code==='GYD'&&Number(value)===5000;
-      Object.assign(n,{front:pair[0],back:pair[1],imageStatus:localVes?'commons-reusable-local':localGyd?'local-source':isVes?'commons-reusable-cropped':'official-source',imageSource:localGyd?'International Bank Note Society (IBNS)':isVes?'Wikimedia Commons · Rjcastillo · CC BY-SA 4.0':'Bank of Guyana',imageSourceUrl:localGyd?'https://www.theibns.org/joomla/index.php?option=com_content&view=article&id=882&catid=13&Itemid=51':sources[code]});
-    }));
-    Object.entries(partial).forEach(([code,values])=>Object.entries(values).forEach(([value,parts])=>{
-      const n=data.find(x=>x.currency===code&&Number(x.value)===Number(value));
-      if(!n)return;
-      if(parts.front)n.front=parts.front;
-      if(parts.back)n.back=parts.back;
-      Object.assign(n,{imageStatus:'commons-reusable-partial',imageSource:'Wikimedia Commons',imageSourceUrl:sources[code]});
+      Object.assign(n,{
+        front:pair[0],back:pair[1],
+        imageStatus:isSrd?'local-source':localVes?'commons-reusable-local':localGyd?'local-source':isVes?'commons-reusable-cropped':'official-source',
+        imageSource:isSrd?'Imagem fornecida pelo utilizador':localGyd?'International Bank Note Society (IBNS)':isVes?'Wikimedia Commons · Rjcastillo · CC BY-SA 4.0':'Bank of Guyana',
+        imageSourceUrl:isSrd?sources.SRD:localGyd?'https://www.theibns.org/joomla/index.php?option=com_content&view=article&id=882&catid=13&Itemid=51':sources[code]
+      });
     }));
     return new Response(JSON.stringify(data),{status:response.status,statusText:response.statusText,headers:{'Content-Type':'application/json; charset=utf-8'}});
   };
