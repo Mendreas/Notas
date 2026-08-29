@@ -47,14 +47,28 @@
       20000:['/assets/notes/pyg/20000-front.jpg','/assets/notes/pyg/20000-back.jpg'],
       50000:['/assets/notes/pyg/50000-front.jpg','/assets/notes/pyg/50000-back.jpg'],
       100000:['/assets/notes/pyg/100000-front.jpg','/assets/notes/pyg/100000-back.jpg']
+    },
+    UYU:{
+      20:['/assets/notes/uyu/20-front.jpg','/assets/notes/uyu/20-back.jpg'],
+      50:['/assets/notes/uyu/50-front.jpg','/assets/notes/uyu/50-back.jpg'],
+      100:['/assets/notes/uyu/100-front.jpg','/assets/notes/uyu/100-back.jpg'],
+      200:['/assets/notes/uyu/200-front.jpg','/assets/notes/uyu/200-back.jpg'],
+      500:['/assets/notes/uyu/500-front.jpg','/assets/notes/uyu/500-back.jpg'],
+      1000:['/assets/notes/uyu/1000-front.jpg','/assets/notes/uyu/1000-back.jpg'],
+      2000:['/assets/notes/uyu/2000-front.jpg','/assets/notes/uyu/2000-back.jpg']
+    },
+    USD:{
+      100:['/assets/notes/usd/100-front.jpg','/assets/notes/usd/100-back.jpg']
     }
   };
   const sources={
     GYD:'https://bankofguyana.org.gy/bog3/core-functions/issuance-of-currency/notes',
     VES:'https://commons.wikimedia.org/wiki/Category:Banknotes_of_Venezuela',
-    SRD:'https://www.cbvs.sr/financieel-sistema/munten-en-biljetten-in-circulatie',
+    SRD:'https://www.cbvs.sr/financieel-systeem/munten-en-biljetten-in-circulatie',
     PEN:'https://www.bcrp.gob.pe/billetes-y-monedas/familia-de-billetes.html',
-    PYG:'https://www.bcp.gov.py/'
+    PYG:'https://www.bcp.gov.py/',
+    UYU:'https://www.bcu.gub.uy/Billetes-Monedas/Paginas/Billetes.aspx',
+    USD:'https://www.uscurrency.gov/denominations/100'
   };
   const previousFetch=window.fetch.bind(window);
   window.fetch=async(...args)=>{
@@ -66,7 +80,7 @@
       const n=data.find(x=>x.currency===code&&Number(x.value)===Number(value));
       if(!n)return;
       const isVes=code==='VES';
-      const isLocalUser=['SRD','PEN','PYG'].includes(code);
+      const isLocalUser=['SRD','PEN','PYG','UYU','USD'].includes(code);
       const localVes=isVes&&[5,200,500].includes(Number(value));
       const localGyd=code==='GYD'&&Number(value)===5000;
       Object.assign(n,{
