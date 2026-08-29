@@ -32,12 +32,20 @@
       100:['/assets/notes/srd/100-front.jpg','/assets/notes/srd/100-back.jpg'],
       200:['/assets/notes/srd/200-front.jpg','/assets/notes/srd/200-back.jpg'],
       500:['/assets/notes/srd/500-front.jpg','/assets/notes/srd/500-back.jpg']
+    },
+    PEN:{
+      10:['/assets/notes/pen/10-front.jpg','/assets/notes/pen/10-back.jpg'],
+      20:['/assets/notes/pen/20-front.jpg','/assets/notes/pen/20-back.jpg'],
+      50:['/assets/notes/pen/50-front.jpg','/assets/notes/pen/50-back.jpg'],
+      100:['/assets/notes/pen/100-front.jpg','/assets/notes/pen/100-back.jpg'],
+      200:['/assets/notes/pen/200-front.jpg','/assets/notes/pen/200-back.jpg']
     }
   };
   const sources={
     GYD:'https://bankofguyana.org.gy/bog3/core-functions/issuance-of-currency/notes',
     VES:'https://commons.wikimedia.org/wiki/Category:Banknotes_of_Venezuela',
-    SRD:'https://www.cbvs.sr/financieel-systeem/munten-en-biljetten-in-circulatie'
+    SRD:'https://www.cbvs.sr/financieel-systeem/munten-en-biljetten-in-circulatie',
+    PEN:'https://www.bcrp.gob.pe/billetes-y-monedas/familia-de-billetes.html'
   };
   const previousFetch=window.fetch.bind(window);
   window.fetch=async(...args)=>{
@@ -49,14 +57,14 @@
       const n=data.find(x=>x.currency===code&&Number(x.value)===Number(value));
       if(!n)return;
       const isVes=code==='VES';
-      const isSrd=code==='SRD';
+      const isLocalUser=['SRD','PEN'].includes(code);
       const localVes=isVes&&[5,200,500].includes(Number(value));
       const localGyd=code==='GYD'&&Number(value)===5000;
       Object.assign(n,{
         front:pair[0],back:pair[1],
-        imageStatus:isSrd?'local-source':localVes?'commons-reusable-local':localGyd?'local-source':isVes?'commons-reusable-cropped':'official-source',
-        imageSource:isSrd?'Imagem fornecida pelo utilizador':localGyd?'International Bank Note Society (IBNS)':isVes?'Wikimedia Commons · Rjcastillo · CC BY-SA 4.0':'Bank of Guyana',
-        imageSourceUrl:isSrd?sources.SRD:localGyd?'https://www.theibns.org/joomla/index.php?option=com_content&view=article&id=882&catid=13&Itemid=51':sources[code]
+        imageStatus:isLocalUser?'local-source':localVes?'commons-reusable-local':localGyd?'local-source':isVes?'commons-reusable-cropped':'official-source',
+        imageSource:isLocalUser?'Imagem fornecida pelo utilizador':localGyd?'International Bank Note Society (IBNS)':isVes?'Wikimedia Commons · Rjcastillo · CC BY-SA 4.0':'Bank of Guyana',
+        imageSourceUrl:isLocalUser?sources[code]:localGyd?'https://www.theibns.org/joomla/index.php?option=com_content&view=article&id=882&catid=13&Itemid=51':sources[code]
       });
     }));
     return new Response(JSON.stringify(data),{status:response.status,statusText:response.statusText,headers:{'Content-Type':'application/json; charset=utf-8'}});
