@@ -5,6 +5,9 @@
 [build.environment]
   NODE_VERSION = "20"
 
+[images]
+  remote_images = ["https:\\/\\/commons\\.wikimedia\\.org\\/.*", "https:\\/\\/upload\\.wikimedia\\.org\\/.*"]
+
 [[headers]]
   for = "/service-worker.js"
   [headers.values]
