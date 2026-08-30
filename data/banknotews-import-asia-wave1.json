@@ -1,0 +1,36 @@
+[
+  {"currency":"IDR","value":1000,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/INO/INO-BIN.htm","pick":"P-W162"},
+  {"currency":"IDR","value":2000,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/INO/INO-BIN.htm","pick":"P-W163"},
+  {"currency":"IDR","value":5000,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/INO/INO-BIN.htm","pick":"P-W164"},
+  {"currency":"IDR","value":10000,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/INO/INO-BIN.htm","pick":"P-W165"},
+  {"currency":"IDR","value":20000,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/INO/INO-BIN.htm","pick":"P-W166"},
+  {"currency":"IDR","value":50000,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/INO/INO-BIN.htm","pick":"P-W167"},
+  {"currency":"IDR","value":100000,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/INO/INO-BIN.htm","pick":"P-W168"},
+
+  {"currency":"MYR","value":1,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/MLY/MLY.htm","pick":"P-51"},
+  {"currency":"MYR","value":5,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/MLY/MLY.htm","pick":"P-52"},
+  {"currency":"MYR","value":10,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/MLY/MLY.htm","pick":"P-53"},
+  {"currency":"MYR","value":20,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/MLY/MLY.htm","pick":"P-54"},
+  {"currency":"MYR","value":50,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/MLY/MLY.htm","pick":"P-50"},
+  {"currency":"MYR","value":100,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/MLY/MLY.htm","pick":"P-56"},
+
+  {"currency":"THB","value":20,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/THL/THL-BOT.htm","pick":"P-W142"},
+  {"currency":"THB","value":50,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/THL/THL-BOT.htm","pick":"P-136"},
+  {"currency":"THB","value":100,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/THL/THL-BOT.htm","pick":"P-137"},
+  {"currency":"THB","value":500,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/THL/THL-BOT.htm","pick":"P-138"},
+  {"currency":"THB","value":1000,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/THL/THL-BOT.htm","pick":"P-139"},
+
+  {"currency":"PHP","value":20,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/PIL/PIL-BSP.htm","pick":"P-W230"},
+  {"currency":"PHP","value":50,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/PIL/PIL-BSP.htm","pick":"P-W237"},
+  {"currency":"PHP","value":100,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/PIL/PIL-BSP.htm","pick":"P-W238"},
+  {"currency":"PHP","value":200,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/PIL/PIL-BSP.htm","pick":"P-W233"},
+  {"currency":"PHP","value":500,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/PIL/PIL-BSP.htm","pick":"P-W240"},
+  {"currency":"PHP","value":1000,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/PIL/PIL-BSP.htm","pick":"P-W241"},
+
+  {"currency":"VND","value":10000,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/VIE/VIE-VIE.htm","pick":"P-119"},
+  {"currency":"VND","value":20000,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/VIE/VIE-VIE.htm","pick":"P-120"},
+  {"currency":"VND","value":50000,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/VIE/VIE-VIE.htm","pick":"P-121"},
+  {"currency":"VND","value":100000,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/VIE/VIE-VIE.htm","pick":"P-122"},
+  {"currency":"VND","value":200000,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/VIE/VIE-VIE.htm","pick":"P-123"},
+  {"currency":"VND","value":500000,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/VIE/VIE-VIE.htm","pick":"P-124"}
+]
