@@ -1,0 +1,24 @@
+name: Banknote.ws probe
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - '.github/workflows/banknotews-probe.yml'
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Probe current GBP 50 page
+        shell: python
+        run: |
+          import re, urllib.request
+          u='https://www.banknote.ws/COLLECTION/countries/EUR/GBR/GBRW0401.htm'
+          req=urllib.request.Request(u,headers={'User-Agent':'Mozilla/5.0'})
+          with urllib.request.urlopen(req,timeout=30) as r:
+              html=r.read().decode('latin-1','replace')
+          print('HTML_BYTES',len(html))
+          imgs=re.findall(r'<img[^>]+src=["\']([^"\']+)',html,re.I)
+          for x in imgs:
+              print('IMG',x)
