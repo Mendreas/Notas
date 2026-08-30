@@ -1,21 +1,16 @@
 #!/usr/bin/env python3
 import json, pathlib, re, ssl, sys, time, urllib.parse, urllib.request
 from html.parser import HTMLParser
-
 ROOT=pathlib.Path(__file__).resolve().parents[1]
-manifest_paths=sorted((ROOT/'data').glob('banknotews-import*.json'))
-notes=[]; seen=set()
+manifest_paths=sorted((ROOT/'data').glob('banknotews-import*.json')); notes=[]; seen=set()
 for mp in manifest_paths:
     payload=json.loads(mp.read_text(encoding='utf-8'))
     for item in payload.get('notes',[]):
         k=(item['currency'],int(item['value']))
         if k in seen: continue
         seen.add(k); notes.append(item)
-CFG={'notes':notes}
-OUT=ROOT/'assets/notes/banknotews'; OUT.mkdir(parents=True,exist_ok=True)
-CTX=ssl._create_unverified_context()
-UA='Notas-do-Mundo/0.10.7 (personal family atlas; banknote.ws scan importer)'
-
+CFG={'notes':notes}; OUT=ROOT/'assets/notes/banknotews'; OUT.mkdir(parents=True,exist_ok=True)
+CTX=ssl._create_unverified_context(); UA='Notas-do-Mundo/0.10.8 (personal family atlas; banknote.ws scan importer)'
 class Parser(HTMLParser):
     def __init__(self): super().__init__(); self.links=[]; self.images=[]; self._href=None; self._txt=[]
     def handle_starttag(self,tag,attrs):
@@ -25,22 +20,17 @@ class Parser(HTMLParser):
     def handle_data(self,data):
         if self._href is not None: self._txt.append(data)
     def handle_endtag(self,tag):
-        if tag.lower()=='a' and self._href is not None:
-            self.links.append((''.join(self._txt).strip(),self._href)); self._href=None; self._txt=[]
-
+        if tag.lower()=='a' and self._href is not None: self.links.append((''.join(self._txt).strip(),self._href)); self._href=None; self._txt=[]
 def get(url,binary=False):
     req=urllib.request.Request(url,headers={'User-Agent':UA,'Referer':'https://www.banknote.ws/'})
     for attempt in range(4):
         try:
-            with urllib.request.urlopen(req,timeout=45,context=CTX) as r:
-                raw=r.read(); ctype=r.headers.get('Content-Type','')
+            with urllib.request.urlopen(req,timeout=45,context=CTX) as r: raw=r.read(); ctype=r.headers.get('Content-Type','')
             return raw if binary else raw.decode('latin-1','replace'),ctype
         except Exception:
             if attempt==3: raise
             time.sleep(2*(attempt+1))
-
 def norm(s): return re.sub(r'[^A-Z0-9]','',str(s).upper())
-
 def find_page(section_url,pick):
     html,_=get(section_url); p=Parser(); p.feed(html); target=norm(pick); exact=[]; loose=[]
     for text,href in p.links:
@@ -54,55 +44,44 @@ def find_page(section_url,pick):
     for text,href in p.links:
         if href and digits and digits in href and '.htm' in href.lower(): return urllib.parse.urljoin(section_url,href)
     raise RuntimeError(f'Pick {pick} not found in {section_url}')
-
 def image_urls(page_url):
     html,_=get(page_url); p=Parser(); p.feed(html)
     return [urllib.parse.urljoin(page_url,x) for x in p.images if re.search(r'\.(?:jpe?g|png)(?:\?|$)',x,re.I)]
-
 def stem_family(fn):
-    # banknote.ws normally uses ...o.jpg / ...r.jpg. Some pages also contain
-    # small reference thumbnails ending os/rs; never pair a full scan with those.
     m=re.match(r'^(.*?)(?:[_-]?)([or])([sS]?)(\.(?:jpe?g|png))$',fn,re.I)
-    if not m: return None
+    if not m:return None
     return m.group(1).lower(),m.group(2).lower(),bool(m.group(3)),m.group(4).lower()
-
 def pair_images(page_url):
     urls=image_urls(page_url); parsed=[]
     for u in urls:
-        fn=urllib.parse.urlparse(u).path.rsplit('/',1)[-1]
-        fam=stem_family(fn)
+        fn=urllib.parse.urlparse(u).path.rsplit('/',1)[-1]; fam=stem_family(fn)
         if fam: parsed.append((u,fam))
-    # Prefer full-size o/r pairs from the same filename family.
     for u,(base,side,small,ext) in parsed:
         if side!='o' or small: continue
         for v,(base2,side2,small2,ext2) in parsed:
-            if base2==base and side2=='r' and not small2 and ext2==ext: return u,v
-    # If only thumbnail-style os/rs exists, use the matched pair together; validation
-    # below will still reject genuinely unusable files.
+            if base2==base and side2=='r' and not small2 and ext2==ext:return u,v
     for u,(base,side,small,ext) in parsed:
-        if side!='o': continue
+        if side!='o':continue
         for v,(base2,side2,small2,ext2) in parsed:
-            if base2==base and side2=='r' and small2==small and ext2==ext: return u,v
+            if base2==base and side2=='r' and small2==small and ext2==ext:return u,v
     raise RuntimeError(f'No matched front/back image pair on {page_url}')
-
 def save_image(url,path):
     raw,ctype=get(url,binary=True)
     if not ctype.startswith('image/') or len(raw)<5000: raise RuntimeError(f'Invalid image {url}: {ctype} {len(raw)} bytes')
     path.parent.mkdir(parents=True,exist_ok=True); path.write_bytes(raw); return len(raw)
-
 results={}; failures=[]
 for item in CFG['notes']:
     code=item['currency']; value=int(item['value']); pick=item['pick']; section=item['section']; key=f'{code}:{value}'
     try:
-        page=find_page(section,pick); front_url,back_url=pair_images(page)
+        page=item.get('page') or find_page(section,pick)
+        if item.get('frontSource') and item.get('backSource'): front_url=item['frontSource']; back_url=item['backSource']
+        else: front_url,back_url=pair_images(page)
         folder=OUT/code.lower(); fp=folder/f'{value}-front.jpg'; bp=folder/f'{value}-back.jpg'
         fs=save_image(front_url,fp); bs=save_image(back_url,bp)
         results[key]={'currency':code,'value':value,'pick':pick,'page':page,'frontSource':front_url,'backSource':back_url,'front':f'/assets/notes/banknotews/{code.lower()}/{value}-front.jpg','back':f'/assets/notes/banknotews/{code.lower()}/{value}-back.jpg','frontBytes':fs,'backBytes':bs}
         print('OK',key,pick,page,fs,bs)
-    except Exception as e:
-        failures.append({'key':key,'pick':pick,'error':str(e)}); print('FAIL',key,pick,e,file=sys.stderr)
+    except Exception as e: failures.append({'key':key,'pick':pick,'error':str(e)}); print('FAIL',key,pick,e,file=sys.stderr)
     time.sleep(.25)
-
 (ROOT/'data/banknotews-sources.json').write_text(json.dumps({'source':'https://www.banknote.ws/','notes':results,'failures':failures},ensure_ascii=False,indent=2),encoding='utf-8')
 rows=[]
 for key,r in results.items(): rows.append(f"    {json.dumps(key)}:{{front:{json.dumps(r['front'])},back:{json.dumps(r['back'])},imageStatus:'local-reference',imageSource:'Banknote Museum · banknote.ws',imageSourceUrl:{json.dumps(r['page'])}}}")
