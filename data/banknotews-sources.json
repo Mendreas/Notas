@@ -1,6 +1,78 @@
 {
   "source": "https://www.banknote.ws/",
   "notes": {
+    "INR:10": {
+      "currency": "INR",
+      "value": 10,
+      "pick": "P-109",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/IND/IND0109.htm",
+      "frontSource": "https://www.banknote.ws/COLLECTION/countries/ASI/IND/IND0109o.jpg",
+      "backSource": "https://www.banknote.ws/COLLECTION/countries/ASI/IND/IND0109r.jpg",
+      "front": "/assets/notes/banknotews/inr/10-front.jpg",
+      "back": "/assets/notes/banknotews/inr/10-back.jpg",
+      "frontBytes": 116734,
+      "backBytes": 113380
+    },
+    "INR:20": {
+      "currency": "INR",
+      "value": 20,
+      "pick": "P-W110",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/IND/INDW2019-0020.htm",
+      "frontSource": "https://www.banknote.ws/COLLECTION/countries/ASI/IND/INDW2019-0020o.jpg",
+      "backSource": "https://www.banknote.ws/COLLECTION/countries/ASI/IND/INDW2019-0020r.jpg",
+      "front": "/assets/notes/banknotews/inr/20-front.jpg",
+      "back": "/assets/notes/banknotews/inr/20-back.jpg",
+      "frontBytes": 134761,
+      "backBytes": 147826
+    },
+    "INR:50": {
+      "currency": "INR",
+      "value": 50,
+      "pick": "P-111",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/IND/IND0111.htm",
+      "frontSource": "https://www.banknote.ws/COLLECTION/countries/ASI/IND/IND0111o.jpg",
+      "backSource": "https://www.banknote.ws/COLLECTION/countries/ASI/IND/IND0111r.jpg",
+      "front": "/assets/notes/banknotews/inr/50-front.jpg",
+      "back": "/assets/notes/banknotews/inr/50-back.jpg",
+      "frontBytes": 123911,
+      "backBytes": 121370
+    },
+    "INR:100": {
+      "currency": "INR",
+      "value": 100,
+      "pick": "P-112",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/IND/IND0112.htm",
+      "frontSource": "https://www.banknote.ws/COLLECTION/countries/ASI/IND/IND0112o.jpg",
+      "backSource": "https://www.banknote.ws/COLLECTION/countries/ASI/IND/IND0112r.jpg",
+      "front": "/assets/notes/banknotews/inr/100-front.jpg",
+      "back": "/assets/notes/banknotews/inr/100-back.jpg",
+      "frontBytes": 101551,
+      "backBytes": 103925
+    },
+    "INR:200": {
+      "currency": "INR",
+      "value": 200,
+      "pick": "P-113",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/IND/IND0113.htm",
+      "frontSource": "https://www.banknote.ws/COLLECTION/countries/ASI/IND/IND0113o.jpg",
+      "backSource": "https://www.banknote.ws/COLLECTION/countries/ASI/IND/IND0113r.jpg",
+      "front": "/assets/notes/banknotews/inr/200-front.jpg",
+      "back": "/assets/notes/banknotews/inr/200-back.jpg",
+      "frontBytes": 104264,
+      "backBytes": 108793
+    },
+    "INR:500": {
+      "currency": "INR",
+      "value": 500,
+      "pick": "P-114",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/IND/IND0114.htm",
+      "frontSource": "https://www.banknote.ws/COLLECTION/countries/ASI/IND/IND0114-Woo.jpg",
+      "backSource": "https://www.banknote.ws/COLLECTION/countries/ASI/IND/IND0114-Wor.jpg",
+      "front": "/assets/notes/banknotews/inr/500-front.jpg",
+      "back": "/assets/notes/banknotews/inr/500-back.jpg",
+      "frontBytes": 122688,
+      "backBytes": 105077
+    },
     "HUF:500": {
       "currency": "HUF",
       "value": 500,
