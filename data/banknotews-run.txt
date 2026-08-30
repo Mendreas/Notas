@@ -1,2 +1,2 @@
-run=2026-08-30T21:39:00Z
-scope=bdt-200-corrected-target
+run=2026-08-30T21:47:00Z
+scope=bdt-200-exact-page
