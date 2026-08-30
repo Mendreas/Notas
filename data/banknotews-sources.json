@@ -2292,43 +2292,91 @@
       "back": "/assets/notes/banknotews/bnd/1000-back.jpg",
       "frontBytes": 159993,
       "backBytes": 157706
+    },
+    "MMK:50": {
+      "currency": "MMK",
+      "value": 50,
+      "pick": "P-73",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/MYA/MYA0073.htm",
+      "frontSource": "https://www.banknote.ws/COLLECTION/countries/ASI/MYA/MYA0073ao.jpg",
+      "backSource": "https://www.banknote.ws/COLLECTION/countries/ASI/MYA/MYA0073ar.jpg",
+      "front": "/assets/notes/banknotews/mmk/50-front.jpg",
+      "back": "/assets/notes/banknotews/mmk/50-back.jpg",
+      "frontBytes": 88514,
+      "backBytes": 80470
+    },
+    "MMK:100": {
+      "currency": "MMK",
+      "value": 100,
+      "pick": "P-74",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/MYA/MYA0074.htm",
+      "frontSource": "https://www.banknote.ws/COLLECTION/countries/ASI/MYA/MYA0074bo.jpg",
+      "backSource": "https://www.banknote.ws/COLLECTION/countries/ASI/MYA/MYA0074br.jpg",
+      "front": "/assets/notes/banknotews/mmk/100-front.jpg",
+      "back": "/assets/notes/banknotews/mmk/100-back.jpg",
+      "frontBytes": 113133,
+      "backBytes": 110031
+    },
+    "MMK:200": {
+      "currency": "MMK",
+      "value": 200,
+      "pick": "P-78",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/MYA/MYA0078.htm",
+      "frontSource": "https://www.banknote.ws/COLLECTION/countries/ASI/MYA/MYA0078o.jpg",
+      "backSource": "https://www.banknote.ws/COLLECTION/countries/ASI/MYA/MYA0078r.jpg",
+      "front": "/assets/notes/banknotews/mmk/200-front.jpg",
+      "back": "/assets/notes/banknotews/mmk/200-back.jpg",
+      "frontBytes": 81185,
+      "backBytes": 81711
+    },
+    "MMK:500": {
+      "currency": "MMK",
+      "value": 500,
+      "pick": "P-W85",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/MYA/MYAW2020-00500.htm",
+      "frontSource": "https://www.banknote.ws/COLLECTION/countries/ASI/MYA/MYAW2020-00500o.jpg",
+      "backSource": "https://www.banknote.ws/COLLECTION/countries/ASI/MYA/MYAW2020-00500r.jpg",
+      "front": "/assets/notes/banknotews/mmk/500-front.jpg",
+      "back": "/assets/notes/banknotews/mmk/500-back.jpg",
+      "frontBytes": 134279,
+      "backBytes": 134534
+    },
+    "MMK:1000": {
+      "currency": "MMK",
+      "value": 1000,
+      "pick": "P-W86",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/MYA/MYAW2019-01000.htm",
+      "frontSource": "https://www.banknote.ws/COLLECTION/countries/ASI/MYA/MYAW2019-01000o.jpg",
+      "backSource": "https://www.banknote.ws/COLLECTION/countries/ASI/MYA/MYAW2019-01000r.jpg",
+      "front": "/assets/notes/banknotews/mmk/1000-front.jpg",
+      "back": "/assets/notes/banknotews/mmk/1000-back.jpg",
+      "frontBytes": 133361,
+      "backBytes": 142115
+    },
+    "MMK:5000": {
+      "currency": "MMK",
+      "value": 5000,
+      "pick": "P-83",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/MYA/MYA0083.htm",
+      "frontSource": "https://www.banknote.ws/COLLECTION/countries/ASI/MYA/MYA0083o.jpg",
+      "backSource": "https://www.banknote.ws/COLLECTION/countries/ASI/MYA/MYA0083r.jpg",
+      "front": "/assets/notes/banknotews/mmk/5000-front.jpg",
+      "back": "/assets/notes/banknotews/mmk/5000-back.jpg",
+      "frontBytes": 88970,
+      "backBytes": 82938
+    },
+    "MMK:10000": {
+      "currency": "MMK",
+      "value": 10000,
+      "pick": "P-84",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/MYA/MYA0084.htm",
+      "frontSource": "https://www.banknote.ws/COLLECTION/countries/ASI/MYA/MYA0084o.jpg",
+      "backSource": "https://www.banknote.ws/COLLECTION/countries/ASI/MYA/MYA0084r.jpg",
+      "front": "/assets/notes/banknotews/mmk/10000-front.jpg",
+      "back": "/assets/notes/banknotews/mmk/10000-back.jpg",
+      "frontBytes": 136120,
+      "backBytes": 127178
     }
   },
-  "failures": [
-    {
-      "key": "MMK:50",
-      "pick": "P-73",
-      "error": "Invalid image https://www.banknote.ws/COLLECTION/countries/ASI/MYA/MYAA0002brs.jpg: image/jpeg 3545 bytes"
-    },
-    {
-      "key": "MMK:100",
-      "pick": "P-74",
-      "error": "Invalid image https://www.banknote.ws/COLLECTION/countries/ASI/MYA/MYAA0002brs.jpg: image/jpeg 3545 bytes"
-    },
-    {
-      "key": "MMK:200",
-      "pick": "P-78",
-      "error": "Invalid image https://www.banknote.ws/COLLECTION/countries/ASI/MYA/MYAA0002brs.jpg: image/jpeg 3545 bytes"
-    },
-    {
-      "key": "MMK:500",
-      "pick": "P-85",
-      "error": "Invalid image https://www.banknote.ws/COLLECTION/countries/ASI/MYA/MYAA0002brs.jpg: image/jpeg 3545 bytes"
-    },
-    {
-      "key": "MMK:1000",
-      "pick": "P-83",
-      "error": "Invalid image https://www.banknote.ws/COLLECTION/countries/ASI/MYA/MYAA0002brs.jpg: image/jpeg 3545 bytes"
-    },
-    {
-      "key": "MMK:5000",
-      "pick": "P-81",
-      "error": "Invalid image https://www.banknote.ws/COLLECTION/countries/ASI/MYA/MYAA0002brs.jpg: image/jpeg 3545 bytes"
-    },
-    {
-      "key": "MMK:10000",
-      "pick": "P-82",
-      "error": "Invalid image https://www.banknote.ws/COLLECTION/countries/ASI/MYA/MYAA0002brs.jpg: image/jpeg 3545 bytes"
-    }
-  ]
+  "failures": []
 }
