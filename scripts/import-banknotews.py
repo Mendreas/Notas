@@ -68,18 +68,33 @@ def stem_family(fn):
 
 def pair_images(page_url):
     urls=image_urls(page_url); parsed=[]
+    page_stem=urllib.parse.urlparse(page_url).path.rsplit('/',1)[-1].rsplit('.',1)[0].lower()
     for u in urls:
         fn=urllib.parse.urlparse(u).path.rsplit('/',1)[-1]; fam=stem_family(fn)
-        if fam: parsed.append((u,fam))
-    for u,(base,side,small,ext) in parsed:
-        if side!='o' or small: continue
-        for v,(base2,side2,small2,ext2) in parsed:
-            if base2==base and side2=='r' and not small2 and ext2==ext:return u,v
-    for u,(base,side,small,ext) in parsed:
-        if side!='o':continue
-        for v,(base2,side2,small2,ext2) in parsed:
-            if base2==base and side2=='r' and small2==small and ext2==ext:return u,v
-    raise RuntimeError(f'No matched front/back image pair on {page_url}')
+        if fam: parsed.append((u,fam,fn.lower()))
+    pairs=[]
+    for u,(base,side,small,ext),fn in parsed:
+        if side!='o': continue
+        for v,(base2,side2,small2,ext2),fn2 in parsed:
+            if base2==base and side2=='r' and small2==small and ext2==ext:
+                score=0
+                if base.startswith(page_stem): score+=100
+                if page_stem in base: score+=50
+                if not small: score+=20
+                if base.startswith('mya') or base.startswith('myaw'): score+=10
+                pairs.append((score,u,v))
+    if not pairs: raise RuntimeError(f'No matched front/back image pair on {page_url}')
+    pairs.sort(reverse=True,key=lambda x:x[0])
+    last_error=None
+    for _,u,v in pairs:
+        try:
+            fr,fc=get(u,binary=True); br,bc=get(v,binary=True)
+            if fc.startswith('image/') and bc.startswith('image/') and len(fr)>=5000 and len(br)>=5000:
+                return u,v
+            last_error=f'Invalid candidate pair {u} / {v}: {len(fr)} / {len(br)} bytes'
+        except Exception as e:
+            last_error=str(e)
+    raise RuntimeError(last_error or f'No valid front/back image pair on {page_url}')
 
 def save_image(url,path):
     raw,ctype=get(url,binary=True)
@@ -94,7 +109,7 @@ if sources_path.exists():
 
 results=dict(existing); failures=[]; imported=0
 for item in notes:
-    code=item['currency']; value=int(item['value']); pick=item['pick']; section=item['section']; key=f'{code}:{value}'
+    code=item['currency']; value=int(item['value']); pick=item['pick']; section=item.get('section',''); key=f'{code}:{value}'
     try:
         page=item.get('page') or find_page(section,pick)
         if item.get('frontSource') and item.get('backSource'): front_url=item['frontSource']; back_url=item['backSource']
