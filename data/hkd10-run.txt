@@ -1,0 +1,2 @@
+run=2026-08-30T19:00:00Z
+scope=install-user-supplied-hkd10
