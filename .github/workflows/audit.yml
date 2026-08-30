@@ -1,0 +1,29 @@
+name: Technical audit
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Use Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Check JavaScript syntax
+        run: |
+          set -e
+          for f in *.js scripts/*.mjs; do
+            [ -f "$f" ] || continue
+            node --check "$f"
+          done
+      - name: Run project audit
+        run: node scripts/audit.mjs
