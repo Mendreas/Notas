@@ -31,6 +31,26 @@
     'ARS:20000':{
       front:{title:'Juan Bautista Alberdi',summary:'Jurista, escritor, diplomata e pensador argentino, inspirador intelectual da Constituição de 1853.',more:'A obra “Bases y puntos de partida para la organización política de la República Argentina” teve forte influência na organização constitucional do país.',wiki:'https://pt.wikipedia.org/wiki/Juan_Bautista_Alberdi'},
       back:{title:'Casa natal de Juan Bautista Alberdi',summary:'Recriação artística da casa onde Alberdi nasceu, em San Miguel de Tucumán.',more:'O reverso liga a figura do pensador ao seu lugar de origem e à memória histórica argentina.',wiki:'https://pt.wikipedia.org/wiki/Juan_Bautista_Alberdi'}
+    },
+    'CLP:1000':{
+      front:{title:'Ignacio Carrera Pinto',summary:'Capitão do Exército chileno, lembrado sobretudo pela Batalha de La Concepción durante a Guerra do Pacífico.',more:'Carrera Pinto comandou a guarnição chilena em La Concepción, no Peru, em julho de 1882. A sua figura tornou-se um símbolo militar no Chile.',wiki:'https://pt.wikipedia.org/wiki/Ignacio_Carrera_Pinto'},
+      back:{title:'Parque Nacional Torres del Paine · Guanaco',summary:'Paisagem do Parque Nacional Torres del Paine, na Patagónia chilena, acompanhada por um guanaco.',more:'Torres del Paine é uma das áreas protegidas mais emblemáticas do Chile. O guanaco é um camelídeo nativo da América do Sul e frequente na paisagem patagónica.',wiki:'https://pt.wikipedia.org/wiki/Parque_Nacional_Torres_del_Paine'}
+    },
+    'CLP:2000':{
+      front:{title:'Manuel Rodríguez Erdoíza',summary:'Advogado, guerrilheiro e figura destacada do processo de independência do Chile.',more:'Rodríguez ficou conhecido pelas ações clandestinas e de resistência durante a Reconquista espanhola, tornando-se uma das figuras populares da independência chilena.',wiki:'https://pt.wikipedia.org/wiki/Manuel_Rodr%C3%ADguez_Erdo%C3%ADza'},
+      back:{title:'Reserva Nacional Nalcas · Loro choroy',summary:'Paisagem da Reserva Nacional Nalcas, no sul do Chile, com a araucária e o loro choroy como elementos naturais de destaque.',more:'A Reserva Nacional Nalcas protege ecossistemas andinos e bosques nativos da Região da Araucanía. O loro choroy é uma ave endémica do Chile.',wiki:'https://pt.wikipedia.org/wiki/Reserva_Nacional_Nalcas'}
+    },
+    'CLP:5000':{
+      front:{title:'Gabriela Mistral',summary:'Poeta, diplomata e educadora chilena, vencedora do Prémio Nobel da Literatura em 1945.',more:'Gabriela Mistral foi a primeira personalidade latino-americana a receber o Nobel da Literatura e é uma das figuras centrais da literatura chilena.',wiki:'https://pt.wikipedia.org/wiki/Gabriela_Mistral'},
+      back:{title:'Parque Nacional La Campana · Tucúquere',summary:'Paisagem do Parque Nacional La Campana, com palmeiras chilenas e um tucúquere, a maior coruja do país.',more:'La Campana protege uma importante população de palmeira-chilena e integra a Reserva da Biosfera La Campana-Peñuelas.',wiki:'https://pt.wikipedia.org/wiki/Parque_Nacional_La_Campana'}
+    },
+    'CLP:10000':{
+      front:{title:'Arturo Prat Chacón',summary:'Oficial da Marinha do Chile e uma das figuras históricas mais conhecidas do país.',more:'Prat morreu durante o Combate Naval de Iquique, em 21 de maio de 1879, episódio central da memória chilena da Guerra do Pacífico.',wiki:'https://pt.wikipedia.org/wiki/Arturo_Prat'},
+      back:{title:'Parque Nacional Alberto de Agostini · Cóndor',summary:'Paisagem glacial do extremo sul chileno, no Parque Nacional Alberto de Agostini, acompanhada por um cóndor-dos-Andes.',more:'O parque situa-se na Terra do Fogo e reúne montanhas, fiordes e glaciares. O cóndor é uma das aves mais emblemáticas dos Andes.',wiki:'https://pt.wikipedia.org/wiki/Parque_Nacional_Alberto_de_Agostini'}
+    },
+    'CLP:20000':{
+      front:{title:'Andrés Bello',summary:'Humanista, jurista, filósofo e educador de origem venezuelana, figura fundamental da vida intelectual chilena do século XIX.',more:'Bello foi o primeiro reitor da Universidade do Chile e principal autor do Código Civil chileno de 1855.',wiki:'https://pt.wikipedia.org/wiki/Andr%C3%A9s_Bello'},
+      back:{title:'Monumento Natural Salar de Surire · Flamingos',summary:'Paisagem altiplânica do Salar de Surire, no norte do Chile, conhecida pelas suas populações de flamingos.',more:'O Salar de Surire é uma área protegida da Região de Arica e Parinacota e constitui um habitat importante para aves aquáticas andinas, incluindo o flamingo-chileno.',wiki:'https://pt.wikipedia.org/wiki/Monumento_natural_Salar_de_Surire'}
     }
   };
 
