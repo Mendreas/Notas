@@ -1,2 +1,2 @@
-run=2026-08-30T22:06:00Z
-scope=asia-wave4-lak-mmk-bnd
+run=2026-08-30T22:14:00Z
+scope=myanmar-corrected-pairs
