@@ -3252,7 +3252,205 @@
       "back": "/assets/notes/banknotews/kzt/1000-back.jpg",
       "frontBytes": 138687,
       "backBytes": 135188
+    },
+    "ILS:20": {
+      "currency": "ILS",
+      "value": 20,
+      "pick": "P-65",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/ISR/ISR0065.htm",
+      "frontSource": "https://www.banknote.ws/COLLECTION/countries/ASI/ISR/ISR0065o.jpg",
+      "backSource": "https://www.banknote.ws/COLLECTION/countries/ASI/ISR/ISR0065r.jpg",
+      "front": "/assets/notes/banknotews/ils/20-front.jpg",
+      "back": "/assets/notes/banknotews/ils/20-back.jpg",
+      "frontBytes": 110431,
+      "backBytes": 130580
+    },
+    "ILS:50": {
+      "currency": "ILS",
+      "value": 50,
+      "pick": "P-66",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/ISR/ISR0066.htm",
+      "frontSource": "https://www.banknote.ws/COLLECTION/countries/ASI/ISR/ISR0066-2013o.jpg",
+      "backSource": "https://www.banknote.ws/COLLECTION/countries/ASI/ISR/ISR0066-2013r.jpg",
+      "front": "/assets/notes/banknotews/ils/50-front.jpg",
+      "back": "/assets/notes/banknotews/ils/50-back.jpg",
+      "frontBytes": 96786,
+      "backBytes": 112102
+    },
+    "ILS:100": {
+      "currency": "ILS",
+      "value": 100,
+      "pick": "P-67",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/ISR/ISR0067.htm",
+      "frontSource": "https://www.banknote.ws/COLLECTION/countries/ASI/ISR/ISR0067o.jpg",
+      "backSource": "https://www.banknote.ws/COLLECTION/countries/ASI/ISR/ISR0067r.jpg",
+      "front": "/assets/notes/banknotews/ils/100-front.jpg",
+      "back": "/assets/notes/banknotews/ils/100-back.jpg",
+      "frontBytes": 94879,
+      "backBytes": 89773
+    },
+    "ILS:200": {
+      "currency": "ILS",
+      "value": 200,
+      "pick": "P-68",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/ISR/ISR0068.htm",
+      "frontSource": "https://www.banknote.ws/COLLECTION/countries/ASI/ISR/ISR0068o.jpg",
+      "backSource": "https://www.banknote.ws/COLLECTION/countries/ASI/ISR/ISR0068r.jpg",
+      "front": "/assets/notes/banknotews/ils/200-front.jpg",
+      "back": "/assets/notes/banknotews/ils/200-back.jpg",
+      "frontBytes": 88441,
+      "backBytes": 97152
+    },
+    "IQD:250": {
+      "currency": "IQD",
+      "value": 250,
+      "pick": "P-97",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/IRQ/IRQ0097.htm",
+      "frontSource": "https://www.banknote.ws/COLLECTION/countries/ASI/IRQ/IRQ0097o.jpg",
+      "backSource": "https://www.banknote.ws/COLLECTION/countries/ASI/IRQ/IRQ0097r.jpg",
+      "front": "/assets/notes/banknotews/iqd/250-front.jpg",
+      "back": "/assets/notes/banknotews/iqd/250-back.jpg",
+      "frontBytes": 148299,
+      "backBytes": 124682
+    },
+    "IQD:500": {
+      "currency": "IQD",
+      "value": 500,
+      "pick": "P-98",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/IRQ/IRQ0098.htm",
+      "frontSource": "https://www.banknote.ws/COLLECTION/countries/ASI/IRQ/IRQ0098o.jpg",
+      "backSource": "https://www.banknote.ws/COLLECTION/countries/ASI/IRQ/IRQ0098r.jpg",
+      "front": "/assets/notes/banknotews/iqd/500-front.jpg",
+      "back": "/assets/notes/banknotews/iqd/500-back.jpg",
+      "frontBytes": 142199,
+      "backBytes": 128130
+    },
+    "IQD:1000": {
+      "currency": "IQD",
+      "value": 1000,
+      "pick": "P-99",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/IRQ/IRQ0099.htm",
+      "frontSource": "https://www.banknote.ws/COLLECTION/countries/ASI/IRQ/IRQ0099o.jpg",
+      "backSource": "https://www.banknote.ws/COLLECTION/countries/ASI/IRQ/IRQ0099r.jpg",
+      "front": "/assets/notes/banknotews/iqd/1000-front.jpg",
+      "back": "/assets/notes/banknotews/iqd/1000-back.jpg",
+      "frontBytes": 156005,
+      "backBytes": 137505
+    },
+    "IQD:5000": {
+      "currency": "IQD",
+      "value": 5000,
+      "pick": "P-100",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/IRQ/IRQ0100.htm",
+      "frontSource": "https://www.banknote.ws/COLLECTION/countries/ASI/IRQ/IRQ0100o.jpg",
+      "backSource": "https://www.banknote.ws/COLLECTION/countries/ASI/IRQ/IRQ0100r.jpg",
+      "front": "/assets/notes/banknotews/iqd/5000-front.jpg",
+      "back": "/assets/notes/banknotews/iqd/5000-back.jpg",
+      "frontBytes": 117424,
+      "backBytes": 131338
+    },
+    "IQD:10000": {
+      "currency": "IQD",
+      "value": 10000,
+      "pick": "P-101",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/IRQ/IRQ0101.htm",
+      "frontSource": "https://www.banknote.ws/COLLECTION/countries/ASI/IRQ/IRQ0101o.jpg",
+      "backSource": "https://www.banknote.ws/COLLECTION/countries/ASI/IRQ/IRQ0101r.jpg",
+      "front": "/assets/notes/banknotews/iqd/10000-front.jpg",
+      "back": "/assets/notes/banknotews/iqd/10000-back.jpg",
+      "frontBytes": 110459,
+      "backBytes": 99686
+    },
+    "IQD:25000": {
+      "currency": "IQD",
+      "value": 25000,
+      "pick": "P-102",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/IRQ/IRQ0102.htm",
+      "frontSource": "https://www.banknote.ws/COLLECTION/countries/ASI/IRQ/IRQ0102o.jpg",
+      "backSource": "https://www.banknote.ws/COLLECTION/countries/ASI/IRQ/IRQ0102r.jpg",
+      "front": "/assets/notes/banknotews/iqd/25000-front.jpg",
+      "back": "/assets/notes/banknotews/iqd/25000-back.jpg",
+      "frontBytes": 132670,
+      "backBytes": 109309
+    },
+    "LBP:1000": {
+      "currency": "LBP",
+      "value": 1000,
+      "pick": "P-90",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/LEB/LEB0090.htm",
+      "frontSource": "https://www.banknote.ws/COLLECTION/countries/ASI/LEB/LEB0090o.jpg",
+      "backSource": "https://www.banknote.ws/COLLECTION/countries/ASI/LEB/LEB0090r.jpg",
+      "front": "/assets/notes/banknotews/lbp/1000-front.jpg",
+      "back": "/assets/notes/banknotews/lbp/1000-back.jpg",
+      "frontBytes": 49995,
+      "backBytes": 47676
+    },
+    "LBP:5000": {
+      "currency": "LBP",
+      "value": 5000,
+      "pick": "P-91",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/LEB/LEB0091.htm",
+      "frontSource": "https://www.banknote.ws/COLLECTION/countries/ASI/LEB/LEB0091o.jpg",
+      "backSource": "https://www.banknote.ws/COLLECTION/countries/ASI/LEB/LEB0091r.jpg",
+      "front": "/assets/notes/banknotews/lbp/5000-front.jpg",
+      "back": "/assets/notes/banknotews/lbp/5000-back.jpg",
+      "frontBytes": 113692,
+      "backBytes": 113821
+    },
+    "LBP:10000": {
+      "currency": "LBP",
+      "value": 10000,
+      "pick": "P-92",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/LEB/LEB0092.htm",
+      "frontSource": "https://www.banknote.ws/COLLECTION/countries/ASI/LEB/LEB0092o.jpg",
+      "backSource": "https://www.banknote.ws/COLLECTION/countries/ASI/LEB/LEB0092r.jpg",
+      "front": "/assets/notes/banknotews/lbp/10000-front.jpg",
+      "back": "/assets/notes/banknotews/lbp/10000-back.jpg",
+      "frontBytes": 98936,
+      "backBytes": 96387
+    },
+    "LBP:20000": {
+      "currency": "LBP",
+      "value": 20000,
+      "pick": "P-93",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/LEB/LEB0093.htm",
+      "frontSource": "https://www.banknote.ws/COLLECTION/countries/ASI/LEB/LEB0093o.jpg",
+      "backSource": "https://www.banknote.ws/COLLECTION/countries/ASI/LEB/LEB0093r.jpg",
+      "front": "/assets/notes/banknotews/lbp/20000-front.jpg",
+      "back": "/assets/notes/banknotews/lbp/20000-back.jpg",
+      "frontBytes": 97987,
+      "backBytes": 102437
+    },
+    "LBP:50000": {
+      "currency": "LBP",
+      "value": 50000,
+      "pick": "P-94",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/LEB/LEB0094.htm",
+      "frontSource": "https://www.banknote.ws/COLLECTION/countries/ASI/LEB/LEB0094o.jpg",
+      "backSource": "https://www.banknote.ws/COLLECTION/countries/ASI/LEB/LEB0094r.jpg",
+      "front": "/assets/notes/banknotews/lbp/50000-front.jpg",
+      "back": "/assets/notes/banknotews/lbp/50000-back.jpg",
+      "frontBytes": 41020,
+      "backBytes": 40784
+    },
+    "LBP:100000": {
+      "currency": "LBP",
+      "value": 100000,
+      "pick": "P-95",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/LEB/LEB0095.htm",
+      "frontSource": "https://www.banknote.ws/COLLECTION/countries/ASI/LEB/LEB0095o.jpg",
+      "backSource": "https://www.banknote.ws/COLLECTION/countries/ASI/LEB/LEB0095r.jpg",
+      "front": "/assets/notes/banknotews/lbp/100000-front.jpg",
+      "back": "/assets/notes/banknotews/lbp/100000-back.jpg",
+      "frontBytes": 35658,
+      "backBytes": 34845
     }
   },
-  "failures": []
+  "failures": [
+    {
+      "key": "IQD:50000",
+      "pick": "P-W104",
+      "error": "HTTP Error 404: Not Found"
+    }
+  ]
 }
