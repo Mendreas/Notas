@@ -1,0 +1,17 @@
+{
+  "notes": [
+    {"currency":"HKD","value":10,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/HKG/HKG.htm","pick":"P-401"},
+    {"currency":"HKD","value":20,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/HKG/HKG-HSB.htm","pick":"P-W218"},
+    {"currency":"HKD","value":50,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/HKG/HKG-HSB.htm","pick":"P-W219"},
+    {"currency":"HKD","value":100,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/HKG/HKG-HSB.htm","pick":"P-W220"},
+    {"currency":"HKD","value":500,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/HKG/HKG-HSB.htm","pick":"P-W221"},
+    {"currency":"HKD","value":1000,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/HKG/HKG-HSB.htm","pick":"P-W222"},
+
+    {"currency":"MOP","value":10,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/MAC/MAC-BNU.htm","pick":"P-W90"},
+    {"currency":"MOP","value":20,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/MAC/MAC-BNU.htm","pick":"P-W91"},
+    {"currency":"MOP","value":50,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/MAC/MAC-BNU.htm","pick":"P-W92"},
+    {"currency":"MOP","value":100,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/MAC/MAC-BNU.htm","pick":"P-W93"},
+    {"currency":"MOP","value":500,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/MAC/MAC-BNU.htm","pick":"P-W94"},
+    {"currency":"MOP","value":1000,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/MAC/MAC-BNU.htm","pick":"P-W95"}
+  ]
+}
