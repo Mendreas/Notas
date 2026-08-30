@@ -1,2 +1,2 @@
-run=2026-08-30T17:12:00Z
-scope=india-current-wave-1
+run=2026-08-30T17:20:00Z
+scope=eur-jpy-cny-current-wave-1
