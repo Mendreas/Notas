@@ -1,2 +1,2 @@
-run=2026-08-30T23:21:00Z
-scope=central-asia-exact-pages-kgs-tjs-uzs
+run=2026-08-30T23:28:00Z
+scope=kazakhstan-exact-image-files
