@@ -14,7 +14,10 @@
   const response=await oldFetch(...args);
   if(!url.includes("/data/notes.json"))return response;
   const data=await response.clone().json();
-  data.filter(n=>n.currency==="MXN"&&notes[n.value]).forEach(n=>Object.assign(n,notes[n.value],{imageStatus:"official",imageSource:"Banco de México",source:"Banco de México"}));
+  data.filter(n=>n.currency==="MXN"&&notes[n.value]).forEach(n=>{
+    Object.assign(n,notes[n.value],{imageStatus:"official",imageSource:"Banco de México",source:"Banco de México"});
+    delete n.restrictionText;
+  });
   return new Response(JSON.stringify(data),{status:response.status,statusText:response.statusText,headers:{"Content-Type":"application/json; charset=utf-8"}});
  };
 })();
