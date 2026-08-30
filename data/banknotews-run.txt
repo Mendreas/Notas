@@ -1,2 +1,2 @@
-run=2026-08-30T21:01:00Z
-scope=fix-php200-thb20-user-supplied-pages
+run=2026-08-30T21:18:00Z
+scope=asia-wave2-targeted-twd-bdt-lkr-npr
