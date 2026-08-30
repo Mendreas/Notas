@@ -1,0 +1,32 @@
+{
+  "notes": [
+    {"currency":"TWD","value":100,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/TWN/TWN.htm","pick":"P-1991"},
+    {"currency":"TWD","value":200,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/TWN/TWN.htm","pick":"P-1992"},
+    {"currency":"TWD","value":500,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/TWN/TWN.htm","pick":"P-1993"},
+    {"currency":"TWD","value":1000,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/TWN/TWN.htm","pick":"P-1994"},
+    {"currency":"TWD","value":2000,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/TWN/TWN.htm","pick":"P-1995"},
+
+    {"currency":"BDT","value":10,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/BDE/BDE.htm","pick":"P-W76"},
+    {"currency":"BDT","value":20,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/BDE/BDE.htm","pick":"P-W77"},
+    {"currency":"BDT","value":50,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/BDE/BDE.htm","pick":"P-W78"},
+    {"currency":"BDT","value":100,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/BDE/BDE.htm","pick":"P-W79"},
+    {"currency":"BDT","value":200,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/BDE/BDE.htm","pick":"P-W80"},
+    {"currency":"BDT","value":500,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/BDE/BDE.htm","pick":"P-W81"},
+    {"currency":"BDT","value":1000,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/BDE/BDE.htm","pick":"P-W82"},
+
+    {"currency":"LKR","value":20,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/SLK/SLK-CBSL.htm","pick":"P-123"},
+    {"currency":"LKR","value":50,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/SLK/SLK-CBSL.htm","pick":"P-124"},
+    {"currency":"LKR","value":100,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/SLK/SLK-CBSL.htm","pick":"P-125"},
+    {"currency":"LKR","value":500,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/SLK/SLK-CBSL.htm","pick":"P-126"},
+    {"currency":"LKR","value":1000,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/SLK/SLK-CBSL.htm","pick":"P-127"},
+    {"currency":"LKR","value":5000,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/SLK/SLK-CBSL.htm","pick":"P-128"},
+
+    {"currency":"NPR","value":5,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/NEP/NEP.htm","pick":"P-76"},
+    {"currency":"NPR","value":10,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/NEP/NEP.htm","pick":"P-77"},
+    {"currency":"NPR","value":20,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/NEP/NEP.htm","pick":"P-78"},
+    {"currency":"NPR","value":50,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/NEP/NEP.htm","pick":"P-79"},
+    {"currency":"NPR","value":100,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/NEP/NEP.htm","pick":"P-80"},
+    {"currency":"NPR","value":500,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/NEP/NEP.htm","pick":"P-81"},
+    {"currency":"NPR","value":1000,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/NEP/NEP.htm","pick":"P-W82"}
+  ]
+}
