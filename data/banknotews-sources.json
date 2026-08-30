@@ -2112,7 +2112,223 @@
       "back": "/assets/notes/banknotews/khr/20000-back.jpg",
       "frontBytes": 107520,
       "backBytes": 103585
+    },
+    "LAK:1000": {
+      "currency": "LAK",
+      "value": 1000,
+      "pick": "P-32",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/LAO/LAO0032.htm",
+      "frontSource": "https://www.banknote.ws/COLLECTION/countries/ASI/LAO/LAO0032ao.jpg",
+      "backSource": "https://www.banknote.ws/COLLECTION/countries/ASI/LAO/LAO0032ar.jpg",
+      "front": "/assets/notes/banknotews/lak/1000-front.jpg",
+      "back": "/assets/notes/banknotews/lak/1000-back.jpg",
+      "frontBytes": 83265,
+      "backBytes": 80456
+    },
+    "LAK:2000": {
+      "currency": "LAK",
+      "value": 2000,
+      "pick": "P-33",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/LAO/LAO0033.htm",
+      "frontSource": "https://www.banknote.ws/COLLECTION/countries/ASI/LAO/LAO0033ao.jpg",
+      "backSource": "https://www.banknote.ws/COLLECTION/countries/ASI/LAO/LAO0033ar.jpg",
+      "front": "/assets/notes/banknotews/lak/2000-front.jpg",
+      "back": "/assets/notes/banknotews/lak/2000-back.jpg",
+      "frontBytes": 75513,
+      "backBytes": 72129
+    },
+    "LAK:5000": {
+      "currency": "LAK",
+      "value": 5000,
+      "pick": "P-34",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/LAO/LAO0034.htm",
+      "frontSource": "https://www.banknote.ws/COLLECTION/countries/ASI/LAO/LAO0034ao.jpg",
+      "backSource": "https://www.banknote.ws/COLLECTION/countries/ASI/LAO/LAO0034ar.jpg",
+      "front": "/assets/notes/banknotews/lak/5000-front.jpg",
+      "back": "/assets/notes/banknotews/lak/5000-back.jpg",
+      "frontBytes": 77520,
+      "backBytes": 72708
+    },
+    "LAK:10000": {
+      "currency": "LAK",
+      "value": 10000,
+      "pick": "P-39",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/LAO/LAO0039.htm",
+      "frontSource": "https://www.banknote.ws/COLLECTION/countries/ASI/LAO/LAO0039o.jpg",
+      "backSource": "https://www.banknote.ws/COLLECTION/countries/ASI/LAO/LAO0039r.jpg",
+      "front": "/assets/notes/banknotews/lak/10000-front.jpg",
+      "back": "/assets/notes/banknotews/lak/10000-back.jpg",
+      "frontBytes": 174983,
+      "backBytes": 178700
+    },
+    "LAK:20000": {
+      "currency": "LAK",
+      "value": 20000,
+      "pick": "P-40",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/LAO/LAO0040.htm",
+      "frontSource": "https://www.banknote.ws/COLLECTION/countries/ASI/LAO/LAO0040o.jpg",
+      "backSource": "https://www.banknote.ws/COLLECTION/countries/ASI/LAO/LAO0040r.jpg",
+      "front": "/assets/notes/banknotews/lak/20000-front.jpg",
+      "back": "/assets/notes/banknotews/lak/20000-back.jpg",
+      "frontBytes": 151351,
+      "backBytes": 141437
+    },
+    "LAK:50000": {
+      "currency": "LAK",
+      "value": 50000,
+      "pick": "P-41",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/LAO/LAO0041.htm",
+      "frontSource": "https://www.banknote.ws/COLLECTION/countries/ASI/LAO/LAO0041o.jpg",
+      "backSource": "https://www.banknote.ws/COLLECTION/countries/ASI/LAO/LAO0041r.jpg",
+      "front": "/assets/notes/banknotews/lak/50000-front.jpg",
+      "back": "/assets/notes/banknotews/lak/50000-back.jpg",
+      "frontBytes": 118470,
+      "backBytes": 117658
+    },
+    "LAK:100000": {
+      "currency": "LAK",
+      "value": 100000,
+      "pick": "P-42",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/LAO/LAO0042.htm",
+      "frontSource": "https://www.banknote.ws/COLLECTION/countries/ASI/LAO/LAO0042o.jpg",
+      "backSource": "https://www.banknote.ws/COLLECTION/countries/ASI/LAO/LAO0042r.jpg",
+      "front": "/assets/notes/banknotews/lak/100000-front.jpg",
+      "back": "/assets/notes/banknotews/lak/100000-back.jpg",
+      "frontBytes": 131484,
+      "backBytes": 133478
+    },
+    "BND:1": {
+      "currency": "BND",
+      "value": 1,
+      "pick": "P-41",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/BRU/BRU0001.htm",
+      "frontSource": "https://www.banknote.ws/COLLECTION/countries/ASI/BRU/BRU0001ao.JPG",
+      "backSource": "https://www.banknote.ws/COLLECTION/countries/ASI/BRU/BRU0001ar.JPG",
+      "front": "/assets/notes/banknotews/bnd/1-front.jpg",
+      "back": "/assets/notes/banknotews/bnd/1-back.jpg",
+      "frontBytes": 136535,
+      "backBytes": 118750
+    },
+    "BND:5": {
+      "currency": "BND",
+      "value": 5,
+      "pick": "P-42",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/BRU/BRU0001.htm",
+      "frontSource": "https://www.banknote.ws/COLLECTION/countries/ASI/BRU/BRU0001ao.JPG",
+      "backSource": "https://www.banknote.ws/COLLECTION/countries/ASI/BRU/BRU0001ar.JPG",
+      "front": "/assets/notes/banknotews/bnd/5-front.jpg",
+      "back": "/assets/notes/banknotews/bnd/5-back.jpg",
+      "frontBytes": 136535,
+      "backBytes": 118750
+    },
+    "BND:10": {
+      "currency": "BND",
+      "value": 10,
+      "pick": "P-43",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/BRU/BRU0001.htm",
+      "frontSource": "https://www.banknote.ws/COLLECTION/countries/ASI/BRU/BRU0001ao.JPG",
+      "backSource": "https://www.banknote.ws/COLLECTION/countries/ASI/BRU/BRU0001ar.JPG",
+      "front": "/assets/notes/banknotews/bnd/10-front.jpg",
+      "back": "/assets/notes/banknotews/bnd/10-back.jpg",
+      "frontBytes": 136535,
+      "backBytes": 118750
+    },
+    "BND:20": {
+      "currency": "BND",
+      "value": 20,
+      "pick": "P-36",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/BRU/BRU0036.htm",
+      "frontSource": "https://www.banknote.ws/COLLECTION/countries/ASI/BRU/BRU0036o.jpg",
+      "backSource": "https://www.banknote.ws/COLLECTION/countries/ASI/BRU/BRU0036r.jpg",
+      "front": "/assets/notes/banknotews/bnd/20-front.jpg",
+      "back": "/assets/notes/banknotews/bnd/20-back.jpg",
+      "frontBytes": 117962,
+      "backBytes": 116729
+    },
+    "BND:50": {
+      "currency": "BND",
+      "value": 50,
+      "pick": "P-39",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/BRU/BRU0039.htm",
+      "frontSource": "https://www.banknote.ws/COLLECTION/countries/ASI/BRU/BRU0039o.jpg",
+      "backSource": "https://www.banknote.ws/COLLECTION/countries/ASI/BRU/BRU0039r.jpg",
+      "front": "/assets/notes/banknotews/bnd/50-front.jpg",
+      "back": "/assets/notes/banknotews/bnd/50-back.jpg",
+      "frontBytes": 110618,
+      "backBytes": 97883
+    },
+    "BND:100": {
+      "currency": "BND",
+      "value": 100,
+      "pick": "P-45",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/BRU/BRU0001.htm",
+      "frontSource": "https://www.banknote.ws/COLLECTION/countries/ASI/BRU/BRU0001ao.JPG",
+      "backSource": "https://www.banknote.ws/COLLECTION/countries/ASI/BRU/BRU0001ar.JPG",
+      "front": "/assets/notes/banknotews/bnd/100-front.jpg",
+      "back": "/assets/notes/banknotews/bnd/100-back.jpg",
+      "frontBytes": 136535,
+      "backBytes": 118750
+    },
+    "BND:500": {
+      "currency": "BND",
+      "value": 500,
+      "pick": "P-46",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/BRU/BRU0001.htm",
+      "frontSource": "https://www.banknote.ws/COLLECTION/countries/ASI/BRU/BRU0001ao.JPG",
+      "backSource": "https://www.banknote.ws/COLLECTION/countries/ASI/BRU/BRU0001ar.JPG",
+      "front": "/assets/notes/banknotews/bnd/500-front.jpg",
+      "back": "/assets/notes/banknotews/bnd/500-back.jpg",
+      "frontBytes": 136535,
+      "backBytes": 118750
+    },
+    "BND:1000": {
+      "currency": "BND",
+      "value": 1000,
+      "pick": "P-35",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/BRU/BRU0035.htm",
+      "frontSource": "https://www.banknote.ws/COLLECTION/countries/ASI/BRU/BRU0035o.jpg",
+      "backSource": "https://www.banknote.ws/COLLECTION/countries/ASI/BRU/BRU0035r.jpg",
+      "front": "/assets/notes/banknotews/bnd/1000-front.jpg",
+      "back": "/assets/notes/banknotews/bnd/1000-back.jpg",
+      "frontBytes": 159993,
+      "backBytes": 157706
     }
   },
-  "failures": []
+  "failures": [
+    {
+      "key": "MMK:50",
+      "pick": "P-73",
+      "error": "Invalid image https://www.banknote.ws/COLLECTION/countries/ASI/MYA/MYAA0002brs.jpg: image/jpeg 3545 bytes"
+    },
+    {
+      "key": "MMK:100",
+      "pick": "P-74",
+      "error": "Invalid image https://www.banknote.ws/COLLECTION/countries/ASI/MYA/MYAA0002brs.jpg: image/jpeg 3545 bytes"
+    },
+    {
+      "key": "MMK:200",
+      "pick": "P-78",
+      "error": "Invalid image https://www.banknote.ws/COLLECTION/countries/ASI/MYA/MYAA0002brs.jpg: image/jpeg 3545 bytes"
+    },
+    {
+      "key": "MMK:500",
+      "pick": "P-85",
+      "error": "Invalid image https://www.banknote.ws/COLLECTION/countries/ASI/MYA/MYAA0002brs.jpg: image/jpeg 3545 bytes"
+    },
+    {
+      "key": "MMK:1000",
+      "pick": "P-83",
+      "error": "Invalid image https://www.banknote.ws/COLLECTION/countries/ASI/MYA/MYAA0002brs.jpg: image/jpeg 3545 bytes"
+    },
+    {
+      "key": "MMK:5000",
+      "pick": "P-81",
+      "error": "Invalid image https://www.banknote.ws/COLLECTION/countries/ASI/MYA/MYAA0002brs.jpg: image/jpeg 3545 bytes"
+    },
+    {
+      "key": "MMK:10000",
+      "pick": "P-82",
+      "error": "Invalid image https://www.banknote.ws/COLLECTION/countries/ASI/MYA/MYAA0002brs.jpg: image/jpeg 3545 bytes"
+    }
+  ]
 }
