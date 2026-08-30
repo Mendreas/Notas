@@ -1,2 +1,2 @@
-run=2026-08-30T21:18:00Z
-scope=asia-wave2-targeted-twd-bdt-lkr-npr
+run=2026-08-30T21:31:00Z
+scope=bdt-200-user-supplied-page
