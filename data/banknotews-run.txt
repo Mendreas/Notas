@@ -1,2 +1,2 @@
-run=2026-08-30T18:12:00Z
-scope=hkd10-corrected-pair-retry
+run=2026-08-30T19:20:00Z
+scope=hkd10-exact-page-images
