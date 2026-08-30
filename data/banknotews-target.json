@@ -1,27 +1,7 @@
-{
-  "notes": [
-    {"currency":"KWD","value":0.25,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/KUW/KUW.htm","pick":"P-29"},
-    {"currency":"KWD","value":0.5,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/KUW/KUW.htm","pick":"P-30"},
-    {"currency":"KWD","value":1,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/KUW/KUW.htm","pick":"P-31"},
-    {"currency":"KWD","value":5,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/KUW/KUW.htm","pick":"P-32"},
-    {"currency":"KWD","value":10,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/KUW/KUW.htm","pick":"P-33"},
-    {"currency":"KWD","value":20,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/KUW/KUW.htm","pick":"P-34"},
-    {"currency":"BHD","value":0.5,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/BHR/BHR.htm","pick":"P-30"},
-    {"currency":"BHD","value":1,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/BHR/BHR.htm","pick":"P-31"},
-    {"currency":"BHD","value":5,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/BHR/BHR.htm","pick":"P-32"},
-    {"currency":"BHD","value":10,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/BHR/BHR.htm","pick":"P-33"},
-    {"currency":"BHD","value":20,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/BHR/BHR.htm","pick":"P-34"},
-    {"currency":"OMR","value":0.1,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/OMA/OMA.htm","pick":"P-W49"},
-    {"currency":"OMR","value":0.5,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/OMA/OMA.htm","pick":"P-W50"},
-    {"currency":"OMR","value":1,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/OMA/OMA.htm","pick":"P-W51"},
-    {"currency":"OMR","value":5,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/OMA/OMA.htm","pick":"P-W52"},
-    {"currency":"OMR","value":10,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/OMA/OMA.htm","pick":"P-W53"},
-    {"currency":"OMR","value":20,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/OMA/OMA.htm","pick":"P-W54"},
-    {"currency":"OMR","value":50,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/OMA/OMA.htm","pick":"P-W55"},
-    {"currency":"JOD","value":1,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/JOR/JOR.htm","pick":"P-W39"},
-    {"currency":"JOD","value":5,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/JOR/JOR.htm","pick":"P-W40"},
-    {"currency":"JOD","value":10,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/JOR/JOR.htm","pick":"P-W41"},
-    {"currency":"JOD","value":20,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/JOR/JOR.htm","pick":"P-W42"},
-    {"currency":"JOD","value":50,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/JOR/JOR.htm","pick":"P-W43"}
-  ]
-}
+{"notes":[
+{"currency":"KZT","value":500,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/KAZ/KAZ.htm","pick":"P-W55"},{"currency":"KZT","value":1000,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/KAZ/KAZ.htm","pick":"P-W56"},{"currency":"KZT","value":2000,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/KAZ/KAZ.htm","pick":"P-W57"},{"currency":"KZT","value":5000,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/KAZ/KAZ.htm","pick":"P-W58"},{"currency":"KZT","value":10000,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/KAZ/KAZ.htm","pick":"P-W59"},{"currency":"KZT","value":20000,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/KAZ/KAZ.htm","pick":"P-W60"},
+{"currency":"KGS","value":20,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/KYR/KYR.htm","pick":"P-29"},{"currency":"KGS","value":50,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/KYR/KYR.htm","pick":"P-30"},{"currency":"KGS","value":100,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/KYR/KYR.htm","pick":"P-31"},{"currency":"KGS","value":200,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/KYR/KYR.htm","pick":"P-32"},{"currency":"KGS","value":500,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/KYR/KYR.htm","pick":"P-33"},{"currency":"KGS","value":1000,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/KYR/KYR.htm","pick":"P-34"},{"currency":"KGS","value":5000,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/KYR/KYR.htm","pick":"P-35"},
+{"currency":"TJS","value":10,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/TAJ/TAJ.htm","pick":"P-27"},{"currency":"TJS","value":20,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/TAJ/TAJ.htm","pick":"P-28"},{"currency":"TJS","value":50,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/TAJ/TAJ.htm","pick":"P-29"},{"currency":"TJS","value":100,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/TAJ/TAJ.htm","pick":"P-30"},{"currency":"TJS","value":200,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/TAJ/TAJ.htm","pick":"P-31"},{"currency":"TJS","value":500,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/TAJ/TAJ.htm","pick":"P-32"},
+{"currency":"TMT","value":1,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/TKM/TKM.htm","pick":"P-29"},{"currency":"TMT","value":5,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/TKM/TKM.htm","pick":"P-30"},{"currency":"TMT","value":10,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/TKM/TKM.htm","pick":"P-31"},{"currency":"TMT","value":20,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/TKM/TKM.htm","pick":"P-32"},{"currency":"TMT","value":50,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/TKM/TKM.htm","pick":"P-33"},{"currency":"TMT","value":100,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/TKM/TKM.htm","pick":"P-34"},
+{"currency":"UZS","value":1000,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/UZB/UZB.htm","pick":"P-86"},{"currency":"UZS","value":5000,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/UZB/UZB.htm","pick":"P-87"},{"currency":"UZS","value":10000,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/UZB/UZB.htm","pick":"P-88"},{"currency":"UZS","value":20000,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/UZB/UZB.htm","pick":"P-89"},{"currency":"UZS","value":50000,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/UZB/UZB.htm","pick":"P-90"},{"currency":"UZS","value":100000,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/UZB/UZB.htm","pick":"P-91"},{"currency":"UZS","value":200000,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/UZB/UZB.htm","pick":"P-92"}
+]}
