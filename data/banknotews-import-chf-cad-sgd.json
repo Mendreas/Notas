@@ -1,0 +1,23 @@
+{
+  "notes": [
+    {"currency":"CHF","value":10,"section":"https://www.banknote.ws/COLLECTION/countries/EUR/SUI/SUI-SNB.htm","pick":"P-75"},
+    {"currency":"CHF","value":20,"section":"https://www.banknote.ws/COLLECTION/countries/EUR/SUI/SUI-SNB.htm","pick":"P-76"},
+    {"currency":"CHF","value":50,"section":"https://www.banknote.ws/COLLECTION/countries/EUR/SUI/SUI-SNB.htm","pick":"P-77"},
+    {"currency":"CHF","value":100,"section":"https://www.banknote.ws/COLLECTION/countries/EUR/SUI/SUI-SNB.htm","pick":"P-W77A"},
+    {"currency":"CHF","value":200,"section":"https://www.banknote.ws/COLLECTION/countries/EUR/SUI/SUI-SNB.htm","pick":"P-78"},
+    {"currency":"CHF","value":1000,"section":"https://www.banknote.ws/COLLECTION/countries/EUR/SUI/SUI-SNB.htm","pick":"P-W79"},
+
+    {"currency":"CAD","value":5,"section":"https://www.banknote.ws/COLLECTION/countries/AME/CAN/CAN-BOC.htm","pick":"P-106"},
+    {"currency":"CAD","value":10,"section":"https://www.banknote.ws/COLLECTION/countries/AME/CAN/CAN-BOC.htm","pick":"P-W113"},
+    {"currency":"CAD","value":20,"section":"https://www.banknote.ws/COLLECTION/countries/AME/CAN/CAN-BOC.htm","pick":"P-108"},
+    {"currency":"CAD","value":50,"section":"https://www.banknote.ws/COLLECTION/countries/AME/CAN/CAN-BOC.htm","pick":"P-109"},
+    {"currency":"CAD","value":100,"section":"https://www.banknote.ws/COLLECTION/countries/AME/CAN/CAN-BOC.htm","pick":"P-110"},
+
+    {"currency":"SGD","value":2,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/SIN/SIN.htm","pick":"P-46"},
+    {"currency":"SGD","value":5,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/SIN/SIN.htm","pick":"P-47"},
+    {"currency":"SGD","value":10,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/SIN/SIN.htm","pick":"P-48"},
+    {"currency":"SGD","value":50,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/SIN/SIN.htm","pick":"P-49"},
+    {"currency":"SGD","value":100,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/SIN/SIN.htm","pick":"P-50"},
+    {"currency":"SGD","value":1000,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/SIN/SIN.htm","pick":"P-51"}
+  ]
+}
