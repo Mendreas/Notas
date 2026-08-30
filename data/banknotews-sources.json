@@ -157,6 +157,18 @@
       "frontBytes": 111377,
       "backBytes": 111576
     },
+    "THB:20": {
+      "currency": "THB",
+      "value": 20,
+      "pick": "P-W145",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/THL/THLW0145.htm",
+      "frontSource": "https://www.banknote.ws/COLLECTION/countries/ASI/THL/THLW0145o.jpg",
+      "backSource": "https://www.banknote.ws/COLLECTION/countries/ASI/THL/THLW0145r.jpg",
+      "front": "/assets/notes/banknotews/thb/20-front.jpg",
+      "back": "/assets/notes/banknotews/thb/20-back.jpg",
+      "frontBytes": 131514,
+      "backBytes": 134077
+    },
     "THB:50": {
       "currency": "THB",
       "value": 50,
@@ -240,6 +252,18 @@
       "back": "/assets/notes/banknotews/php/100-back.jpg",
       "frontBytes": 99879,
       "backBytes": 98779
+    },
+    "PHP:200": {
+      "currency": "PHP",
+      "value": 200,
+      "pick": "P-W233",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/PIL/PILW2020-0200.htm",
+      "frontSource": "https://www.banknote.ws/COLLECTION/countries/ASI/PIL/PILW2020-0200o.jpg",
+      "backSource": "https://www.banknote.ws/COLLECTION/countries/ASI/PIL/PILW2020-0200r.jpg",
+      "front": "/assets/notes/banknotews/php/200-front.jpg",
+      "back": "/assets/notes/banknotews/php/200-back.jpg",
+      "frontBytes": 103588,
+      "backBytes": 108172
     },
     "PHP:500": {
       "currency": "PHP",
@@ -1527,16 +1551,6 @@
     }
   },
   "failures": [
-    {
-      "key": "THB:20",
-      "pick": "P-W142",
-      "error": "HTTP Error 404: Not Found"
-    },
-    {
-      "key": "PHP:200",
-      "pick": "P-W233",
-      "error": "HTTP Error 404: Not Found"
-    },
     {
       "key": "HKD:10",
       "pick": "P-401",
