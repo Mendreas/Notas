@@ -1,6 +1,5 @@
 {
   "notes": [
-    {"currency":"HKD","value":10,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/HKG/HKG.htm","page":"https://www.banknote.ws/COLLECTION/countries/ASI/HKG/HKG0401.htm","frontSource":"https://www.banknote.ws/COLLECTION/countries/ASI/HKG/HKG0401o.jpg","backSource":"https://www.banknote.ws/COLLECTION/countries/ASI/HKG/HKG0401r.jpg","pick":"P-401"},
     {"currency":"HKD","value":20,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/HKG/HKG-HSB.htm","pick":"P-W218"},
     {"currency":"HKD","value":50,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/HKG/HKG-HSB.htm","pick":"P-W219"},
     {"currency":"HKD","value":100,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/HKG/HKG-HSB.htm","pick":"P-W220"},
