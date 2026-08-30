@@ -14,7 +14,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Import curated banknote.ws scans
+      - name: Import targeted banknote.ws scans
+        env:
+          BANKNOTEWS_MANIFEST: data/banknotews-target.json
         run: python scripts/import-banknotews.py
       - name: Commit imported scans
         shell: bash
@@ -25,7 +27,7 @@ jobs:
           if git diff --cached --quiet; then
             echo 'No banknote.ws changes'
           else
-            git commit -m 'Import curated banknote.ws scans'
+            git commit -m 'Import targeted banknote.ws scans'
             git pull --rebase origin main
             git push origin main
           fi
