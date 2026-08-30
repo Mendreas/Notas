@@ -3,11 +3,22 @@ import json, pathlib, re, ssl, sys, time, urllib.parse, urllib.request
 from html.parser import HTMLParser
 
 ROOT=pathlib.Path(__file__).resolve().parents[1]
-CFG=json.loads((ROOT/'data/banknotews-import.json').read_text(encoding='utf-8'))
+# Merge all curated batch manifests. This lets us expand country-by-country
+# without rewriting the original import list.
+manifest_paths=sorted((ROOT/'data').glob('banknotews-import*.json'))
+notes=[]
+seen=set()
+for mp in manifest_paths:
+    payload=json.loads(mp.read_text(encoding='utf-8'))
+    for item in payload.get('notes',[]):
+        k=(item['currency'],int(item['value']))
+        if k in seen: continue
+        seen.add(k); notes.append(item)
+CFG={'notes':notes}
 OUT=ROOT/'assets/notes/banknotews'
 OUT.mkdir(parents=True,exist_ok=True)
 CTX=ssl._create_unverified_context()
-UA='Notas-do-Mundo/0.10.4 (personal family atlas; banknote.ws scan importer)'
+UA='Notas-do-Mundo/0.10.6 (personal family atlas; banknote.ws scan importer)'
 
 class Parser(HTMLParser):
     def __init__(self):
@@ -47,7 +58,6 @@ def find_page(section_url,pick):
         elif target in n or n in target: loose.append(href)
     href=(exact or loose)
     if href: return urllib.parse.urljoin(section_url,href[0])
-    # Fallback: inspect href names for Pick digits.
     digits=''.join(re.findall(r'\d+',pick))
     for text,href in p.links:
         if href and digits and digits in href and '.htm' in href.lower():
@@ -58,8 +68,7 @@ def pair_images(page_url):
     html,_=get(page_url); p=Parser(); p.feed(html)
     urls=[urllib.parse.urljoin(page_url,x) for x in p.images]
     urls=[u for u in urls if re.search(r'\.(?:jpe?g|png)(?:\?|$)',u,re.I)]
-    # Prefer pairs whose filenames differ only by obverse/reverse marker.
-    for i,u in enumerate(urls):
+    for u in urls:
         fn=urllib.parse.urlparse(u).path.rsplit('/',1)[-1]
         candidates=[]
         if re.search(r'o\.(?:jpe?g|png)$',fn,re.I): candidates.append(re.sub(r'o(\.(?:jpe?g|png))$',r'r\1',fn,flags=re.I))
@@ -93,8 +102,6 @@ for item in CFG['notes']:
     time.sleep(.25)
 
 (ROOT/'data/banknotews-sources.json').write_text(json.dumps({'source':'https://www.banknote.ws/','notes':results,'failures':failures},ensure_ascii=False,indent=2),encoding='utf-8')
-
-# Generate a late fetch override. Existing user-supplied currencies are not in the import manifest.
 rows=[]
 for key,r in results.items():
     rows.append(f"    {json.dumps(key)}:{{front:{json.dumps(r['front'])},back:{json.dumps(r['back'])},imageStatus:'local-reference',imageSource:'Banknote Museum · banknote.ws',imageSourceUrl:{json.dumps(r['page'])}}}")
