@@ -1194,7 +1194,7 @@
     {
       "key": "HKD:10",
       "pick": "P-401",
-      "error": "Invalid image https://www.banknote.ws/COLLECTION/countries/ASI/HKG/HKG0006rs.jpg: image/jpeg 3674 bytes"
+      "error": "HTTP Error 404: Not Found"
     }
   ]
 }
