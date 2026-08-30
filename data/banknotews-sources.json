@@ -2920,14 +2920,14 @@
     "KZT:20000": {
       "currency": "KZT",
       "value": 20000,
-      "pick": "P-W60",
-      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/KAZ/KAZ0001.htm",
-      "frontSource": "https://www.banknote.ws/COLLECTION/countries/ASI/KAZ/KAZ0001ao.jpg",
-      "backSource": "https://www.banknote.ws/COLLECTION/countries/ASI/KAZ/KAZ0001ar.jpg",
+      "pick": "P-W49",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/KAZ/KAZW0049.htm",
+      "frontSource": "https://www.banknote.ws/COLLECTION/countries/ASI/KAZ/KAZW0049o.jpg",
+      "backSource": "https://www.banknote.ws/COLLECTION/countries/ASI/KAZ/KAZW0049r.jpg",
       "front": "/assets/notes/banknotews/kzt/20000-front.jpg",
       "back": "/assets/notes/banknotews/kzt/20000-back.jpg",
-      "frontBytes": 169639,
-      "backBytes": 170838
+      "frontBytes": 126345,
+      "backBytes": 124270
     },
     "KGS:20": {
       "currency": "KGS",
@@ -3254,11 +3254,5 @@
       "backBytes": 135188
     }
   },
-  "failures": [
-    {
-      "key": "KZT:20000",
-      "pick": "P-W56",
-      "error": "No matched front/back image pair on https://www.banknote.ws/COLLECTION/countries/ASI/KAZ/KAZW0056.htm"
-    }
-  ]
+  "failures": []
 }
