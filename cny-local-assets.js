@@ -17,7 +17,10 @@
     const notes = await response.clone().json();
     for (const note of notes) {
       const key = `${note.currency}:${note.value}`;
-      if (overrides[key]) Object.assign(note, overrides[key]);
+      if (overrides[key]) {
+        Object.assign(note, overrides[key]);
+        delete note.restrictionText;
+      }
     }
     return new Response(JSON.stringify(notes), {
       status: response.status,
