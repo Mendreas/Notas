@@ -1,0 +1,10 @@
+{
+  "notes": [
+    {"currency":"INR","value":10,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/IND/IND-RBI.htm","pick":"P-109"},
+    {"currency":"INR","value":20,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/IND/IND-RBI.htm","pick":"P-W110"},
+    {"currency":"INR","value":50,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/IND/IND-RBI.htm","pick":"P-111"},
+    {"currency":"INR","value":100,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/IND/IND-RBI.htm","pick":"P-112"},
+    {"currency":"INR","value":200,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/IND/IND-RBI.htm","pick":"P-113"},
+    {"currency":"INR","value":500,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/IND/IND-RBI.htm","pick":"P-114"}
+  ]
+}
