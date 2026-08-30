@@ -1,26 +1,11 @@
 {
   "notes": [
-    {"currency":"LAK","value":1000,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/LAO/LAO.htm","pick":"P-32"},
-    {"currency":"LAK","value":2000,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/LAO/LAO.htm","pick":"P-33"},
-    {"currency":"LAK","value":5000,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/LAO/LAO.htm","pick":"P-34"},
-    {"currency":"LAK","value":10000,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/LAO/LAO.htm","pick":"P-39"},
-    {"currency":"LAK","value":20000,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/LAO/LAO.htm","pick":"P-40"},
-    {"currency":"LAK","value":50000,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/LAO/LAO.htm","pick":"P-41"},
-    {"currency":"LAK","value":100000,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/LAO/LAO.htm","pick":"P-42"},
-    {"currency":"MMK","value":50,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/MYA/MYA.htm","pick":"P-73"},
-    {"currency":"MMK","value":100,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/MYA/MYA.htm","pick":"P-74"},
-    {"currency":"MMK","value":200,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/MYA/MYA.htm","pick":"P-78"},
-    {"currency":"MMK","value":500,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/MYA/MYA.htm","pick":"P-85"},
-    {"currency":"MMK","value":1000,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/MYA/MYA.htm","pick":"P-83"},
-    {"currency":"MMK","value":5000,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/MYA/MYA.htm","pick":"P-81"},
-    {"currency":"MMK","value":10000,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/MYA/MYA.htm","pick":"P-82"},
-    {"currency":"BND","value":1,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/BRU/BRU.htm","pick":"P-41"},
-    {"currency":"BND","value":5,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/BRU/BRU.htm","pick":"P-42"},
-    {"currency":"BND","value":10,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/BRU/BRU.htm","pick":"P-43"},
-    {"currency":"BND","value":20,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/BRU/BRU.htm","pick":"P-36"},
-    {"currency":"BND","value":50,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/BRU/BRU.htm","pick":"P-39"},
-    {"currency":"BND","value":100,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/BRU/BRU.htm","pick":"P-45"},
-    {"currency":"BND","value":500,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/BRU/BRU.htm","pick":"P-46"},
-    {"currency":"BND","value":1000,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/BRU/BRU.htm","pick":"P-35"}
+    {"currency":"MMK","value":50,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/MYA/MYA-MYA.htm","pick":"P-73"},
+    {"currency":"MMK","value":100,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/MYA/MYA-MYA.htm","pick":"P-74"},
+    {"currency":"MMK","value":200,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/MYA/MYA-MYA.htm","pick":"P-78"},
+    {"currency":"MMK","value":500,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/MYA/MYA-MYA.htm","pick":"P-W85"},
+    {"currency":"MMK","value":1000,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/MYA/MYA-MYA.htm","pick":"P-W86"},
+    {"currency":"MMK","value":5000,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/MYA/MYA-MYA.htm","pick":"P-83"},
+    {"currency":"MMK","value":10000,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/MYA/MYA-MYA.htm","pick":"P-84"}
   ]
 }
