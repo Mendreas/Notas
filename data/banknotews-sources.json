@@ -1842,7 +1842,7 @@
     {
       "key": "BDT:200",
       "pick": "P-W80",
-      "error": "No matched front/back image pair on https://www.banknote.ws/COLLECTION/countries/ASI/BDE/BDEW0080.htm"
+      "error": "Pick P-W80 not found in https://www.banknote.ws/COLLECTION/countries/ASI/BDE/BDEW2020-0200.htm"
     }
   ]
 }
