@@ -1,0 +1,31 @@
+name: Import banknote.ws scans
+
+on:
+  push:
+    paths:
+      - 'data/banknotews-run.txt'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  import:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Import curated banknote.ws scans
+        run: python scripts/import-banknotews.py
+      - name: Commit imported scans
+        shell: bash
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add assets/notes/banknotews banknotews-assets.js data/banknotews-sources.json
+          if git diff --cached --quiet; then
+            echo 'No banknote.ws changes'
+          else
+            git commit -m 'Import curated banknote.ws scans'
+            git pull --rebase origin main
+            git push origin main
+          fi
