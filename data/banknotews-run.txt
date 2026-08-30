@@ -1,2 +1,2 @@
-run=2026-08-30T22:14:00Z
-scope=myanmar-corrected-pairs
+run=2026-08-30T22:24:00Z
+scope=asia-wave5-sar-aed-qar
