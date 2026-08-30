@@ -1,11 +1,26 @@
 {
   "notes": [
-    {"currency":"MMK","value":50,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/MYA/MYA-MYA.htm","pick":"P-73"},
-    {"currency":"MMK","value":100,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/MYA/MYA-MYA.htm","pick":"P-74"},
-    {"currency":"MMK","value":200,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/MYA/MYA-MYA.htm","pick":"P-78"},
-    {"currency":"MMK","value":500,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/MYA/MYA-MYA.htm","pick":"P-W85"},
-    {"currency":"MMK","value":1000,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/MYA/MYA-MYA.htm","pick":"P-W86"},
-    {"currency":"MMK","value":5000,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/MYA/MYA-MYA.htm","pick":"P-83"},
-    {"currency":"MMK","value":10000,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/MYA/MYA-MYA.htm","pick":"P-84"}
+    {"currency":"SAR","value":5,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/SAR/SAR.htm","pick":"P-W46"},
+    {"currency":"SAR","value":10,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/SAR/SAR.htm","pick":"P-W47"},
+    {"currency":"SAR","value":50,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/SAR/SAR.htm","pick":"P-W48"},
+    {"currency":"SAR","value":100,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/SAR/SAR.htm","pick":"P-W49"},
+    {"currency":"SAR","value":500,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/SAR/SAR.htm","pick":"P-W50"},
+
+    {"currency":"AED","value":5,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/UAE/UAE.htm","pick":"P-W36"},
+    {"currency":"AED","value":10,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/UAE/UAE.htm","pick":"P-W37"},
+    {"currency":"AED","value":20,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/UAE/UAE.htm","pick":"P-28"},
+    {"currency":"AED","value":50,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/UAE/UAE.htm","pick":"P-W39"},
+    {"currency":"AED","value":100,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/UAE/UAE.htm","pick":"P-W40"},
+    {"currency":"AED","value":200,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/UAE/UAE.htm","pick":"P-31"},
+    {"currency":"AED","value":500,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/UAE/UAE.htm","pick":"P-W42"},
+    {"currency":"AED","value":1000,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/UAE/UAE.htm","pick":"P-W43"},
+
+    {"currency":"QAR","value":1,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/QAT/QAT.htm","pick":"P-W32"},
+    {"currency":"QAR","value":5,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/QAT/QAT.htm","pick":"P-W33"},
+    {"currency":"QAR","value":10,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/QAT/QAT.htm","pick":"P-W34"},
+    {"currency":"QAR","value":50,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/QAT/QAT.htm","pick":"P-W35"},
+    {"currency":"QAR","value":100,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/QAT/QAT.htm","pick":"P-W36"},
+    {"currency":"QAR","value":200,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/QAT/QAT.htm","pick":"P-W37"},
+    {"currency":"QAR","value":500,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/QAT/QAT.htm","pick":"P-W38"}
   ]
 }
