@@ -1,0 +1,42 @@
+name: Install HKD10 supplied images
+
+on:
+  push:
+    paths:
+      - 'data/hkd10-run.txt'
+
+permissions:
+  contents: write
+
+jobs:
+  install:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Download supplied HKD10 images
+        run: |
+          mkdir -p assets/notes/banknotews/hkd
+          curl -fL --retry 3 'https://www.banknote.ws/COLLECTION/countries/ASI/HKG/HKG0006o.jpg' -o assets/notes/banknotews/hkd/10-front.jpg || true
+          curl -fL --retry 3 'https://www.banknote.ws/COLLECTION/countries/ASI/HKG/HKG0006r.jpg' -o assets/notes/banknotews/hkd/10-back.jpg || true
+          test -s assets/notes/banknotews/hkd/10-front.jpg
+          test -s assets/notes/banknotews/hkd/10-back.jpg
+      - name: Add HKD10 override
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          p=Path('banknotews-assets.js')
+          s=p.read_text()
+          marker='  const O={\n'
+          row='    "HKD:10":{front:"/assets/notes/banknotews/hkd/10-front.jpg",back:"/assets/notes/banknotews/hkd/10-back.jpg",imageStatus:\'local-user\',imageSource:\'Imagem fornecida pelo utilizador\'},\n'
+          if '"HKD:10"' not in s:
+              s=s.replace(marker,marker+row,1)
+              p.write_text(s)
+          PY
+      - name: Commit HKD10
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add assets/notes/banknotews/hkd/10-front.jpg assets/notes/banknotews/hkd/10-back.jpg banknotews-assets.js
+          git commit -m 'Add supplied HKD 10 images'
+          git pull --rebase origin main
+          git push origin main
