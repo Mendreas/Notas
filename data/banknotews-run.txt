@@ -1,2 +1,2 @@
-run=2026-08-30T17:45:00Z
-scope=hkd-mop-current-wave-1
+run=2026-08-30T18:12:00Z
+scope=hkd10-corrected-pair-retry
