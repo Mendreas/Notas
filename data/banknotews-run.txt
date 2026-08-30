@@ -1,2 +1,2 @@
-run=2026-08-30T23:36:00Z
-scope=asia-wave9-afghanistan-bhutan-maldives-exact-pages
+run=2026-08-30T23:46:00Z
+scope=asia-wave10-iran-exact-pages
