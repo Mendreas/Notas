@@ -1,5 +1,28 @@
 {
   "notes": [
-    {"currency":"BDT","value":200,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/BDE/BDE.htm","page":"https://www.banknote.ws/COLLECTION/countries/ASI/BDE/BDEW2020-0200.htm","pick":"P-W80"}
+    {"currency":"PKR","value":10,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/PAK/PAK-SBP.htm","pick":"P-45"},
+    {"currency":"PKR","value":20,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/PAK/PAK-SBP.htm","pick":"P-46"},
+    {"currency":"PKR","value":50,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/PAK/PAK-SBP.htm","pick":"P-47"},
+    {"currency":"PKR","value":100,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/PAK/PAK-SBP.htm","pick":"P-48"},
+    {"currency":"PKR","value":500,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/PAK/PAK-SBP.htm","pick":"P-49"},
+    {"currency":"PKR","value":1000,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/PAK/PAK-SBP.htm","pick":"P-50"},
+    {"currency":"PKR","value":5000,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/PAK/PAK-SBP.htm","pick":"P-51"},
+
+    {"currency":"MNT","value":50,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/MON/MON.htm","pick":"P-W72"},
+    {"currency":"MNT","value":100,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/MON/MON.htm","pick":"P-W73"},
+    {"currency":"MNT","value":500,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/MON/MON.htm","pick":"P-W74"},
+    {"currency":"MNT","value":1000,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/MON/MON.htm","pick":"P-W75"},
+    {"currency":"MNT","value":5000,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/MON/MON.htm","pick":"P-W76"},
+    {"currency":"MNT","value":10000,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/MON/MON.htm","pick":"P-W77"},
+    {"currency":"MNT","value":20000,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/MON/MON.htm","pick":"P-W78"},
+
+    {"currency":"KHR","value":100,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/CMB/CMB.htm","pick":"P-65"},
+    {"currency":"KHR","value":200,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/CMB/CMB.htm","pick":"P-W65A"},
+    {"currency":"KHR","value":500,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/CMB/CMB.htm","pick":"P-66"},
+    {"currency":"KHR","value":1000,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/CMB/CMB.htm","pick":"P-67"},
+    {"currency":"KHR","value":2000,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/CMB/CMB.htm","pick":"P-W67A"},
+    {"currency":"KHR","value":5000,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/CMB/CMB.htm","pick":"P-68"},
+    {"currency":"KHR","value":10000,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/CMB/CMB.htm","pick":"P-69"},
+    {"currency":"KHR","value":20000,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/CMB/CMB.htm","pick":"P-70"}
   ]
 }
