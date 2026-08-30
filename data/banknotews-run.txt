@@ -1,2 +1,2 @@
-run=2026-08-30T21:55:00Z
-scope=asia-wave3-pkr-mnt-khr
+run=2026-08-30T22:06:00Z
+scope=asia-wave4-lak-mmk-bnd
