@@ -1,2 +1,2 @@
-run=2026-08-30T20:05:00Z
-scope=asia-wave1-banknote-museum-images
+run=2026-08-30T20:29:00Z
+scope=asia-wave1-banknote-museum-images-retry
