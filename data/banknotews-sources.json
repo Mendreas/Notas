@@ -409,6 +409,138 @@
       "frontBytes": 112933,
       "backBytes": 111067
     },
+    "HKD:20": {
+      "currency": "HKD",
+      "value": 20,
+      "pick": "P-W218",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/HKG/HKGW2018-0020-HSB.htm",
+      "frontSource": "https://www.banknote.ws/COLLECTION/countries/ASI/HKG/HKGW2018-0020-HSBo.jpg",
+      "backSource": "https://www.banknote.ws/COLLECTION/countries/ASI/HKG/HKGW2018-0020-HSBr.jpg",
+      "front": "/assets/notes/banknotews/hkd/20-front.jpg",
+      "back": "/assets/notes/banknotews/hkd/20-back.jpg",
+      "frontBytes": 124022,
+      "backBytes": 128370
+    },
+    "HKD:50": {
+      "currency": "HKD",
+      "value": 50,
+      "pick": "P-W219",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/HKG/HKGW2018-0050-HSB.htm",
+      "frontSource": "https://www.banknote.ws/COLLECTION/countries/ASI/HKG/HKGW2018-0050-HSBo.jpg",
+      "backSource": "https://www.banknote.ws/COLLECTION/countries/ASI/HKG/HKGW2018-0050-HSBr.jpg",
+      "front": "/assets/notes/banknotews/hkd/50-front.jpg",
+      "back": "/assets/notes/banknotews/hkd/50-back.jpg",
+      "frontBytes": 119631,
+      "backBytes": 121614
+    },
+    "HKD:100": {
+      "currency": "HKD",
+      "value": 100,
+      "pick": "P-W220",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/HKG/HKGW2018-0100-HSB.htm",
+      "frontSource": "https://www.banknote.ws/COLLECTION/countries/ASI/HKG/HKGW2018-0100-HSBo.jpg",
+      "backSource": "https://www.banknote.ws/COLLECTION/countries/ASI/HKG/HKGW2018-0100-HSBr.jpg",
+      "front": "/assets/notes/banknotews/hkd/100-front.jpg",
+      "back": "/assets/notes/banknotews/hkd/100-back.jpg",
+      "frontBytes": 136851,
+      "backBytes": 141680
+    },
+    "HKD:500": {
+      "currency": "HKD",
+      "value": 500,
+      "pick": "P-W221",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/HKG/HKGW2018-0500-HSB.htm",
+      "frontSource": "https://www.banknote.ws/COLLECTION/countries/ASI/HKG/HKGW2018-0500-HSBo.jpg",
+      "backSource": "https://www.banknote.ws/COLLECTION/countries/ASI/HKG/HKGW2018-0500-HSBr.jpg",
+      "front": "/assets/notes/banknotews/hkd/500-front.jpg",
+      "back": "/assets/notes/banknotews/hkd/500-back.jpg",
+      "frontBytes": 106698,
+      "backBytes": 118806
+    },
+    "HKD:1000": {
+      "currency": "HKD",
+      "value": 1000,
+      "pick": "P-W222",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/HKG/HKGW2018-1000-HSB.htm",
+      "frontSource": "https://www.banknote.ws/COLLECTION/countries/ASI/HKG/HKGW2018-1000-HSBo.jpg",
+      "backSource": "https://www.banknote.ws/COLLECTION/countries/ASI/HKG/HKGW2018-1000-HSBr.jpg",
+      "front": "/assets/notes/banknotews/hkd/1000-front.jpg",
+      "back": "/assets/notes/banknotews/hkd/1000-back.jpg",
+      "frontBytes": 130093,
+      "backBytes": 129392
+    },
+    "MOP:10": {
+      "currency": "MOP",
+      "value": 10,
+      "pick": "P-W90",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/MAC/MACW0090.htm",
+      "frontSource": "https://www.banknote.ws/COLLECTION/countries/ASI/MAC/MACW0090o.jpg",
+      "backSource": "https://www.banknote.ws/COLLECTION/countries/ASI/MAC/MACW0090r.jpg",
+      "front": "/assets/notes/banknotews/mop/10-front.jpg",
+      "back": "/assets/notes/banknotews/mop/10-back.jpg",
+      "frontBytes": 139816,
+      "backBytes": 128815
+    },
+    "MOP:20": {
+      "currency": "MOP",
+      "value": 20,
+      "pick": "P-W91",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/MAC/MACW0091.htm",
+      "frontSource": "https://www.banknote.ws/COLLECTION/countries/ASI/MAC/MACW0091o.jpg",
+      "backSource": "https://www.banknote.ws/COLLECTION/countries/ASI/MAC/MACW0091r.jpg",
+      "front": "/assets/notes/banknotews/mop/20-front.jpg",
+      "back": "/assets/notes/banknotews/mop/20-back.jpg",
+      "frontBytes": 139936,
+      "backBytes": 128088
+    },
+    "MOP:50": {
+      "currency": "MOP",
+      "value": 50,
+      "pick": "P-W92",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/MAC/MACW0092.htm",
+      "frontSource": "https://www.banknote.ws/COLLECTION/countries/ASI/MAC/MACW0092o.jpg",
+      "backSource": "https://www.banknote.ws/COLLECTION/countries/ASI/MAC/MACW0092r.jpg",
+      "front": "/assets/notes/banknotews/mop/50-front.jpg",
+      "back": "/assets/notes/banknotews/mop/50-back.jpg",
+      "frontBytes": 128379,
+      "backBytes": 119778
+    },
+    "MOP:100": {
+      "currency": "MOP",
+      "value": 100,
+      "pick": "P-W93",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/MAC/MACW0093.htm",
+      "frontSource": "https://www.banknote.ws/COLLECTION/countries/ASI/MAC/MACW0093o.jpg",
+      "backSource": "https://www.banknote.ws/COLLECTION/countries/ASI/MAC/MACW0093r.jpg",
+      "front": "/assets/notes/banknotews/mop/100-front.jpg",
+      "back": "/assets/notes/banknotews/mop/100-back.jpg",
+      "frontBytes": 138007,
+      "backBytes": 130592
+    },
+    "MOP:500": {
+      "currency": "MOP",
+      "value": 500,
+      "pick": "P-W94",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/MAC/MACW0094.htm",
+      "frontSource": "https://www.banknote.ws/COLLECTION/countries/ASI/MAC/MACW0094o.jpg",
+      "backSource": "https://www.banknote.ws/COLLECTION/countries/ASI/MAC/MACW0094r.jpg",
+      "front": "/assets/notes/banknotews/mop/500-front.jpg",
+      "back": "/assets/notes/banknotews/mop/500-back.jpg",
+      "frontBytes": 116847,
+      "backBytes": 109856
+    },
+    "MOP:1000": {
+      "currency": "MOP",
+      "value": 1000,
+      "pick": "P-W95",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/MAC/MACW0095.htm",
+      "frontSource": "https://www.banknote.ws/COLLECTION/countries/ASI/MAC/MACW0095o.jpg",
+      "backSource": "https://www.banknote.ws/COLLECTION/countries/ASI/MAC/MACW0095r.jpg",
+      "front": "/assets/notes/banknotews/mop/1000-front.jpg",
+      "back": "/assets/notes/banknotews/mop/1000-back.jpg",
+      "frontBytes": 114498,
+      "backBytes": 109108
+    },
     "INR:10": {
       "currency": "INR",
       "value": 10,
@@ -1058,5 +1190,11 @@
       "backBytes": 91035
     }
   },
-  "failures": []
+  "failures": [
+    {
+      "key": "HKD:10",
+      "pick": "P-401",
+      "error": "Invalid image https://www.banknote.ws/COLLECTION/countries/ASI/HKG/HKG0006rs.jpg: image/jpeg 3674 bytes"
+    }
+  ]
 }
