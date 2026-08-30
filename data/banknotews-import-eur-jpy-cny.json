@@ -1,0 +1,23 @@
+{
+  "notes": [
+    {"currency":"EUR","value":5,"section":"https://www.banknote.ws/COLLECTION/countries/EUR/EUR/EUR.htm","pick":"P-W26"},
+    {"currency":"EUR","value":10,"section":"https://www.banknote.ws/COLLECTION/countries/EUR/EUR/EUR.htm","pick":"P-W27"},
+    {"currency":"EUR","value":20,"section":"https://www.banknote.ws/COLLECTION/countries/EUR/EUR/EUR.htm","pick":"P-W28"},
+    {"currency":"EUR","value":50,"section":"https://www.banknote.ws/COLLECTION/countries/EUR/EUR/EUR.htm","pick":"P-W29"},
+    {"currency":"EUR","value":100,"section":"https://www.banknote.ws/COLLECTION/countries/EUR/EUR/EUR.htm","pick":"P-W30"},
+    {"currency":"EUR","value":200,"section":"https://www.banknote.ws/COLLECTION/countries/EUR/EUR/EUR.htm","pick":"P-W31"},
+    {"currency":"EUR","value":500,"section":"https://www.banknote.ws/COLLECTION/countries/EUR/EUR/EUR.htm","pick":"P-19A"},
+
+    {"currency":"JPY","value":1000,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/JAP/JAP-NPG.htm","pick":"P-W107"},
+    {"currency":"JPY","value":2000,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/JAP/JAP-NPG.htm","pick":"P-103"},
+    {"currency":"JPY","value":5000,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/JAP/JAP-NPG.htm","pick":"P-W108"},
+    {"currency":"JPY","value":10000,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/JAP/JAP-NPG.htm","pick":"P-W109"},
+
+    {"currency":"CNY","value":1,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/CIN/CIN-PR/CIN-PR.htm","pick":"P-W912"},
+    {"currency":"CNY","value":5,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/CIN/CIN-PR/CIN-PR.htm","pick":"P-W913"},
+    {"currency":"CNY","value":10,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/CIN/CIN-PR/CIN-PR.htm","pick":"P-W914"},
+    {"currency":"CNY","value":20,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/CIN/CIN-PR/CIN-PR.htm","pick":"P-W915"},
+    {"currency":"CNY","value":50,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/CIN/CIN-PR/CIN-PR.htm","pick":"P-W916"},
+    {"currency":"CNY","value":100,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/CIN/CIN-PR/CIN-PR.htm","pick":"P-909"}
+  ]
+}
