@@ -1,0 +1,58 @@
+{
+  "notes": [
+    {"currency":"HUF","value":500,"section":"https://www.banknote.ws/COLLECTION/countries/EUR/HUN/HUN-MNB.htm","pick":"P-W202"},
+    {"currency":"HUF","value":1000,"section":"https://www.banknote.ws/COLLECTION/countries/EUR/HUN/HUN-MNB.htm","pick":"P-203"},
+    {"currency":"HUF","value":2000,"section":"https://www.banknote.ws/COLLECTION/countries/EUR/HUN/HUN-MNB.htm","pick":"P-204"},
+    {"currency":"HUF","value":5000,"section":"https://www.banknote.ws/COLLECTION/countries/EUR/HUN/HUN-MNB.htm","pick":"P-205"},
+    {"currency":"HUF","value":10000,"section":"https://www.banknote.ws/COLLECTION/countries/EUR/HUN/HUN-MNB.htm","pick":"P-206"},
+    {"currency":"HUF","value":20000,"section":"https://www.banknote.ws/COLLECTION/countries/EUR/HUN/HUN-MNB.htm","pick":"P-207"},
+
+    {"currency":"RSD","value":10,"section":"https://www.banknote.ws/COLLECTION/countries/EUR/SER/SER.htm","pick":"P-54"},
+    {"currency":"RSD","value":20,"section":"https://www.banknote.ws/COLLECTION/countries/EUR/SER/SER.htm","pick":"P-55"},
+    {"currency":"RSD","value":50,"section":"https://www.banknote.ws/COLLECTION/countries/EUR/SER/SER.htm","pick":"P-56"},
+    {"currency":"RSD","value":100,"section":"https://www.banknote.ws/COLLECTION/countries/EUR/SER/SER.htm","pick":"P-57"},
+    {"currency":"RSD","value":200,"section":"https://www.banknote.ws/COLLECTION/countries/EUR/SER/SER.htm","pick":"P-58"},
+    {"currency":"RSD","value":500,"section":"https://www.banknote.ws/COLLECTION/countries/EUR/SER/SER.htm","pick":"P-59"},
+    {"currency":"RSD","value":1000,"section":"https://www.banknote.ws/COLLECTION/countries/EUR/SER/SER.htm","pick":"P-60"},
+    {"currency":"RSD","value":2000,"section":"https://www.banknote.ws/COLLECTION/countries/EUR/SER/SER.htm","pick":"P-61"},
+    {"currency":"RSD","value":5000,"section":"https://www.banknote.ws/COLLECTION/countries/EUR/SER/SER.htm","pick":"P-62"},
+
+    {"currency":"ALL","value":200,"section":"https://www.banknote.ws/COLLECTION/countries/EUR/ALB/ALB-BES.htm","pick":"P-W76"},
+    {"currency":"ALL","value":500,"section":"https://www.banknote.ws/COLLECTION/countries/EUR/ALB/ALB-BES.htm","pick":"P-W77"},
+    {"currency":"ALL","value":1000,"section":"https://www.banknote.ws/COLLECTION/countries/EUR/ALB/ALB-BES.htm","pick":"P-W78"},
+    {"currency":"ALL","value":2000,"section":"https://www.banknote.ws/COLLECTION/countries/EUR/ALB/ALB-BES.htm","pick":"P-W79"},
+    {"currency":"ALL","value":5000,"section":"https://www.banknote.ws/COLLECTION/countries/EUR/ALB/ALB-BES.htm","pick":"P-W80"},
+    {"currency":"ALL","value":10000,"section":"https://www.banknote.ws/COLLECTION/countries/EUR/ALB/ALB-BES.htm","pick":"P-W81"},
+
+    {"currency":"BAM","value":10,"section":"https://www.banknote.ws/COLLECTION/countries/EUR/BIH/BIH-CBBH.htm","pick":"P-80"},
+    {"currency":"BAM","value":20,"section":"https://www.banknote.ws/COLLECTION/countries/EUR/BIH/BIH-CBBH.htm","pick":"P-82"},
+    {"currency":"BAM","value":50,"section":"https://www.banknote.ws/COLLECTION/countries/EUR/BIH/BIH-CBBH.htm","pick":"P-84"},
+    {"currency":"BAM","value":100,"section":"https://www.banknote.ws/COLLECTION/countries/EUR/BIH/BIH-CBBH.htm","pick":"P-86"},
+    {"currency":"BAM","value":200,"section":"https://www.banknote.ws/COLLECTION/countries/EUR/BIH/BIH-CBBH.htm","pick":"P-71"},
+
+    {"currency":"MDL","value":1,"section":"https://www.banknote.ws/COLLECTION/countries/EUR/MOL/MOL.htm","pick":"P-21"},
+    {"currency":"MDL","value":5,"section":"https://www.banknote.ws/COLLECTION/countries/EUR/MOL/MOL.htm","pick":"P-B22"},
+    {"currency":"MDL","value":10,"section":"https://www.banknote.ws/COLLECTION/countries/EUR/MOL/MOL.htm","pick":"P-22"},
+    {"currency":"MDL","value":20,"section":"https://www.banknote.ws/COLLECTION/countries/EUR/MOL/MOL.htm","pick":"P-23"},
+    {"currency":"MDL","value":50,"section":"https://www.banknote.ws/COLLECTION/countries/EUR/MOL/MOL.htm","pick":"P-24"},
+    {"currency":"MDL","value":100,"section":"https://www.banknote.ws/COLLECTION/countries/EUR/MOL/MOL.htm","pick":"P-25"},
+    {"currency":"MDL","value":200,"section":"https://www.banknote.ws/COLLECTION/countries/EUR/MOL/MOL.htm","pick":"P-26"},
+    {"currency":"MDL","value":500,"section":"https://www.banknote.ws/COLLECTION/countries/EUR/MOL/MOL.htm","pick":"P-27"},
+    {"currency":"MDL","value":1000,"section":"https://www.banknote.ws/COLLECTION/countries/EUR/MOL/MOL.htm","pick":"P-18"},
+
+    {"currency":"BYN","value":5,"section":"https://www.banknote.ws/COLLECTION/countries/EUR/BLR/BLR.htm","pick":"P-37"},
+    {"currency":"BYN","value":10,"section":"https://www.banknote.ws/COLLECTION/countries/EUR/BLR/BLR.htm","pick":"P-38"},
+    {"currency":"BYN","value":20,"section":"https://www.banknote.ws/COLLECTION/countries/EUR/BLR/BLR.htm","pick":"P-39"},
+    {"currency":"BYN","value":50,"section":"https://www.banknote.ws/COLLECTION/countries/EUR/BLR/BLR.htm","pick":"P-40"},
+    {"currency":"BYN","value":100,"section":"https://www.banknote.ws/COLLECTION/countries/EUR/BLR/BLR.htm","pick":"P-41"},
+    {"currency":"BYN","value":200,"section":"https://www.banknote.ws/COLLECTION/countries/EUR/BLR/BLR.htm","pick":"P-42"},
+    {"currency":"BYN","value":500,"section":"https://www.banknote.ws/COLLECTION/countries/EUR/BLR/BLR.htm","pick":"P-43"},
+
+    {"currency":"UAH","value":20,"section":"https://www.banknote.ws/COLLECTION/countries/EUR/UKR/UKR-NBU.htm","pick":"P-W138"},
+    {"currency":"UAH","value":50,"section":"https://www.banknote.ws/COLLECTION/countries/EUR/UKR/UKR-NBU.htm","pick":"P-W139"},
+    {"currency":"UAH","value":100,"section":"https://www.banknote.ws/COLLECTION/countries/EUR/UKR/UKR-NBU.htm","pick":"P-W140"},
+    {"currency":"UAH","value":200,"section":"https://www.banknote.ws/COLLECTION/countries/EUR/UKR/UKR-NBU.htm","pick":"P-W141"},
+    {"currency":"UAH","value":500,"section":"https://www.banknote.ws/COLLECTION/countries/EUR/UKR/UKR-NBU.htm","pick":"P-W142"},
+    {"currency":"UAH","value":1000,"section":"https://www.banknote.ws/COLLECTION/countries/EUR/UKR/UKR-NBU.htm","pick":"P-W143"}
+  ]
+}
