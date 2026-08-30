@@ -1,2 +1,2 @@
-run=2026-08-30T22:55:00Z
-scope=asia-wave7-central-asia-corrected
+run=2026-08-30T23:05:00Z
+scope=kazakhstan-exact-pages-user-verified
