@@ -16,10 +16,12 @@ jobs:
           python-version: '3.12'
       - name: Scrape exact front/back motifs
         run: python scripts/scrape-banknote-context.py
-      - name: Commit raw motif catalogue
+      - name: Build Portuguese context catalogue
+        run: python scripts/build-note-context.py
+      - name: Commit motif catalogue
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/banknote-context-raw.json
+          git add data/banknote-context-raw.json note-context-catalog.js
           git diff --cached --quiet || git commit -m "Update exact banknote motif catalogue"
           git push
