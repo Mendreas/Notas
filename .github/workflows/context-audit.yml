@@ -1,0 +1,25 @@
+name: Banknote context audit
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'data/context-run.txt'
+jobs:
+  context:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Scrape exact front/back motifs
+        run: python scripts/scrape-banknote-context.py
+      - name: Commit raw motif catalogue
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/banknote-context-raw.json
+          git diff --cached --quiet || git commit -m "Update exact banknote motif catalogue"
+          git push
