@@ -1,4 +1,12 @@
 (() => {
+  if(!document.querySelector('link[data-home-layout-v2]')){
+    const link=document.createElement('link');
+    link.rel='stylesheet';
+    link.href='/home-layout-v2.css?v=126';
+    link.dataset.homeLayoutV2='1';
+    document.head.appendChild(link);
+  }
+
   showHome = function(fromBack=false){
     if(!fromBack && state.currentKind) rememberLocation();
     state.currentKind="home";
