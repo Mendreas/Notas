@@ -1,17 +1,17 @@
-/* v0.10.5 — visualizador de nota em ecrã completo */
+/* v0.11.1 — visualizador de nota em ecrã completo + contexto editorial */
 .note-image-button{display:block;width:100%;padding:0;border:0;background:transparent;cursor:zoom-in;border-radius:12px;overflow:hidden}
 .note-image-button img{display:block;width:100%;height:auto;max-height:360px;object-fit:contain}
 .tap-hint{display:block;margin-top:8px;color:var(--muted);text-align:center}
 .image-viewer{position:fixed;inset:0;z-index:500;display:grid;place-items:stretch;background:#02070b}
 .image-viewer-backdrop{position:absolute;inset:0;background:#02070b}
-.image-viewer-shell{position:relative;z-index:2;display:grid;grid-template-rows:auto minmax(0,1fr) auto;min-height:100vh;min-height:100dvh;background:#02070b}
+.image-viewer-shell{position:relative;z-index:2;display:grid;grid-template-rows:auto minmax(0,1fr) auto auto;min-height:100vh;min-height:100dvh;background:#02070b}
 .image-viewer-bar{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:calc(10px + env(safe-area-inset-top)) max(16px,env(safe-area-inset-right)) 10px max(16px,env(safe-area-inset-left));background:rgba(2,7,11,.92);border-bottom:1px solid #182634}
 .image-viewer-bar strong{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .image-viewer-close{width:44px;height:44px;border:1px solid #324556;background:#0d1720;color:#fff;border-radius:50%;font-size:28px;line-height:1;cursor:pointer}
 .image-viewer-stage{min-width:0;min-height:0;overflow:auto;display:flex;align-items:center;justify-content:center;padding:14px;touch-action:pinch-zoom}
-/* A imagem ocupa sempre a área útil do visualizador, mesmo quando o JPG tem poucos píxeis.
-   object-fit:contain mantém a nota inteira visível e sem distorção. */
 .image-viewer-stage img{display:block;width:100%;height:100%;max-width:none;max-height:none;object-fit:contain;user-select:none;-webkit-user-drag:none}
-.image-viewer-help{padding:10px max(16px,env(safe-area-inset-right)) calc(10px + env(safe-area-inset-bottom)) max(16px,env(safe-area-inset-left));color:#91a4b3;text-align:center;font-size:12px;background:rgba(2,7,11,.92);border-top:1px solid #182634}
+.image-viewer-context{display:flex;align-items:flex-start;justify-content:space-between;gap:20px;padding:12px max(18px,env(safe-area-inset-right)) 12px max(18px,env(safe-area-inset-left));background:#07111a;border-top:1px solid #223442;color:#dce8f0;font-size:13px;line-height:1.45}
+.note-context-copy{max-width:1100px}.note-context-copy strong{font-size:14px;color:#fff}.note-context-copy p{margin:4px 0 0}.note-context-why{color:#b9cad6}.note-context-wiki{flex:0 0 auto;color:#80c8ff;text-decoration:none;border:1px solid #31536b;border-radius:9px;padding:7px 10px}.note-context-wiki:hover{text-decoration:underline}
+.image-viewer-help{padding:8px max(16px,env(safe-area-inset-right)) calc(8px + env(safe-area-inset-bottom)) max(16px,env(safe-area-inset-left));color:#91a4b3;text-align:center;font-size:11px;background:rgba(2,7,11,.92);border-top:1px solid #182634}
 body.viewer-open{overflow:hidden}
-@media(max-width:850px){.image-viewer-stage{padding:6px}}
+@media(max-width:850px){.image-viewer-stage{padding:6px}.image-viewer-context{display:block;max-height:30vh;overflow:auto}.note-context-wiki{display:inline-block;margin-top:9px}}
