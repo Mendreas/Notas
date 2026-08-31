@@ -1,55 +1,21 @@
 (() => {
- const byName=(a,b)=>a.name.localeCompare(b.name,'pt',{sensitivity:'base'});
- const currencyFlag=code=>{
-   if(code==='EUR') return '🇪🇺';
-   const members=DB.countries.filter(c=>c.currency===code).sort(byName);
-   return members[0]?.flag||'🏳️';
- };
+ const byName=(a,b)=>(a.name||'').localeCompare(b.name||'','pt',{sensitivity:'base'});
+ const flagOf=c=>c?.flag||'🏳️';
+ const safeHistory=c=>Array.isArray(c?.history)&&c.history.length?c.history:[["Atualidade",`A moeda usada é ${DB.currencies[c.currency]?.name||c.currency} (${c.currency}).`]];
+ const card=c=>`<div class="card" data-country="${c.id}"><div class="card-topline"><span class="flag" aria-label="Bandeira de ${c.name}">${flagOf(c)}</span><span class="mini-badge">${c.currency}</span></div><h3>${c.name}</h3><p>${DB.currencies[c.currency]?.name||c.currency}</p></div>`;
+ const currencyFlag=code=>code==='EUR'?'🇪🇺':flagOf(DB.countries.filter(c=>c.currency===code).sort(byName)[0]);
  const worldButton=()=>`<button class="ghost-btn persistent-nav-btn" data-go-world>← Mundo</button>`;
  const bindWorld=()=>$$('[data-go-world]').forEach(b=>b.onclick=()=>showHome());
- const openNotesModal=(title,notes)=>{
-   $('#modalBody').innerHTML=`<div class="note-detail-head"><div><h2>${title}</h2><p style="color:var(--muted);margin:4px 0 0">${notes.length} notas</p></div></div><div class="note-grid modal-note-list">${notes.map(noteCard).join('')}</div>`;
-   $('#noteModal').classList.remove('hidden');$('#noteModal').setAttribute('aria-hidden','false');bindNoteCards();
- };
- window.openRandomTenModal=()=>{
-   const pool=[...DB.notes];
-   for(let i=pool.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[pool[i],pool[j]]=[pool[j],pool[i]]}
-   openNotesModal('10 notas aleatórias',pool.slice(0,10));
- };
+ const openNotesModal=(title,notes)=>{$('#modalBody').innerHTML=`<div class="note-detail-head"><div><h2>${title}</h2><p style="color:var(--muted);margin:4px 0 0">${notes.length} notas</p></div></div><div class="note-grid modal-note-list">${notes.map(noteCard).join('')}</div>`;$('#noteModal').classList.remove('hidden');$('#noteModal').setAttribute('aria-hidden','false');bindNoteCards();};
+ window.openRandomTenModal=()=>{const pool=[...DB.notes];for(let i=pool.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[pool[i],pool[j]]=[pool[j],pool[i]]}openNotesModal('10 notas aleatórias',pool.slice(0,10));};
 
- showCountries=function(fromBack=false){
-   if(!fromBack)rememberLocation();state.currentKind='countries';state.currentId=null;crumbs.textContent='Países';setActive('countries');
-   view.innerHTML=`<div class="persistent-nav-row">${worldButton()}</div>${hero('Países','Selecione um país para abrir a ficha monetária.')}<div class="filter-panel"><input id="countryFilter" placeholder="Filtrar países…"><select id="continentFilter"><option value="">Todos os continentes</option>${Object.entries(CONTINENTS).map(([k,v])=>`<option value="${k}">${v.name}</option>`).join('')}</select><select id="currencyFilter"><option value="">Todas as moedas</option>${Object.keys(DB.currencies).sort().map(c=>`<option>${c}</option>`).join('')}</select></div><div id="countryGrid"></div>`;
-   const render=()=>{const q=$('#countryFilter').value.toLowerCase(),co=$('#continentFilter').value,cu=$('#currencyFilter').value;const items=DB.countries.filter(c=>(!q||c.name.toLowerCase().includes(q))&&(!co||c.continent===co)&&(!cu||c.currency===cu)).sort(byName);$('#countryGrid').innerHTML=`<div class="grid">${items.map(countryCard).join('')}</div>`;$$('[data-country]').forEach(x=>x.onclick=()=>showCountry(x.dataset.country))};
-   ['countryFilter','continentFilter','currencyFilter'].forEach(id=>$('#'+id).addEventListener('input',render));bindWorld();render();
- };
+ showCountries=function(fromBack=false){if(!fromBack)rememberLocation();state.currentKind='countries';state.currentId=null;crumbs.textContent='Países';setActive('countries');view.innerHTML=`<div class="persistent-nav-row">${worldButton()}</div>${hero('Países','Selecione um país para abrir a ficha monetária.')}<div class="filter-panel"><input id="countryFilter" placeholder="Filtrar países…"><select id="continentFilter"><option value="">Todos os continentes</option>${Object.entries(CONTINENTS).map(([k,v])=>`<option value="${k}">${v.name}</option>`).join('')}</select><select id="currencyFilter"><option value="">Todas as moedas</option>${Object.keys(DB.currencies).sort().map(c=>`<option>${c}</option>`).join('')}</select></div><div id="countryGrid"></div>`;const render=()=>{const q=$('#countryFilter').value.toLowerCase(),co=$('#continentFilter').value,cu=$('#currencyFilter').value;const items=DB.countries.filter(c=>(!q||(c.name||'').toLowerCase().includes(q))&&(!co||c.continent===co)&&(!cu||c.currency===cu)).sort(byName);$('#countryGrid').innerHTML=`<div class="grid">${items.map(card).join('')}</div>`;$$('[data-country]').forEach(x=>x.onclick=()=>showCountry(x.dataset.country));};['countryFilter','continentFilter','currencyFilter'].forEach(id=>$('#'+id).addEventListener('input',render));bindWorld();render();};
 
- showAllNotes=function(fromBack=false){
-   if(!fromBack)rememberLocation();state.currentKind='notes';state.currentId=null;crumbs.textContent='Notas';setActive('notes');
-   const currencies=Object.entries(DB.currencies).filter(([code])=>DB.notes.some(n=>n.currency===code)).sort((a,b)=>(a[1].name||a[0]).localeCompare(b[1].name||b[0],'pt',{sensitivity:'base'}));
-   view.innerHTML=`<div class="persistent-nav-row">${worldButton()}</div>${hero('Notas','Organizadas por moeda. Clique numa caixa para ver todas as denominações.')}<div class="currency-type-grid">${currencies.map(([code,c])=>{const count=DB.notes.filter(n=>n.currency===code).length;return `<div class="card note-type-card" data-note-currency="${code}"><div class="card-topline"><span class="flag">${currencyFlag(code)}</span><span class="mini-badge">${code}</span></div><h3>${c.name}</h3><p>${c.group||code}</p><small>${count} denominações</small></div>`}).join('')}</div>`;
-   $$('[data-note-currency]').forEach(x=>x.onclick=()=>{const code=x.dataset.noteCurrency,c=DB.currencies[code];openNotesModal(`${currencyFlag(code)} ${c.name} · ${code}`,DB.notes.filter(n=>n.currency===code).sort((a,b)=>a.value-b.value))});bindWorld();
- };
+ showAllNotes=function(fromBack=false){if(!fromBack)rememberLocation();state.currentKind='notes';state.currentId=null;crumbs.textContent='Notas';setActive('notes');const currencies=Object.entries(DB.currencies).filter(([code])=>DB.notes.some(n=>n.currency===code)).sort((a,b)=>(a[1].name||a[0]).localeCompare(b[1].name||b[0],'pt',{sensitivity:'base'}));view.innerHTML=`<div class="persistent-nav-row">${worldButton()}</div>${hero('Notas','Organizadas por moeda. Clique numa caixa para ver todas as denominações.')}<div class="grid">${currencies.map(([code,c])=>`<div class="card" data-note-currency="${code}"><div class="card-topline"><span class="flag">${currencyFlag(code)}</span><span class="mini-badge">${code}</span></div><h3>${c.name}</h3><p>${c.group||code}</p><small>${DB.notes.filter(n=>n.currency===code).length} denominações</small></div>`).join('')}</div>`;$$('[data-note-currency]').forEach(x=>x.onclick=()=>{const code=x.dataset.noteCurrency,c=DB.currencies[code];openNotesModal(`${currencyFlag(code)} ${c.name} · ${code}`,DB.notes.filter(n=>n.currency===code).sort((a,b)=>a.value-b.value))});bindWorld();};
 
- const oldShowContinent=showContinent;
- showContinent=function(k,fromBack=false){
-   state.mapMode='country';oldShowContinent(k,fromBack);
-   const cs=DB.countries.filter(c=>c.continent===k).sort(byName);
-   const grid=[...document.querySelectorAll('[data-country]')];
-   const parent=grid[0]?.parentElement;if(parent){parent.innerHTML=cs.map(countryCard).join('');$$('[data-country]').forEach(x=>x.onclick=()=>showCountry(x.dataset.country));}
-   const head=view.querySelector('.section-head');if(head){const old=head.querySelector('#backWorld');if(old){old.textContent='← Mundo';old.onclick=()=>showHome();old.classList.add('persistent-nav-btn');}}
-   renderWorldMap(k);
- };
+ showCountry=function(id,fromBack=false){if(!fromBack)rememberLocation();state.currentKind='country';state.currentId=id;const c=DB.countries.find(x=>x.id===id);if(!c)return;state.continent=c.continent;const cur=DB.currencies[c.currency]||{};crumbs.textContent=`${CONTINENTS[c.continent]?.name||c.continent} › ${c.name}`;view.innerHTML=`<div class="persistent-nav-row"><button class="ghost-btn persistent-nav-btn" data-back-continent>← ${CONTINENTS[c.continent]?.name||'Continente'}</button></div><div class="panel country-currency-hero"><div><div class="country-title"><span class="flag">${flagOf(c)}</span><div><h1>${c.name}</h1><p>${cur.name||c.currency} · ${c.currency} · ${cur.symbol||''}</p></div></div></div><div class="huge-currency">${cur.symbol||''}</div></div><div class="detail-layout" style="margin-top:18px"><div class="panel"><h3>Breve história da moeda</h3><div class="timeline">${safeHistory(c).map(h=>`<div class="timeline-item"><strong>${h[0]}</strong><span>${h[1]}</span></div>`).join('')}</div></div><aside class="panel"><h3>Ficha rápida</h3><div class="info-row"><span>Capital</span><strong>${c.capital||'—'}</strong></div><div class="info-row"><span>População</span><strong>${c.population||'—'}</strong></div><div class="info-row"><span>Idioma</span><strong>${c.language||'—'}</strong></div><div class="info-row"><span>Moeda</span><strong>${c.currency}</strong></div><div class="info-row"><span>Emissor</span><strong>${cur.source||'—'}</strong></div><button class="primary-btn" id="openCurrency" style="width:100%;margin-top:14px">Abrir ${cur.name||c.currency}</button></aside></div><div class="section-head"><div><h2>Notas associadas</h2></div></div>${notesGrid(c.currency)}`;view.querySelector('[data-back-continent]').onclick=()=>showContinent(c.continent);$('#openCurrency').onclick=()=>showCurrency(c.currency);bindNoteCards();};
 
- const oldShowCountry=showCountry;
- showCountry=function(id,fromBack=false){
-   const c=DB.countries.find(x=>x.id===id);if(c)state.continent=c.continent;
-   oldShowCountry(id,fromBack);
-   const b=view.querySelector('[data-app-back]');if(b&&c){b.textContent=`← ${CONTINENTS[c.continent].name}`;b.onclick=()=>showContinent(c.continent);b.classList.add('persistent-nav-btn');}
- };
+ const oldShowContinent=showContinent;showContinent=function(k,fromBack=false){state.mapMode='country';oldShowContinent(k,fromBack);const cs=DB.countries.filter(c=>c.continent===k).sort(byName);const heads=[...view.querySelectorAll('.section-head')];const countryHead=heads.find(h=>h.textContent.includes('Países'));if(countryHead){const grid=countryHead.nextElementSibling;if(grid)grid.innerHTML=cs.map(card).join('');}$$('[data-country]').forEach(x=>x.onclick=()=>showCountry(x.dataset.country));const bw=$('#backWorld');if(bw){bw.textContent='← Mundo';bw.onclick=()=>showHome();bw.classList.add('persistent-nav-btn');}renderWorldMap(k);};
 
- const oldRenderWorldMap=renderWorldMap;
- renderWorldMap=async function(continent=null){
-   if(continent)state.mapMode='country';await oldRenderWorldMap(continent);
- };
+ const oldRenderWorldMap=renderWorldMap;renderWorldMap=async function(continent=null){if(continent)state.mapMode='country';Object.assign(DB.isoMap,{"4":"AFG","48":"BHR","50":"BGD","64":"BTN","96":"BRN","116":"KHM","156":"CHN","356":"IND","360":"IDN","364":"IRN","368":"IRQ","376":"ISR","392":"JPN","398":"KAZ","400":"JOR","408":"PRK","410":"KOR","414":"KWT","417":"KGZ","418":"LAO","422":"LBN","458":"MYS","462":"MDV","496":"MNG","104":"MMR","524":"NPL","512":"OMN","586":"PAK","608":"PHL","634":"QAT","682":"SAU","702":"SGP","144":"LKA","760":"SYR","158":"TWN","762":"TJK","764":"THA","626":"TLS","795":"TKM","784":"ARE","860":"UZB","704":"VNM","887":"YEM","275":"PSE"});await oldRenderWorldMap(continent);};
 })();
