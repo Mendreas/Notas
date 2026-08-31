@@ -1,11 +1,6 @@
 {"notes":[
-{"currency":"IRR","value":10000,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/IRN/IRN-CBIRI.htm","page":"https://www.banknote.ws/COLLECTION/countries/ASI/IRN/IRNW0160.htm","pick":"P-W160"},
-{"currency":"IRR","value":20000,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/IRN/IRN-CBIRI.htm","page":"https://www.banknote.ws/COLLECTION/countries/ASI/IRN/IRNW0161.htm","pick":"P-W161"},
-{"currency":"IRR","value":50000,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/IRN/IRN-CBIRI.htm","page":"https://www.banknote.ws/COLLECTION/countries/ASI/IRN/IRNW0162.htm","pick":"P-W162"},
-{"currency":"IRR","value":100000,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/IRN/IRN-CBIRI.htm","page":"https://www.banknote.ws/COLLECTION/countries/ASI/IRN/IRNW0163.htm","pick":"P-W163"},
-{"currency":"IRR","value":500000,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/IRN/IRN-CBIRI.htm","page":"https://www.banknote.ws/COLLECTION/countries/ASI/IRN/IRNW0164.htm","pick":"P-W164"},
-{"currency":"IRR","value":1000000,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/IRN/IRN-CBIRI.htm","page":"https://www.banknote.ws/COLLECTION/countries/ASI/IRN/IRNW0165.htm","pick":"P-W165"},
-{"currency":"IRR","value":2000000,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/IRN/IRN-CBIRI.htm","page":"https://www.banknote.ws/COLLECTION/countries/ASI/IRN/IRNW0167.htm","pick":"P-W167"},
-{"currency":"IRR","value":5000000,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/IRN/IRN-CBIRI.htm","page":"https://www.banknote.ws/COLLECTION/countries/ASI/IRN/IRNW0168.htm","pick":"P-W168"},
-{"currency":"IRR","value":10000000,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/IRN/IRN-CBIRI.htm","page":"https://www.banknote.ws/COLLECTION/countries/ASI/IRN/IRNW0169.htm","pick":"P-W169"}
+{"currency":"IRR","value":50000,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/IRN/IRN-CBIRI.htm","page":"https://www.banknote.ws/COLLECTION/countries/ASI/IRN/IRNW2021-050000.htm","pick":"P-W162"},
+{"currency":"IRR","value":100000,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/IRN/IRN-CBIRI.htm","page":"https://www.banknote.ws/COLLECTION/countries/ASI/IRN/IRNW2021-100000.htm","pick":"P-W163"},
+{"currency":"IRR","value":500000,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/IRN/IRN-CBIRI.htm","page":"https://www.banknote.ws/COLLECTION/countries/ASI/IRN/IRN0154.htm","pick":"P-W153A"},
+{"currency":"IRR","value":1000000,"section":"https://www.banknote.ws/COLLECTION/countries/ASI/IRN/IRN-CBIRI.htm","page":"https://www.banknote.ws/COLLECTION/countries/ASI/IRN/IRNW0166.htm","pick":"P-W166"}
 ]}
