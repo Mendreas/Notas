@@ -1,18 +1,40 @@
 (() => {
-  const nativeFetch=window.fetch.bind(window),B='https://www.banknote.ws/COLLECTION/countries/AFR';
-  const M={
-   ZAR:{10:'SAF/SAFW0148',20:'SAF/SAFW0149',50:'SAF/SAFW0150',100:'SAF/SAFW0151',200:'SAF/SAFW0152'},
-   MAD:{20:'MRQ/MRQW0079',50:'MRQ/MRQW0080',100:'MRQ/MRQW0081',200:'MRQ/MRQW0082'},
-   KES:{50:'KEN/KENW0052-2024',100:'KEN/KENW0053-2024',200:'KEN/KENW0054-2024',500:'KEN/KENW0055-2024',1000:'KEN/KENW0056-2024'},
-   EGP:{5:'EGY/EGY0072',10:'EGY/EGYW2021-0010',20:'EGY/EGYW2021-0020',50:'EGY/EGY0075',100:'EGY/EGY0076',200:'EGY/EGY0077'},
-   BWP:{10:'BOT/BOTW0036',20:'BOT/BOT0031',50:'BOT/BOT0032',100:'BOT/BOT0033',200:'BOT/BOT0034'},
-   NAD:{10:'NAM/NAMW0020',20:'NAM/NAMW0021',30:'NAM/NAMW0018',50:'NAM/NAMW0022',100:'NAM/NAMW0023',200:'NAM/NAMW0024'}
+  const nativeFetch=window.fetch.bind(window);
+  const imported={
+    BWP:new Set([20,50,100,200]),NAD:new Set([10,20,50,100,200]),ZAR:new Set([10,20,50,100,200]),MAD:new Set([20,50,100,200]),KES:new Set([50,100,200,500,1000]),EGP:new Set([5,50])
   };
+  const commons=f=>'https://commons.wikimedia.org/wiki/Special:Redirect/file/'+encodeURIComponent(f);
+  const egpFallback={
+    10:[commons('10 EGP obverse 2014-8-13.jpg'),commons('10 EGP reverse 2014-8-13.jpg')],
+    20:[commons('20 EGP 2022 Polymer - front 01.jpg'),commons('20 EGP 2022 Polymer - rear.jpg')],
+    100:[commons('100 EGP obverse 2014-1-26.jpg'),commons('100 EGP reverse 2014-1-26.jpg')],
+    200:[commons('200 EGP obverse 2010-1-2.jpg'),commons('200 EGP reverse 2010-1-2.jpg')]
+  };
+  const placeholderFront='/assets/notes/placeholder-front.svg',placeholderBack='/assets/notes/placeholder-back.svg';
   window.fetch=async(input,init)=>{
     const url=typeof input==='string'?input:input?.url||'';
-    if(url.startsWith('https://api.frankfurter.app/latest?from=EUR'))return new Response(JSON.stringify({rates:{}}),{status:200,headers:{'Content-Type':'application/json'}});
-    const r=await nativeFetch(input,init);if(!url.includes('/data/notes.json'))return r;
-    const notes=await r.clone().json();for(const n of notes){const stem=M[n.currency]?.[Number(n.value)];if(!stem)continue;n.front=`${B}/${stem}o.jpg`;n.back=`${B}/${stem}r.jpg`;n.imageStatus='museum-reference';n.imageSource='Bank Note Museum · banknote.ws';const pageStem=stem.replace(/-2024$/,'');n.imageSourceUrl=`${B}/${pageStem}.htm`;}
-    return new Response(JSON.stringify(notes),{status:r.status,statusText:r.statusText,headers:{'Content-Type':'application/json; charset=utf-8'}});
+    if(url.startsWith('https://api.frankfurter.app/latest?from=EUR')){
+      return new Response(JSON.stringify({rates:{}}),{status:200,headers:{'Content-Type':'application/json'}});
+    }
+    const response=await nativeFetch(input,init);
+    if(!url.includes('/data/notes.json'))return response;
+    const notes=await response.clone().json();
+    for(const n of notes){
+      const value=Number(n.value),set=imported[n.currency];
+      if(set?.has(value)){
+        n.front=`/assets/notes/banknotews/${n.currency.toLowerCase()}/${value}-front.jpg`;
+        n.back=`/assets/notes/banknotews/${n.currency.toLowerCase()}/${value}-back.jpg`;
+        n.imageStatus='local-reference';
+        n.imageSource='Bank Note Museum · cópia local';
+      } else if(n.currency==='EGP'&&egpFallback[value]){
+        [n.front,n.back]=egpFallback[value];
+        n.imageStatus='public-domain';
+        n.imageSource='Central Bank of Egypt / Wikimedia Commons';
+      } else {
+        if(/^https:\/\/www\.banknote\.ws\//i.test(n.front||''))n.front=placeholderFront;
+        if(/^https:\/\/www\.banknote\.ws\//i.test(n.back||''))n.back=placeholderBack;
+      }
+    }
+    return new Response(JSON.stringify(notes),{status:response.status,statusText:response.statusText,headers:{'Content-Type':'application/json; charset=utf-8'}});
   };
 })();
