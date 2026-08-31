@@ -1,15 +1,6 @@
 (()=>{
- const sets={
-  BWP:[10,20,50,100,200],NAD:[10,20,30,50,100,200],ZAR:[10,20,50,100,200],MAD:[20,50,100,200],KES:[50,100,200,500,1000],EGP:[5,10,20,50,100,200]
- };
- const pages={
-  BWP:{10:'BOT/BOTW0036.htm',20:'BOT/BOT0031.htm',50:'BOT/BOT0032.htm',100:'BOT/BOT0033.htm',200:'BOT/BOT0034.htm'},
-  NAD:{10:'NAM/NAMW0020.htm',20:'NAM/NAMW0021.htm',30:'NAM/NAMW0018.htm',50:'NAM/NAMW0022.htm',100:'NAM/NAMW0023.htm',200:'NAM/NAMW0024.htm'},
-  ZAR:{10:'SAF/SAFW0148.htm',20:'SAF/SAFW0149.htm',50:'SAF/SAFW0150.htm',100:'SAF/SAFW0151.htm',200:'SAF/SAFW0152.htm'},
-  MAD:{20:'MRQ/MRQW0079.htm',50:'MRQ/MRQW0080.htm',100:'MRQ/MRQW0081.htm',200:'MRQ/MRQW0082.htm'},
-  KES:{50:'KEN/KENW0052.htm',100:'KEN/KENW0053.htm',200:'KEN/KENW0054.htm',500:'KEN/KENW0055.htm',1000:'KEN/KENW0056.htm'},
-  EGP:{5:'EGY/EGY0072.htm',10:'EGY/EGYW2021-0010.htm',20:'EGY/EGYW2021-0020.htm',50:'EGY/EGY0075.htm',100:'EGY/EGY0076.htm',200:'EGY/EGY0077.htm'}
- };
+ const sets={BWP:[20,50,100,200],NAD:[10,20,50,100,200],ZAR:[10,20,50,100,200],MAD:[20,50,100,200],KES:[50,100,200,500,1000],EGP:[5,50]};
+ const pages={BWP:{20:'BOT/BOT0031.htm',50:'BOT/BOT0032.htm',100:'BOT/BOT0033.htm',200:'BOT/BOT0034.htm'},NAD:{10:'NAM/NAMW0020.htm',20:'NAM/NAMW0021.htm',50:'NAM/NAMW0022.htm',100:'NAM/NAMW0023.htm',200:'NAM/NAMW0024.htm'},ZAR:{10:'SAF/SAFW0148.htm',20:'SAF/SAFW0149.htm',50:'SAF/SAFW0150.htm',100:'SAF/SAFW0151.htm',200:'SAF/SAFW0152.htm'},MAD:{20:'MRQ/MRQW0079.htm',50:'MRQ/MRQW0080.htm',100:'MRQ/MRQW0081.htm',200:'MRQ/MRQW0082.htm'},KES:{50:'KEN/KENW0052.htm',100:'KEN/KENW0053.htm',200:'KEN/KENW0054.htm',500:'KEN/KENW0055.htm',1000:'KEN/KENW0056.htm'},EGP:{5:'EGY/EGY0072.htm',50:'EGY/EGY0075.htm'}};
  const oldFetch=window.fetch.bind(window);
  window.fetch=async(...args)=>{const req=args[0],url=typeof req==='string'?req:req?.url||'';const r=await oldFetch(...args);if(!url.includes('/data/notes.json'))return r;const notes=await r.clone().json();for(const [currency,vals] of Object.entries(sets))for(const value of vals){const n=notes.find(x=>x.currency===currency&&Number(x.value)===Number(value));if(!n)continue;n.front=`/assets/notes/banknotews/${currency.toLowerCase()}/${value}-front.jpg`;n.back=`/assets/notes/banknotews/${currency.toLowerCase()}/${value}-back.jpg`;n.imageStatus='local-reference';n.imageSource='Bank Note Museum · cópia local';n.imageSourceUrl=`https://www.banknote.ws/COLLECTION/countries/AFR/${pages[currency][value]}`;}return new Response(JSON.stringify(notes),{status:r.status,statusText:r.statusText,headers:{'Content-Type':'application/json; charset=utf-8'}})};
 })();
