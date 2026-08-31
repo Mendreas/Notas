@@ -1,0 +1,2 @@
+run=2026-08-31T15:40:00+01:00
+scope=all-banknotews-sourced-notes
