@@ -1,2 +1,2 @@
-run=2026-08-31T14:49:00+01:00
-scope=yemen-100-rial-commons-fallback
+run=2026-08-31T18:45:00+01:00
+scope=africa-local-cache
