@@ -1,0 +1,18 @@
+name: Banknote context debug
+on:
+  push:
+    paths:
+      - 'data/context-debug-run.txt'
+jobs:
+  debug:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Inspect first catalogue pages
+        env:
+          CONTEXT_LIMIT: '3'
+          CONTEXT_DEBUG: '1'
+        run: python scripts/scrape-banknote-context.py
