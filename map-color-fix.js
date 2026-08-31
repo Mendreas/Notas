@@ -1,9 +1,9 @@
 (()=>{
  const palette={
-  'North America':'#594665','South America':'#6c3f47','Europe':'#234a68',
-  'Africa':'#77542a','Asia':'#24594f','Oceania':'#31506d'
+  'North America':'#29445f','South America':'#355b57','Europe':'#3d4f6f',
+  'Africa':'#6a5736','Asia':'#315b53','Oceania':'#36536d'
  };
- const muted='#132431',active='#b57a32';
+ const muted='#13232f',active='#b7833e';
  function geoContinent(feature){
    try{
      const [lon,lat]=d3.geoCentroid(feature);
@@ -16,7 +16,8 @@
    }catch(_){return null}
  }
  function knownCountry(feature){
-   const id=DB.isoMap?.[String(+feature.id)];
+   const raw=String(feature.id),padded=raw.padStart(3,'0');
+   const id=DB.isoMap?.[raw]||DB.isoMap?.[padded];
    return DB.countries?.find(c=>c.id===id)||null;
  }
  function belongs(country,continent){
@@ -27,19 +28,22 @@
  if(typeof previous!=='function')return;
  window.renderWorldMap=async function(continent=null){
    await previous(continent);
-   d3.select('#worldMap').selectAll('path.country-shape').attr('fill',d=>{
+   const map=d3.select('#worldMap');
+   map.selectAll('path.country-path').attr('fill',d=>{
      const c=knownCountry(d),geo=geoContinent(d);
      if(continent){
        if(c&&belongs(c,continent))return active;
-       if(!c&&geo===continent)return palette[continent]||'#28485a';
+       if(geo===continent)return palette[continent]||'#355065';
        return muted;
      }
-     const cc=(c?.continents?.[0]||c?.continent||geo);
+     const cc=c?.continent||geo;
      return palette[cc]||muted;
    }).attr('opacity',d=>{
      if(!continent)return 1;
      const c=knownCountry(d),geo=geoContinent(d);
-     return (c&&belongs(c,continent))||(!c&&geo===continent)?1:.35;
-   });
+     return (c&&belongs(c,continent))||geo===continent?1:.30;
+   }).attr('stroke','#0b1720').attr('stroke-width',0.55);
+   map.selectAll('g.cont-label rect').attr('fill','#0c1823').attr('stroke','#3b5367').attr('opacity',0.94);
+   map.selectAll('g.cont-label text').attr('fill','#eef5f8').attr('font-weight',700).attr('font-size',13);
  };
 })();
