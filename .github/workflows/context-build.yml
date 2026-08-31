@@ -1,0 +1,28 @@
+name: Banknote context build
+on:
+  push:
+    paths:
+      - 'data/context-build-run.txt'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python scripts/build-note-context.py
+      - name: Commit polished catalogue
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add note-context-catalog.js
+          if ! git diff --cached --quiet; then
+            git commit -m "Polish exact banknote motif catalogue"
+            git pull --rebase origin main
+            git push origin main
+          fi
