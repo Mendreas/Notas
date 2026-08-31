@@ -4032,13 +4032,19 @@
       "back": "/assets/notes/banknotews/kpw/5000-back.jpg",
       "frontBytes": 110083,
       "backBytes": 109341
+    },
+    "YER:100": {
+      "currency": "YER",
+      "value": 100,
+      "pick": "P-W37",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/YEM/YEMW0037.htm",
+      "frontSource": "https://commons.wikimedia.org/wiki/Special:Redirect/file/100-2018-obverse.jpg",
+      "backSource": "https://commons.wikimedia.org/wiki/Special:Redirect/file/100-2018-reverse.jpg",
+      "front": "/assets/notes/banknotews/yer/100-front.jpg",
+      "back": "/assets/notes/banknotews/yer/100-back.jpg",
+      "frontBytes": 668952,
+      "backBytes": 736016
     }
   },
-  "failures": [
-    {
-      "key": "YER:100",
-      "pick": "P-W37",
-      "error": "HTTP Error 404: Not Found"
-    }
-  ]
+  "failures": []
 }
