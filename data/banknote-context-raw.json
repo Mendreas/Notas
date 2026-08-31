@@ -1,0 +1,2715 @@
+{
+  "source": "Banknote Museum · banknote.ws",
+  "notes": {
+    "IDR:1000": {
+      "currency": "IDR",
+      "value": 1000,
+      "pick": "P-W162",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/INO/INOW0162.htm",
+      "front": "Tjut Meutia, arms, outline of Indonesia",
+      "back": "Banda Neira (Banda Island), Fort Belgica, Tari Tifa dancer"
+    },
+    "IDR:2000": {
+      "currency": "IDR",
+      "value": 2000,
+      "pick": "P-W163",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/INO/INOW0163.htm",
+      "front": "Mohammad Hoesni Thamrin, arms, outline of Indonesia",
+      "back": "Ngaral Sianok (Sumatra), Tari Piring dancer"
+    },
+    "IDR:5000": {
+      "currency": "IDR",
+      "value": 5000,
+      "pick": "P-W164",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/INO/INOW0164.htm",
+      "front": "Dr. K. H. Idham Chalid, arms, outline of Indonesia",
+      "back": "Gunung Bromo (Java), Tari Gambyong dancer"
+    },
+    "IDR:10000": {
+      "currency": "IDR",
+      "value": 10000,
+      "pick": "P-W165",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/INO/INOW0165.htm",
+      "front": "Frans Kaisiepo, arms, outline of Indonesia",
+      "back": "Wakatobi National Park (Celebes), Tari Pakarena dancer"
+    },
+    "IDR:20000": {
+      "currency": "IDR",
+      "value": 20000,
+      "pick": "P-W166",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/INO/INOW0166.htm",
+      "front": "Dr. G. S. S. J. Ratulangi, arms, outline of Indonesia",
+      "back": "Derawan Islands, Tari Gong dancer"
+    },
+    "IDR:50000": {
+      "currency": "IDR",
+      "value": 50000,
+      "pick": "P-W167",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/INO/INOW0167.htm",
+      "front": "Dr. H. Djuanda Kartawidjaja, arms, outline of Indonesia",
+      "back": "Komodo National Park, Tari Legong dancer"
+    },
+    "IDR:100000": {
+      "currency": "IDR",
+      "value": 100000,
+      "pick": "P-W168",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/INO/INOW0168.htm",
+      "front": "Dr. Ir. (Achmed) Soekarno and Mohammed Hatta, arms, outline of Indonesia",
+      "back": "Raja Ampat Archipelago (New Guinea), Tari Dopeng Betawi dancer"
+    },
+    "MYR:1": {
+      "currency": "MYR",
+      "value": 1,
+      "pick": "P-51",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/MLY/MLY0051.htm",
+      "front": "King Tuanku Abdul Rahman, hibiscus",
+      "back": "Symbolic presentation of Kite Sport"
+    },
+    "MYR:5": {
+      "currency": "MYR",
+      "value": 5,
+      "pick": "P-52",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/MLY/MLY0052.htm",
+      "front": "King Tuanku Abdul Rahman, hibiscus",
+      "back": "Rhinoceros hornbills"
+    },
+    "MYR:10": {
+      "currency": "MYR",
+      "value": 10,
+      "pick": "P-53",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/MLY/MLY0053.htm",
+      "front": "King Tuanku Abdul Rahman, hibiscus",
+      "back": "Raffesia azlanii flower"
+    },
+    "MYR:20": {
+      "currency": "MYR",
+      "value": 20,
+      "pick": "P-54",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/MLY/MLY0054.htm",
+      "front": "King Tuanku Abdul Rahman, hibiscus",
+      "back": "Hawksbill turtles"
+    },
+    "MYR:50": {
+      "currency": "MYR",
+      "value": 50,
+      "pick": "P-50",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/MLY/MLY0050.htm",
+      "front": "King Tuanku Abdul Rahman, hibiscus",
+      "back": "Palm tree, King Tunku Abdul Rahman during Declaration of Independence"
+    },
+    "MYR:100": {
+      "currency": "MYR",
+      "value": 100,
+      "pick": "P-56",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/MLY/MLY0056.htm",
+      "front": "King Tuanku Abdul Rahman, hibiscus",
+      "back": "Kinabalu Park, Sabah"
+    },
+    "THB:20": {
+      "currency": "THB",
+      "value": 20,
+      "pick": "P-W145",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/THL/THLW0145.htm",
+      "front": "King Rama X Maha Vajiralongkorn Bodindradebayavarangkun",
+      "back": "Kings Rama I Phra Buddha Yodfa Chulalok and; Rama II Phrabat Somdet Phra Phutthaloetla Naphalai"
+    },
+    "THB:50": {
+      "currency": "THB",
+      "value": 50,
+      "pick": "P-136",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/THL/THL0136.htm",
+      "front": "King Rama X Maha Vajiralongkorn Bodindradebayavarangkun",
+      "back": "Kings Rama III Maha Chetsadabodin and; Rama IV Mongkut (Phra Chom Klao)"
+    },
+    "THB:100": {
+      "currency": "THB",
+      "value": 100,
+      "pick": "P-137",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/THL/THL0137.htm",
+      "front": "King Rama X Maha Vajiralongkorn Bodindradebayavarangkun",
+      "back": "Kings Rama V Chulalongkorn (Phra Chunlachom Klao) and; Rama VI Vajiravudh (Phra Bat Somdet Phra Poramentharamaha Vajiravudh Phra Mongkut Klao Chao Yu Hua)"
+    },
+    "THB:500": {
+      "currency": "THB",
+      "value": 500,
+      "pick": "P-138",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/THL/THL0138.htm",
+      "front": "King Rama X Maha Vajiralongkorn Bodindradebayavarangkun",
+      "back": "Kings Rama VII Prajadhipok (Phra Pok Klao) and; King Rama VIII Ananda Mahidol (Phrabat Somdet Phra Poramentharamaha Ananda Mahidol Phra Atthama Ramathibodin)"
+    },
+    "THB:1000": {
+      "currency": "THB",
+      "value": 1000,
+      "pick": "P-139",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/THL/THL0139.htm",
+      "front": "King Rama X Maha Vajiralongkorn Bodindradebayavarangkun",
+      "back": "Kings Rama IX Bhumibol Adulyadej and; Crown Prince Maha Vajiralongkorn (later King Rama X)"
+    },
+    "PHP:20": {
+      "currency": "PHP",
+      "value": 20,
+      "pick": "P-W230",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/PIL/PILW0230.htm",
+      "front": "Manuel Quezon, people during proclamation of Filipino as national language (1935), Malacañang palace",
+      "back": "Rice terraces of Banaue, Asian palm civet (Paradoxurus hermaphroditus)"
+    },
+    "PHP:50": {
+      "currency": "PHP",
+      "value": 50,
+      "pick": "P-W237",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/PIL/PILW0237.htm",
+      "front": "Visayan leopard cat (Prionaiurus bengalensis rabori)",
+      "back": "Taal Lake (Batangas), giant trevally (Caranx ignobilis)"
+    },
+    "PHP:100": {
+      "currency": "PHP",
+      "value": 100,
+      "pick": "P-W238",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/PIL/PILW0238.htm",
+      "front": "Palawan peacock pheasant (Polyplectron napoleonis)",
+      "back": "Mayon vulcano (Bicol region), whale shark (Rhincodon typus)"
+    },
+    "PHP:200": {
+      "currency": "PHP",
+      "value": 200,
+      "pick": "P-W233",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/PIL/PILW2020-0200.htm",
+      "front": "Diosdado P. Macapagal; Declaration of Philippine Independence (Cavite 12.06.1898); Opening of Malolos Congress (Barasoain Church 15.09.1898)",
+      "back": "Bohol Chocolate hills (Bohol), Philippine tarsier (Tarsius syrichta)"
+    },
+    "PHP:500": {
+      "currency": "PHP",
+      "value": 500,
+      "pick": "P-W240",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/PIL/PILW0240.htm",
+      "front": "Visayan spotted deer (Rusa alfredi)",
+      "back": "Puerto Princesa Subterranean River National Park, blue naped parrot (Tanygnathus lucionensis)"
+    },
+    "PHP:1000": {
+      "currency": "PHP",
+      "value": 1000,
+      "pick": "P-W241",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/PIL/PILW2022-1000.htm",
+      "front": "Philippine eagle (Pithecophega jefferyi)",
+      "back": "Tubbataha reefs (Sulu Sea), pearl oyster (Pinctada maxima)"
+    },
+    "VND:10000": {
+      "currency": "VND",
+      "value": 10000,
+      "pick": "P-119",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/VIE/VIE0119.htm",
+      "front": "Ho Chi Minh",
+      "back": "Oil rigs"
+    },
+    "VND:20000": {
+      "currency": "VND",
+      "value": 20000,
+      "pick": "P-120",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/VIE/VIE0120.htm",
+      "front": "Ho Chi Minh",
+      "back": "Chùa Cầu (footbridge with a temple atop), Hoi An, Quang Nam Province; (also referred to as \"Cầu Nhật Bản\" (Japanese Covered Bridge), or \"Lai Viễn Kiều\""
+    },
+    "VND:50000": {
+      "currency": "VND",
+      "value": 50000,
+      "pick": "P-121",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/VIE/VIE0121.htm",
+      "front": "Ho Chi Minh",
+      "back": "Pavillons in Hué"
+    },
+    "VND:100000": {
+      "currency": "VND",
+      "value": 100000,
+      "pick": "P-122",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/VIE/VIE0122.htm",
+      "front": "Ho Chi Minh",
+      "back": "Khuê Văn Các (part of the Temple of Literature, Hanoi)"
+    },
+    "VND:200000": {
+      "currency": "VND",
+      "value": 200000,
+      "pick": "P-123",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/VIE/VIE0123.htm",
+      "front": "Ho Chi Minh",
+      "back": "Junk, Fai Tsi Long Archipelago"
+    },
+    "VND:500000": {
+      "currency": "VND",
+      "value": 500000,
+      "pick": "P-124",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/VIE/VIE0124.htm",
+      "front": "Ho Chi Minh",
+      "back": "Ho Chi Minh's birthplace in Kiem Lin (Nghean Province)"
+    },
+    "CHF:10": {
+      "currency": "CHF",
+      "value": 10,
+      "pick": "P-75",
+      "page": "https://www.banknote.ws/COLLECTION/countries/EUR/SUI/SUI0075.htm",
+      "front": "Hand holding conductor's baton, globe with time zones (key motif: Time)",
+      "back": "Watch, railroad track and tunnel"
+    },
+    "CHF:20": {
+      "currency": "CHF",
+      "value": 20,
+      "pick": "P-76",
+      "page": "https://www.banknote.ws/COLLECTION/countries/EUR/SUI/SUI0076.htm",
+      "front": "Hand holding prisma, globe with star constellations around (key motif: Light)",
+      "back": "Film festival, butterflies"
+    },
+    "CHF:50": {
+      "currency": "CHF",
+      "value": 50,
+      "pick": "P-77",
+      "page": "https://www.banknote.ws/COLLECTION/countries/EUR/SUI/SUI0077.htm",
+      "front": "Hand holding dandelion, globe with planetaric wind belts (key motif: Wind)",
+      "back": "Mountain, isohypses, paraglider"
+    },
+    "CHF:100": {
+      "currency": "CHF",
+      "value": 100,
+      "pick": "P-W77A",
+      "page": "https://www.banknote.ws/COLLECTION/countries/EUR/SUI/SUIW2017-0100.htm",
+      "front": "Hands scooping up water, globe with isobars (key motif: Water and Switzerland's humanitarian tradition)",
+      "back": "\"Suone\" - typical wooden aqueduct in the Alps, feeding glacial meltwater down a cliff face to the fields below; reflecting humanity's eternal challenges: finding a supply of water"
+    },
+    "CHF:200": {
+      "currency": "CHF",
+      "value": 200,
+      "pick": "P-78",
+      "page": "https://www.banknote.ws/COLLECTION/countries/EUR/SUI/SUI0078.htm",
+      "front": "Right Hand Rule to demonstrate expansion of matter, Big Bang, planetary system, distribution of the land masses during the cretaceous period (key motif: science and research in Switzerland)",
+      "back": "Particle detector and particle collision"
+    },
+    "CHF:1000": {
+      "currency": "CHF",
+      "value": 1000,
+      "pick": "P-W79",
+      "page": "https://www.banknote.ws/COLLECTION/countries/EUR/SUI/SUIW2017-1000.htm",
+      "front": "Handshake, globe with phonetic alphabet letters (key motif: Language - Switzerland's communicative flair)",
+      "back": "Switzerland's Parliament during a public debate, stylized \"open network\""
+    },
+    "CAD:5": {
+      "currency": "CAD",
+      "value": 5,
+      "pick": "P-106",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AME/CAN/CAN0106.htm",
+      "front": "Sir Wilfrid Laurier",
+      "back": "CANADARM2 (multifunction robotic arm) and Dextre (Special Purpose Dexterous Manipulator - SPDM), astronaut in space"
+    },
+    "CAD:10": {
+      "currency": "CAD",
+      "value": 10,
+      "pick": "P-W113",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AME/CAN/CANW2018-010.htm",
+      "front": "Viola Desmond",
+      "back": "Canadian Museum of Human Rights, Winnipeg"
+    },
+    "CAD:20": {
+      "currency": "CAD",
+      "value": 20,
+      "pick": "P-108",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AME/CAN/CAN0108.htm",
+      "front": "Elizabeth II",
+      "back": "Canadian National Vimy Memorial (Vimy, France)"
+    },
+    "CAD:50": {
+      "currency": "CAD",
+      "value": 50,
+      "pick": "P-109",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AME/CAN/CAN0109.htm",
+      "front": "William Lyon Mackenzie King",
+      "back": "CCGS \"Amundsen\" research icebreaker"
+    },
+    "CAD:100": {
+      "currency": "CAD",
+      "value": 100,
+      "pick": "P-110",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AME/CAN/CAN0110.htm",
+      "front": "Sir Robert Borden",
+      "back": "Woman with microscope, Insuline vial (\"Medical Innovation\")"
+    },
+    "SGD:2": {
+      "currency": "SGD",
+      "value": 2,
+      "pick": "P-46",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/SIN/SIN0046.htm",
+      "front": "President Encik Yusof bin Ishak",
+      "back": "Education (Raffles Institute, College of Medicine)"
+    },
+    "SGD:5": {
+      "currency": "SGD",
+      "value": 5,
+      "pick": "P-47",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/SIN/SIN0047.htm",
+      "front": "President Yusuf bin Ishak",
+      "back": "Garden City"
+    },
+    "SGD:10": {
+      "currency": "SGD",
+      "value": 10,
+      "pick": "P-48",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/SIN/SIN0048.htm",
+      "front": "President Encik Yusof bin Ishak",
+      "back": "Sports"
+    },
+    "SGD:50": {
+      "currency": "SGD",
+      "value": 50,
+      "pick": "P-49",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/SIN/SIN0049.htm",
+      "front": "President Encik Yusof bin Ishak",
+      "back": "Arts"
+    },
+    "SGD:100": {
+      "currency": "SGD",
+      "value": 100,
+      "pick": "P-50",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/SIN/SIN0050.htm",
+      "front": "President Encik Yusof bin Ishak",
+      "back": "Youth (Members of the Singapore Red Cross, St. John's Ambuilance Brigade, National Police Cadets Corps, Boy Scouts and National Service; tower of Safti Military Institute)"
+    },
+    "SGD:1000": {
+      "currency": "SGD",
+      "value": 1000,
+      "pick": "P-51",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/SIN/SIN0051.htm",
+      "front": "President Encik Yusof bin Ishak",
+      "back": "Government; Parliament House, Istana (Presidential residence), Supreme Court"
+    },
+    "EUR:5": {
+      "currency": "EUR",
+      "value": 5,
+      "pick": "P-W26",
+      "page": "https://www.banknote.ws/COLLECTION/countries/EUR/EUR/EURW2020-005.htm",
+      "front": "Classic architecture",
+      "back": "Bridge of classic architecture, map of Europe"
+    },
+    "EUR:10": {
+      "currency": "EUR",
+      "value": 10,
+      "pick": "P-W27",
+      "page": "https://www.banknote.ws/COLLECTION/countries/EUR/EUR/EURW2020-010.htm",
+      "front": "Roman architecture",
+      "back": "Bridge of Roman architecture, map of Europe"
+    },
+    "EUR:20": {
+      "currency": "EUR",
+      "value": 20,
+      "pick": "P-W28",
+      "page": "https://www.banknote.ws/COLLECTION/countries/EUR/EUR/EURW2020-020.htm",
+      "front": "Gothic architecture",
+      "back": "Bridge of Gothic architecture, map of Europe"
+    },
+    "EUR:50": {
+      "currency": "EUR",
+      "value": 50,
+      "pick": "P-W29",
+      "page": "https://www.banknote.ws/COLLECTION/countries/EUR/EUR/EURW2020-050.htm",
+      "front": "Renaissance architecture",
+      "back": "Bridge of Renaissance architecture, map of Europe"
+    },
+    "EUR:100": {
+      "currency": "EUR",
+      "value": 100,
+      "pick": "P-W30",
+      "page": "https://www.banknote.ws/COLLECTION/countries/EUR/EUR/EURW2020-100.htm",
+      "front": "Baroque and Rokoko architecture",
+      "back": "Bridge of Baroque architecture, map of Europe"
+    },
+    "EUR:200": {
+      "currency": "EUR",
+      "value": 200,
+      "pick": "P-W31",
+      "page": "https://www.banknote.ws/COLLECTION/countries/EUR/EUR/EURW2021-200.htm",
+      "front": "Glass and Iron architecture",
+      "back": "Cantilever bridge, map of Europe"
+    },
+    "EUR:500": {
+      "currency": "EUR",
+      "value": 500,
+      "pick": "P-19A",
+      "page": "https://www.banknote.ws/COLLECTION/countries/EUR/EUR/EUR0019A2.htm",
+      "front": "Architecture of the 20th Century",
+      "back": "Suspension Bridge, map of Europe"
+    },
+    "JPY:1000": {
+      "currency": "JPY",
+      "value": 1000,
+      "pick": "P-W107",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/JAP/JAPW0107.htm",
+      "front": "Shibasaburo Kitasato",
+      "back": "\"Under the Great Wave off Kanagawa\" (one of the Thirty-six Views of Mount Fuji)"
+    },
+    "JPY:2000": {
+      "currency": "JPY",
+      "value": 2000,
+      "pick": "P-103",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/JAP/JAP0103.htm",
+      "front": "Shurei-Mon gate, Naha (Okinawa, Ryukyu Islands)",
+      "back": "Scene of \"Genji Monogatari\" (Tale of Prince Genji, the oldest novel of World's literature); Portrait of Lady Murasaki Shikibu (author of \"Genji Monogatari\")"
+    },
+    "JPY:5000": {
+      "currency": "JPY",
+      "value": 5000,
+      "pick": "P-W108",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/JAP/JAPW0108.htm",
+      "front": "Umeko Tsuda",
+      "back": "Wisteria"
+    },
+    "JPY:10000": {
+      "currency": "JPY",
+      "value": 10000,
+      "pick": "P-W109",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/JAP/JAPW0109.htm",
+      "front": "Eiichi Shibusawa",
+      "back": "Marunouchi Station Building, Tokyo"
+    },
+    "CNY:1": {
+      "currency": "CNY",
+      "value": 1,
+      "pick": "P-W912",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/CIN/CIN-PR/CINW2019-001.htm",
+      "front": "Mao Tse-tung",
+      "back": "\"Three Ponds, Reflecting the Moon\", Western Lake, Huangzhou"
+    },
+    "CNY:5": {
+      "currency": "CNY",
+      "value": 5,
+      "pick": "P-W913",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/CIN/CIN-PR/CINW2020-005.htm",
+      "front": "Mao Tse-tung",
+      "back": "Mountains"
+    },
+    "CNY:10": {
+      "currency": "CNY",
+      "value": 10,
+      "pick": "P-W914",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/CIN/CIN-PR/CINW2019-010.htm",
+      "front": "Mao Tse-tung",
+      "back": "Three Gorges of Yangtze River"
+    },
+    "CNY:20": {
+      "currency": "CNY",
+      "value": 20,
+      "pick": "P-W915",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/CIN/CIN-PR/CINW2019-020.htm",
+      "front": "Mao Tse-tung",
+      "back": "Li River near Guilin (Kweilin)"
+    },
+    "CNY:50": {
+      "currency": "CNY",
+      "value": 50,
+      "pick": "P-W916",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/CIN/CIN-PR/CINW2019-050.htm",
+      "front": "Mao Tse-tung",
+      "back": "Potala of Tibet"
+    },
+    "CNY:100": {
+      "currency": "CNY",
+      "value": 100,
+      "pick": "P-909",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/CIN/CIN-PR/CIN0909.htm",
+      "front": "Mao Tse-tung",
+      "back": "Hall of the People, Peking"
+    },
+    "HKD:20": {
+      "currency": "HKD",
+      "value": 20,
+      "pick": "P-W218",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/HKG/HKGW2018-0020-HSB.htm",
+      "front": "Lion",
+      "back": "Tea gathering"
+    },
+    "HKD:50": {
+      "currency": "HKD",
+      "value": 50,
+      "pick": "P-W219",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/HKG/HKGW2018-0050-HSB.htm",
+      "front": "Lion",
+      "back": "Butterfly on flower"
+    },
+    "HKD:100": {
+      "currency": "HKD",
+      "value": 100,
+      "pick": "P-W220",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/HKG/HKGW2018-0100-HSB.htm",
+      "front": "Lion",
+      "back": "Cantonese Opera"
+    },
+    "HKD:500": {
+      "currency": "HKD",
+      "value": 500,
+      "pick": "P-W221",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/HKG/HKGW2018-0500-HSB.htm",
+      "front": "Lion",
+      "back": "Octagonal rock formation"
+    },
+    "HKD:1000": {
+      "currency": "HKD",
+      "value": 1000,
+      "pick": "P-W222",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/HKG/HKGW2018-1000-HSB.htm",
+      "front": "Lion",
+      "back": "Aerial view of Hong Kong - Financial Metropolis"
+    },
+    "MOP:10": {
+      "currency": "MOP",
+      "value": 10,
+      "pick": "P-W90",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/MAC/MACW0090.htm",
+      "front": "Old and new façades of Banco Nacional Ultramarino building",
+      "back": "Tree, map of Macau in 1635"
+    },
+    "MOP:20": {
+      "currency": "MOP",
+      "value": 20,
+      "pick": "P-W91",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/MAC/MACW0091.htm",
+      "front": "Old and new façades of Banco Nacional Ultramarino building",
+      "back": "Tree, boats, map of Macau in 1780"
+    },
+    "MOP:50": {
+      "currency": "MOP",
+      "value": 50,
+      "pick": "P-W92",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/MAC/MACW0092.htm",
+      "front": "Old and new façades of Banco Nacional Ultramarino building",
+      "back": "Tree, junks, map of Macau in 1889"
+    },
+    "MOP:100": {
+      "currency": "MOP",
+      "value": 100,
+      "pick": "P-W93",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/MAC/MACW0093.htm",
+      "front": "Old and new façades of Banco Nacional Ultramarino building",
+      "back": "Tree, ferryboat, map of Macau in 1949"
+    },
+    "MOP:500": {
+      "currency": "MOP",
+      "value": 500,
+      "pick": "P-W94",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/MAC/MACW0094.htm",
+      "front": "Old and new façades of Banco Nacional Ultramarino building",
+      "back": "Tree, fishing boat, map of Macau in 1986"
+    },
+    "MOP:1000": {
+      "currency": "MOP",
+      "value": 1000,
+      "pick": "P-W95",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/MAC/MACW0095.htm",
+      "front": "Old and new façades of Banco Nacional Ultramarino building",
+      "back": "Tree, fishing boat, map of Macau in 2022"
+    },
+    "INR:10": {
+      "currency": "INR",
+      "value": 10,
+      "pick": "P-109",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/IND/IND0109.htm",
+      "front": "Mohendas Karamchand \"Mahatma\" Gandhi; Lion capital of Asoka column (now in Sarnath Museum)",
+      "back": "Hindu Wheel of Time"
+    },
+    "INR:20": {
+      "currency": "INR",
+      "value": 20,
+      "pick": "P-W110",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/IND/INDW2019-0020.htm",
+      "front": "Mohendas Karamchand \"Mahatma\" Gandhi; Lion capital of Asoka column (now in Sarnath Museum)",
+      "back": "Ellora Caves (Maharashtra)"
+    },
+    "INR:50": {
+      "currency": "INR",
+      "value": 50,
+      "pick": "P-111",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/IND/IND0111.htm",
+      "front": "Mohendas Karamchand \"Mahatma\" Gandhi; Lion capital of Asoka column (now in Sarnath Museum)",
+      "back": "Garuda shrine chariot, Hampi"
+    },
+    "INR:100": {
+      "currency": "INR",
+      "value": 100,
+      "pick": "P-112",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/IND/IND0112.htm",
+      "front": "Mohendas Karamchand \"Mahatma\" Gandhi; Lion capital of Asoka column (now in Sarnath Museum)",
+      "back": "Rani Ki Vav (Fountain of the Queen), Patan (Gujarat)"
+    },
+    "INR:200": {
+      "currency": "INR",
+      "value": 200,
+      "pick": "P-113",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/IND/IND0113.htm",
+      "front": "Mohendas Karamchand \"Mahatma\" Gandhi; Lion capital of Asoka column (now in Sarnath Museum)",
+      "back": "Sanchi stupa, Bhopal"
+    },
+    "INR:500": {
+      "currency": "INR",
+      "value": 500,
+      "pick": "P-114",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/IND/IND0114.htm",
+      "front": "Mohendas Karamchand \"Mahatma\" Gandhi; Lion capital of Asoka column (now in Sarnath Museum)",
+      "back": "Red Fort, Delhi"
+    },
+    "HUF:500": {
+      "currency": "HUF",
+      "value": 500,
+      "pick": "P-W202",
+      "page": "https://www.banknote.ws/COLLECTION/countries/EUR/HUN/HUNW2018-00500.htm",
+      "front": "Prince Rákóczi Ferenc II",
+      "back": "Sárospatak castle"
+    },
+    "HUF:1000": {
+      "currency": "HUF",
+      "value": 1000,
+      "pick": "P-203",
+      "page": "https://www.banknote.ws/COLLECTION/countries/EUR/HUN/HUN0203.htm",
+      "front": "King Mátyás",
+      "back": "Hercules fountain (Royal Palace, Visegrád)"
+    },
+    "HUF:2000": {
+      "currency": "HUF",
+      "value": 2000,
+      "pick": "P-204",
+      "page": "https://www.banknote.ws/COLLECTION/countries/EUR/HUN/HUN0204.htm",
+      "front": "Bethlen Gábor",
+      "back": "Bethlen Gábor with scientists"
+    },
+    "HUF:5000": {
+      "currency": "HUF",
+      "value": 5000,
+      "pick": "P-205",
+      "page": "https://www.banknote.ws/COLLECTION/countries/EUR/HUN/HUN0205.htm",
+      "front": "Gróf (Count) Széchenyi István",
+      "back": "Count Széchenyi's castle, Nagycenk"
+    },
+    "HUF:10000": {
+      "currency": "HUF",
+      "value": 10000,
+      "pick": "P-206",
+      "page": "https://www.banknote.ws/COLLECTION/countries/EUR/HUN/HUN0206.htm",
+      "front": "Szent István Király (St. Stephen)",
+      "back": "Esztergom (Gran) Palace"
+    },
+    "HUF:20000": {
+      "currency": "HUF",
+      "value": 20000,
+      "pick": "P-207",
+      "page": "https://www.banknote.ws/COLLECTION/countries/EUR/HUN/HUN0207.htm",
+      "front": "Deák Ferenc",
+      "back": "Plaza in Pest"
+    },
+    "RSD:10": {
+      "currency": "RSD",
+      "value": 10,
+      "pick": "P-54",
+      "page": "https://www.banknote.ws/COLLECTION/countries/EUR/SER/SER0054.htm",
+      "front": "Young Vuk Stefanović Karadić",
+      "back": "Aged Vuk Stefanović Karadić; First Slavic Congress in Prague, 1848"
+    },
+    "RSD:20": {
+      "currency": "RSD",
+      "value": 20,
+      "pick": "P-55",
+      "page": "https://www.banknote.ws/COLLECTION/countries/EUR/SER/SER0055.htm",
+      "front": "Petar II Njego, Prince Bishop of Montenegro",
+      "back": "Petar II Njego, Montenegro"
+    },
+    "RSD:50": {
+      "currency": "RSD",
+      "value": 50,
+      "pick": "P-56",
+      "page": "https://www.banknote.ws/COLLECTION/countries/EUR/SER/SER0056.htm",
+      "front": "Stevan Stojanović Mokranjac, violin",
+      "back": "Stevan Stojanović Mokranjac"
+    },
+    "RSD:100": {
+      "currency": "RSD",
+      "value": 100,
+      "pick": "P-57",
+      "page": "https://www.banknote.ws/COLLECTION/countries/EUR/SER/SER0057.htm",
+      "front": "Nikola Tesla",
+      "back": "Nikola Tesla, electromagnetic induction engine"
+    },
+    "RSD:200": {
+      "currency": "RSD",
+      "value": 200,
+      "pick": "P-58",
+      "page": "https://www.banknote.ws/COLLECTION/countries/EUR/SER/SER0058.htm",
+      "front": "Nadeda Petrović, sculpture (by Petrović), Gračanica monastery",
+      "back": "Nadezda Petrović, Gračanica monastery (Kosovo)"
+    },
+    "RSD:500": {
+      "currency": "RSD",
+      "value": 500,
+      "pick": "P-59",
+      "page": "https://www.banknote.ws/COLLECTION/countries/EUR/SER/SER0059.htm",
+      "front": "Jovan Cvijić, planimetrical drawing",
+      "back": "Jovan Cvijić"
+    },
+    "RSD:1000": {
+      "currency": "RSD",
+      "value": 1000,
+      "pick": "P-60",
+      "page": "https://www.banknote.ws/COLLECTION/countries/EUR/SER/SER0060.htm",
+      "front": "Ðorđe Vajfert",
+      "back": "Ðorđe Vajfert; interior of National Bank, Belgrade"
+    },
+    "RSD:2000": {
+      "currency": "RSD",
+      "value": 2000,
+      "pick": "P-61",
+      "page": "https://www.banknote.ws/COLLECTION/countries/EUR/SER/SER0061.htm",
+      "front": "Milutin Milanković",
+      "back": "Milutin Milanković, fragments of his scientific work"
+    },
+    "RSD:5000": {
+      "currency": "RSD",
+      "value": 5000,
+      "pick": "P-62",
+      "page": "https://www.banknote.ws/COLLECTION/countries/EUR/SER/SER0062.htm",
+      "front": "Slobodan Jovanovi ć",
+      "back": "Slobodan Jovanović; Parliament building, Belgrade"
+    },
+    "ALL:200": {
+      "currency": "ALL",
+      "value": 200,
+      "pick": "P-W76",
+      "page": "https://www.banknote.ws/COLLECTION/countries/EUR/ALB/ALBW2017-0200.htm",
+      "front": "Naim Frashëri, Banka e Shqipërisë building (Tirana)",
+      "back": "Sheet of paper, pen, birthplace of Naim Frasheri"
+    },
+    "ALL:500": {
+      "currency": "ALL",
+      "value": 500,
+      "pick": "P-W77",
+      "page": "https://www.banknote.ws/COLLECTION/countries/EUR/ALB/ALBW0077.htm",
+      "front": "Ismail Qemali, double headed eagle, Banka e Shqipërisë building (Tirana)",
+      "back": "Conference table (room of the proclamation of independence), telegraph, Independence house (Valona/Vlorë)"
+    },
+    "ALL:1000": {
+      "currency": "ALL",
+      "value": 1000,
+      "pick": "P-W78",
+      "page": "https://www.banknote.ws/COLLECTION/countries/EUR/ALB/ALBW2019-1000.htm",
+      "front": "Pjeter Bogdani, stylized sun, Banka e Shqipërisë building (Tirana)",
+      "back": "Astronomical drawing (eclipse of the Moon), church of Vau i Dejes"
+    },
+    "ALL:2000": {
+      "currency": "ALL",
+      "value": 2000,
+      "pick": "P-W79",
+      "page": "https://www.banknote.ws/COLLECTION/countries/EUR/ALB/ALBW0079.htm",
+      "front": "King Gent, Banka e Shqipërisë building (Tirana)",
+      "back": "Amphitheatre at Butrinto (near Saranda), yellow gentian (Gentiana lutea)"
+    },
+    "ALL:5000": {
+      "currency": "ALL",
+      "value": 5000,
+      "pick": "P-W80",
+      "page": "https://www.banknote.ws/COLLECTION/countries/EUR/ALB/ALBW2017-5000.htm",
+      "front": "Skanderbeg, Banka e Shqipërisë building (Tirana)",
+      "back": "Equestrian statue of Skanderbeg, Skanderbeg's crown, Kruja fortress"
+    },
+    "ALL:10000": {
+      "currency": "ALL",
+      "value": 10000,
+      "pick": "P-W81",
+      "page": "https://www.banknote.ws/COLLECTION/countries/EUR/ALB/ALBW2019-10000.htm",
+      "front": "Aleksandër Stavre Drenova ( Asdreni ) , Banka e Shqipërisë building (Tirana)",
+      "back": "Flag of Albania, musical chord"
+    },
+    "BAM:10": {
+      "currency": "BAM",
+      "value": 10,
+      "pick": "P-80",
+      "page": "https://www.banknote.ws/COLLECTION/countries/EUR/BIH/BIH0080.htm",
+      "front": "Mehmedalija Mak Dizdar",
+      "back": "Stećak Radimlja fragment"
+    },
+    "BAM:20": {
+      "currency": "BAM",
+      "value": 20,
+      "pick": "P-82",
+      "page": "https://www.banknote.ws/COLLECTION/countries/EUR/BIH/BIH0082.htm",
+      "front": "Antun Branko imić",
+      "back": "Stećak Radimlja fragment"
+    },
+    "BAM:50": {
+      "currency": "BAM",
+      "value": 50,
+      "pick": "P-84",
+      "page": "https://www.banknote.ws/COLLECTION/countries/EUR/BIH/BIH0084.htm",
+      "front": "Musa Ćazim Ćatić",
+      "back": "Stone relief"
+    },
+    "BAM:100": {
+      "currency": "BAM",
+      "value": 100,
+      "pick": "P-86",
+      "page": "https://www.banknote.ws/COLLECTION/countries/EUR/BIH/BIH0086.htm",
+      "front": "Nikola op",
+      "back": "Stećak Zgoca fragment"
+    },
+    "BAM:200": {
+      "currency": "BAM",
+      "value": 200,
+      "pick": "P-71",
+      "page": "https://www.banknote.ws/COLLECTION/countries/EUR/BIH/BIH0071.htm",
+      "front": "Ivo Andrić",
+      "back": "Mehmed-Paa-Sokolović bridge over the Drina river, Viegrad (Serbian Republic; Bosnia and Herzegovina)"
+    },
+    "MDL:1": {
+      "currency": "MDL",
+      "value": 1,
+      "pick": "P-21",
+      "page": "https://www.banknote.ws/COLLECTION/countries/EUR/MOL/MOL0021.htm",
+      "front": "Ştefan cel Mare (Stephen the Great)",
+      "back": "Capriana monastery"
+    },
+    "MDL:5": {
+      "currency": "MDL",
+      "value": 5,
+      "pick": "P-B22",
+      "page": "https://www.banknote.ws/COLLECTION/countries/EUR/MOL/MOLW2015-005.htm",
+      "front": "Ştefan cel Mare (Stephen the Great)",
+      "back": "St. Dimitru basilica, Orhei"
+    },
+    "MDL:10": {
+      "currency": "MDL",
+      "value": 10,
+      "pick": "P-22",
+      "page": "https://www.banknote.ws/COLLECTION/countries/EUR/MOL/MOL0022.htm",
+      "front": "Ştefan cel Mare (Stephen the Great)",
+      "back": "Hirjauca monastery"
+    },
+    "MDL:20": {
+      "currency": "MDL",
+      "value": 20,
+      "pick": "P-23",
+      "page": "https://www.banknote.ws/COLLECTION/countries/EUR/MOL/MOL0023.htm",
+      "front": "Ştefan cel Mare (Stephen the Great)",
+      "back": "Soroca castle"
+    },
+    "MDL:50": {
+      "currency": "MDL",
+      "value": 50,
+      "pick": "P-24",
+      "page": "https://www.banknote.ws/COLLECTION/countries/EUR/MOL/MOL0024.htm",
+      "front": "Ştefan cel Mare (Stephen the Great)",
+      "back": "Hîrbov ăţ monastery"
+    },
+    "MDL:100": {
+      "currency": "MDL",
+      "value": 100,
+      "pick": "P-25",
+      "page": "https://www.banknote.ws/COLLECTION/countries/EUR/MOL/MOL0025.htm",
+      "front": "Ştefan cel Mare (Stephen the Great)",
+      "back": "Tighina citadel"
+    },
+    "MDL:200": {
+      "currency": "MDL",
+      "value": 200,
+      "pick": "P-26",
+      "page": "https://www.banknote.ws/COLLECTION/countries/EUR/MOL/MOL0026.htm",
+      "front": "Ştefan cel Mare (Stephen the Great)",
+      "back": "Chi ş in ă u Municipal building"
+    },
+    "MDL:500": {
+      "currency": "MDL",
+      "value": 500,
+      "pick": "P-27",
+      "page": "https://www.banknote.ws/COLLECTION/countries/EUR/MOL/MOL0027.htm",
+      "front": "Ştefan cel Mare (Stephen the Great)",
+      "back": "Chi ş in ă u cathedral"
+    },
+    "MDL:1000": {
+      "currency": "MDL",
+      "value": 1000,
+      "pick": "P-18",
+      "page": "https://www.banknote.ws/COLLECTION/countries/EUR/MOL/MOL0018.htm",
+      "front": "Ştefan cel Mare (Stephen the Great)",
+      "back": "Presidential palace, Chi ş in ă u"
+    },
+    "BYN:5": {
+      "currency": "BYN",
+      "value": 5,
+      "pick": "P-37",
+      "page": "https://www.banknote.ws/COLLECTION/countries/EUR/BLR/BLR0037.htm",
+      "front": "Belaja (White) tower (Kamenets city, Brest district)",
+      "back": "Wooden wheel, leather belt fragment, ancient settlement (\"Berest'e\")"
+    },
+    "BYN:10": {
+      "currency": "BYN",
+      "value": 10,
+      "pick": "P-38",
+      "page": "https://www.banknote.ws/COLLECTION/countries/EUR/BLR/BLR0038.htm",
+      "front": "Spaso-Preobrazhenskaja Church (Polotsk city, Vitebsk district)",
+      "back": "Collage dedicated to enlightenment and typography (cross Efrosin'ja Polotska, ornament fragment)"
+    },
+    "BYN:20": {
+      "currency": "BYN",
+      "value": 20,
+      "pick": "P-39",
+      "page": "https://www.banknote.ws/COLLECTION/countries/EUR/BLR/BLR0039.htm",
+      "front": "Rumjantsev and Paskevich palace, Gomel' city",
+      "back": "Collage on the theme of spirituality, bell"
+    },
+    "BYN:50": {
+      "currency": "BYN",
+      "value": 50,
+      "pick": "P-40",
+      "page": "https://www.banknote.ws/COLLECTION/countries/EUR/BLR/BLR0040.htm",
+      "front": "Mir Castle, Mir",
+      "back": "Lyra, musical chords, collage on the theme of art"
+    },
+    "BYN:100": {
+      "currency": "BYN",
+      "value": 100,
+      "pick": "P-41",
+      "page": "https://www.banknote.ws/COLLECTION/countries/EUR/BLR/BLR0041.htm",
+      "front": "Radzivil castle, Nyesvizh (Minsk district)",
+      "back": "Violin, collage on the theme of theater and folk holidays"
+    },
+    "BYN:200": {
+      "currency": "BYN",
+      "value": 200,
+      "pick": "P-42",
+      "page": "https://www.banknote.ws/COLLECTION/countries/EUR/BLR/BLR0042.htm",
+      "front": "Regional Museum of Art, Mogilev",
+      "back": "Collage on the theme of crafts and town-planning"
+    },
+    "BYN:500": {
+      "currency": "BYN",
+      "value": 500,
+      "pick": "P-43",
+      "page": "https://www.banknote.ws/COLLECTION/countries/EUR/BLR/BLR0043.htm",
+      "front": "National library, Minsk",
+      "back": "Inkwell, stylus, fern, bellflower, names of Belarusian writers"
+    },
+    "UAH:20": {
+      "currency": "UAH",
+      "value": 20,
+      "pick": "P-W138",
+      "page": "https://www.banknote.ws/COLLECTION/countries/EUR/UKR/UKRW0138.htm",
+      "front": "Ivan Franko",
+      "back": "Opera and Ballet theatre, Lvov/Lemberg"
+    },
+    "UAH:50": {
+      "currency": "UAH",
+      "value": 50,
+      "pick": "P-W139",
+      "page": "https://www.banknote.ws/COLLECTION/countries/EUR/UKR/UKRW0139.htm",
+      "front": "Mikhailo Hrushevskiy",
+      "back": "Tsentralna Rada (House of the Teacher) building, Kiev"
+    },
+    "UAH:100": {
+      "currency": "UAH",
+      "value": 100,
+      "pick": "P-W140",
+      "page": "https://www.banknote.ws/COLLECTION/countries/EUR/UKR/UKRW0140.htm",
+      "front": "Taras Grigoryevich Shevchenko",
+      "back": "National Taras Shevchenko University, Kiev"
+    },
+    "UAH:200": {
+      "currency": "UAH",
+      "value": 200,
+      "pick": "P-W141",
+      "page": "https://www.banknote.ws/COLLECTION/countries/EUR/UKR/UKRW0141.htm",
+      "front": "Larysa Petrivna Kosatch-Kvitka (al. Lesia Ukrainka)",
+      "back": "Medieval Ljubart fortress, Lutsk"
+    },
+    "UAH:500": {
+      "currency": "UAH",
+      "value": 500,
+      "pick": "P-W142",
+      "page": "https://www.banknote.ws/COLLECTION/countries/EUR/UKR/UKRW0142.htm",
+      "front": "Grigoriy Skovoroda",
+      "back": "Kievo-Mogilyansk Academy"
+    },
+    "UAH:1000": {
+      "currency": "UAH",
+      "value": 1000,
+      "pick": "P-W143",
+      "page": "https://www.banknote.ws/COLLECTION/countries/EUR/UKR/UKRW0143.htm",
+      "front": "Volodymyr Vernadskiy",
+      "back": "National Academy of Sciences of Ukraine, Kiev"
+    },
+    "TWD:100": {
+      "currency": "TWD",
+      "value": 100,
+      "pick": "P-1991",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/TWN/TWN1991.htm",
+      "front": "Dr. Sun Yat-sen",
+      "back": "Chungshan building , Taipeh"
+    },
+    "TWD:200": {
+      "currency": "TWD",
+      "value": 200,
+      "pick": "P-1992",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/TWN/TWN1992.htm",
+      "front": "Chiang Kai-shek",
+      "back": "Presidential palace, Taipeh"
+    },
+    "TWD:500": {
+      "currency": "TWD",
+      "value": 500,
+      "pick": "P-1993",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/TWN/TWN1993.htm",
+      "front": "Baseball team",
+      "back": "Formosan Sika deers, Dabajian mountain"
+    },
+    "TWD:1000": {
+      "currency": "TWD",
+      "value": 1000,
+      "pick": "P-1994",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/TWN/TWN1994.htm",
+      "front": "Children",
+      "back": "Mikado pheasants, Yushan (Jade mountain)"
+    },
+    "TWD:2000": {
+      "currency": "TWD",
+      "value": 2000,
+      "pick": "P-1995",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/TWN/TWN1995.htm",
+      "front": "Satellite dishes, rocket",
+      "back": "Mount Nanhu, salmons"
+    },
+    "BDT:10": {
+      "currency": "BDT",
+      "value": 10,
+      "pick": "P-W76",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/BDE/BDEW0076.htm",
+      "front": "Baitul Mokarram mosque (Dhaka/Dacca), water lily",
+      "back": "Symbol of Youth Unity, man holding flag"
+    },
+    "BDT:20": {
+      "currency": "BDT",
+      "value": 20,
+      "pick": "P-W77",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/BDE/BDEW0077.htm",
+      "front": "Kantaji Temple (Dinajpur), water lily",
+      "back": "Somapura Mahavihara Buddhist monastery, Naogaon"
+    },
+    "BDT:50": {
+      "currency": "BDT",
+      "value": 50,
+      "pick": "P-W78",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/BDE/BDEW0078.htm",
+      "front": "Ahsan Manzil Palace ( Dhaka/Dacca), water lily",
+      "back": "The Struggle (painting by Shilpacharya Zainul Abedin)"
+    },
+    "BDT:100": {
+      "currency": "BDT",
+      "value": 100,
+      "pick": "P-W79",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/BDE/BDEW0079.htm",
+      "front": "\"Shait Gumbad\" (Sixty Dome) mosque (Bagherat), water lily",
+      "back": "Spotted deers, Bengali tiger"
+    },
+    "BDT:500": {
+      "currency": "BDT",
+      "value": 500,
+      "pick": "P-W81",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/BDE/BDEW0081.htm",
+      "front": "Shaheed Minar monument, water lily",
+      "back": "Supreme Court, Dhaka/Dacca"
+    },
+    "BDT:1000": {
+      "currency": "BDT",
+      "value": 1000,
+      "pick": "P-W82",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/BDE/BDEW0082.htm",
+      "front": "National Martyrs' monument (Savar), water lily",
+      "back": "Jatiya Sangsad Bhaban (National Parliament House), Dhaka/Dacca"
+    },
+    "LKR:20": {
+      "currency": "LKR",
+      "value": 20,
+      "pick": "P-123",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/SLK/SLK0123.htm",
+      "front": "Recent and early view of port of Colombo, Sri Lanka Serendib scops owl (Otus thilohoffmanni), baronet butterfly (euthalia nais)",
+      "back": "Ves dancer and Geta Bera drummer, guard stone with a Punkalasa, stylized floral motif (Liya Vela)"
+    },
+    "LKR:50": {
+      "currency": "LKR",
+      "value": 50,
+      "pick": "P-124",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/SLK/SLK0124.htm",
+      "front": "Newly constructed bridge at Manampitiya alongside the old bridge, Sri Lanka dull blue flycatcher (Eumyias sordida), blue oakleaf butterfly (Kallima horsfieldi)",
+      "back": "Patuna dancer and Yak Bera drummer, guard stone with a Punkalasa, stylized floral motif (Liya Vela)"
+    },
+    "LKR:100": {
+      "currency": "LKR",
+      "value": 100,
+      "pick": "P-125",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/SLK/SLK0125.htm",
+      "front": "Norochcholai Coal Power Plant Project and Laxapana waterfall, Sri Lanka orange billed babbler (Turdoides rufescens), autumn leaf butterfly (Doleschallia bisaltide)",
+      "back": "Bharatanatyam dancer and Mridangam drummer, Naga guard stone, stylized floral motif (Dvithva Liya Vela)"
+    },
+    "LKR:500": {
+      "currency": "LKR",
+      "value": 500,
+      "pick": "P-126",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/SLK/SLK0126.htm",
+      "front": "World Trade Centre and Bank of Ceylon Headquarters in Colombo, ancient Buddhist temple Lankathilaka Viharaya at Kandy, Sri Lanka emerald collared parakeet (Psittacula calthropae), Ceylon indigo royal butterfly (Tajuria arida)",
+      "back": "Thelme dancer and Yak Bera drummer, Padmanidhi guard stone, stylized floral motif (Dvithva Liya Vela)"
+    },
+    "LKR:1000": {
+      "currency": "LKR",
+      "value": 1000,
+      "pick": "P-127",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/SLK/SLK0127.htm",
+      "front": "Newly constructed Ramboda Tunnel with the rock wall at the same location before construction, Sri Lanka hanging parrot (Loriculus beryllinus), white four ring butterfly (Ypthima ceylonica)",
+      "back": "Malpadaya dancer and Dawul Bera drummer, guard stone with guardian deities, stylized floral motif (Dvithva Liya Vela)"
+    },
+    "LKR:5000": {
+      "currency": "LKR",
+      "value": 5000,
+      "pick": "P-128",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/SLK/SLK0128.htm",
+      "front": "Weheragala Dam, Canyon Dam, Sri Lanka yellow eared bulbul (Pycnonotus penicillatus), lemon migrant butterfly (Catopsilia pomona)",
+      "back": "Nagaraksha dancer and Guruluraksha dancer, Rathnaprasadaya guard stone, stylized floral motif (Kalpavrksha)"
+    },
+    "NPR:5": {
+      "currency": "NPR",
+      "value": 5,
+      "pick": "P-76",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/NEP/NEP0076.htm"
+    },
+    "NPR:10": {
+      "currency": "NPR",
+      "value": 10,
+      "pick": "P-77",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/NEP/NEP0077.htm",
+      "front": "Mount Everest, Changunarayan (a form of appearance of Vishnu) on Garuda",
+      "back": "Antelope"
+    },
+    "NPR:20": {
+      "currency": "NPR",
+      "value": 20,
+      "pick": "P-78",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/NEP/NEP0078.htm",
+      "front": "Mount Everest, Krishna temple",
+      "back": "Sambar deers"
+    },
+    "NPR:50": {
+      "currency": "NPR",
+      "value": 50,
+      "pick": "P-79",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/NEP/NEP0079.htm",
+      "front": "Mount Everest, Rama-Janaki temple",
+      "back": "Snow leopard"
+    },
+    "NPR:100": {
+      "currency": "NPR",
+      "value": 100,
+      "pick": "P-80",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/NEP/NEP0080.htm",
+      "front": "Mount Everest, Mayadevi inside silver metallic oval, map of Nepal, text \"Lumbini - Birthplace of Lord Buddha\", Ashoka pillar, wood carvings from temple of Taleju (Kathmandu)",
+      "back": "Rhinoceros"
+    },
+    "NPR:500": {
+      "currency": "NPR",
+      "value": 500,
+      "pick": "P-81",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/NEP/NEP0081.htm",
+      "front": "Mount Everest, Thyangboche monastery",
+      "back": "Tiger"
+    },
+    "NPR:1000": {
+      "currency": "NPR",
+      "value": 1000,
+      "pick": "P-W82",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/NEP/NEPW2019-1000.htm",
+      "front": "Mount Everest, Swayambhunath stupa & Harati temple",
+      "back": "Elephants"
+    },
+    "BDT:200": {
+      "currency": "BDT",
+      "value": 200,
+      "pick": "P-W80",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/BDE/BDEW2020-0200.htm",
+      "front": "Sheikh Mujibur Rahman",
+      "back": "Sheikh Mujibur Rahman, boats"
+    },
+    "PKR:10": {
+      "currency": "PKR",
+      "value": 10,
+      "pick": "P-45",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/PAK/PAK0045.htm",
+      "front": "Mohammed Ali Jinnah",
+      "back": "Khyber Pass"
+    },
+    "PKR:20": {
+      "currency": "PKR",
+      "value": 20,
+      "pick": "P-46",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/PAK/PAK0046.htm",
+      "front": "Mohammed Ali Jinnah",
+      "back": "Mo h enjo -D aro , Larkana"
+    },
+    "PKR:50": {
+      "currency": "PKR",
+      "value": 50,
+      "pick": "P-47",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/PAK/PAK0047.htm",
+      "front": "Mohammed Ali Jinnah",
+      "back": "K2 Mountain (Karakorum)"
+    },
+    "PKR:100": {
+      "currency": "PKR",
+      "value": 100,
+      "pick": "P-48",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/PAK/PAK0048.htm",
+      "front": "Mohammed Ali Jinnah",
+      "back": "Quaid-e-Azam residency, Ziarat-Quetta (incorrect); Quaid-i-Azam residency, Ziarat-Balochistan (correct)"
+    },
+    "PKR:500": {
+      "currency": "PKR",
+      "value": 500,
+      "pick": "P-49",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/PAK/PAK0049.htm",
+      "front": "Mohammed Ali Jinnah",
+      "back": "Badshahi mosque, Lahore"
+    },
+    "PKR:1000": {
+      "currency": "PKR",
+      "value": 1000,
+      "pick": "P-50",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/PAK/PAK0050.htm",
+      "front": "Mohammed Ali Jinnah",
+      "back": "Islamic college, Peshawar"
+    },
+    "PKR:5000": {
+      "currency": "PKR",
+      "value": 5000,
+      "pick": "P-51",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/PAK/PAK0051.htm",
+      "front": "Mohammed Ali Jinnah",
+      "back": "Faisal mosque, Islamabad"
+    },
+    "MNT:50": {
+      "currency": "MNT",
+      "value": 50,
+      "pick": "P-W72",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/MON/MONW0072.htm",
+      "front": "Sukhe Bataar",
+      "back": "Horses"
+    },
+    "MNT:100": {
+      "currency": "MNT",
+      "value": 100,
+      "pick": "P-W73",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/MON/MONW0073.htm",
+      "front": "Sukhe Bataar",
+      "back": "Horses"
+    },
+    "MNT:500": {
+      "currency": "MNT",
+      "value": 500,
+      "pick": "P-W74",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/MON/MONW0074.htm",
+      "front": "Chinggis Khaan",
+      "back": "Ox drawn yurte"
+    },
+    "MNT:1000": {
+      "currency": "MNT",
+      "value": 1000,
+      "pick": "P-W75",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/MON/MONW0075.htm",
+      "front": "Chinggis Khaan",
+      "back": "Ox drawn yurte"
+    },
+    "MNT:5000": {
+      "currency": "MNT",
+      "value": 5000,
+      "pick": "P-W76",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/MON/MONW0076.htm",
+      "front": "Chinggis Khaan",
+      "back": "\"Drinking Fountain\" at Chinggis Khan's court"
+    },
+    "MNT:10000": {
+      "currency": "MNT",
+      "value": 10000,
+      "pick": "P-W77",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/MON/MONW0077.htm",
+      "front": "Chinggis Khaan",
+      "back": "\"Drinking Fountain\" at Chinggis Khaan's court"
+    },
+    "MNT:20000": {
+      "currency": "MNT",
+      "value": 20000,
+      "pick": "P-W78",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/MON/MONW0078.htm",
+      "front": "Chinggis Khaan",
+      "back": "Flags of the Golden Horde"
+    },
+    "KHR:100": {
+      "currency": "KHR",
+      "value": 100,
+      "pick": "P-65",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/CMB/CMB0065.htm",
+      "front": "Naga (mythical snake) head , Buddha, King Father Norodom Sihanouk as a young monk",
+      "back": "Khmer statue, Wat Preah Keo (Silver palace), buddha"
+    },
+    "KHR:200": {
+      "currency": "KHR",
+      "value": 200,
+      "pick": "P-W65A",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/CMB/CMBW0065A2.htm",
+      "front": "Naga (mythical snake) head , king Norodom Sihamoni as youth",
+      "back": "Preah Thineang Chan Chhaya (Moonlight Pavilion) of Royal Palace in Phnom Penh; Paul Ducuings statue of King Sisowath (National Museum of Cambodia)"
+    },
+    "KHR:500": {
+      "currency": "KHR",
+      "value": 500,
+      "pick": "P-66",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/CMB/CMB0066.htm",
+      "front": "Naga (mythical snake) head , arms, king Norodom Sihamoni",
+      "back": "Nak Loeung bridge, Kizuna bridge over Mekong River (near Kampong Cham), monument, frieze"
+    },
+    "KHR:1000": {
+      "currency": "KHR",
+      "value": 1000,
+      "pick": "P-67",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/CMB/CMB0067.htm",
+      "front": "Naga (mythical snake) head , arms, king Norodom Sihanouk",
+      "back": "Royal palace throne room, \"Kinnari\" (half-human, half-bird)"
+    },
+    "KHR:2000": {
+      "currency": "KHR",
+      "value": 2000,
+      "pick": "P-W67A",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/CMB/CMBW0067A2.htm",
+      "front": "Naga (mythical snake) head , king Norodom Sihamoni as adult",
+      "back": "Ancient stone artifact, archaeological ruins, chinze"
+    },
+    "KHR:5000": {
+      "currency": "KHR",
+      "value": 5000,
+      "pick": "P-68",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/CMB/CMB0068.htm",
+      "front": "Naga (mythical snake) head , vessel, king Norodom Sihanouk",
+      "back": "Naga (mythical snake) head, Kampong Kdei bridge (Siemreap Province), freezes, chariot"
+    },
+    "KHR:10000": {
+      "currency": "KHR",
+      "value": 10000,
+      "pick": "P-69",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/CMB/CMB0069.htm",
+      "front": "Naga (mythical snake) head , arms, king Norodom Sihamoni",
+      "back": "Neak Pean (Entwined Serpents) Temple, Angkor; statue of the horse Balaha, who helped sailors escape from an island held by an ogress"
+    },
+    "KHR:20000": {
+      "currency": "KHR",
+      "value": 20000,
+      "pick": "P-70",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/CMB/CMB0070.htm",
+      "front": "Naga (mythical snake) head , arms, king Norodom Sihamoni",
+      "back": "Banteay Srei temple, Angkor"
+    },
+    "LAK:1000": {
+      "currency": "LAK",
+      "value": 1000,
+      "pick": "P-32",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/LAO/LAO0032.htm",
+      "front": "Women, Pha That Luang pagoda (Vientiane)",
+      "back": "Cattle"
+    },
+    "LAK:2000": {
+      "currency": "LAK",
+      "value": 2000,
+      "pick": "P-33",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/LAO/LAO0033.htm",
+      "front": "Kaysone Phomvihane, Pha That Luang pagoda (Vientiane)",
+      "back": "Hydroelectric complex"
+    },
+    "LAK:5000": {
+      "currency": "LAK",
+      "value": 5000,
+      "pick": "P-34",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/LAO/LAO0034.htm",
+      "front": "Kaysone Phomvihane, Pha That Luang pagoda (Vientiane)",
+      "back": "Cement factory"
+    },
+    "LAK:10000": {
+      "currency": "LAK",
+      "value": 10000,
+      "pick": "P-39",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/LAO/LAO0039.htm",
+      "front": "Women, Pha That Luang pagoda (Vientiane)",
+      "back": "Cattle"
+    },
+    "LAK:20000": {
+      "currency": "LAK",
+      "value": 20000,
+      "pick": "P-40",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/LAO/LAO0040.htm",
+      "front": "King Setthathilat, Frangipani (plumeria) blossoms; Pha That Luang pagoda (Vientiane), Naga dragons",
+      "back": "Ho Phra Keo temple, Vientiane"
+    },
+    "LAK:50000": {
+      "currency": "LAK",
+      "value": 50000,
+      "pick": "P-41",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/LAO/LAO0041.htm",
+      "front": "Kaysone Phomvihane, Wat Xieng Thong (Golden City temple), Luang Prabang",
+      "back": "Hydroelectric complex"
+    },
+    "LAK:100000": {
+      "currency": "LAK",
+      "value": 100000,
+      "pick": "P-42",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/LAO/LAO0042.htm",
+      "front": "Kaysone Phomvihane, Pha That Luang pagoda (Vientiane)",
+      "back": "Building with statue"
+    },
+    "BND:1": {
+      "currency": "BND",
+      "value": 1,
+      "pick": "P-41",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/BRU/BRU0001.htm",
+      "front": "Sultan Omar Ali Saifuddin III",
+      "back": "Sultan Omar Ali Saifuddin mosque, Bandar Seri Begawan"
+    },
+    "BND:5": {
+      "currency": "BND",
+      "value": 5,
+      "pick": "P-42",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/BRU/BRU0001.htm",
+      "front": "Sultan Omar Ali Saifuddin III",
+      "back": "Sultan Omar Ali Saifuddin mosque, Bandar Seri Begawan"
+    },
+    "BND:10": {
+      "currency": "BND",
+      "value": 10,
+      "pick": "P-43",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/BRU/BRU0001.htm",
+      "front": "Sultan Omar Ali Saifuddin III",
+      "back": "Sultan Omar Ali Saifuddin mosque, Bandar Seri Begawan"
+    },
+    "BND:20": {
+      "currency": "BND",
+      "value": 20,
+      "pick": "P-36",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/BRU/BRU0036.htm",
+      "front": "Sultan Hassan al-Bolkiah I, bunga kunyit (Curcuma longa) flower",
+      "back": "Lapau (Royal Ceremonial Hall) building, fountain"
+    },
+    "BND:50": {
+      "currency": "BND",
+      "value": 50,
+      "pick": "P-39",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/BRU/BRU0039.htm",
+      "front": "Coronation scene, Sultan Hassan al-Bolkiah I",
+      "back": "Sultan Hassan al-Bolkiah I, people"
+    },
+    "BND:100": {
+      "currency": "BND",
+      "value": 100,
+      "pick": "P-45",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/BRU/BRU0001.htm",
+      "front": "Sultan Omar Ali Saifuddin III",
+      "back": "Sultan Omar Ali Saifuddin mosque, Bandar Seri Begawan"
+    },
+    "BND:500": {
+      "currency": "BND",
+      "value": 500,
+      "pick": "P-46",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/BRU/BRU0001.htm",
+      "front": "Sultan Omar Ali Saifuddin III",
+      "back": "Sultan Omar Ali Saifuddin mosque, Bandar Seri Begawan"
+    },
+    "BND:1000": {
+      "currency": "BND",
+      "value": 1000,
+      "pick": "P-35",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/BRU/BRU0035.htm",
+      "front": "Sultan Hassan al-Bolkiah I; bunga simpur (Dillenia suffruticosa) flower",
+      "back": "Sultan Omar Ali Saifuddin mosque; Sultan Hassan al-Bolkiah Foundation"
+    },
+    "MMK:50": {
+      "currency": "MMK",
+      "value": 50,
+      "pick": "P-73",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/MYA/MYA0073.htm",
+      "front": "Chinze",
+      "back": "Varnishing artist (lacquerware industry)"
+    },
+    "MMK:100": {
+      "currency": "MMK",
+      "value": 100,
+      "pick": "P-74",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/MYA/MYA0074.htm",
+      "front": "Chinze",
+      "back": "Working on traditional decorative stucco"
+    },
+    "MMK:200": {
+      "currency": "MMK",
+      "value": 200,
+      "pick": "P-78",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/MYA/MYA0078.htm",
+      "front": "Chinze",
+      "back": "Elephant dragging a log"
+    },
+    "MMK:500": {
+      "currency": "MMK",
+      "value": 500,
+      "pick": "P-W85",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/MYA/MYAW2020-00500.htm",
+      "front": "General Aung San",
+      "back": "Governmental buildings"
+    },
+    "MMK:1000": {
+      "currency": "MMK",
+      "value": 1000,
+      "pick": "P-W86",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/MYA/MYAW2019-01000.htm",
+      "front": "General Aung San",
+      "back": "Hluttaw (National Parliament) complex, Naypyidaw"
+    },
+    "MMK:5000": {
+      "currency": "MMK",
+      "value": 5000,
+      "pick": "P-83",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/MYA/MYA0083.htm",
+      "front": "Elephant",
+      "back": "Hluttaw (National Parliament) complex, Naypyidaw"
+    },
+    "MMK:10000": {
+      "currency": "MMK",
+      "value": 10000,
+      "pick": "P-84",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/MYA/MYA0084.htm",
+      "front": "Arms",
+      "back": "Royal palace, Mandalay"
+    },
+    "SAR:5": {
+      "currency": "SAR",
+      "value": 5,
+      "pick": "P-W46",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/SAR/SARW0046.htm",
+      "front": "Refinery, King Salman ibn Abdulaziz al-Saud",
+      "back": "Flowers"
+    },
+    "SAR:10": {
+      "currency": "SAR",
+      "value": 10,
+      "pick": "P-W47",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/SAR/SARW0047.htm",
+      "front": "Fortress, King Salman ibn Abdulaziz al-Saud",
+      "back": "Skyline"
+    },
+    "SAR:50": {
+      "currency": "SAR",
+      "value": 50,
+      "pick": "P-W48",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/SAR/SARW0048.htm",
+      "front": "Dome of the Rock (Jerusalem), King Salman ibn Abdulaziz al-Saud",
+      "back": "Al-Aqsa Mosque and Dome of the Rock, Jerusalem"
+    },
+    "SAR:100": {
+      "currency": "SAR",
+      "value": 100,
+      "pick": "P-W49",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/SAR/SARW0049.htm",
+      "front": "Prophet's mosque (Medina), King Salman ibn Abdulaziz al-Saud",
+      "back": "Prophet's mosque (Medina)"
+    },
+    "SAR:500": {
+      "currency": "SAR",
+      "value": 500,
+      "pick": "P-W50",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/SAR/SARW0050.htm",
+      "front": "Kaaba (Mecca), King Abdulaziz Ibn Saud",
+      "back": "Mecca"
+    },
+    "AED:5": {
+      "currency": "AED",
+      "value": 5,
+      "pick": "P-W36",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/UAE/UAEW0036.htm",
+      "front": "Ajman Fort",
+      "back": "Dhayah Fort (Ras al Khaimah)"
+    },
+    "AED:10": {
+      "currency": "AED",
+      "value": 10,
+      "pick": "P-W37",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/UAE/UAEW0037.htm",
+      "front": "Sheikh Zayed Grand Mosque, Abu Dhabi",
+      "back": "Khor Fakkan amphitheatre"
+    },
+    "AED:20": {
+      "currency": "AED",
+      "value": 20,
+      "pick": "P-28",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/UAE/UAE0028.htm",
+      "front": "Dubai Creek Golf & Yacht Club",
+      "back": "Dhow"
+    },
+    "AED:50": {
+      "currency": "AED",
+      "value": 50,
+      "pick": "P-W39",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/UAE/UAEW0039.htm",
+      "front": "Seven founding fathers with flag after signing the union document",
+      "back": "Sheikh Zayed bin Sultan Al Nahyan signing the union document; Etihad (Union) Museum, Dubai"
+    },
+    "AED:100": {
+      "currency": "AED",
+      "value": 100,
+      "pick": "P-W40",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/UAE/UAEW0040.htm",
+      "front": "Umm Al Quwain National Fort",
+      "back": "Etihad Rail Project high speed train, Port of Fujairah"
+    },
+    "AED:200": {
+      "currency": "AED",
+      "value": 200,
+      "pick": "P-31",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/UAE/UAE0031.htm",
+      "front": "Zayed Sports City, Sharia court building",
+      "back": "United Emirates Central Bank building"
+    },
+    "AED:500": {
+      "currency": "AED",
+      "value": 500,
+      "pick": "P-W42",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/UAE/UAEW0042.htm",
+      "front": "Sheikh Zayed; Terra Sustainability Pavilion (Expo City, Dubai)",
+      "back": "Museum of the Future, Emirates Towers, Burj Khalifa (Khalifa Tower), Dubai"
+    },
+    "AED:1000": {
+      "currency": "AED",
+      "value": 1000,
+      "pick": "P-W43",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/UAE/UAEW0043.htm",
+      "front": "Sheikh Zayed; \"Hope\" probe (Misbar al-Amal; orbiter satellite of Emirates' Mars mission); Tanegashima Space Center (Tanegashima Island, Japan)",
+      "back": "Barakah nuclear power plant, Al-Dhafra Region (Abu Dhabi)"
+    },
+    "QAR:1": {
+      "currency": "QAR",
+      "value": 1,
+      "pick": "P-W32",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/QAT/QATW2020-001.htm",
+      "front": "Arms , flag, door",
+      "back": "Dhow, pearl"
+    },
+    "QAR:5": {
+      "currency": "QAR",
+      "value": 5,
+      "pick": "P-W33",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/QAT/QATW2020-005.htm",
+      "front": "Arms , flag, door",
+      "back": "Horses, camel, gazelles"
+    },
+    "QAR:10": {
+      "currency": "QAR",
+      "value": 10,
+      "pick": "P-W34",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/QAT/QATW2020-010.htm",
+      "front": "Arms , flag, door",
+      "back": "Modern buildings, sport stadium, tower"
+    },
+    "QAR:50": {
+      "currency": "QAR",
+      "value": 50,
+      "pick": "P-W35",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/QAT/QATW2020-050.htm",
+      "front": "Arms , flag, door",
+      "back": "Modern buildings"
+    },
+    "QAR:100": {
+      "currency": "QAR",
+      "value": 100,
+      "pick": "P-W36",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/QAT/QATW2020-100.htm",
+      "front": "Arms , flag, door",
+      "back": "Mosque"
+    },
+    "QAR:200": {
+      "currency": "QAR",
+      "value": 200,
+      "pick": "P-W37",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/QAT/QATW2020-200.htm",
+      "front": "Arms , flag, door",
+      "back": "Airport"
+    },
+    "QAR:500": {
+      "currency": "QAR",
+      "value": 500,
+      "pick": "P-W38",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/QAT/QATW2020-500.htm",
+      "front": "Arms , flag, door",
+      "back": "Tanker terminal, LPG tanker"
+    },
+    "KWD:0": {
+      "currency": "KWD",
+      "value": 0,
+      "pick": "P-29",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/KUW/KUW0029.htm",
+      "front": "Arms, Liberation tower, dhow",
+      "back": "Door"
+    },
+    "KWD:1": {
+      "currency": "KWD",
+      "value": 1,
+      "pick": "P-31",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/KUW/KUW0031.htm",
+      "front": "Arms, mosque, dhow",
+      "back": "Ancient columns"
+    },
+    "KWD:5": {
+      "currency": "KWD",
+      "value": 5,
+      "pick": "P-32",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/KUW/KUW0032.htm",
+      "front": "Central Bank of Kuwait building, arms, dhow",
+      "back": "Product tanker, refinery"
+    },
+    "KWD:10": {
+      "currency": "KWD",
+      "value": 10,
+      "pick": "P-33",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/KUW/KUW0033.htm",
+      "front": "Arms, National Assembly building, dhow",
+      "back": "Camel, falcon"
+    },
+    "KWD:20": {
+      "currency": "KWD",
+      "value": 20,
+      "pick": "P-34",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/KUW/KUW0034.htm",
+      "front": "Seif palace, arms, dhow",
+      "back": "Pearl diver, oyster, dhow"
+    },
+    "BHD:0": {
+      "currency": "BHD",
+      "value": 0,
+      "pick": "P-30",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/BHR/BHR0030.htm",
+      "front": "30(2)",
+      "back": "signature"
+    },
+    "BHD:1": {
+      "currency": "BHD",
+      "value": 1,
+      "pick": "P-31",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/BHR/BHR0031.htm",
+      "front": "31(2)",
+      "back": "signature"
+    },
+    "BHD:5": {
+      "currency": "BHD",
+      "value": 5,
+      "pick": "P-32",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/BHR/BHR0032.htm",
+      "front": "32b(1)",
+      "back": "hologram type:; ; signature"
+    },
+    "BHD:10": {
+      "currency": "BHD",
+      "value": 10,
+      "pick": "P-33",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/BHR/BHR0033.htm",
+      "front": "King Sheikh Hamad bin Isa al-Khalifa",
+      "back": "Sheikh Isa bin Salman al-Khalifa bridge"
+    },
+    "BHD:20": {
+      "currency": "BHD",
+      "value": 20,
+      "pick": "P-34",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/BHR/BHR0034.htm",
+      "front": "King Sheikh Hamad bin Isa al-Khalifa",
+      "back": "Ahmed al-Fateh Islamic Center"
+    },
+    "OMR:0": {
+      "currency": "OMR",
+      "value": 0,
+      "pick": "P-W49",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/OMA/OMAW2020-100b.htm",
+      "front": "Green terraces of Jabal al-Akhdar , Omani arms",
+      "back": "Coconut trees, Falaj"
+    },
+    "OMR:1": {
+      "currency": "OMR",
+      "value": 1,
+      "pick": "P-W51",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/OMA/OMAW2020-01.htm",
+      "front": "Oman Across Ages Museum, Nizwa; Omani arms",
+      "back": "Khasab Castle (Musandan), Wadi Ain cemetery (Ibri), ; Omani khanjar (dagger) and hatchet"
+    },
+    "OMR:5": {
+      "currency": "OMR",
+      "value": 5,
+      "pick": "P-W52",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/OMA/OMAW2020-05.htm",
+      "front": "Sultan Qaboos University, Muscat; Sultan Haitham ibn Tariq ibn Taymur as-Sa'id",
+      "back": "Royal Opera house, Muscat"
+    },
+    "OMR:10": {
+      "currency": "OMR",
+      "value": 10,
+      "pick": "P-W53",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/OMA/OMAW2020-10.htm",
+      "front": "Sultan Haitham ibn Tariq ibn Taymur as-Sa'id; Sultan Qaboos Grand Mosque",
+      "back": "Al Baleed archaeological park ( Salalah ); niche (mihrab) of Uweyna mosque ( Wadi Bani Khalid )"
+    },
+    "OMR:20": {
+      "currency": "OMR",
+      "value": 20,
+      "pick": "P-W54",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/OMA/OMAW2020-20.htm",
+      "front": "Sultan Haitham ibn Tariq ibn Taymur as-Sa'id; Muscat International airport",
+      "back": "Batinah Expressway, Sohar Industrial port, Salalah airport"
+    },
+    "OMR:50": {
+      "currency": "OMR",
+      "value": 50,
+      "pick": "P-W55",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/OMA/OMAW2020-50.htm",
+      "front": "Sultan Qaboos bin Sa'id, arms, Central Bank of Oman building",
+      "back": "Omani Supreme Court building, Al-Alam Palace (Ministry of Financy), Parliament building"
+    },
+    "JOD:1": {
+      "currency": "JOD",
+      "value": 1,
+      "pick": "P-W39",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/JOR/JORW0039.htm",
+      "front": "Sherif Hussein Ibn Ali, mountain, plants",
+      "back": "Rosefinch of Petra and Rum"
+    },
+    "JOD:5": {
+      "currency": "JOD",
+      "value": 5,
+      "pick": "P-W40",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/JOR/JORW0040.htm",
+      "front": "King Abdullah I Ibn Hussain; Khazne al-Firaun (Treasury of the Pharao), Petra",
+      "back": "Central Tholos (small round temple) of Khazne al-Firaun (Treasury of the Pharao), Petra"
+    },
+    "JOD:10": {
+      "currency": "JOD",
+      "value": 10,
+      "pick": "P-W41",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/JOR/JORW0041.htm",
+      "front": "King Talal Ibn Abdullah, Qusayr 'Amra vaults",
+      "back": "Roman amphitheater, Amman"
+    },
+    "JOD:20": {
+      "currency": "JOD",
+      "value": 20,
+      "pick": "P-W42",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/JOR/JORW0042.htm",
+      "front": "King Hussein II; King Hussein mosque, Amman",
+      "back": "Wadi Mujib"
+    },
+    "JOD:50": {
+      "currency": "JOD",
+      "value": 50,
+      "pick": "P-W43",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/JOR/JORW0043.htm",
+      "front": "King Abdullah II bin Al Hussein; Temple Mount compound, Jerusalem (al-Quds)",
+      "back": "Wadi Rum"
+    },
+    "KZT:500": {
+      "currency": "KZT",
+      "value": 500,
+      "pick": "P-W51",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/KAZ/KAZW0051.htm",
+      "front": "\"Tree of Life\" with bird (Issyk Kurgan burial mound, 3rd or 4th century b. Chr.) ; Head of Transcaspian urial (Ovis vignei arkal), DNA spiral, arms",
+      "back": "Snow-covered mountains, Transcaspian urial, stylized ornamental shield"
+    },
+    "KZT:2000": {
+      "currency": "KZT",
+      "value": 2000,
+      "pick": "P-W53",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/KAZ/KAZW0053.htm",
+      "front": "\"Tree of Life\" with bird (Issyk Kurgan burial mound, 3rd or 4th century b. Chr.) ; Head of antelope, DNA spiral, arms",
+      "back": "Hills and lake; Saiga antelopes (Saiga tatarica), stylized ornamental shield"
+    },
+    "KZT:5000": {
+      "currency": "KZT",
+      "value": 5000,
+      "pick": "P-W54",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/KAZ/KAZW0054.htm",
+      "front": "\"Tree of Life\" with bird (Issyk Kurgan burial mound, 3rd or 4th century b. Chr.) ; Golden eagle detail (Taldy II Kurgan burial mound, 6th or 7th century b. Chr.), DNA spiral, arms",
+      "back": "Charin Canyon; Golden eagle, stylized ornamental shield; golden eagle artifact (Berel Mounds, Valley of the Kings)"
+    },
+    "KZT:10000": {
+      "currency": "KZT",
+      "value": 10000,
+      "pick": "P-W55",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/KAZ/KAZW0055.htm",
+      "front": "\"Tree of Life\" with bird (Issyk Kurgan burial mound, 3rd or 4th century b. Chr.) ; Snow leopard ornament, DNA spiral, arms",
+      "back": "Snow-covered mountains, snow leopard (Panthera uncia), stylized ornamental shield"
+    },
+    "KZT:20000": {
+      "currency": "KZT",
+      "value": 20000,
+      "pick": "P-W49",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/KAZ/KAZW0049.htm",
+      "front": "\"Kazakh Eli\" monument in Nur-Sultan /Astana (representing \"Independence of Kazakhstan\" and \"Continuation of Generations\"); Arch of Triumph \"M Ə NGILIK EL \"Eternal Nation\" (Nur-Sultan/Astana)",
+      "back": "Outline of Kazakhstan, Residence Ak Orda (Palace of the President), Nur- Sultan/Astana"
+    },
+    "KGS:20": {
+      "currency": "KGS",
+      "value": 20,
+      "pick": "P-W34",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/KYR/KYRW0034.htm",
+      "front": "Togolok Moldo",
+      "back": "Tash-Rabat"
+    },
+    "KGS:50": {
+      "currency": "KGS",
+      "value": 50,
+      "pick": "P-W35",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/KYR/KYRW0035.htm",
+      "front": "Czarina Kurmanzhan Datka",
+      "back": "Mausoleum and minaret in Uzgen"
+    },
+    "KGS:100": {
+      "currency": "KGS",
+      "value": 100,
+      "pick": "P-W36",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/KYR/KYRW0036.htm",
+      "front": "Toktogul Satylganov",
+      "back": "Toktogul hydroelectric power station"
+    },
+    "KGS:200": {
+      "currency": "KGS",
+      "value": 200,
+      "pick": "P-W37",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/KYR/KYRW0037.htm",
+      "front": "Alykul Osmonov, mountain",
+      "back": "Mountains, Lake Issyk-Kul"
+    },
+    "KGS:500": {
+      "currency": "KGS",
+      "value": 500,
+      "pick": "P-W38",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/KYR/KYRW0038.htm",
+      "front": "Sayakbai Karalayev, mountain",
+      "back": "Manas mausoleum"
+    },
+    "KGS:1000": {
+      "currency": "KGS",
+      "value": 1000,
+      "pick": "P-W39",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/KYR/KYRW0039.htm",
+      "front": "Zhusup Balasagyn, mountain",
+      "back": "Takhti Suleyman, mountains"
+    },
+    "KGS:5000": {
+      "currency": "KGS",
+      "value": 5000,
+      "pick": "P-W40",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/KYR/KYRW0040.htm",
+      "front": "Syimonkyl Tchokmorov, mountain",
+      "back": "Ala-Too square (Bishkek), mountain"
+    },
+    "TJS:10": {
+      "currency": "TJS",
+      "value": 10,
+      "pick": "P-24",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/TAJ/TAJ0024.htm",
+      "front": "Mir Saiid Alii Hamadoni",
+      "back": "Mausoleum of Mir Said Ali Hamadoni in Kulob"
+    },
+    "TJS:20": {
+      "currency": "TJS",
+      "value": 20,
+      "pick": "P-25",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/TAJ/TAJ0025.htm",
+      "front": "Abuali ibn Sino",
+      "back": "Hissor fortress"
+    },
+    "TJS:50": {
+      "currency": "TJS",
+      "value": 50,
+      "pick": "P-26",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/TAJ/TAJ0026.htm",
+      "front": "Bobojon Gafurov",
+      "back": "Choikhanai Sibne tea house, Dushanbe"
+    },
+    "TJS:100": {
+      "currency": "TJS",
+      "value": 100,
+      "pick": "P-W28",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/TAJ/TAJW2021-100.htm",
+      "front": "Ismoili Somoni",
+      "back": "Navruz palace, Dushanbe"
+    },
+    "TJS:200": {
+      "currency": "TJS",
+      "value": 200,
+      "pick": "P-21",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/TAJ/TAJ0021.htm",
+      "front": "Nusratullo Makhsum, building of Central Executive Committee of the former Council of National Commissioners of Tajik Autonomous Soviet Socialist Republic",
+      "back": "National Library, Dushanbe"
+    },
+    "TJS:500": {
+      "currency": "TJS",
+      "value": 500,
+      "pick": "P-22",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/TAJ/TAJ0022.htm",
+      "front": "Abuabdullokhi Rudaki",
+      "back": "Palace of Nation (Dushanbe)"
+    },
+    "TMT:1": {
+      "currency": "TMT",
+      "value": 1,
+      "pick": "P-29",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/TKM/TKM0029.htm",
+      "front": "Togrul Beg Türkmen (aka Tugrul Bey)",
+      "back": "Beyik Saparmyrat Türkmenbaşynyň Milli Medeniyet Merkezi ; (National Cultural Centre of Great Saparmurat Turkmenbashi), Aşğabat"
+    },
+    "TMT:5": {
+      "currency": "TMT",
+      "value": 5,
+      "pick": "P-30",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/TKM/TKM0030.htm",
+      "front": "Soltan Sanjar Türkmen",
+      "back": "Garaşsyzlyk Binasy (Independence monument), Bitaraplyk Binasy (Neutrality monument), Aşğabat"
+    },
+    "TMT:10": {
+      "currency": "TMT",
+      "value": 10,
+      "pick": "P-31",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/TKM/TKM0031.htm",
+      "front": "Magdymguly Pyragy",
+      "back": "Central Bank building, Aşğabat"
+    },
+    "TMT:20": {
+      "currency": "TMT",
+      "value": 20,
+      "pick": "P-32",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/TKM/TKM0032.htm",
+      "front": "Görogly Beg Türkmen (aka Köroğlu)",
+      "back": "Ruhyýet Köşgi (Palace of Spirituality), Aşğabat"
+    },
+    "TMT:50": {
+      "currency": "TMT",
+      "value": 50,
+      "pick": "P-33",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/TKM/TKM0033.htm",
+      "front": "Gorgut Ata Türkmen (aka Dede Korkut)",
+      "back": "Türkmenistanyň Mejlisi (National Assembly of Turkmenistan), Aşğabat"
+    },
+    "TMT:100": {
+      "currency": "TMT",
+      "value": 100,
+      "pick": "P-34",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/TKM/TKM0034.htm",
+      "front": "Oguz Han Türkmen",
+      "back": "\"Oguzhan\" Köşkler Toplumy (Oguz Han palace), Aşğabat"
+    },
+    "UZS:1000": {
+      "currency": "UZS",
+      "value": 1000,
+      "pick": "P-82",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/UZB/UZB0082.htm",
+      "front": "Arms",
+      "back": "Amir Temur museum, Tashkent"
+    },
+    "UZS:5000": {
+      "currency": "UZS",
+      "value": 5000,
+      "pick": "P-W88",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/UZB/UZBW2021-005000.htm",
+      "front": "Sherdor Madrasa (Samarkand) , map of Uzbekistan, arms",
+      "back": "Antique Afrosiyob/Afrasiab archeological site, pottery"
+    },
+    "UZS:10000": {
+      "currency": "UZS",
+      "value": 10000,
+      "pick": "P-W89",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/UZB/UZBW2021-010000.htm",
+      "front": "Ko'Kaldosh Madrasa (Tashkent) , map of Uzbekistan, arms",
+      "back": "Shoshtepa (Tashkent) archeological site, pottery"
+    },
+    "UZS:20000": {
+      "currency": "UZS",
+      "value": 20000,
+      "pick": "P-W90",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/UZB/UZBW2021-020000.htm",
+      "front": "Ancient structure of Qo'yqirilgan qal'a , map of Uzbekistan, arms",
+      "back": "Jonbos archeological site, jugs"
+    },
+    "UZS:50000": {
+      "currency": "UZS",
+      "value": 50000,
+      "pick": "P-W91",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/UZB/UZBW2021-050000.htm",
+      "front": "Al-Hakim at-Termiziy mausoleum, Termiz",
+      "back": "Fayotzepa archeological site, jug and chalice"
+    },
+    "UZS:100000": {
+      "currency": "UZS",
+      "value": 100000,
+      "pick": "P-W92",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/UZB/UZBW2021-100000.htm",
+      "front": "Ichan Qal'a (Inner fortress) of Khiva (Chiva), arms",
+      "back": "Angkaqa'l archeological site, plate, jug"
+    },
+    "UZS:200000": {
+      "currency": "UZS",
+      "value": 200000,
+      "pick": "P-W93",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/UZB/UZBW0093.htm",
+      "front": "Xudoyorxon O'rdasi (Palace of Xudayar Khan), Qo'qon/Kokand, arms",
+      "back": "Axsikent/Akhsikent archeological site, pottery"
+    },
+    "KZT:1000": {
+      "currency": "KZT",
+      "value": 1000,
+      "pick": "P-W52",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/KAZ/KAZW0052.htm",
+      "front": "\"Tree of Life\" with bird (Issyk Kurgan burial mound, 3rd or 4th century b. Chr.) ; Dog's head, DNA spiral, arms",
+      "back": "Sloping hills, Central Asian Shepherd Dog and Tazy sighthound, stylized ornamental shield"
+    },
+    "ILS:20": {
+      "currency": "ILS",
+      "value": 20,
+      "pick": "P-65",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/ISR/ISR0065.htm",
+      "front": "Palm trees, Rachel Bluwstein",
+      "back": "Lake of Galilee"
+    },
+    "ILS:50": {
+      "currency": "ILS",
+      "value": 50,
+      "pick": "P-66",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/ISR/ISR0066.htm",
+      "front": "Citrus tree with fruit, Saul Tchernichovsky",
+      "back": "Capital of Corinthian column"
+    },
+    "ILS:100": {
+      "currency": "ILS",
+      "value": 100,
+      "pick": "P-67",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/ISR/ISR0067.htm",
+      "front": "Almond tree leaves, Leah Goldberg",
+      "back": "Gazelle"
+    },
+    "ILS:200": {
+      "currency": "ILS",
+      "value": 200,
+      "pick": "P-68",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/ISR/ISR0068.htm",
+      "front": "Leaves, Nathan Alterman",
+      "back": "Moonlit flora"
+    },
+    "IQD:250": {
+      "currency": "IQD",
+      "value": 250,
+      "pick": "P-97",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/IRQ/IRQ0097.htm",
+      "front": "Astrolabe",
+      "back": "Ruins of mosque and spiral minaret at Samarra"
+    },
+    "IQD:500": {
+      "currency": "IQD",
+      "value": 500,
+      "pick": "P-98",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/IRQ/IRQ0098.htm",
+      "front": "Ducan dam",
+      "back": "al-thawr al-mugannah (Winged Assyrian bull, Assyrian pries, Complex of Sargon II, Khorsabad)"
+    },
+    "IQD:1000": {
+      "currency": "IQD",
+      "value": 1000,
+      "pick": "P-99",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/IRQ/IRQ0099.htm",
+      "front": "Coin",
+      "back": "al-Mustansiriya School, Baghdad"
+    },
+    "IQD:5000": {
+      "currency": "IQD",
+      "value": 5000,
+      "pick": "P-100",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/IRQ/IRQ0100.htm",
+      "front": "Gali Ali Beg waterfall, Arbil (Kurdistan)",
+      "back": "al-Ukhether castle"
+    },
+    "IQD:10000": {
+      "currency": "IQD",
+      "value": 10000,
+      "pick": "P-101",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/IRQ/IRQ0101.htm",
+      "front": "Freedom monument, Baghdad",
+      "back": "Al-manara al-hadba fi al-Mawsil (the hunchbacked tower of the Great Nurid mosque in Mosul)"
+    },
+    "IQD:25000": {
+      "currency": "IQD",
+      "value": 25000,
+      "pick": "P-102",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/IRQ/IRQ0102.htm",
+      "front": "Kurdish peasant",
+      "back": "Hamurabiy yatasallam al-sharia (King Hammurabi receives the Law)"
+    },
+    "LBP:1000": {
+      "currency": "LBP",
+      "value": 1000,
+      "pick": "P-90",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/LEB/LEB0090.htm",
+      "front": "Alphabet development",
+      "back": "Alphabet development"
+    },
+    "LBP:5000": {
+      "currency": "LBP",
+      "value": 5000,
+      "pick": "P-91",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/LEB/LEB0091.htm"
+    },
+    "LBP:10000": {
+      "currency": "LBP",
+      "value": 10000,
+      "pick": "P-92",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/LEB/LEB0092.htm"
+    },
+    "LBP:20000": {
+      "currency": "LBP",
+      "value": 20000,
+      "pick": "P-93",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/LEB/LEB0093.htm"
+    },
+    "LBP:50000": {
+      "currency": "LBP",
+      "value": 50000,
+      "pick": "P-94",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/LEB/LEB0094.htm"
+    },
+    "LBP:100000": {
+      "currency": "LBP",
+      "value": 100000,
+      "pick": "P-95",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/LEB/LEB0095.htm",
+      "front": "95 ; 2022(1)",
+      "back": "20 2 2 *; serial# style: ; ; * not listed in catalog"
+    },
+    "AFN:10": {
+      "currency": "AFN",
+      "value": 10,
+      "pick": "P-67",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/AFG/AFG0067.htm",
+      "front": "Mir Wais Khan Hotak mausoleum, Kandahar",
+      "back": "Royal Gardens and Victory Arch, Paghman"
+    },
+    "AFN:20": {
+      "currency": "AFN",
+      "value": 20,
+      "pick": "P-68",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/AFG/AFG0068.htm",
+      "front": "Sultan Mahmud Ghazni mausoleum",
+      "back": "Arg-e-Shahi (King's palace), today Palace of the President, Kabul"
+    },
+    "AFN:50": {
+      "currency": "AFN",
+      "value": 50,
+      "pick": "P-69",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/AFG/AFG0069.htm",
+      "front": "Shah-do-Shamshira Mosque, Kabul",
+      "back": "Road to the Salang Pass, Hindukush"
+    },
+    "AFN:100": {
+      "currency": "AFN",
+      "value": 100,
+      "pick": "P-75",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/AFG/AFG0075.htm",
+      "front": "Pul-e-Khishti mosque, Kabul",
+      "back": "Arch of Qila-e-Bost, Lashkargah"
+    },
+    "AFN:500": {
+      "currency": "AFN",
+      "value": 500,
+      "pick": "P-76",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/AFG/AFG0076.htm",
+      "front": "Masjid-i-Jami mosque, Herat",
+      "back": "Kandahar airport"
+    },
+    "AFN:1000": {
+      "currency": "AFN",
+      "value": 1000,
+      "pick": "P-77",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/AFG/AFG0077.htm",
+      "front": "Hazrat Ali Shrine, Mazar-i-Sharif",
+      "back": "Ahmad Shah Durrani mausoleum, Kandahar"
+    },
+    "BTN:5": {
+      "currency": "BTN",
+      "value": 5,
+      "pick": "P-28",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/BHU/BHU0028.htm",
+      "front": "Birds",
+      "back": "Taktsang"
+    },
+    "BTN:10": {
+      "currency": "BTN",
+      "value": 10,
+      "pick": "P-29",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/BHU/BHU0029.htm",
+      "front": "Jigme Singye Wangchuk",
+      "back": "Paro Dzong"
+    },
+    "BTN:20": {
+      "currency": "BTN",
+      "value": 20,
+      "pick": "P-30",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/BHU/BHU0030.htm",
+      "front": "Jigme Khesar Namgyel Wangchuk",
+      "back": "Punakha Dzong"
+    },
+    "BTN:50": {
+      "currency": "BTN",
+      "value": 50,
+      "pick": "P-31",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/BHU/BHU0031.htm",
+      "front": "Jigme Khesar Namgyel Wangchuk",
+      "back": "Tongsa Dzong"
+    },
+    "BTN:100": {
+      "currency": "BTN",
+      "value": 100,
+      "pick": "P-32",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/BHU/BHU0032.htm",
+      "front": "Jigme Singye Wangchuk",
+      "back": "Tashichho Dzong"
+    },
+    "BTN:500": {
+      "currency": "BTN",
+      "value": 500,
+      "pick": "P-33",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/BHU/BHU0033.htm",
+      "front": "Ugyen Wangchuk",
+      "back": "Punakha Dzong"
+    },
+    "BTN:1000": {
+      "currency": "BTN",
+      "value": 1000,
+      "pick": "P-34",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/BHU/BHU0034.htm",
+      "front": "Jigme Khesar Namgyel Wangchuk",
+      "back": "Tashichho Dzong"
+    },
+    "MVR:5": {
+      "currency": "MVR",
+      "value": 5,
+      "pick": "P-A26",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/MLV/MLVA0026.htm",
+      "front": "Soccer player, fish, dancers",
+      "back": "Conch"
+    },
+    "MVR:10": {
+      "currency": "MVR",
+      "value": 10,
+      "pick": "P-26",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/MLV/MLV0026.htm",
+      "front": "Men and women playing traditional drums; toddy tapper (ruherun) climbing coconut palm tree",
+      "back": "Oldest drum displayed in the national museum"
+    },
+    "MVR:20": {
+      "currency": "MVR",
+      "value": 20,
+      "pick": "P-27",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/MLV/MLV0027.htm",
+      "front": "Jet airplane taking off from Ibrahim Nasir International Airport (MLE); fisherman carrying skipjack tuna and yellow fin tuna, cowry shell (cyprea moneta)",
+      "back": "Traditional sail boat (Dhoni)"
+    },
+    "MVR:50": {
+      "currency": "MVR",
+      "value": 50,
+      "pick": "P-28",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/MLV/MLV0028.htm",
+      "front": "Men pulling boats from the beach onto the water; seated boy reciting the Holy Quran",
+      "back": "Minaret of the Friday Mosque (Hukuru Miskiy)"
+    },
+    "MVR:100": {
+      "currency": "MVR",
+      "value": 100,
+      "pick": "P-29",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/MLV/MLV0029.htm",
+      "front": "Group of locals in traditional attire, seated woman wearing traditional dress (Libaas), working on the neckline threading (Hiru) of a similar dress",
+      "back": "Early Dhivehi scripture (Dambidū Lōmāfānu)"
+    },
+    "MVR:500": {
+      "currency": "MVR",
+      "value": 500,
+      "pick": "P-30",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/MLV/MLV0030.htm",
+      "front": "Woman making ekels (Iloshi), traditionally used for brooms (Iloshi fathii); artisan carving wood using mallet and chisel",
+      "back": "Traditional hand carved vase with lacquer work detailing"
+    },
+    "MVR:1000": {
+      "currency": "MVR",
+      "value": 1000,
+      "pick": "P-31",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/MLV/MLV0031.htm",
+      "front": "Manta rays (Manta alfredi), green turtle (Chelonia mydas)",
+      "back": "Whale shark (Rhincodon typus)"
+    },
+    "IRR:10000": {
+      "currency": "IRR",
+      "value": 10000,
+      "pick": "P-W160",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/IRN/IRNW0160.htm",
+      "front": "Ayatollah Ruhollah Khomeini",
+      "back": "Tomb of Ibn Sina (Avicenna), Hamedan"
+    },
+    "IRR:20000": {
+      "currency": "IRR",
+      "value": 20000,
+      "pick": "P-W161",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/IRN/IRNW0161.htm",
+      "front": "Ayatollah Ruhollah Khomeini",
+      "back": "Mausoleum of Poets, Tabriz"
+    },
+    "IRR:2000000": {
+      "currency": "IRR",
+      "value": 2000000,
+      "pick": "P-W167",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/IRN/IRNW0167.htm",
+      "front": "Naqsh-e Jahan Square, Isfahan",
+      "back": "Men on horseback holding mallets playing Chogan"
+    },
+    "IRR:5000000": {
+      "currency": "IRR",
+      "value": 5000000,
+      "pick": "P-W168",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/IRN/IRNW0168.htm",
+      "front": "Agha Bozorg mosque, Kashan",
+      "back": "Tomb of Ferdowsi, Tus"
+    },
+    "IRR:10000000": {
+      "currency": "IRR",
+      "value": 10000000,
+      "pick": "P-W169",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/IRN/IRNW0169.htm",
+      "front": "Jameh mosque, Yazd",
+      "back": "Arg-e Bam fortress, Bam, Kerman Province"
+    },
+    "IRR:50000": {
+      "currency": "IRR",
+      "value": 50000,
+      "pick": "P-W162",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/IRN/IRNW2021-050000.htm",
+      "front": "Ayatollah Ruhollah Khomeini",
+      "back": "Tomb of Hafez, Shiraz"
+    },
+    "IRR:100000": {
+      "currency": "IRR",
+      "value": 100000,
+      "pick": "P-W163",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/IRN/IRNW2021-100000.htm",
+      "front": "Ayatollah Ruhollah Khomeini",
+      "back": "Tomb of Saadi , Shiraz"
+    },
+    "IRR:500000": {
+      "currency": "IRR",
+      "value": 500000,
+      "pick": "P-W153A",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/IRN/IRN0154.htm",
+      "front": "W153A(2)",
+      "back": "signature: Mahmud Bahmani"
+    },
+    "IRR:1000000": {
+      "currency": "IRR",
+      "value": 1000000,
+      "pick": "P-W166",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/IRN/IRNW0166.htm",
+      "front": "Fatima Masumeh Shrine, Qom",
+      "back": "Refinery"
+    },
+    "SYP:50": {
+      "currency": "SYP",
+      "value": 50,
+      "pick": "P-112",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/SYR/SYR0112.htm",
+      "front": "Ugarit alphabet on ancient cuneiform clay tables from Ebla",
+      "back": "Library in Damascus, monument to Hafez al-Assad"
+    },
+    "SYP:100": {
+      "currency": "SYP",
+      "value": 100,
+      "pick": "P-113",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/SYR/SYR0113.htm",
+      "front": "Basalt stone gate and amphitheatre of Bosra",
+      "back": "Central Bank of Syria (Damascus), dome of Omayyad mosque in Damascus, ancient coin"
+    },
+    "SYP:200": {
+      "currency": "SYP",
+      "value": 200,
+      "pick": "P-114",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/SYR/SYR0114.htm",
+      "front": "Water wheel of Hama",
+      "back": "Ceiling of a temple Bel in Palmyra"
+    },
+    "SYP:500": {
+      "currency": "SYP",
+      "value": 500,
+      "pick": "P-115",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/SYR/SYR0115.htm",
+      "front": "Opera House, Damascus",
+      "back": "Musicians, oldest musical note"
+    },
+    "SYP:1000": {
+      "currency": "SYP",
+      "value": 1000,
+      "pick": "P-116",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/SYR/SYR0116.htm",
+      "front": "Bosra amphitheater",
+      "back": "Mosaic of grape harvest in Roman ruins of As-Suwayda, olive branches"
+    },
+    "SYP:2000": {
+      "currency": "SYP",
+      "value": 2000,
+      "pick": "P-117",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/SYR/SYR0117.htm",
+      "front": "Omayyad mosque, Damascus, president Bashar Hafiz al-Assad",
+      "back": "People's Council of Syria, Damascus"
+    },
+    "SYP:5000": {
+      "currency": "SYP",
+      "value": 5000,
+      "pick": "P-W118",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/SYR/SYRW2019-5000.htm",
+      "front": "Soldier, flag",
+      "back": "Eagle and Yarhibol (Sun God) of the Baalshamin temple (Palmyra)"
+    },
+    "YER:200": {
+      "currency": "YER",
+      "value": 200,
+      "pick": "P-38",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/YEM/YEM0038.htm",
+      "front": "Zbeid/Zabid fortress, Hodeidah Governorate",
+      "back": "Landscape, al-Mahra Governorate"
+    },
+    "YER:250": {
+      "currency": "YER",
+      "value": 250,
+      "pick": "P-35",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/YEM/YEM0035.htm",
+      "front": "Al-Saleh mosque, Sana'a",
+      "back": "Mukalla"
+    },
+    "YER:500": {
+      "currency": "YER",
+      "value": 500,
+      "pick": "P-39",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/YEM/YEM0039.htm",
+      "front": "Al-Muhdhar mosque, Tarim",
+      "back": "Palace of the Rock"
+    },
+    "YER:1000": {
+      "currency": "YER",
+      "value": 1000,
+      "pick": "P-40",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/YEM/YEM0040.htm",
+      "front": "Sultan's palace in Seiyun, Hadramaut",
+      "back": "Bab Al-Yaman gate, San'a"
+    },
+    "KPW:5": {
+      "currency": "KPW",
+      "value": 5,
+      "pick": "P-58",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/KON/KON0058.htm",
+      "front": "Party members",
+      "back": "Hydroelectric dam"
+    },
+    "KPW:10": {
+      "currency": "KPW",
+      "value": 10,
+      "pick": "P-59",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/KON/KON0059.htm",
+      "front": "Soldiers (Air Force, Navy, Army)",
+      "back": "Victory monument of the Patriotic Liberation War (WWII), Pyongyang"
+    },
+    "KPW:50": {
+      "currency": "KPW",
+      "value": 50,
+      "pick": "P-60",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/KON/KON0060.htm",
+      "front": "Young people",
+      "back": "Monument of the \"Workers' Party of Korea\""
+    },
+    "KPW:100": {
+      "currency": "KPW",
+      "value": 100,
+      "pick": "P-61",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/KON/KON0061.htm",
+      "front": "Siebolds-Magnolia (National flower of Korea)",
+      "back": "Monument"
+    },
+    "KPW:200": {
+      "currency": "KPW",
+      "value": 200,
+      "pick": "P-62",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/KON/KON0062.htm",
+      "front": "62(2)",
+      "back": "Numeral \"200\" at lower left on front with UV activity"
+    },
+    "KPW:500": {
+      "currency": "KPW",
+      "value": 500,
+      "pick": "P-63",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/KON/KON0063.htm",
+      "front": "63(2)",
+      "back": "Korean text at lower left on front with UV activity"
+    },
+    "KPW:1000": {
+      "currency": "KPW",
+      "value": 1000,
+      "pick": "P-64",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/KON/KON0064.htm",
+      "front": "Mangyongdae (Birthplace of Kim Il Sung)",
+      "back": "Park, Mount Paekdu"
+    },
+    "KPW:2000": {
+      "currency": "KPW",
+      "value": 2000,
+      "pick": "P-65",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/KON/KON0065.htm",
+      "front": "Wooden hut",
+      "back": "Landscape"
+    },
+    "KPW:5000": {
+      "currency": "KPW",
+      "value": 5000,
+      "pick": "P-67",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/KON/KON0067.htm",
+      "front": "Mangyongdae (Birthplace of Kim Il Sung)",
+      "back": "International Friendship Exhibition building, Myohyang-san"
+    }
+  },
+  "failures": [
+    {
+      "key": "NPR:5",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/NEP/NEP0076.htm",
+      "found": []
+    },
+    {
+      "key": "LBP:5000",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/LEB/LEB0091.htm",
+      "found": []
+    },
+    {
+      "key": "LBP:10000",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/LEB/LEB0092.htm",
+      "found": []
+    },
+    {
+      "key": "LBP:20000",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/LEB/LEB0093.htm",
+      "found": []
+    },
+    {
+      "key": "LBP:50000",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/LEB/LEB0094.htm",
+      "found": []
+    },
+    {
+      "key": "YER:100",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/YEM/YEMW0037.htm",
+      "error": "HTTP Error 404: Not Found"
+    }
+  ]
+}
