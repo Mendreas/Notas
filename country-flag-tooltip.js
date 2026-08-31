@@ -12,47 +12,39 @@
  let active=null;
  const hide=()=>{if(active){active.classList.remove('tip-visible');active=null}};
  const show=el=>{hide();active=el;el.classList.add('tip-visible')};
- const esc=s=>String(s||'').replace(/&/g,'&amp;').replace(/"/g,'&quot;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
- function countryList(){return [...(window.DB?.countries||[])].filter(c=>c?.flag&&c?.name).sort((a,b)=>b.flag.length-a.flag.length)}
- function wrapFlags(value){
-   if(!value||value.dataset.flagTooltipReady==='1')return;
-   let html=value.innerHTML,changed=false;
-   for(const c of countryList()){
-     if(!html.includes(c.flag))continue;
-     const name=esc(c.name);
-     html=html.split(c.flag).join(`<span class="country-flag-tip" data-country="${name}" aria-label="${name}" tabindex="0">${c.flag}</span>`);
-     changed=true;
+ function countries(){return [...(window.DB?.countries||[])].filter(c=>c?.flag&&c?.name).sort((a,b)=>b.flag.length-a.flag.length)}
+ function wrapTextNode(node){
+   if(!node?.parentElement||node.parentElement.closest('.country-flag-tip'))return;
+   const text=node.nodeValue||'';let hit=false;
+   for(const c of countries())if(text.includes(c.flag)){hit=true;break}
+   if(!hit)return;
+   const frag=document.createDocumentFragment();let rest=text;
+   while(rest){
+     let best=null,pos=-1;
+     for(const c of countries()){
+       const i=rest.indexOf(c.flag);
+       if(i>=0&&(pos<0||i<pos)){best=c;pos=i}
+     }
+     if(!best){frag.appendChild(document.createTextNode(rest));break}
+     if(pos>0)frag.appendChild(document.createTextNode(rest.slice(0,pos)));
+     const span=document.createElement('span');span.className='country-flag-tip';span.dataset.country=best.name;span.setAttribute('aria-label',best.name);span.tabIndex=0;span.textContent=best.flag;frag.appendChild(span);
+     rest=rest.slice(pos+best.flag.length);
    }
-   if(changed){value.innerHTML=html;value.dataset.flagTooltipReady='1'}
+   node.replaceWith(frag);
  }
- function findValueFromLabel(label){
-   const card=label.closest('.stat,.modal-fact,.fact-card,.info-row')||label.parentElement;
-   if(!card)return null;
-   return card.querySelector('.fact-value')||card.querySelector('strong')||label.nextElementSibling;
+ function enhanceRoot(root){
+   if(!root||!window.DB?.countries?.length)return;
+   const walker=document.createTreeWalker(root,NodeFilter.SHOW_TEXT,{acceptNode:n=>{
+     if(!n.nodeValue?.trim())return NodeFilter.FILTER_REJECT;
+     if(n.parentElement?.closest('.country-flag-tip,script,style'))return NodeFilter.FILTER_REJECT;
+     return NodeFilter.FILTER_ACCEPT;
+   }});
+   const nodes=[];while(walker.nextNode())nodes.push(walker.currentNode);nodes.forEach(wrapTextNode);
  }
- function enhance(){
-   if(!window.DB?.countries?.length)return;
-   document.querySelectorAll('.fact-label').forEach(label=>{
-     if(!/^País\(es\)$/i.test((label.textContent||'').trim()))return;
-     wrapFlags(findValueFromLabel(label));
-   });
-   document.querySelectorAll('.stat,.modal-fact,.fact-card').forEach(card=>{
-     const txt=(card.textContent||'').trim();
-     if(!/^País\(es\)/i.test(txt))return;
-     wrapFlags(card.querySelector('.fact-value')||card.querySelector('strong')||card.lastElementChild);
-   });
- }
- document.addEventListener('pointerdown',e=>{
-   const el=e.target.closest('.country-flag-tip');
-   if(el){if(e.pointerType!=='mouse'){e.preventDefault();active===el?hide():show(el)}return}
-   hide();
- },true);
+ function enhance(){enhanceRoot(document.getElementById('modalBody'));enhanceRoot(document.getElementById('view'))}
+ document.addEventListener('pointerdown',e=>{const el=e.target.closest?.('.country-flag-tip');if(el){if(e.pointerType!=='mouse'){e.preventDefault();active===el?hide():show(el)}return}hide()},true);
  document.addEventListener('focusin',e=>{const el=e.target.closest?.('.country-flag-tip');if(el)show(el)});
  document.addEventListener('focusout',e=>{if(e.target.closest?.('.country-flag-tip'))hide()});
- document.addEventListener('scroll',hide,true);
- window.addEventListener('blur',hide);
- document.addEventListener('mouseleave',hide);
- const observer=new MutationObserver(()=>{hide();enhance()});
- observer.observe(document.body,{subtree:true,childList:true});
- enhance();
+ document.addEventListener('scroll',hide,true);window.addEventListener('blur',hide);document.addEventListener('mouseleave',hide);
+ const observer=new MutationObserver(()=>{hide();enhance()});observer.observe(document.body,{subtree:true,childList:true});enhance();
 })();
