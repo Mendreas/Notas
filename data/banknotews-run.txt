@@ -1,2 +1,2 @@
-run=2026-08-31T14:36:00+01:00
-scope=yemen-100-rial-direct-sources
+run=2026-08-31T14:49:00+01:00
+scope=yemen-100-rial-commons-fallback
