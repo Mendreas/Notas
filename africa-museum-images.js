@@ -1,13 +1,15 @@
 (()=>{
- const B='https://www.banknote.ws/COLLECTION/countries/AFR';
  const sets={
-  BWP:{10:['BOT/BOTW0036o.jpg','BOT/BOTW0036r.jpg','BOT/BOTW0036.htm'],20:['BOT/BOT0031o.jpg','BOT/BOT0031r.jpg','BOT/BOT0031.htm'],50:['BOT/BOT0032o.jpg','BOT/BOT0032r.jpg','BOT/BOT0032.htm'],100:['BOT/BOT0033o.jpg','BOT/BOT0033r.jpg','BOT/BOT0033.htm'],200:['BOT/BOT0034o.jpg','BOT/BOT0034r.jpg','BOT/BOT0034.htm']},
-  NAD:{10:['NAM/NAMW0020o.jpg','NAM/NAMW0020r.jpg','NAM/NAMW0020.htm'],20:['NAM/NAMW0021o.jpg','NAM/NAMW0021r.jpg','NAM/NAMW0021.htm'],30:['NAM/NAMW0018o.jpg','NAM/NAMW0018r.jpg','NAM/NAMW0018.htm'],50:['NAM/NAMW0022o.jpg','NAM/NAMW0022r.jpg','NAM/NAMW0022.htm'],100:['NAM/NAMW0023o.jpg','NAM/NAMW0023r.jpg','NAM/NAMW0023.htm'],200:['NAM/NAMW0024o.jpg','NAM/NAMW0024r.jpg','NAM/NAMW0024.htm']},
-  ZAR:{10:['SAF/SAFW0148o.jpg','SAF/SAFW0148r.jpg','SAF/SAFW0148.htm'],20:['SAF/SAFW0149o.jpg','SAF/SAFW0149r.jpg','SAF/SAFW0149.htm'],50:['SAF/SAFW0150o.jpg','SAF/SAFW0150r.jpg','SAF/SAFW0150.htm'],100:['SAF/SAFW0151o.jpg','SAF/SAFW0151r.jpg','SAF/SAFW0151.htm'],200:['SAF/SAFW0152o.jpg','SAF/SAFW0152r.jpg','SAF/SAFW0152.htm']},
-  MAD:{20:['MRQ/MRQW0079o.jpg','MRQ/MRQW0079r.jpg','MRQ/MRQW0079.htm'],50:['MRQ/MRQW0080o.jpg','MRQ/MRQW0080r.jpg','MRQ/MRQW0080.htm'],100:['MRQ/MRQW0081o.jpg','MRQ/MRQW0081r.jpg','MRQ/MRQW0081.htm'],200:['MRQ/MRQW0082o.jpg','MRQ/MRQW0082r.jpg','MRQ/MRQW0082.htm']},
-  KES:{50:['KEN/KENW0052-2024o.jpg','KEN/KENW0052-2024r.jpg','KEN/KENW0052.htm'],100:['KEN/KENW0053-2024o.jpg','KEN/KENW0053-2024r.jpg','KEN/KENW0053.htm'],200:['KEN/KENW0054-2024o.jpg','KEN/KENW0054-2024r.jpg','KEN/KENW0054.htm'],500:['KEN/KENW0055-2024o.jpg','KEN/KENW0055-2024r.jpg','KEN/KENW0055.htm'],1000:['KEN/KENW0056-2024o.jpg','KEN/KENW0056-2024r.jpg','KEN/KENW0056.htm']},
-  EGP:{5:['EGY/EGY0072o.jpg','EGY/EGY0072r.jpg','EGY/EGY0072.htm'],10:['EGY/EGYW2021-0010o.jpg','EGY/EGYW2021-0010r.jpg','EGY/EGYW2021-0010.htm'],20:['EGY/EGYW2021-0020o.jpg','EGY/EGYW2021-0020r.jpg','EGY/EGYW2021-0020.htm'],50:['EGY/EGY0075o.jpg','EGY/EGY0075r.jpg','EGY/EGY0075.htm'],100:['EGY/EGY0076o.jpg','EGY/EGY0076r.jpg','EGY/EGY0076.htm'],200:['EGY/EGY0077o.jpg','EGY/EGY0077r.jpg','EGY/EGY0077.htm']}
+  BWP:[10,20,50,100,200],NAD:[10,20,30,50,100,200],ZAR:[10,20,50,100,200],MAD:[20,50,100,200],KES:[50,100,200,500,1000],EGP:[5,10,20,50,100,200]
+ };
+ const pages={
+  BWP:{10:'BOT/BOTW0036.htm',20:'BOT/BOT0031.htm',50:'BOT/BOT0032.htm',100:'BOT/BOT0033.htm',200:'BOT/BOT0034.htm'},
+  NAD:{10:'NAM/NAMW0020.htm',20:'NAM/NAMW0021.htm',30:'NAM/NAMW0018.htm',50:'NAM/NAMW0022.htm',100:'NAM/NAMW0023.htm',200:'NAM/NAMW0024.htm'},
+  ZAR:{10:'SAF/SAFW0148.htm',20:'SAF/SAFW0149.htm',50:'SAF/SAFW0150.htm',100:'SAF/SAFW0151.htm',200:'SAF/SAFW0152.htm'},
+  MAD:{20:'MRQ/MRQW0079.htm',50:'MRQ/MRQW0080.htm',100:'MRQ/MRQW0081.htm',200:'MRQ/MRQW0082.htm'},
+  KES:{50:'KEN/KENW0052.htm',100:'KEN/KENW0053.htm',200:'KEN/KENW0054.htm',500:'KEN/KENW0055.htm',1000:'KEN/KENW0056.htm'},
+  EGP:{5:'EGY/EGY0072.htm',10:'EGY/EGYW2021-0010.htm',20:'EGY/EGYW2021-0020.htm',50:'EGY/EGY0075.htm',100:'EGY/EGY0076.htm',200:'EGY/EGY0077.htm'}
  };
  const oldFetch=window.fetch.bind(window);
- window.fetch=async(...args)=>{const req=args[0],url=typeof req==='string'?req:req?.url||'';const r=await oldFetch(...args);if(!url.includes('/data/notes.json'))return r;const notes=await r.clone().json();for(const [currency,vals] of Object.entries(sets))for(const [value,a] of Object.entries(vals)){const n=notes.find(x=>x.currency===currency&&Number(x.value)===Number(value));if(!n)continue;n.front=`${B}/${a[0]}`;n.back=`${B}/${a[1]}`;n.imageStatus='museum-reference';n.imageSource='Bank Note Museum';n.imageSourceUrl=`${B}/${a[2]}`;}return new Response(JSON.stringify(notes),{status:r.status,statusText:r.statusText,headers:{'Content-Type':'application/json; charset=utf-8'}})};
+ window.fetch=async(...args)=>{const req=args[0],url=typeof req==='string'?req:req?.url||'';const r=await oldFetch(...args);if(!url.includes('/data/notes.json'))return r;const notes=await r.clone().json();for(const [currency,vals] of Object.entries(sets))for(const value of vals){const n=notes.find(x=>x.currency===currency&&Number(x.value)===Number(value));if(!n)continue;n.front=`/assets/notes/banknotews/${currency.toLowerCase()}/${value}-front.jpg`;n.back=`/assets/notes/banknotews/${currency.toLowerCase()}/${value}-back.jpg`;n.imageStatus='local-reference';n.imageSource='Bank Note Museum · cópia local';n.imageSourceUrl=`https://www.banknote.ws/COLLECTION/countries/AFR/${pages[currency][value]}`;}return new Response(JSON.stringify(notes),{status:r.status,statusText:r.statusText,headers:{'Content-Type':'application/json; charset=utf-8'}})};
 })();
