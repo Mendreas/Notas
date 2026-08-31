@@ -3744,28 +3744,55 @@
       "back": "/assets/notes/banknotews/irr/10000000-back.jpg",
       "frontBytes": 103726,
       "backBytes": 97075
+    },
+    "IRR:50000": {
+      "currency": "IRR",
+      "value": 50000,
+      "pick": "P-W162",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/IRN/IRNW2021-050000.htm",
+      "frontSource": "https://www.banknote.ws/COLLECTION/countries/ASI/IRN/IRNW2021-050000o.jpg",
+      "backSource": "https://www.banknote.ws/COLLECTION/countries/ASI/IRN/IRNW2021-050000r.jpg",
+      "front": "/assets/notes/banknotews/irr/50000-front.jpg",
+      "back": "/assets/notes/banknotews/irr/50000-back.jpg",
+      "frontBytes": 96512,
+      "backBytes": 99337
+    },
+    "IRR:100000": {
+      "currency": "IRR",
+      "value": 100000,
+      "pick": "P-W163",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/IRN/IRNW2021-100000.htm",
+      "frontSource": "https://www.banknote.ws/COLLECTION/countries/ASI/IRN/IRNW2021-100000o.jpg",
+      "backSource": "https://www.banknote.ws/COLLECTION/countries/ASI/IRN/IRNW2021-100000r.jpg",
+      "front": "/assets/notes/banknotews/irr/100000-front.jpg",
+      "back": "/assets/notes/banknotews/irr/100000-back.jpg",
+      "frontBytes": 123307,
+      "backBytes": 123451
+    },
+    "IRR:500000": {
+      "currency": "IRR",
+      "value": 500000,
+      "pick": "P-W153A",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/IRN/IRN0154.htm",
+      "frontSource": "https://www.banknote.ws/COLLECTION/countries/ASI/IRN/IRN0154-11o.jpg",
+      "backSource": "https://www.banknote.ws/COLLECTION/countries/ASI/IRN/IRN0154-11r.jpg",
+      "front": "/assets/notes/banknotews/irr/500000-front.jpg",
+      "back": "/assets/notes/banknotews/irr/500000-back.jpg",
+      "frontBytes": 84934,
+      "backBytes": 124779
+    },
+    "IRR:1000000": {
+      "currency": "IRR",
+      "value": 1000000,
+      "pick": "P-W166",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/IRN/IRNW0166.htm",
+      "frontSource": "https://www.banknote.ws/COLLECTION/countries/ASI/IRN/IRNW0166o.jpg",
+      "backSource": "https://www.banknote.ws/COLLECTION/countries/ASI/IRN/IRNW0166r.jpg",
+      "front": "/assets/notes/banknotews/irr/1000000-front.jpg",
+      "back": "/assets/notes/banknotews/irr/1000000-back.jpg",
+      "frontBytes": 141885,
+      "backBytes": 124210
     }
   },
-  "failures": [
-    {
-      "key": "IRR:50000",
-      "pick": "P-W162",
-      "error": "HTTP Error 404: Not Found"
-    },
-    {
-      "key": "IRR:100000",
-      "pick": "P-W163",
-      "error": "HTTP Error 404: Not Found"
-    },
-    {
-      "key": "IRR:500000",
-      "pick": "P-W164",
-      "error": "HTTP Error 404: Not Found"
-    },
-    {
-      "key": "IRR:1000000",
-      "pick": "P-W165",
-      "error": "HTTP Error 404: Not Found"
-    }
-  ]
+  "failures": []
 }
