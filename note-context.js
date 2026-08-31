@@ -16,9 +16,22 @@
   };
   function esc(s=''){return String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}
   function findNoteByImage(src){try{return DB.notes.find(n=>n.front===src||n.back===src)||null}catch(_){return null}}
-  function getInfo(src){const n=findNoteByImage(src);if(!n)return null;const side=n.front===src?'front':'back';const key=`${n.currency}:${Number(n.value)}`;return {note:n,side,info:INFO[key]?.[side]||window.NOTE_CONTEXT_WAVE5?.[key]?.[side]||window.NOTE_CONTEXT_WAVE4?.[key]?.[side]||window.NOTE_CONTEXT_WAVE3?.[key]?.[side]||window.NOTE_CONTEXT_WAVE2?.[key]?.[side]||window.NOTE_CONTEXT_GLOBAL?.get(n,side)||null}}
+  function getInfo(src){
+    const n=findNoteByImage(src);if(!n)return null;
+    const side=n.front===src?'front':'back',key=`${n.currency}:${Number(n.value)}`;
+    return {note:n,side,info:
+      INFO[key]?.[side] ||
+      window.NOTE_CONTEXT_MANUAL?.[key]?.[side] ||
+      window.NOTE_CONTEXT_CATALOG?.[key]?.[side] ||
+      window.NOTE_CONTEXT_WAVE5?.[key]?.[side] ||
+      window.NOTE_CONTEXT_WAVE4?.[key]?.[side] ||
+      window.NOTE_CONTEXT_WAVE3?.[key]?.[side] ||
+      window.NOTE_CONTEXT_WAVE2?.[key]?.[side] ||
+      window.NOTE_CONTEXT_GLOBAL?.get(n,side) || null};
+  }
   function ensurePanel(){const shell=document.querySelector('.image-viewer-shell');if(!shell)return null;let panel=document.querySelector('#imageViewerContext');if(!panel){panel=document.createElement('div');panel.id='imageViewerContext';panel.className='image-viewer-context';shell.appendChild(panel)}return panel}
-  function renderContext(src){const panel=ensurePanel();if(!panel)return;const hit=getInfo(src);if(!hit?.info){panel.innerHTML='<div class="note-context-muted">Descrição editorial em preparação.</div>';return}const i=hit.info;panel.innerHTML=`<div class="note-context-copy"><strong>${esc(i.title)}</strong><p>${esc(i.summary)}</p>${i.more?`<details><summary>Saber mais</summary><p>${esc(i.more)}</p></details>`:''}</div>${i.wiki?`<a class="note-context-wiki" href="${i.wiki}" target="_blank" rel="noopener noreferrer">Wikipédia ↗</a>`:''}`}
+  function renderContext(src){const panel=ensurePanel();if(!panel)return;const hit=getInfo(src);if(!hit?.info){panel.innerHTML='<div class="note-context-muted">Descrição específica em validação.</div>';return}const i=hit.info;panel.innerHTML=`<div class="note-context-copy"><strong>${esc(i.title)}</strong><p>${esc(i.summary)}</p>${i.more?`<details><summary>Saber mais</summary><p>${esc(i.more)}</p></details>`:''}</div>${i.wiki?`<a class="note-context-wiki" href="${i.wiki}" target="_blank" rel="noopener noreferrer">Wikipédia ↗</a>`:''}`}
   const original=window.openImageViewer;window.openImageViewer=function(src,label='Nota'){original(src,label);renderContext(src)};
+  window.NOTE_CONTEXT_LOOKUP={get:(currency,value,side)=>{const key=`${currency}:${Number(value)}`,n=DB.notes.find(x=>x.currency===currency&&Number(x.value)===Number(value));return INFO[key]?.[side]||window.NOTE_CONTEXT_MANUAL?.[key]?.[side]||window.NOTE_CONTEXT_CATALOG?.[key]?.[side]||window.NOTE_CONTEXT_WAVE5?.[key]?.[side]||window.NOTE_CONTEXT_WAVE4?.[key]?.[side]||window.NOTE_CONTEXT_WAVE3?.[key]?.[side]||window.NOTE_CONTEXT_WAVE2?.[key]?.[side]||(n?window.NOTE_CONTEXT_GLOBAL?.get(n,side):null)}};
   const style=document.createElement('style');style.textContent=`.image-viewer-context{display:flex;gap:16px;align-items:flex-start;justify-content:space-between;padding:14px 18px 18px;color:#dfe8ef;background:rgba(6,15,24,.94);border-top:1px solid rgba(255,255,255,.09)}.note-context-copy{max-width:920px}.note-context-copy strong{display:block;font-size:16px;margin-bottom:5px}.note-context-copy p{margin:0;color:#b8c6d1;line-height:1.45;font-size:14px}.note-context-copy details{margin-top:7px}.note-context-copy summary{cursor:pointer;color:#e6eef4;font-size:13px}.note-context-copy details p{margin-top:6px}.note-context-wiki{flex:0 0 auto;text-decoration:none;color:#fff;border:1px solid rgba(255,255,255,.22);border-radius:999px;padding:8px 12px;font-size:13px;white-space:nowrap}.note-context-wiki:hover{background:rgba(255,255,255,.08)}.note-context-muted{color:#8395a3;font-size:13px}@media(max-width:700px){.image-viewer-context{display:block;padding:12px 14px 16px}.note-context-wiki{display:inline-block;margin-top:10px}.note-context-copy strong{font-size:15px}.note-context-copy p{font-size:13px}}`;document.head.appendChild(style);
 })();
