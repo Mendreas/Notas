@@ -4044,7 +4044,338 @@
       "back": "/assets/notes/banknotews/yer/100-back.jpg",
       "frontBytes": 668952,
       "backBytes": 736016
+    },
+    "BWP:20": {
+      "currency": "BWP",
+      "value": 20,
+      "pick": "Africa-current",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/BOT/BOT0031.htm",
+      "frontSource": "https://www.banknote.ws/COLLECTION/countries/AFR/BOT/BOT0031o.jpg",
+      "backSource": "https://www.banknote.ws/COLLECTION/countries/AFR/BOT/BOT0031r.jpg",
+      "front": "/assets/notes/banknotews/bwp/20-front.jpg",
+      "back": "/assets/notes/banknotews/bwp/20-back.jpg",
+      "frontBytes": 183367,
+      "backBytes": 183864
+    },
+    "BWP:50": {
+      "currency": "BWP",
+      "value": 50,
+      "pick": "Africa-current",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/BOT/BOT0032.htm",
+      "frontSource": "https://www.banknote.ws/COLLECTION/countries/AFR/BOT/BOT0032o.jpg",
+      "backSource": "https://www.banknote.ws/COLLECTION/countries/AFR/BOT/BOT0032r.jpg",
+      "front": "/assets/notes/banknotews/bwp/50-front.jpg",
+      "back": "/assets/notes/banknotews/bwp/50-back.jpg",
+      "frontBytes": 180260,
+      "backBytes": 181002
+    },
+    "BWP:100": {
+      "currency": "BWP",
+      "value": 100,
+      "pick": "Africa-current",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/BOT/BOT0033.htm",
+      "frontSource": "https://www.banknote.ws/COLLECTION/countries/AFR/BOT/BOT0033o.jpg",
+      "backSource": "https://www.banknote.ws/COLLECTION/countries/AFR/BOT/BOT0033r.jpg",
+      "front": "/assets/notes/banknotews/bwp/100-front.jpg",
+      "back": "/assets/notes/banknotews/bwp/100-back.jpg",
+      "frontBytes": 170566,
+      "backBytes": 168563
+    },
+    "BWP:200": {
+      "currency": "BWP",
+      "value": 200,
+      "pick": "Africa-current",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/BOT/BOT0034.htm",
+      "frontSource": "https://www.banknote.ws/COLLECTION/countries/AFR/BOT/BOT0034o.jpg",
+      "backSource": "https://www.banknote.ws/COLLECTION/countries/AFR/BOT/BOT0034r.jpg",
+      "front": "/assets/notes/banknotews/bwp/200-front.jpg",
+      "back": "/assets/notes/banknotews/bwp/200-back.jpg",
+      "frontBytes": 171952,
+      "backBytes": 176454
+    },
+    "NAD:10": {
+      "currency": "NAD",
+      "value": 10,
+      "pick": "Africa-current",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/NAM/NAMW0020.htm",
+      "frontSource": "https://www.banknote.ws/COLLECTION/countries/AFR/NAM/NAMW0020o.jpg",
+      "backSource": "https://www.banknote.ws/COLLECTION/countries/AFR/NAM/NAMW0020r.jpg",
+      "front": "/assets/notes/banknotews/nad/10-front.jpg",
+      "back": "/assets/notes/banknotews/nad/10-back.jpg",
+      "frontBytes": 138764,
+      "backBytes": 141834
+    },
+    "NAD:20": {
+      "currency": "NAD",
+      "value": 20,
+      "pick": "Africa-current",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/NAM/NAMW0021.htm",
+      "frontSource": "https://www.banknote.ws/COLLECTION/countries/AFR/NAM/NAMW0021o.jpg",
+      "backSource": "https://www.banknote.ws/COLLECTION/countries/AFR/NAM/NAMW0021r.jpg",
+      "front": "/assets/notes/banknotews/nad/20-front.jpg",
+      "back": "/assets/notes/banknotews/nad/20-back.jpg",
+      "frontBytes": 134840,
+      "backBytes": 138323
+    },
+    "NAD:50": {
+      "currency": "NAD",
+      "value": 50,
+      "pick": "Africa-current",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/NAM/NAMW0022.htm",
+      "frontSource": "https://www.banknote.ws/COLLECTION/countries/AFR/NAM/NAMW0022o.jpg",
+      "backSource": "https://www.banknote.ws/COLLECTION/countries/AFR/NAM/NAMW0022r.jpg",
+      "front": "/assets/notes/banknotews/nad/50-front.jpg",
+      "back": "/assets/notes/banknotews/nad/50-back.jpg",
+      "frontBytes": 122591,
+      "backBytes": 128799
+    },
+    "NAD:100": {
+      "currency": "NAD",
+      "value": 100,
+      "pick": "Africa-current",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/NAM/NAMW0023.htm",
+      "frontSource": "https://www.banknote.ws/COLLECTION/countries/AFR/NAM/NAMW0023o.jpg",
+      "backSource": "https://www.banknote.ws/COLLECTION/countries/AFR/NAM/NAMW0023r.jpg",
+      "front": "/assets/notes/banknotews/nad/100-front.jpg",
+      "back": "/assets/notes/banknotews/nad/100-back.jpg",
+      "frontBytes": 119146,
+      "backBytes": 124866
+    },
+    "NAD:200": {
+      "currency": "NAD",
+      "value": 200,
+      "pick": "Africa-current",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/NAM/NAMW0024.htm",
+      "frontSource": "https://www.banknote.ws/COLLECTION/countries/AFR/NAM/NAMW0024o.jpg",
+      "backSource": "https://www.banknote.ws/COLLECTION/countries/AFR/NAM/NAMW0024r.jpg",
+      "front": "/assets/notes/banknotews/nad/200-front.jpg",
+      "back": "/assets/notes/banknotews/nad/200-back.jpg",
+      "frontBytes": 113600,
+      "backBytes": 116378
+    },
+    "ZAR:10": {
+      "currency": "ZAR",
+      "value": 10,
+      "pick": "Africa-current",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/SAF/SAFW0148.htm",
+      "frontSource": "https://www.banknote.ws/COLLECTION/countries/AFR/SAF/SAFW0148o.jpg",
+      "backSource": "https://www.banknote.ws/COLLECTION/countries/AFR/SAF/SAFW0148r.jpg",
+      "front": "/assets/notes/banknotews/zar/10-front.jpg",
+      "back": "/assets/notes/banknotews/zar/10-back.jpg",
+      "frontBytes": 124715,
+      "backBytes": 121052
+    },
+    "ZAR:20": {
+      "currency": "ZAR",
+      "value": 20,
+      "pick": "Africa-current",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/SAF/SAFW0149.htm",
+      "frontSource": "https://www.banknote.ws/COLLECTION/countries/AFR/SAF/SAFW0149o.jpg",
+      "backSource": "https://www.banknote.ws/COLLECTION/countries/AFR/SAF/SAFW0149r.jpg",
+      "front": "/assets/notes/banknotews/zar/20-front.jpg",
+      "back": "/assets/notes/banknotews/zar/20-back.jpg",
+      "frontBytes": 118572,
+      "backBytes": 114769
+    },
+    "ZAR:50": {
+      "currency": "ZAR",
+      "value": 50,
+      "pick": "Africa-current",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/SAF/SAFW0150.htm",
+      "frontSource": "https://www.banknote.ws/COLLECTION/countries/AFR/SAF/SAFW0150o.jpg",
+      "backSource": "https://www.banknote.ws/COLLECTION/countries/AFR/SAF/SAFW0150r.jpg",
+      "front": "/assets/notes/banknotews/zar/50-front.jpg",
+      "back": "/assets/notes/banknotews/zar/50-back.jpg",
+      "frontBytes": 117294,
+      "backBytes": 115662
+    },
+    "ZAR:100": {
+      "currency": "ZAR",
+      "value": 100,
+      "pick": "Africa-current",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/SAF/SAFW0151.htm",
+      "frontSource": "https://www.banknote.ws/COLLECTION/countries/AFR/SAF/SAFW0151o.jpg",
+      "backSource": "https://www.banknote.ws/COLLECTION/countries/AFR/SAF/SAFW0151r.jpg",
+      "front": "/assets/notes/banknotews/zar/100-front.jpg",
+      "back": "/assets/notes/banknotews/zar/100-back.jpg",
+      "frontBytes": 133342,
+      "backBytes": 115792
+    },
+    "ZAR:200": {
+      "currency": "ZAR",
+      "value": 200,
+      "pick": "Africa-current",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/SAF/SAFW0152.htm",
+      "frontSource": "https://www.banknote.ws/COLLECTION/countries/AFR/SAF/SAFW0152o.jpg",
+      "backSource": "https://www.banknote.ws/COLLECTION/countries/AFR/SAF/SAFW0152r.jpg",
+      "front": "/assets/notes/banknotews/zar/200-front.jpg",
+      "back": "/assets/notes/banknotews/zar/200-back.jpg",
+      "frontBytes": 97726,
+      "backBytes": 98487
+    },
+    "MAD:20": {
+      "currency": "MAD",
+      "value": 20,
+      "pick": "Africa-current",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/MRQ/MRQW0079.htm",
+      "frontSource": "https://www.banknote.ws/COLLECTION/countries/AFR/MRQ/MRQW0079o.jpg",
+      "backSource": "https://www.banknote.ws/COLLECTION/countries/AFR/MRQ/MRQW0079r.jpg",
+      "front": "/assets/notes/banknotews/mad/20-front.jpg",
+      "back": "/assets/notes/banknotews/mad/20-back.jpg",
+      "frontBytes": 125971,
+      "backBytes": 135247
+    },
+    "MAD:50": {
+      "currency": "MAD",
+      "value": 50,
+      "pick": "Africa-current",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/MRQ/MRQW0080.htm",
+      "frontSource": "https://www.banknote.ws/COLLECTION/countries/AFR/MRQ/MRQW0080o.jpg",
+      "backSource": "https://www.banknote.ws/COLLECTION/countries/AFR/MRQ/MRQW0080r.jpg",
+      "front": "/assets/notes/banknotews/mad/50-front.jpg",
+      "back": "/assets/notes/banknotews/mad/50-back.jpg",
+      "frontBytes": 107429,
+      "backBytes": 106326
+    },
+    "MAD:100": {
+      "currency": "MAD",
+      "value": 100,
+      "pick": "Africa-current",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/MRQ/MRQW0081.htm",
+      "frontSource": "https://www.banknote.ws/COLLECTION/countries/AFR/MRQ/MRQW0081o.jpg",
+      "backSource": "https://www.banknote.ws/COLLECTION/countries/AFR/MRQ/MRQW0081r.jpg",
+      "front": "/assets/notes/banknotews/mad/100-front.jpg",
+      "back": "/assets/notes/banknotews/mad/100-back.jpg",
+      "frontBytes": 118766,
+      "backBytes": 122349
+    },
+    "MAD:200": {
+      "currency": "MAD",
+      "value": 200,
+      "pick": "Africa-current",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/MRQ/MRQW0082.htm",
+      "frontSource": "https://www.banknote.ws/COLLECTION/countries/AFR/MRQ/MRQW0082o.jpg",
+      "backSource": "https://www.banknote.ws/COLLECTION/countries/AFR/MRQ/MRQW0082r.jpg",
+      "front": "/assets/notes/banknotews/mad/200-front.jpg",
+      "back": "/assets/notes/banknotews/mad/200-back.jpg",
+      "frontBytes": 122533,
+      "backBytes": 117418
+    },
+    "KES:50": {
+      "currency": "KES",
+      "value": 50,
+      "pick": "Africa-current",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/KEN/KENW0052.htm",
+      "frontSource": "https://www.banknote.ws/COLLECTION/countries/AFR/KEN/KENW0052-2024o.jpg",
+      "backSource": "https://www.banknote.ws/COLLECTION/countries/AFR/KEN/KENW0052-2024r.jpg",
+      "front": "/assets/notes/banknotews/kes/50-front.jpg",
+      "back": "/assets/notes/banknotews/kes/50-back.jpg",
+      "frontBytes": 113686,
+      "backBytes": 124422
+    },
+    "KES:100": {
+      "currency": "KES",
+      "value": 100,
+      "pick": "Africa-current",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/KEN/KENW0053.htm",
+      "frontSource": "https://www.banknote.ws/COLLECTION/countries/AFR/KEN/KENW0053-2024o.jpg",
+      "backSource": "https://www.banknote.ws/COLLECTION/countries/AFR/KEN/KENW0053-2024r.jpg",
+      "front": "/assets/notes/banknotews/kes/100-front.jpg",
+      "back": "/assets/notes/banknotews/kes/100-back.jpg",
+      "frontBytes": 135956,
+      "backBytes": 127605
+    },
+    "KES:200": {
+      "currency": "KES",
+      "value": 200,
+      "pick": "Africa-current",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/KEN/KENW0054.htm",
+      "frontSource": "https://www.banknote.ws/COLLECTION/countries/AFR/KEN/KENW0054-2024o.jpg",
+      "backSource": "https://www.banknote.ws/COLLECTION/countries/AFR/KEN/KENW0054-2024r.jpg",
+      "front": "/assets/notes/banknotews/kes/200-front.jpg",
+      "back": "/assets/notes/banknotews/kes/200-back.jpg",
+      "frontBytes": 131178,
+      "backBytes": 125751
+    },
+    "KES:500": {
+      "currency": "KES",
+      "value": 500,
+      "pick": "Africa-current",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/KEN/KENW0055.htm",
+      "frontSource": "https://www.banknote.ws/COLLECTION/countries/AFR/KEN/KENW0055-2024o.jpg",
+      "backSource": "https://www.banknote.ws/COLLECTION/countries/AFR/KEN/KENW0055-2024r.jpg",
+      "front": "/assets/notes/banknotews/kes/500-front.jpg",
+      "back": "/assets/notes/banknotews/kes/500-back.jpg",
+      "frontBytes": 110945,
+      "backBytes": 115586
+    },
+    "KES:1000": {
+      "currency": "KES",
+      "value": 1000,
+      "pick": "Africa-current",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/KEN/KENW0056.htm",
+      "frontSource": "https://www.banknote.ws/COLLECTION/countries/AFR/KEN/KENW0056-2024o.jpg",
+      "backSource": "https://www.banknote.ws/COLLECTION/countries/AFR/KEN/KENW0056-2024r.jpg",
+      "front": "/assets/notes/banknotews/kes/1000-front.jpg",
+      "back": "/assets/notes/banknotews/kes/1000-back.jpg",
+      "frontBytes": 127460,
+      "backBytes": 128022
+    },
+    "EGP:5": {
+      "currency": "EGP",
+      "value": 5,
+      "pick": "Africa-current",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/EGY/EGY0072.htm",
+      "frontSource": "https://www.banknote.ws/COLLECTION/countries/AFR/EGY/EGY0072o.jpg",
+      "backSource": "https://www.banknote.ws/COLLECTION/countries/AFR/EGY/EGY0072r.jpg",
+      "front": "/assets/notes/banknotews/egp/5-front.jpg",
+      "back": "/assets/notes/banknotews/egp/5-back.jpg",
+      "frontBytes": 132479,
+      "backBytes": 118552
+    },
+    "EGP:50": {
+      "currency": "EGP",
+      "value": 50,
+      "pick": "Africa-current",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/EGY/EGY0075.htm",
+      "frontSource": "https://www.banknote.ws/COLLECTION/countries/AFR/EGY/EGY0075o.jpg",
+      "backSource": "https://www.banknote.ws/COLLECTION/countries/AFR/EGY/EGY0075r.jpg",
+      "front": "/assets/notes/banknotews/egp/50-front.jpg",
+      "back": "/assets/notes/banknotews/egp/50-back.jpg",
+      "frontBytes": 89922,
+      "backBytes": 88038
     }
   },
-  "failures": []
+  "failures": [
+    {
+      "key": "BWP:10",
+      "pick": "Africa-current",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "key": "NAD:30",
+      "pick": "Africa-current",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "key": "EGP:10",
+      "pick": "Africa-current",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "key": "EGP:20",
+      "pick": "Africa-current",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "key": "EGP:100",
+      "pick": "Africa-current",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "key": "EGP:200",
+      "pick": "Africa-current",
+      "error": "HTTP Error 404: Not Found"
+    }
+  ]
 }
