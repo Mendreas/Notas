@@ -17,6 +17,8 @@ jobs:
         with:
           python-version: '3.12'
       - name: Scrape exact front/back motifs
+        env:
+          CONTEXT_TARGET_MANIFEST: data/banknotews-target.json
         run: python scripts/scrape-banknote-context.py
       - name: Build Portuguese context catalogue
         run: python scripts/build-note-context.py
