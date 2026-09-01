@@ -8736,6 +8736,18 @@
       "back": "/assets/notes/banknotews/gtq/1-back.jpg",
       "frontBytes": 112259,
       "backBytes": 113087
+    },
+    "BDT:5": {
+      "currency": "BDT",
+      "value": 5,
+      "pick": "P-W75",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/BDE/BDEW0075.htm",
+      "frontSource": "https://www.banknote.ws/COLLECTION/countries/ASI/BDE/BDW0075o.jpg",
+      "backSource": "https://www.banknote.ws/COLLECTION/countries/ASI/BDE/BDW0075r.jpg",
+      "front": "/assets/notes/banknotews/bdt/5-front.jpg",
+      "back": "/assets/notes/banknotews/bdt/5-back.jpg",
+      "frontBytes": 121787,
+      "backBytes": 130694
     }
   },
   "failures": []
