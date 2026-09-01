@@ -1,2 +1,2 @@
-run=2026-09-01T21:30:00+01:00
-scope=caribbean-full-banknotews
+run=2026-09-01T21:40:00+01:00
+scope=caribbean-targeted-refresh
