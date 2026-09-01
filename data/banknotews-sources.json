@@ -4404,33 +4404,67 @@
       "back": "/assets/notes/banknotews/xaf/10000-back.jpg",
       "frontBytes": 128006,
       "backBytes": 125540
+    },
+    "XOF:500": {
+      "currency": "XOF",
+      "value": 500,
+      "pick": "P-119A",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/WAS/WAS0119A2.htm",
+      "frontSource": "https://www.banknote.ws/COLLECTION/countries/AFR/WAS/WAS0119A2ao.jpg",
+      "backSource": "https://www.banknote.ws/COLLECTION/countries/AFR/WAS/WAS0119A2ar.jpg",
+      "front": "/assets/notes/banknotews/xof/500-front.jpg",
+      "back": "/assets/notes/banknotews/xof/500-back.jpg",
+      "frontBytes": 132774,
+      "backBytes": 141301
+    },
+    "XOF:1000": {
+      "currency": "XOF",
+      "value": 1000,
+      "pick": "P-115A",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/WAS/WAS0115A2.htm",
+      "frontSource": "https://www.banknote.ws/COLLECTION/countries/AFR/WAS/WAS0115A2bo.jpg",
+      "backSource": "https://www.banknote.ws/COLLECTION/countries/AFR/WAS/WAS0115A2br.jpg",
+      "front": "/assets/notes/banknotews/xof/1000-front.jpg",
+      "back": "/assets/notes/banknotews/xof/1000-back.jpg",
+      "frontBytes": 117385,
+      "backBytes": 106671
+    },
+    "XOF:2000": {
+      "currency": "XOF",
+      "value": 2000,
+      "pick": "P-116A",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/WAS/WAS0116A2.htm",
+      "frontSource": "https://www.banknote.ws/COLLECTION/countries/AFR/WAS/WAS0116A2bo.jpg",
+      "backSource": "https://www.banknote.ws/COLLECTION/countries/AFR/WAS/WAS0116A2br.jpg",
+      "front": "/assets/notes/banknotews/xof/2000-front.jpg",
+      "back": "/assets/notes/banknotews/xof/2000-back.jpg",
+      "frontBytes": 128615,
+      "backBytes": 125554
+    },
+    "XOF:5000": {
+      "currency": "XOF",
+      "value": 5000,
+      "pick": "P-117A",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/WAS/WAS0117A2.htm",
+      "frontSource": "https://www.banknote.ws/COLLECTION/countries/AFR/WAS/WAS0117A2bo.jpg",
+      "backSource": "https://www.banknote.ws/COLLECTION/countries/AFR/WAS/WAS0117A2br.jpg",
+      "front": "/assets/notes/banknotews/xof/5000-front.jpg",
+      "back": "/assets/notes/banknotews/xof/5000-back.jpg",
+      "frontBytes": 142390,
+      "backBytes": 131581
+    },
+    "XOF:10000": {
+      "currency": "XOF",
+      "value": 10000,
+      "pick": "P-118A",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/WAS/WAS0118A2.htm",
+      "frontSource": "https://www.banknote.ws/COLLECTION/countries/AFR/WAS/WAS0118A2bo.jpg",
+      "backSource": "https://www.banknote.ws/COLLECTION/countries/AFR/WAS/WAS0118A2br.jpg",
+      "front": "/assets/notes/banknotews/xof/10000-front.jpg",
+      "back": "/assets/notes/banknotews/xof/10000-back.jpg",
+      "frontBytes": 132594,
+      "backBytes": 131459
     }
   },
-  "failures": [
-    {
-      "key": "XOF:500",
-      "pick": "Africa-XOF-current",
-      "error": "HTTP Error 404: Not Found"
-    },
-    {
-      "key": "XOF:1000",
-      "pick": "Africa-XOF-current",
-      "error": "HTTP Error 404: Not Found"
-    },
-    {
-      "key": "XOF:2000",
-      "pick": "Africa-XOF-current",
-      "error": "HTTP Error 404: Not Found"
-    },
-    {
-      "key": "XOF:5000",
-      "pick": "Africa-XOF-current",
-      "error": "HTTP Error 404: Not Found"
-    },
-    {
-      "key": "XOF:10000",
-      "pick": "Africa-XOF-current",
-      "error": "HTTP Error 404: Not Found"
-    }
-  ]
+  "failures": []
 }
