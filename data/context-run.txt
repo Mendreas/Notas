@@ -1,2 +1,2 @@
-run=2026-08-31T15:16:00Z
-scope=all-banknotews-sourced-notes-exact-front-back
+run=2026-09-01T09:36:00+01:00
+scope=africa-wave3-ghs-ugx-tzs-etb-rwf
