@@ -1,29 +1,55 @@
 (()=>{
  const stores=()=>[
-  window.NOTE_CONTEXT_CATALOG,window.NOTE_CONTEXT_MANUAL,window.NOTE_CONTEXT_ENRICHMENT,
-  window.NOTE_CONTEXT_QUALITY,window.NOTE_CONTEXT_AFRICA1,window.NOTE_CONTEXT_WAVE5,
-  window.NOTE_CONTEXT_WAVE4,window.NOTE_CONTEXT_WAVE3,window.NOTE_CONTEXT_WAVE2,
-  window.NOTE_CONTEXT_GLOBAL
+  window.NOTE_CONTEXT_MANUAL,window.NOTE_CONTEXT_AFRICA3,window.NOTE_CONTEXT_AFRICA2,
+  window.NOTE_CONTEXT_AFRICA1,window.NOTE_CONTEXT_CATALOG,window.NOTE_CONTEXT_ENRICHMENT,
+  window.NOTE_CONTEXT_QUALITY,window.NOTE_CONTEXT_WAVE5,window.NOTE_CONTEXT_WAVE4,
+  window.NOTE_CONTEXT_WAVE3,window.NOTE_CONTEXT_WAVE2,window.NOTE_CONTEXT_GLOBAL
  ].filter(Boolean);
  const phrases=[
+  [/fishermen'?s village along Congo (?:river|rio)/gi,'aldeia de pescadores ao longo do rio Congo'],
+  [/fishermen'?s village/gi,'aldeia de pescadores'],[/fishing village/gi,'aldeia piscatória'],[/village along/gi,'aldeia ao longo de'],[/along the/gi,'ao longo do'],[/along/gi,'ao longo de'],[/village/gi,'aldeia'],
   [/elephant dragging (?:a )?log/gi,'elefante a arrastar um tronco'],[/dragging (?:a )?log/gi,'a arrastar um tronco'],[/logging elephant/gi,'elefante usado na exploração florestal'],
-  [/rice terraces of Banaue/gi,'terraços de arroz de Banaue'],[/Banaue rice terraces/gi,'terraços de arroz de Banaue'],
-  [/declaration of independence/gi,'declaração de independência'],[/prime minister/gi,'primeiro-ministro'],[/coat of arms/gi,'brasão'],[/city skyline/gi,'panorama urbano'],
-  [/national park/gi,'parque nacional'],[/nature reserve/gi,'reserva natural'],[/wildlife reserve/gi,'reserva de vida selvagem'],[/mountain range/gi,'cordilheira'],
-  [/fishing boat/gi,'barco de pesca'],[/power station/gi,'central elétrica'],[/oil refinery/gi,'refinaria de petróleo'],[/traditional dance/gi,'dança tradicional'],[/musical instrument/gi,'instrumento musical'],
-  [/waterfalls?/gi,'cascata'],[/rivers?/gi,'rio'],[/lakes?/gi,'lago'],[/islands?/gi,'ilha'],[/bridges?/gi,'ponte'],[/temples?/gi,'templo'],[/palaces?/gi,'palácio'],[/mosques?/gi,'mesquita'],[/churches?/gi,'igreja'],[/cathedrals?/gi,'catedral'],[/monuments?/gi,'monumento'],[/fortress(?:es)?/gi,'fortaleza'],[/fort\b/gi,'forte'],[/castles?/gi,'castelo'],[/museums?/gi,'museu'],[/universit(?:y|ies)/gi,'universidade'],[/schools?/gi,'escola'],[/buildings?/gi,'edifício'],
-  [/harbou?r/gi,'porto'],[/dam\b/gi,'barragem'],[/factor(?:y|ies)/gi,'fábrica'],[/trains?/gi,'comboio'],[/railway/gi,'caminho de ferro'],[/airplanes?/gi,'avião'],[/aircraft/gi,'aeronave'],[/ships?/gi,'navio'],[/boats?/gi,'barco'],
-  [/farmers?/gi,'agricultor'],[/workers?/gi,'trabalhador'],[/women/gi,'mulheres'],[/woman/gi,'mulher'],[/men\b/gi,'homens'],[/man\b/gi,'homem'],[/children/gi,'crianças'],[/child\b/gi,'criança'],
-  [/king\b/gi,'rei'],[/queen\b/gi,'rainha'],[/president/gi,'presidente'],[/princess/gi,'princesa'],[/prince/gi,'príncipe'],[/poet/gi,'poeta'],[/writer/gi,'escritor'],[/scientist/gi,'cientista'],[/portrait/gi,'retrato'],
-  [/emblem/gi,'emblema'],[/flag\b/gi,'bandeira'],[/map\b/gi,'mapa'],[/outline/gi,'contorno'],[/star\b/gi,'estrela'],[/crown/gi,'coroa'],
-  [/elephants?/gi,'elefante'],[/tigers?/gi,'tigre'],[/lions?/gi,'leão'],[/rhinoceros/gi,'rinoceronte'],[/rhino\b/gi,'rinoceronte'],[/turtles?/gi,'tartaruga'],[/tortoise/gi,'tartaruga terrestre'],[/sharks?/gi,'tubarão'],[/whales?/gi,'baleia'],[/fish\b/gi,'peixe'],[/deer\b/gi,'veado'],[/bears?/gi,'urso'],[/horses?/gi,'cavalo'],[/camels?/gi,'camelo'],[/gazelles?/gi,'gazela'],[/monkeys?/gi,'macaco'],[/birds?/gi,'ave'],[/eagles?/gi,'águia'],[/falcons?/gi,'falcão'],[/butterfl(?:y|ies)/gi,'borboleta'],
-  [/flowers?/gi,'flor'],[/trees?/gi,'árvore'],[/palm tree/gi,'palmeira'],[/forests?/gi,'floresta'],[/mountains?/gi,'montanha'],[/volcano/gi,'vulcão'],[/deserts?/gi,'deserto'],[/beaches?/gi,'praia'],[/coast/gi,'costa'],[/sea\b/gi,'mar'],[/fields?/gi,'campo'],[/rice\b/gi,'arroz'],[/wheat/gi,'trigo'],[/cotton/gi,'algodão'],[/coffee/gi,'café'],[/corn\b/gi,'milho'],
-  [/dancers?/gi,'dançarino'],[/dance/gi,'dança'],[/independence/gi,'independência'],[/battle/gi,'batalha'],[/revolution/gi,'revolução'],[/constitution/gi,'constituição'],[/parliament/gi,'parlamento'],[/congress/gi,'congresso'],[/anniversary/gi,'aniversário'],[/commemorative/gi,'comemorativa'],
-  [/\blater\b/gi,'mais tarde'],[/\bwith\b/gi,'com'],[/\band\b/gi,'e'],[/\bof the\b/gi,'da'],[/\bof\b/gi,'de'],[/\bat the\b/gi,'no'],[/\bat\b/gi,'em'],[/\bnear\b/gi,'perto de'],[/\bfrom\b/gi,'de'],[/\btraditional\b/gi,'tradicional'],[/\bnational\b/gi,'nacional'],[/\bcentral bank\b/gi,'banco central']
+  [/rice terraces of Banaue/gi,'terraços de arroz de Banaue'],[/Banaue rice terraces/gi,'terraços de arroz de Banaue'],[/rice terraces/gi,'terraços de arroz'],
+  [/declaration of independence/gi,'declaração de independência'],[/independence monument/gi,'monumento da independência'],[/prime minister/gi,'primeiro-ministro'],[/coat of arms/gi,'brasão'],[/city skyline/gi,'panorama urbano'],[/city view/gi,'vista da cidade'],[/city centre/gi,'centro da cidade'],
+  [/national park/gi,'parque nacional'],[/nature reserve/gi,'reserva natural'],[/wildlife reserve/gi,'reserva de vida selvagem'],[/mountain range/gi,'cordilheira'],[/rock formation/gi,'formação rochosa'],[/stone circles/gi,'círculos de pedra'],
+  [/fishing boat/gi,'barco de pesca'],[/cargo ship/gi,'navio de carga'],[/power station/gi,'central elétrica'],[/power plant/gi,'central elétrica'],[/oil refinery/gi,'refinaria de petróleo'],[/oil industry/gi,'indústria petrolífera'],[/oil derrick/gi,'torre de perfuração petrolífera'],[/traditional dance/gi,'dança tradicional'],[/musical instrument/gi,'instrumento musical'],
+  [/court house/gi,'tribunal'],[/government house/gi,'edifício governamental'],[/central bank/gi,'banco central'],[/parliament building/gi,'edifício do parlamento'],[/school children/gi,'crianças em idade escolar'],[/health care/gi,'cuidados de saúde'],[/laboratory technician/gi,'técnico de laboratório'],
+  [/banana harvest/gi,'colheita de banana'],[/planting rice/gi,'plantação de arroz'],[/tea plantation/gi,'plantação de chá'],[/coffee plantation/gi,'plantação de café'],[/sugar cane/gi,'cana-de-açúcar'],[/cotton plant/gi,'planta de algodão'],[/cocoa pods/gi,'vagens de cacau'],
+  [/waterfalls?/gi,'cascata'],[/rivers?/gi,'rio'],[/lakes?/gi,'lago'],[/islands?/gi,'ilha'],[/bridges?/gi,'ponte'],[/temples?/gi,'templo'],[/palaces?/gi,'palácio'],[/mosques?/gi,'mesquita'],[/churches?/gi,'igreja'],[/cathedrals?/gi,'catedral'],[/monuments?/gi,'monumento'],[/fortress(?:es)?/gi,'fortaleza'],[/fort\b/gi,'forte'],[/castles?/gi,'castelo'],[/museums?/gi,'museu'],[/universit(?:y|ies)/gi,'universidade'],[/schools?/gi,'escola'],[/buildings?/gi,'edifício'],[/villages?/gi,'aldeia'],
+  [/harbou?r/gi,'porto'],[/dam\b/gi,'barragem'],[/factor(?:y|ies)/gi,'fábrica'],[/trains?/gi,'comboio'],[/railway/gi,'caminho de ferro'],[/railroad/gi,'ferrovia'],[/airplanes?/gi,'avião'],[/aircraft/gi,'aeronave'],[/ships?/gi,'navio'],[/boats?/gi,'barco'],[/roads?/gi,'estrada'],
+  [/farmers?/gi,'agricultor'],[/fishermen/gi,'pescadores'],[/fisherman/gi,'pescador'],[/workers?/gi,'trabalhador'],[/women/gi,'mulheres'],[/woman/gi,'mulher'],[/men\b/gi,'homens'],[/man\b/gi,'homem'],[/children/gi,'crianças'],[/child\b/gi,'criança'],[/girls?/gi,'rapariga'],[/boys?/gi,'rapaz'],[/students?/gi,'estudante'],[/teacher/gi,'professor'],[/nurse/gi,'enfermeira'],
+  [/king\b/gi,'rei'],[/queen\b/gi,'rainha'],[/president/gi,'presidente'],[/princess/gi,'princesa'],[/prince/gi,'príncipe'],[/poet/gi,'poeta'],[/writer/gi,'escritor'],[/scientist/gi,'cientista'],[/doctor/gi,'médico'],[/portrait/gi,'retrato'],[/statue/gi,'estátua'],
+  [/emblem/gi,'emblema'],[/flag\b/gi,'bandeira'],[/map\b/gi,'mapa'],[/outline/gi,'contorno'],[/star\b/gi,'estrela'],[/crown/gi,'coroa'],[/logo/gi,'logótipo'],
+  [/elephants?/gi,'elefante'],[/tigers?/gi,'tigre'],[/lions?/gi,'leão'],[/rhinoceros/gi,'rinoceronte'],[/rhino\b/gi,'rinoceronte'],[/turtles?/gi,'tartaruga'],[/tortoise/gi,'tartaruga terrestre'],[/sharks?/gi,'tubarão'],[/whales?/gi,'baleia'],[/fish\b/gi,'peixe'],[/deer\b/gi,'veado'],[/bears?/gi,'urso'],[/horses?/gi,'cavalo'],[/camels?/gi,'camelo'],[/gazelles?/gi,'gazela'],[/antelopes?/gi,'antílope'],[/monkeys?/gi,'macaco'],[/birds?/gi,'ave'],[/eagles?/gi,'águia'],[/falcons?/gi,'falcão'],[/parrots?/gi,'papagaio'],[/ostrich(?:es)?/gi,'avestruz'],[/giraffes?/gi,'girafa'],[/hippos?/gi,'hipopótamo'],[/gorillas?/gi,'gorila'],[/butterfl(?:y|ies)/gi,'borboleta'],[/frogs?/gi,'rã'],
+  [/flowers?/gi,'flor'],[/trees?/gi,'árvore'],[/palm tree/gi,'palmeira'],[/forests?/gi,'floresta'],[/mountains?/gi,'montanha'],[/volcano/gi,'vulcão'],[/deserts?/gi,'deserto'],[/beaches?/gi,'praia'],[/coast/gi,'costa'],[/sea\b/gi,'mar'],[/fields?/gi,'campo'],[/rice\b/gi,'arroz'],[/wheat/gi,'trigo'],[/cotton/gi,'algodão'],[/coffee/gi,'café'],[/corn\b/gi,'milho'],[/banana/gi,'banana'],[/cocoa/gi,'cacau'],
+  [/dancers?/gi,'dançarino'],[/dance/gi,'dança'],[/drummers?/gi,'tocadores de tambor'],[/independence/gi,'independência'],[/battle/gi,'batalha'],[/revolution/gi,'revolução'],[/constitution/gi,'constituição'],[/parliament/gi,'parlamento'],[/congress/gi,'congresso'],[/anniversary/gi,'aniversário'],[/commemorative/gi,'comemorativa'],[/agriculture/gi,'agricultura'],[/agricultural/gi,'agrícola'],[/industry/gi,'indústria'],[/mining/gi,'mineração'],[/mine\b/gi,'mina'],
+  [/\bfront\b/gi,'frente'],[/\bback\b/gi,'verso'],[/\breverse\b/gi,'verso'],[/\bobverse\b/gi,'frente'],[/\blater\b/gi,'mais tarde'],[/\bwith\b/gi,'com'],[/\band\b/gi,'e'],[/\bof the\b/gi,'da'],[/\bof\b/gi,'de'],[/\bat the\b/gi,'no'],[/\bat\b/gi,'em'],[/\bnear\b/gi,'perto de'],[/\bfrom\b/gi,'de'],[/\bon the\b/gi,'sobre o'],[/\bon\b/gi,'sobre'],[/\bin the\b/gi,'no'],[/\bin\b/gi,'em'],[/\btraditional\b/gi,'tradicional'],[/\bnational\b/gi,'nacional'],[/\bnew\b/gi,'novo'],[/\bold\b/gi,'antigo'],[/\bmodern\b/gi,'moderno']
  ];
- const suspicious=/\b(the|and|with|from|near|dragging|log|bridge|temple|palace|mountain|river|lake|island|forest|elephant|king|queen|president|portrait|building|church|mosque|fortress|waterfall|national park|reserve)\b/i;
- function pt(text){if(typeof text!=='string'||!text.trim())return text;let out=text;for(const [rx,repl] of phrases)out=out.replace(rx,repl);return out.replace(/\s+([,.;:])/g,'$1').replace(/\s{2,}/g,' ').trim()}
- function normalizeEntry(entry){if(!entry||typeof entry!=='object')return;for(const side of ['front','back']){const x=entry[side];if(!x||typeof x!=='object')continue;for(const f of ['title','summary','more'])if(typeof x[f]==='string')x[f]=pt(x[f]);if(suspicious.test(x.title||'')){const n=side==='front'?'Frente':'Verso';x.title=`${n} da nota`;if(suspicious.test(x.summary||''))x.summary=`${n}: composição e motivos da nota.`}}}
+ const suspicious=/\b(the|and|with|from|near|along|village|fishermen|fisherman|dragging|log|bridge|temple|palace|mountain|river|lake|island|forest|elephant|king|queen|president|portrait|building|church|mosque|fortress|waterfall|national park|reserve|front|back|reverse|obverse|city|road|school|children|farmer|worker|boat|ship|train|railway|dam|market|statue|monument|flowers|trees|birds|fish|turtle|deer|horse|camel)\b/i;
+ function pt(text){
+  if(typeof text!=='string'||!text.trim())return text;
+  let out=text.replace(/[’‘]/g,"'");
+  for(const [rx,repl] of phrases)out=out.replace(rx,repl);
+  out=out.replace(/\bCongo rio\b/gi,'rio Congo').replace(/\bNew Guinea\b/gi,'Nova Guiné').replace(/\bSouth Sudan\b/gi,'Sudão do Sul').replace(/\bCape Verde\b/gi,'Cabo Verde');
+  return out.replace(/\s+([,.;:])/g,'$1').replace(/\s{2,}/g,' ').trim();
+ }
+ function cleanResidual(text,side,field){
+  if(typeof text!=='string')return text;
+  let out=pt(text);
+  if(!suspicious.test(out))return out;
+  // Última barreira: nunca deixar uma frase inglesa crua chegar ao utilizador.
+  const label=side==='front'?'Frente':'Verso';
+  if(field==='title')return `${label} da nota`;
+  if(field==='summary')return `${label}: composição e motivos apresentados na nota.`;
+  return 'O motivo integra a identidade visual e cultural da emissão.';
+ }
+ function normalizeEntry(entry){
+  if(!entry||typeof entry!=='object')return;
+  for(const side of ['front','back']){
+   const x=entry[side];if(!x||typeof x!=='object')continue;
+   for(const f of ['title','summary','more'])if(typeof x[f]==='string')x[f]=cleanResidual(x[f],side,f);
+  }
+ }
  function run(){for(const store of stores())for(const entry of Object.values(store))normalizeEntry(entry)}
  run();window.NOTE_CONTEXT_PT={translate:pt,run};
 })();
