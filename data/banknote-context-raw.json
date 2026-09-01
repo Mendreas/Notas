@@ -2682,7 +2682,7 @@
     "BWP:20": {
       "currency": "BWP",
       "value": 20,
-      "pick": "Africa-current",
+      "pick": "P-31",
       "page": "https://www.banknote.ws/COLLECTION/countries/AFR/BOT/BOT0031.htm",
       "front": "Kgalemang Tumedisco Motsete",
       "back": "Mining equipment"
@@ -2690,7 +2690,7 @@
     "BWP:50": {
       "currency": "BWP",
       "value": 50,
-      "pick": "Africa-current",
+      "pick": "P-32",
       "page": "https://www.banknote.ws/COLLECTION/countries/AFR/BOT/BOT0032.htm",
       "front": "President Sir Seretse Khama",
       "back": "Boat, fish eagle"
@@ -2698,7 +2698,7 @@
     "BWP:100": {
       "currency": "BWP",
       "value": 100,
-      "pick": "Africa-current",
+      "pick": "P-33",
       "page": "https://www.banknote.ws/COLLECTION/countries/AFR/BOT/BOT0033.htm",
       "front": "Three Chiefs (Sebele I, Bathoen I, Khama III)",
       "back": "Sorting diamonds, diamond mine"
@@ -2706,7 +2706,7 @@
     "BWP:200": {
       "currency": "BWP",
       "value": 200,
-      "pick": "Africa-current",
+      "pick": "P-34",
       "page": "https://www.banknote.ws/COLLECTION/countries/AFR/BOT/BOT0034.htm",
       "front": "Teacher, children",
       "back": "Zebras"
@@ -2714,7 +2714,7 @@
     "NAD:10": {
       "currency": "NAD",
       "value": 10,
-      "pick": "Africa-current",
+      "pick": "P-W20",
       "page": "https://www.banknote.ws/COLLECTION/countries/AFR/NAM/NAMW0020.htm",
       "front": "Dr. Sam Nujoma, Parliament building (Windhoek)",
       "back": "Springbok"
@@ -2722,7 +2722,7 @@
     "NAD:20": {
       "currency": "NAD",
       "value": 20,
-      "pick": "Africa-current",
+      "pick": "P-W21",
       "page": "https://www.banknote.ws/COLLECTION/countries/AFR/NAM/NAMW0021.htm",
       "front": "Dr. Sam Nujoma, Parliament building (Windhoek)",
       "back": "Red Hartebeest"
@@ -2730,7 +2730,7 @@
     "NAD:50": {
       "currency": "NAD",
       "value": 50,
-      "pick": "Africa-current",
+      "pick": "P-W22",
       "page": "https://www.banknote.ws/COLLECTION/countries/AFR/NAM/NAMW0022.htm",
       "front": "Captain Hendrik Witbooi, Parliament building (Windhoek)",
       "back": "Kudus"
@@ -2738,7 +2738,7 @@
     "NAD:100": {
       "currency": "NAD",
       "value": 100,
-      "pick": "Africa-current",
+      "pick": "P-W23",
       "page": "https://www.banknote.ws/COLLECTION/countries/AFR/NAM/NAMW0023.htm",
       "front": "Captain Hendrik Witbooi, Parliament building (Windhoek)",
       "back": "Oryx"
@@ -2746,7 +2746,7 @@
     "NAD:200": {
       "currency": "NAD",
       "value": 200,
-      "pick": "Africa-current",
+      "pick": "P-W24",
       "page": "https://www.banknote.ws/COLLECTION/countries/AFR/NAM/NAMW0024.htm",
       "front": "Captain Hendrik Witbooi, Parliament building (Windhoek)",
       "back": "Roan antelope"
@@ -3126,6 +3126,390 @@
       "page": "https://www.banknote.ws/COLLECTION/countries/AFR/RWA/RWAW0045.htm",
       "front": "Kigali Convention Centre building",
       "back": "Basket with calabash inside traditional house"
+    },
+    "BWP:10": {
+      "currency": "BWP",
+      "value": 10,
+      "pick": "P-W36",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/BOT/BOTW2020-010.htm",
+      "front": "President Mokgweetsi Eric Keabetswe Masisi",
+      "back": "Parliament building, Gaborone"
+    },
+    "MRU:20": {
+      "currency": "MRU",
+      "value": 20,
+      "pick": "P-WA22",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/MAU/MAUW2020-0020.htm",
+      "front": "Great Mosque of Gataga, Kaédi (Gorgol Region)",
+      "back": "Geological wonder of Guelb Errichât (Eye of Africa)"
+    },
+    "MRU:50": {
+      "currency": "MRU",
+      "value": 50,
+      "pick": "P-22",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/MAU/MAU0022.htm",
+      "front": "Ibn Abbas mosque, Nouakchott",
+      "back": "Teapot, musical instruments"
+    },
+    "MRU:100": {
+      "currency": "MRU",
+      "value": 100,
+      "pick": "P-23",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/MAU/MAU0023.htm",
+      "front": "Mosque of Oualata",
+      "back": "Cattle"
+    },
+    "MRU:200": {
+      "currency": "MRU",
+      "value": 200,
+      "pick": "P-24",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/MAU/MAU0024.htm",
+      "front": "Tower",
+      "back": "Camels"
+    },
+    "MRU:500": {
+      "currency": "MRU",
+      "value": 500,
+      "pick": "P-25",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/MAU/MAU0025.htm",
+      "front": "Tower",
+      "back": "Trawlers, fish"
+    },
+    "MRU:1000": {
+      "currency": "MRU",
+      "value": 1000,
+      "pick": "P-26",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/MAU/MAU0026.htm",
+      "front": "Mosque of Chinguetti",
+      "back": "Locomotive of an ore train"
+    },
+    "KMF:500": {
+      "currency": "KMF",
+      "value": 500,
+      "pick": "P-15",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/COM/COM0015.htm",
+      "front": "Lemur",
+      "back": "Orchid"
+    },
+    "KMF:1000": {
+      "currency": "KMF",
+      "value": 1000,
+      "pick": "P-16",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/COM/COM0016.htm",
+      "front": "Coelacanth",
+      "back": "Canoe"
+    },
+    "KMF:2000": {
+      "currency": "KMF",
+      "value": 2000,
+      "pick": "P-17",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/COM/COM0017.htm",
+      "front": "Mosque and market of Moroni",
+      "back": "Huts"
+    },
+    "KMF:5000": {
+      "currency": "KMF",
+      "value": 5000,
+      "pick": "P-18",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/COM/COM0018.htm",
+      "front": "Saïd Mohamed Cheik",
+      "back": "Beach"
+    },
+    "KMF:10000": {
+      "currency": "KMF",
+      "value": 10000,
+      "pick": "P-19",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/COM/COM0019.htm",
+      "front": "Friday mosque (Moroni), Al-Habib Seyyid Omar Bin Sumeit",
+      "back": "Vanilla, blossoms of Ylang-Ylang tree"
+    },
+    "STN:5": {
+      "currency": "STN",
+      "value": 5,
+      "pick": "P-W76",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/STP/STPW2020-005.htm",
+      "front": "Arms, Acraea insulana butterfly, Banco Central building (São Tomé)",
+      "back": "Map of São Tomé and Príncipe, musaranho fingui (Crocidusa thomensis) mouse"
+    },
+    "STN:10": {
+      "currency": "STN",
+      "value": 10,
+      "pick": "P-W77",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/STP/STPW2020-010.htm",
+      "front": "Arms, Acraea niobe butterfly, Banco Central building (São Tomé)",
+      "back": "Map of São Tomé and Príncipe, Tluqui-sun-Dêçu (Prinia molleri) bird"
+    },
+    "STN:20": {
+      "currency": "STN",
+      "value": 20,
+      "pick": "P-72",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/STP/STP0072.htm",
+      "front": "Arms, Charaxes barnsi butterfly, Banco Central building (São Tomé)",
+      "back": "Map of São Tomé and Príncipe, rã de S. Tomé (Hyperolius thomensis) frog"
+    },
+    "STN:50": {
+      "currency": "STN",
+      "value": 50,
+      "pick": "P-73",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/STP/STP0073.htm",
+      "front": "Arms, Charaxes lemosi butterfly, Banco Central building (São Tomé)",
+      "back": "Map of São Tomé and Príncipe, tchintchinchólò (Ploceus sanctithomae) bird"
+    },
+    "STN:100": {
+      "currency": "STN",
+      "value": 100,
+      "pick": "P-74",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/STP/STP0074.htm",
+      "front": "Arms, Charaxes odysseus butterfly, Banco Central building (São Tomé)",
+      "back": "Map of São Tomé and Príncipe, macaco de S. Tomé (Cercophithecus mona) monkey"
+    },
+    "STN:200": {
+      "currency": "STN",
+      "value": 200,
+      "pick": "P-W81",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/STP/STPW2020-200.htm",
+      "front": "Rei Amador, arms",
+      "back": "Map of São Tomé and Príncipe, chibi-ficha (Anabathmis hartlaubii) Príncipe sunbird"
+    },
+    "ZMW:10": {
+      "currency": "ZMW",
+      "value": 10,
+      "pick": "P-W62",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/ZAM/ZAMW0062.htm",
+      "front": "Fish eagle, Kariba dam, arms",
+      "back": "Zambezi teak tree, Kabwelume Falls, Temminck's pangolin (scaly anteater, Smutsia temminckii)"
+    },
+    "ZMW:20": {
+      "currency": "ZMW",
+      "value": 20,
+      "pick": "P-W63",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/ZAM/ZAMW0063.htm",
+      "front": "Fish eagle, tractor, arms",
+      "back": "Candelabra tree, Chishimba Falls, kudus"
+    },
+    "ZMW:50": {
+      "currency": "ZMW",
+      "value": 50,
+      "pick": "P-W64",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/ZAM/ZAMW0064.htm",
+      "front": "Fish eagle, mining haul truck, arms",
+      "back": "Baobab tree, Lumangwe falls, parrots"
+    },
+    "ZMW:100": {
+      "currency": "ZMW",
+      "value": 100,
+      "pick": "P-W65",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/ZAM/ZAMW0065.htm",
+      "front": "Fish eagle, Victoria falls, arms",
+      "back": "Baobab tree, Mukuyu tree, Bioma falls, giraffes"
+    },
+    "ZMW:200": {
+      "currency": "ZMW",
+      "value": 200,
+      "pick": "P-W66",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/ZAM/ZAMW0066.htm",
+      "front": "Fish eagle, Kazungula bridge over the Zambezi River between Zambia and Botswana, arms",
+      "back": "Ing'ombe Ilede tree, Kalambo Fallas, rhinoceroses"
+    },
+    "ZMW:500": {
+      "currency": "ZMW",
+      "value": 500,
+      "pick": "P-W67",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/ZAM/ZAMW0067.htm",
+      "front": "Fish eagle, Bank of Zambia building (Lusaka), arms",
+      "back": "Acacia tree, Victoria Falls, Cape buffalos"
+    },
+    "MWK:20": {
+      "currency": "MWK",
+      "value": 20,
+      "pick": "P-63",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/MLW/MLW0063.htm",
+      "front": "Reserve Bank of Malawi (Lilongwe); Inkosi Ya Makhosi M'Mbelwa II (Lazalo Mkhuzo Jere)",
+      "back": "Machinga Teachers Training College, books, doctor's hat"
+    },
+    "MWK:50": {
+      "currency": "MWK",
+      "value": 50,
+      "pick": "P-64",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/MLW/MLW0064.htm",
+      "front": "Reserve Bank of Malawi (Lilongwe); Inkhosi ya Makhosi Philip Gomani II",
+      "back": "Elephant, Safari Jeep (Kasunga National Park)"
+    },
+    "MWK:100": {
+      "currency": "MWK",
+      "value": 100,
+      "pick": "P-65",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/MLW/MLW0065.htm",
+      "front": "Reserve Bank of Malawi (Lilongwe); James Frederick Sangala",
+      "back": "College of Medicine, Blantyre, stetoscope"
+    },
+    "MWK:200": {
+      "currency": "MWK",
+      "value": 200,
+      "pick": "P-W65A",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/MLW/MLWW0065A2.htm#2016",
+      "front": "W65A",
+      "back": "01.01.20 2 4"
+    },
+    "MWK:500": {
+      "currency": "MWK",
+      "value": 500,
+      "pick": "P-66",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/MLW/MLW0066.htm",
+      "front": "Reserve Bank of Malawi (Lilongwe); Reverend John Chilembwe",
+      "back": "Mulunguzi Dam (Zomba), faucet"
+    },
+    "MWK:1000": {
+      "currency": "MWK",
+      "value": 1000,
+      "pick": "P-67",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/MLW/MLW0067.htm",
+      "front": "Reserve Bank of Malawi (Lilongwe); Dr. Hastings Kamuzu Banda",
+      "back": "Mzuzu maize silos"
+    },
+    "MWK:2000": {
+      "currency": "MWK",
+      "value": 2000,
+      "pick": "P-W70",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/MLW/MLWW2022-2000.htm",
+      "front": "Reverend John Chilembwe, outline of Malawi",
+      "back": "Magistrate Court, Blantyre"
+    },
+    "MWK:5000": {
+      "currency": "MWK",
+      "value": 5000,
+      "pick": "P-W71",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/MLW/MLWW2022-5000.htm",
+      "front": "Dr. Hastings Kamuzu Banda , outline of Malawi",
+      "back": "Reserve Bank of Malawi building, Mzuzu"
+    },
+    "MZN:20": {
+      "currency": "MZN",
+      "value": 20,
+      "pick": "P-W155",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/MOZ/MOZW0155.htm",
+      "front": "Samora Moíses Machel",
+      "back": "Trees, mountains"
+    },
+    "MZN:50": {
+      "currency": "MZN",
+      "value": 50,
+      "pick": "P-W156",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/MOZ/MOZW0156.htm",
+      "front": "Samora Moíses Machel",
+      "back": "Kudu, antelopes"
+    },
+    "MZN:100": {
+      "currency": "MZN",
+      "value": 100,
+      "pick": "P-W157",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/MOZ/MOZW0157.htm",
+      "front": "Samora Moíses Machel",
+      "back": "Baskets of vegetables and fruit"
+    },
+    "MZN:200": {
+      "currency": "MZN",
+      "value": 200,
+      "pick": "P-W158",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/MOZ/MOZW0158.htm",
+      "front": "Samora Moíses Machel",
+      "back": "Lions"
+    },
+    "MZN:500": {
+      "currency": "MZN",
+      "value": 500,
+      "pick": "P-W159",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/MOZ/MOZW0159.htm",
+      "front": "Samora Moíses Machel",
+      "back": "Sailing boats"
+    },
+    "MZN:1000": {
+      "currency": "MZN",
+      "value": 1000,
+      "pick": "P-W160",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/MOZ/MOZW0160.htm",
+      "front": "Samora Moíses Machel",
+      "back": "Elephants"
+    },
+    "AOA:200": {
+      "currency": "AOA",
+      "value": 200,
+      "pick": "P-W160",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/ANG/ANGW2020-0200.htm",
+      "front": "Dr. António Agostinho Neto",
+      "back": "Piedras Negras de Punduandongo, Malanje"
+    },
+    "AOA:500": {
+      "currency": "AOA",
+      "value": 500,
+      "pick": "P-W161",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/ANG/ANGW2020-0500.htm",
+      "front": "Dr. António Agostinho Neto",
+      "back": "Gap of Tundavala, Huila"
+    },
+    "AOA:1000": {
+      "currency": "AOA",
+      "value": 1000,
+      "pick": "P-W162",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/ANG/ANGW2020-1000.htm",
+      "front": "Dr. António Agostinho Neto",
+      "back": "Luvili Peak, Huambo"
+    },
+    "AOA:2000": {
+      "currency": "AOA",
+      "value": 2000,
+      "pick": "P-W163",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/ANG/ANGW2020-2000.htm",
+      "front": "Dr. António Agostinho Neto",
+      "back": "Serra da Leba, Namibe"
+    },
+    "AOA:5000": {
+      "currency": "AOA",
+      "value": 5000,
+      "pick": "P-W164",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/ANG/ANGW2020-5000.htm",
+      "front": "Dr. António Agostinho Neto",
+      "back": "Ruins of the old Kulumbimbi cathedral / Catedral de São Salvador de Congo (Mbanza Kongo)"
+    },
+    "SLE:1": {
+      "currency": "SLE",
+      "value": 1,
+      "pick": "P-W34",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/SLE/SLEW0034.htm",
+      "front": "Bai Bureh",
+      "back": "Satellite dish"
+    },
+    "SLE:2": {
+      "currency": "SLE",
+      "value": 2,
+      "pick": "P-W35",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/SLE/SLEW0035.htm",
+      "front": "Isaac Theophilus Akunna Wallace-Johnson, cargo ship",
+      "back": "Bank of Sierra Leone building, Freetown"
+    },
+    "SLE:5": {
+      "currency": "SLE",
+      "value": 5,
+      "pick": "P-W36",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/SLE/SLEW0036.htm",
+      "front": "Sengbe Pieh",
+      "back": "Bumbuna hydroelectric dam"
+    },
+    "SLE:10": {
+      "currency": "SLE",
+      "value": 10,
+      "pick": "P-W37",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/SLE/SLEW0037.htm",
+      "front": "Pigeon, flag",
+      "back": "Arms, \"Cotton Tree\" of Freetown (Kapok tree, Ceiba pentandra); fallen in a storm in May 2023"
+    },
+    "SLE:20": {
+      "currency": "SLE",
+      "value": 20,
+      "pick": "P-W38",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/SLE/SLEW0038.htm",
+      "front": "Constance Cummings-John, arms",
+      "back": "Group of people (Education for Gender Empowerment)"
     }
   },
   "failures": [
