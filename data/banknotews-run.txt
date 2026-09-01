@@ -1,2 +1,2 @@
-run=2026-09-01T22:24:00+01:00
-scope=oceania-vuv100
+run=2026-09-01T22:45:00+01:00
+scope=central-america-full-banknotews
