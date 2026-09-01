@@ -4294,6 +4294,182 @@
       "page": "https://www.banknote.ws/COLLECTION/countries/AFR/CDR/CDR0104.htm",
       "front": "Giraffes, carved head \"Bashilele\"",
       "back": "Palm trees, crowned cranes"
+    },
+    "GMD:5": {
+      "currency": "GMD",
+      "value": 5,
+      "pick": "P-W37",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/GAM/GAMW2019-005.htm",
+      "front": "Giant kingfisher, arms",
+      "back": "Cattle"
+    },
+    "GMD:10": {
+      "currency": "GMD",
+      "value": 10,
+      "pick": "P-W38",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/GAM/GAMW2019-010.htm",
+      "front": "Birds, arms",
+      "back": "Ferry \"Kunta Kinteh\""
+    },
+    "GMD:20": {
+      "currency": "GMD",
+      "value": 20,
+      "pick": "P-W39",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/GAM/GAMW2019-020.htm",
+      "front": "Birds, arms",
+      "back": "Agricultural machine"
+    },
+    "GMD:50": {
+      "currency": "GMD",
+      "value": 50,
+      "pick": "P-W40",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/GAM/GAMW2019-050.htm",
+      "front": "Birds, arms",
+      "back": "Wassu stone circles"
+    },
+    "GMD:100": {
+      "currency": "GMD",
+      "value": 100,
+      "pick": "P-W41",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/GAM/GAMW2019-100.htm",
+      "front": "Crowned cranes, arms",
+      "back": "Fishermen"
+    },
+    "GMD:200": {
+      "currency": "GMD",
+      "value": 200,
+      "pick": "P-W42",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/GAM/GAMW2019-200.htm",
+      "front": "Birds, arms",
+      "back": "Planting rice"
+    },
+    "SSP:1": {
+      "currency": "SSP",
+      "value": 1,
+      "pick": "P-5",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/SSD/SSD0005.htm",
+      "front": "Dr. John Garang de Mabior",
+      "back": "Giraffes"
+    },
+    "SSP:5": {
+      "currency": "SSP",
+      "value": 5,
+      "pick": "P-11",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/SSD/SSD0011.htm",
+      "front": "Dr. John Garang de Mabior",
+      "back": "Aliab Dinka cattle"
+    },
+    "SSP:10": {
+      "currency": "SSP",
+      "value": 10,
+      "pick": "P-12",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/SSD/SSD0012.htm",
+      "front": "Dr. John Garang de Mabior",
+      "back": "Buffalos, pineapple"
+    },
+    "SSP:25": {
+      "currency": "SSP",
+      "value": 25,
+      "pick": "P-8",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/SSD/SSD0008.htm",
+      "front": "Dr. John Garang de Mabior",
+      "back": "Oryx antelopes, oil derrick"
+    },
+    "SSP:50": {
+      "currency": "SSP",
+      "value": 50,
+      "pick": "P-14",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/SSD/SSD0014.htm",
+      "front": "Dr. John Garang de Mabior",
+      "back": "Elephants"
+    },
+    "SSP:100": {
+      "currency": "SSP",
+      "value": 100,
+      "pick": "P-15",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/SSD/SSD0015.htm",
+      "front": "Dr. John Garang de Mabior",
+      "back": "Lion, waterfall"
+    },
+    "SSP:500": {
+      "currency": "SSP",
+      "value": 500,
+      "pick": "P-W20",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/SSD/SSDW0020.htm",
+      "front": "Dr. John Garang de Mabior",
+      "back": "River"
+    },
+    "SSP:1000": {
+      "currency": "SSP",
+      "value": 1000,
+      "pick": "P-W21",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/SSD/SSDW0021.htm",
+      "front": "Dr. John Garang de Mabior",
+      "back": "Ostriches"
+    },
+    "LYD:1": {
+      "currency": "LYD",
+      "value": 1,
+      "pick": "P-W85",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/LIY/LIYW2019-01.htm",
+      "front": "Central Bank of Libya building , Tripolis",
+      "back": "Refinery, Marcus Aurelius arch (Tripolis)"
+    },
+    "LYD:5": {
+      "currency": "LYD",
+      "value": 5,
+      "pick": "P-W86",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/LIY/LIYW2021-05.htm",
+      "front": "Ottoman clock tower , Tripolis",
+      "back": "Temple of Zeus, Cyrene"
+    },
+    "LYD:10": {
+      "currency": "LYD",
+      "value": 10,
+      "pick": "P-82",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/LIY/LIY0082.htm",
+      "front": "Omar el Mukhtar",
+      "back": "Horsemen of Omar el Mukhtar"
+    },
+    "LYD:20": {
+      "currency": "LYD",
+      "value": 20,
+      "pick": "P-W87",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/LIY/LIYW0087.htm",
+      "front": "Al-Atiq mosque, Awjilah",
+      "back": "Girl's school, Ghadames"
+    },
+    "SOS:1000": {
+      "currency": "SOS",
+      "value": 1000,
+      "pick": "P-37",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/SOM/SOM0037.htm",
+      "front": "Basket weavers",
+      "back": "Port and waterfront of Mogadiscio"
+    },
+    "ZWG:10": {
+      "currency": "ZWG",
+      "value": 10,
+      "pick": "P-W115",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/ZIM/ZIMW0115.htm",
+      "front": "Cape buffalo, Chiremba balancing rock formation",
+      "back": "Matopo hills balancing rock formation"
+    },
+    "ZWG:20": {
+      "currency": "ZWG",
+      "value": 20,
+      "pick": "P-W116",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/ZIM/ZIMW0116.htm",
+      "front": "Elephant, Chiremba balancing rock formation",
+      "back": "New Parliament building complex, Harare"
+    },
+    "ZWG:50": {
+      "currency": "ZWG",
+      "value": 50,
+      "pick": "P-W117",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/ZIM/ZIMW0117.htm",
+      "front": "Rhinoceros, Chiremba balancing rock formation",
+      "back": "Kariba dam"
     }
   },
   "failures": [
