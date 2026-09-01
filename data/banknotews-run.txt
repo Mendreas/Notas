@@ -1,2 +1,2 @@
-run=2026-09-01T09:55:00+01:00
-scope=africa-shared-cfa
+run=2026-09-01T10:02:00+01:00
+scope=africa-xof-retry
