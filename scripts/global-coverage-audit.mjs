@@ -10,7 +10,7 @@ function walk(dir='.'){
     if(['.git','node_modules','assets'].includes(ent.name)) continue;
     const rel=path.join(dir,ent.name).replaceAll('\\','/');
     if(ent.isDirectory()) out.push(...walk(rel));
-    else if(/\.(?:js|json)$/i.test(ent.name)) out.push(rel.replace(/^\.\//,''));
+    else if(/\.(?:js|json)$/i.test(ent.name) && rel!=='scripts/global-coverage-audit.mjs') out.push(rel.replace(/^\.\//,''));
   }
   return out;
 }
