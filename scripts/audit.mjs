@@ -79,6 +79,31 @@ for(const f of textual){
 }
 info.push(`${remoteImages} referências diretas a imagens remotas detetadas (dependência de rede; não é erro por si só).`);
 
+// 8) Every locally imported banknote scan should have a front/back pair.
+const bankDir='assets/notes/banknotews';
+if(exists(bankDir)){
+  const scans=walk(bankDir).filter(x=>/-(?:front|back)\.jpg$/i.test(x));
+  const stems=new Map();
+  for(const f of scans){
+    const m=f.match(/^(.*)-(front|back)\.jpg$/i);if(!m)continue;
+    if(!stems.has(m[1]))stems.set(m[1],new Set());stems.get(m[1]).add(m[2].toLowerCase());
+  }
+  let incomplete=0;
+  for(const [stem,sides] of stems){if(!sides.has('front')||!sides.has('back')){errors.push(`Par frente/verso incompleto: ${stem}`);incomplete++;}}
+  info.push(`${stems.size} notas locais banknote.ws verificadas em pares frente/verso; ${incomplete} incompletas.`);
+}
+
+// 9) Surface likely English residue in editorial descriptions; never hide it.
+const contextFiles=files.filter(x=>/^note-context.*\.js$/i.test(path.basename(x)));
+const englishMarkers=/\b(?:building|bridge|church|palace|portrait|river|mountain|waterfall|fishermen|village|airport|airplane|ship|boat|farmer|farmers|cattle|children|dancers|forest|bird|birds|turtle|flower|flowers|school|hospital|museum|monument|statue|arms|coat of arms|government|central bank|national bank)\b/i;
+const englishHits=[];
+for(const f of contextFiles){
+  const lines=read(f).split(/\r?\n/);
+  lines.forEach((line,i)=>{if(englishMarkers.test(line)&&/(summary|more|title)\s*:/.test(line))englishHits.push(`${f}:${i+1}`);});
+}
+if(englishHits.length)warnings.push(`Possível inglês residual em descrições: ${englishHits.slice(0,20).join(', ')}${englishHits.length>20?` (+${englishHits.length-20})`:''}.`);
+else info.push('Sem marcadores óbvios de inglês residual nas descrições editoriais.');
+
 console.log('\n=== NOTAS DO MUNDO · AUDITORIA ESTÁTICA ===');
 for(const x of info)console.log(`INFO  ${x}`);
 for(const x of warnings)console.warn(`WARN  ${x}`);
