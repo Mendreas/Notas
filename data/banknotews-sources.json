@@ -8676,6 +8676,66 @@
       "back": "/assets/notes/banknotews/nad/60-back.jpg",
       "frontBytes": 138808,
       "backBytes": 108102
+    },
+    "FKP:5": {
+      "currency": "FKP",
+      "value": 5,
+      "pick": "P-W20",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AME/FKL/FKLW0020.htm",
+      "frontSource": "https://www.banknote.ws/COLLECTION/countries/AME/FKL/FKLW0020o.jpg",
+      "backSource": "https://www.banknote.ws/COLLECTION/countries/AME/FKL/FKLW0020r.jpg",
+      "front": "/assets/notes/banknotews/fkp/5-front.jpg",
+      "back": "/assets/notes/banknotews/fkp/5-back.jpg",
+      "frontBytes": 108873,
+      "backBytes": 102137
+    },
+    "FKP:10": {
+      "currency": "FKP",
+      "value": 10,
+      "pick": "P-W21",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AME/FKL/FKLW0021.htm",
+      "frontSource": "https://www.banknote.ws/COLLECTION/countries/AME/FKL/FKLW0021o.jpg",
+      "backSource": "https://www.banknote.ws/COLLECTION/countries/AME/FKL/FKLW0021r.jpg",
+      "front": "/assets/notes/banknotews/fkp/10-front.jpg",
+      "back": "/assets/notes/banknotews/fkp/10-back.jpg",
+      "frontBytes": 104664,
+      "backBytes": 101289
+    },
+    "FKP:20": {
+      "currency": "FKP",
+      "value": 20,
+      "pick": "P-W22",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AME/FKL/FKLW0022.htm",
+      "frontSource": "https://www.banknote.ws/COLLECTION/countries/AME/FKL/FKLW0022o.jpg",
+      "backSource": "https://www.banknote.ws/COLLECTION/countries/AME/FKL/FKLW0022r.jpg",
+      "front": "/assets/notes/banknotews/fkp/20-front.jpg",
+      "back": "/assets/notes/banknotews/fkp/20-back.jpg",
+      "frontBytes": 107954,
+      "backBytes": 102275
+    },
+    "FKP:50": {
+      "currency": "FKP",
+      "value": 50,
+      "pick": "P-16",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AME/FKL/FKL0016.htm",
+      "frontSource": "https://www.banknote.ws/COLLECTION/countries/AME/FKL/FKL0016ao.jpg",
+      "backSource": "https://www.banknote.ws/COLLECTION/countries/AME/FKL/FKL0016ar.jpg",
+      "front": "/assets/notes/banknotews/fkp/50-front.jpg",
+      "back": "/assets/notes/banknotews/fkp/50-back.jpg",
+      "frontBytes": 83506,
+      "backBytes": 78380
+    },
+    "GTQ:1": {
+      "currency": "GTQ",
+      "value": 1,
+      "pick": "P-W129",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AME/GTM/GTMW0129.htm",
+      "frontSource": "https://www.banknote.ws/COLLECTION/countries/AME/GTM/GTMW0129o.jpg",
+      "backSource": "https://www.banknote.ws/COLLECTION/countries/AME/GTM/GTMW0129r.jpg",
+      "front": "/assets/notes/banknotews/gtq/1-front.jpg",
+      "back": "/assets/notes/banknotews/gtq/1-back.jpg",
+      "frontBytes": 112259,
+      "backBytes": 113087
     }
   },
   "failures": []
