@@ -1,7 +1,9 @@
+document.write('<script src="/africa-wave9.js?v=163"><\/script>');
 (() => {
   const nativeFetch=window.fetch.bind(window);
   const imported={
-    BWP:new Set([20,50,100,200]),NAD:new Set([10,20,50,100,200]),ZAR:new Set([10,20,50,100,200]),MAD:new Set([20,50,100,200]),KES:new Set([50,100,200,500,1000]),EGP:new Set([5,50])
+    BWP:new Set([20,50,100,200]),NAD:new Set([10,20,50,100,200]),ZAR:new Set([10,20,50,100,200]),MAD:new Set([20,50,100,200]),KES:new Set([50,100,200,500,1000]),EGP:new Set([5,50]),
+    GMD:new Set([5,10,20,50,100,200]),SSP:new Set([1,5,10,25,50,100,500,1000]),LYD:new Set([1,5,10,20]),SOS:new Set([1000]),ZWG:new Set([10,20,50])
   };
   const commons=f=>'https://commons.wikimedia.org/wiki/Special:Redirect/file/'+encodeURIComponent(f);
   const egpFallback={
