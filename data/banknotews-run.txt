@@ -1,2 +1,2 @@
-run=2026-09-01T16:29:00+01:00
-scope=africa-wave6-kes-ngn-tnd-dzd-egp
+run=2026-09-01T18:58:00+01:00
+scope=africa-repair-scr-mur-cve-szl-lsl-lrd-gnf-djf-ern-sdg-bif-mga-cdf
