@@ -11,3 +11,5 @@ window.NOTE_CONTEXT_AFRICA2={
  'XAF:10000':{front:{title:'BEAC e integração regional',summary:'Sede do BEAC, logótipo da CEMAC e mapa estilizado de África.',more:'A maior denominação mantém a identidade institucional comum da série.'},back:{title:'Educação',summary:'Sala de aula e ensino.',more:'A educação surge como investimento no capital humano e no desenvolvimento regional.'}}
 };
 Object.assign(window.NOTE_CONTEXT_MANUAL||(window.NOTE_CONTEXT_MANUAL={}),window.NOTE_CONTEXT_AFRICA2);
+document.write('<script src="/note-context-africa-review.js?v=164"><\/script>');
+const _afFoot=document.querySelector('.sidebar-foot');if(_afFoot){const s=_afFoot.querySelector('small'),t=_afFoot.querySelector('span');if(s)s.textContent='v0.11.24 · 1 set 2026';if(t)t.textContent='África: descrições revistas';}
