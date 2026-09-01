@@ -2823,6 +2823,46 @@
       "front": "King Mohammed VI, Mohammed VI bridge over river Bouregreg (Rabat), arms",
       "back": "Mohammed VI tower (Bouregreg Valley Development Project, Salé, Rabat); Marrakech-Menara International Airport"
     },
+    "KES:50": {
+      "currency": "KES",
+      "value": 50,
+      "pick": "P-W52",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/KEN/KENW2019-0050.htm",
+      "front": "Kenyatta statue and Kenyatta International Convention Centre, Nairobi",
+      "back": "Wind Power, geothermal power, solar power"
+    },
+    "KES:100": {
+      "currency": "KES",
+      "value": 100,
+      "pick": "P-W53",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/KEN/KENW2019-0100.htm",
+      "front": "Kenyatta statue and Kenyatta International Convention Centre, Nairobi",
+      "back": "Cereal, agriculture, livestock"
+    },
+    "KES:200": {
+      "currency": "KES",
+      "value": 200,
+      "pick": "P-W54",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/KEN/KENW2019-0200.htm",
+      "front": "Kenyatta statue and Kenyatta International Convention Centre, Nairobi",
+      "back": "Health services, Education, sports"
+    },
+    "KES:500": {
+      "currency": "KES",
+      "value": 500,
+      "pick": "P-W55",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/KEN/KENW2019-0500.htm",
+      "front": "Kenyatta statue and Kenyatta International Convention Centre, Nairobi",
+      "back": "Tourism, wildlife, lion"
+    },
+    "KES:1000": {
+      "currency": "KES",
+      "value": 1000,
+      "pick": "P-W56",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/KEN/KENW2019-1000.htm",
+      "front": "Kenyatta statue and Kenyatta International Convention Centre, Nairobi",
+      "back": "Parliament, Nairobi"
+    },
     "EGP:5": {
       "currency": "EGP",
       "value": 5,
@@ -2834,10 +2874,10 @@
     "EGP:50": {
       "currency": "EGP",
       "value": 50,
-      "pick": "Africa-current",
+      "pick": "P-75",
       "page": "https://www.banknote.ws/COLLECTION/countries/AFR/EGY/EGY0075.htm",
-      "front": "75a(2)",
-      "back": "11.02.2016 - 29.02.2016; signature"
+      "front": "Abu Hariba mosque, Cairo",
+      "back": "Edfu temple"
     },
     "XAF:500": {
       "currency": "XAF",
@@ -3510,6 +3550,750 @@
       "page": "https://www.banknote.ws/COLLECTION/countries/AFR/SLE/SLEW0038.htm",
       "front": "Constance Cummings-John, arms",
       "back": "Group of people (Education for Gender Empowerment)"
+    },
+    "NGN:5": {
+      "currency": "NGN",
+      "value": 5,
+      "pick": "P-38",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/NIA/NIA0038.htm",
+      "front": "Alhaji Sir Abubakar Tafawa Balewa",
+      "back": "Nkpokiti Drummers"
+    },
+    "NGN:10": {
+      "currency": "NGN",
+      "value": 10,
+      "pick": "P-39",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/NIA/NIA0039.htm",
+      "front": "Alvan Ikoku",
+      "back": "Women"
+    },
+    "NGN:20": {
+      "currency": "NGN",
+      "value": 20,
+      "pick": "P-34",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/NIA/NIA0034.htm",
+      "front": "General Murtala Ramad Muhammed",
+      "back": "Ladi Kwali (famous Nigerian potter)"
+    },
+    "NGN:50": {
+      "currency": "NGN",
+      "value": 50,
+      "pick": "P-40",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/NIA/NIA0040.htm",
+      "front": "Ethnic groups of Nigeria",
+      "back": "Fishermen"
+    },
+    "NGN:100": {
+      "currency": "NGN",
+      "value": 100,
+      "pick": "P-41",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/NIA/NIA0041.htm",
+      "front": "Chief Obafemi Awolowo",
+      "back": "Chief Obafemi Awolowo, traditional dancers,; quickresponse code (QRC) which when scanned leads users to a website about Nigeria's history"
+    },
+    "NGN:200": {
+      "currency": "NGN",
+      "value": 200,
+      "pick": "P-W47",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/NIA/NIAW0047.htm",
+      "front": "Alhaji Sir Ahmadu Bello",
+      "back": "Cattle, bag pyramid"
+    },
+    "NGN:500": {
+      "currency": "NGN",
+      "value": 500,
+      "pick": "P-W48",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/NIA/NIAW0048.htm",
+      "front": "Dr. Nnamdi Azikiwe",
+      "back": "Oil rig"
+    },
+    "NGN:1000": {
+      "currency": "NGN",
+      "value": 1000,
+      "pick": "P-W49",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/NIA/NIAW0049.htm",
+      "front": "Alhaji Aliyu Mai-Bornu & Dr. Clement Isong",
+      "back": "Central Bank of Nigeria building (Abuja), rock formation"
+    },
+    "TND:5": {
+      "currency": "TND",
+      "value": 5,
+      "pick": "P-W98",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/TUN/TUNW0098.htm",
+      "front": "Slaheddine el-Amami",
+      "back": "Roman aqueducts of Zaghouan"
+    },
+    "TND:10": {
+      "currency": "TND",
+      "value": 10,
+      "pick": "P-W99",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/TUN/TUNW2020-10.htm",
+      "front": "Dr. Tawhida ben Cheikh",
+      "back": "Pottery and jewellery of the Berbers"
+    },
+    "TND:20": {
+      "currency": "TND",
+      "value": 20,
+      "pick": "P-97",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/TUN/TUN0097.htm",
+      "front": "Farhat Hached",
+      "back": "El Jem amphitheater"
+    },
+    "TND:50": {
+      "currency": "TND",
+      "value": 50,
+      "pick": "P-W100",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/TUN/TUNW0100.htm",
+      "front": "Hedi Nouira",
+      "back": "Banque Centrale de Tunisie building, Tunis"
+    },
+    "DZD:200": {
+      "currency": "DZD",
+      "value": 200,
+      "pick": "P-138",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/ALG/ALG0138.htm",
+      "front": "Koranic school",
+      "back": "Mosque"
+    },
+    "DZD:500": {
+      "currency": "DZD",
+      "value": 500,
+      "pick": "P-W145",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/ALG/ALGW2018-0500.htm",
+      "front": "Satellite, globe",
+      "back": "Satellite dishes, outline of Algeria, bridge"
+    },
+    "DZD:1000": {
+      "currency": "DZD",
+      "value": 1000,
+      "pick": "P-W146",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/ALG/ALGW2018-1000.htm",
+      "front": "Grand mosque of Algiers",
+      "back": "Loom, tea pot"
+    },
+    "DZD:2000": {
+      "currency": "DZD",
+      "value": 2000,
+      "pick": "P-W147",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/ALG/ALGW2020-2000.htm",
+      "front": "Six leaders of the FLN \"Heroes of the Revolution\" in the War of Independence (Rabah Bitat, Mostefa Ben Boula ï d, Didouche Mourad , Mohammed Boudiaf, Krim Belkacem and Larbi Ben MHidi); Bouzegza, Aures and Kherrata mountains",
+      "back": "Foggara (u nderground water conduit ) of Beni Fought (Adrar); Medracen (Royal Numidian mausoleum ) near Batna"
+    },
+    "EGP:10": {
+      "currency": "EGP",
+      "value": 10,
+      "pick": "P-W81",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/EGY/EGYW2021-0010.htm",
+      "front": "Al-Fatah al-Aleem mosque, Cairo",
+      "back": "Library of Alexandria, pyramid, Queen Hatshepsut (Metropolitan Museum of Art, New York)"
+    },
+    "EGP:20": {
+      "currency": "EGP",
+      "value": 20,
+      "pick": "P-W82",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/EGY/EGYW2021-0020.htm",
+      "front": "Mohammed Ali mosque, Cairo",
+      "back": "Pyramid, war chariot, statue of goddess Isis"
+    },
+    "EGP:100": {
+      "currency": "EGP",
+      "value": 100,
+      "pick": "P-76",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/EGY/EGY0076.htm",
+      "front": "Sultan Hassan mosque, Cairo",
+      "back": "Sphinx"
+    },
+    "EGP:200": {
+      "currency": "EGP",
+      "value": 200,
+      "pick": "P-77",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/EGY/EGY0077.htm",
+      "front": "Qani Bey mosque, Cairo",
+      "back": "Scribe (5th dynasty; around 2494 BC to around 2345 BC)"
+    },
+    "SCR:25": {
+      "currency": "SCR",
+      "value": 25,
+      "pick": "P-48",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/SEY/SEY0048.htm",
+      "front": "Seychelles magpie robin",
+      "back": "Seychelles killifish, plant, Seychelles blue pigeon"
+    },
+    "SCR:50": {
+      "currency": "SCR",
+      "value": 50,
+      "pick": "P-49",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/SEY/SEY0049.htm",
+      "front": "Seychelles block parrot",
+      "back": "Seychells tree frog, branch, Seychelles white eye bird"
+    },
+    "SCR:100": {
+      "currency": "SCR",
+      "value": 100,
+      "pick": "P-50",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/SEY/SEY0050.htm",
+      "front": "Seychelles black paradise flycatcher",
+      "back": "Aldabra banded snail, plants, Seychelles sunbird (Kolibri)"
+    },
+    "SCR:500": {
+      "currency": "SCR",
+      "value": 500,
+      "pick": "P-51",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/SEY/SEY0051.htm",
+      "front": "Seychelles Kestrel",
+      "back": "Seychelles tiger chameleon, flowers, Seychelles scops owl"
+    },
+    "MUR:25": {
+      "currency": "MUR",
+      "value": 25,
+      "pick": "P-64",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/MRS/MRS0064.htm",
+      "front": "Sir Moilin Jean Ah-Chuen",
+      "back": "Fisherman, Rodrigues Island"
+    },
+    "MUR:50": {
+      "currency": "MUR",
+      "value": 50,
+      "pick": "P-65",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/MRS/MRS0065.htm",
+      "front": "Joseph Maurice Paturau",
+      "back": "Shopping mall \"Le Caudan Waterfront\", Port Louis"
+    },
+    "MUR:100": {
+      "currency": "MUR",
+      "value": 100,
+      "pick": "P-W65A",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/MRS/MRSW0065A2.htm",
+      "front": "Renganaden Seeneevassen",
+      "back": "Court House, Port Louis"
+    },
+    "MUR:200": {
+      "currency": "MUR",
+      "value": 200,
+      "pick": "P-W65B",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/MRS/MRSW0065B2.htm",
+      "front": "Sir Abdool Razack Mohamed",
+      "back": "Market"
+    },
+    "MUR:500": {
+      "currency": "MUR",
+      "value": 500,
+      "pick": "P-66",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/MRS/MRS0066.htm",
+      "front": "Sookdeo Bissoondoyal",
+      "back": "University of Mauritius"
+    },
+    "MUR:1000": {
+      "currency": "MUR",
+      "value": 1000,
+      "pick": "P-W66A",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/MRS/MRSW0066A2.htm",
+      "front": "Sir Charles Gaetan Duval",
+      "back": "State House, Port Louis"
+    },
+    "MUR:2000": {
+      "currency": "MUR",
+      "value": 2000,
+      "pick": "P-W67",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/MRS/MRSW2018-2000.htm",
+      "front": "Sir Seewoosagur Ramgoolam",
+      "back": "Ox cart"
+    },
+    "CVE:200": {
+      "currency": "CVE",
+      "value": 200,
+      "pick": "P-71",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/CVE/CVE0071.htm",
+      "front": "Fogo Island, Henrique Teixeira de Sousa",
+      "back": "Pico do Fogo"
+    },
+    "CVE:500": {
+      "currency": "CVE",
+      "value": 500,
+      "pick": "P-72",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/CVE/CVE0072.htm",
+      "front": "Jorge Barbosa",
+      "back": "Lines from Barbosas poem Casebre (struggle); Poilão Dam in the Santa Cruz municipal area on Santiago island (home of Jorge Barbosa)"
+    },
+    "CVE:1000": {
+      "currency": "CVE",
+      "value": 1000,
+      "pick": "P-73",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/CVE/CVE0073.htm",
+      "front": "Codé di Dona playing concertina",
+      "back": "Musician holding a Ferrinho (musical instrument typical of funaná genre)"
+    },
+    "CVE:2000": {
+      "currency": "CVE",
+      "value": 2000,
+      "pick": "P-74",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/CVE/CVE0074.htm",
+      "front": "Cesária Évora, musical chord",
+      "back": "Violin"
+    },
+    "CVE:5000": {
+      "currency": "CVE",
+      "value": 5000,
+      "pick": "P-75",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/CVE/CVE0075.htm",
+      "front": "Cape Verde Islands outline, house exterior, first president Aristides Maria Pereira",
+      "back": "Map of Boa Vista; landscape of Boa Vista (home of Aristides Maria Pereira); fireplace of pottery factory."
+    },
+    "SZL:10": {
+      "currency": "SZL",
+      "value": 10,
+      "pick": "P-WA44",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/SWZ/SWZWA0044.htm",
+      "front": "King Mswati III",
+      "back": "Princesses at the Ncwala (kingship ceremony)"
+    },
+    "SZL:20": {
+      "currency": "SZL",
+      "value": 20,
+      "pick": "P-WB44",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/SWZ/SWZWB0044.htm",
+      "front": "King Mswati III",
+      "back": "Flower, corn, pineapple, zebu, refinery"
+    },
+    "SZL:50": {
+      "currency": "SZL",
+      "value": 50,
+      "pick": "P-WC44",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/SWZ/SWZW2018-050.htm",
+      "front": "King Mswati III",
+      "back": "Central Bank of Eswatini building"
+    },
+    "SZL:100": {
+      "currency": "SZL",
+      "value": 100,
+      "pick": "P-42",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/SWZ/SWZ0042.htm",
+      "front": "King Mswati III",
+      "back": "Elephant, rhinoceros, lion's head, bird, flower"
+    },
+    "SZL:200": {
+      "currency": "SZL",
+      "value": 200,
+      "pick": "P-W45",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/SWZ/SWZW0045.htm",
+      "front": "King Mswati III",
+      "back": "Zebu, typical Swazi straw huts"
+    },
+    "LSL:10": {
+      "currency": "LSL",
+      "value": 10,
+      "pick": "P-W26",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/LES/LESW0026.htm",
+      "front": "Kings Letsie III, Moshoeshoe I & Moshoeshoe II, arms",
+      "back": "Flowers"
+    },
+    "LSL:20": {
+      "currency": "LSL",
+      "value": 20,
+      "pick": "P-W27",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/LES/LESW0027.htm",
+      "front": "Kings Letsie III, Moshoeshoe I & Moshoeshoe II, arms",
+      "back": "Basotho huts"
+    },
+    "LSL:50": {
+      "currency": "LSL",
+      "value": 50,
+      "pick": "P-W28",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/LES/LESW0028.htm",
+      "front": "Kings Letsie III, Moshoeshoe I & Moshoeshoe II, arms",
+      "back": "Horsemen"
+    },
+    "LSL:100": {
+      "currency": "LSL",
+      "value": 100,
+      "pick": "P-W29",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/LES/LESW0029.htm",
+      "front": "Kings Letsie III, Moshoeshoe I & Moshoeshoe II, arms",
+      "back": "Shepherd"
+    },
+    "LSL:200": {
+      "currency": "LSL",
+      "value": 200,
+      "pick": "P-W30",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/LES/LESW0030.htm",
+      "front": "Kings Letsie III, Moshoeshoe I & Moshoeshoe II, arms",
+      "back": "Man on horseback"
+    },
+    "LRD:20": {
+      "currency": "LRD",
+      "value": 20,
+      "pick": "P-W39",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/LIB/LIBW0039.htm",
+      "front": "President William Vacanarat Shadrach Tubman",
+      "back": "Market"
+    },
+    "LRD:50": {
+      "currency": "LRD",
+      "value": 50,
+      "pick": "P-W40",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/LIB/LIBW0040.htm",
+      "front": "President Samuel Kayon Doe",
+      "back": "Trimming oil palm tree"
+    },
+    "LRD:100": {
+      "currency": "LRD",
+      "value": 100,
+      "pick": "P-W41",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/LIB/LIBW0041.htm",
+      "front": "President William Richard Tolbert Jr.",
+      "back": "Market woman"
+    },
+    "LRD:500": {
+      "currency": "LRD",
+      "value": 500,
+      "pick": "P-W42",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/LIB/LIBW0042.htm",
+      "front": "Designers of Liberian flag",
+      "back": "Hippos"
+    },
+    "LRD:1000": {
+      "currency": "LRD",
+      "value": 1000,
+      "pick": "P-W43",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/LIB/LIBW0043.htm",
+      "front": "16 tribal masks (Kpelle, Dey, Gbandi, Gio, Yaj, Kissi, Mano, Kru, Mandingo, Grebo, Krahn, Bassa, Gola, Mende, Lorma, Belle)",
+      "back": "Capitol building, Monrovia"
+    },
+    "GNF:100": {
+      "currency": "GNF",
+      "value": 100,
+      "pick": "P-A47",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/GUI/GUIA0047.htm",
+      "front": "Woman",
+      "back": "Banana harvest"
+    },
+    "GNF:500": {
+      "currency": "GNF",
+      "value": 500,
+      "pick": "P-W52",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/GUI/GUIW2018-00500.htm",
+      "front": "Woman",
+      "back": "Mining conveyor"
+    },
+    "GNF:1000": {
+      "currency": "GNF",
+      "value": 1000,
+      "pick": "P-48",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/GUI/GUI0048.htm",
+      "front": "Woman",
+      "back": "Open pit bauxite mining, stalk of bananas"
+    },
+    "GNF:2000": {
+      "currency": "GNF",
+      "value": 2000,
+      "pick": "P-W48A",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/GUI/GUIW2018-02000.htm",
+      "front": "Man, arms",
+      "back": "Mountain, palm trees"
+    },
+    "GNF:5000": {
+      "currency": "GNF",
+      "value": 5000,
+      "pick": "P-49",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/GUI/GUI0049.htm",
+      "front": "Woman, pigeons",
+      "back": "Kinkon hydroelectric plant , corn on the cob"
+    },
+    "GNF:10000": {
+      "currency": "GNF",
+      "value": 10000,
+      "pick": "P-W49A",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/GUI/GUIW2018-10000.htm",
+      "front": "Girl",
+      "back": "Field, Mount Loura with rock formation \"Lady of Mali\""
+    },
+    "GNF:20000": {
+      "currency": "GNF",
+      "value": 20000,
+      "pick": "P-50",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/GUI/GUI0050.htm",
+      "front": "Woman, arms",
+      "back": "Outline of Guinea,Kaleta hydroelectric dam"
+    },
+    "DJF:1000": {
+      "currency": "DJF",
+      "value": 1000,
+      "pick": "P-42",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/DJI/DJI0042.htm",
+      "front": "Camel, Ali Ahmed Oudoum",
+      "back": "Port of Djibouti"
+    },
+    "DJF:2000": {
+      "currency": "DJF",
+      "value": 2000,
+      "pick": "P-43",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/DJI/DJI0043.htm",
+      "front": "Camel caravan, girl",
+      "back": "Statue, Government building, Djibouti"
+    },
+    "DJF:5000": {
+      "currency": "DJF",
+      "value": 5000,
+      "pick": "P-44",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/DJI/DJI0044.htm",
+      "front": "Banque Centrale de Djibouti building, Mahamoud Harbi",
+      "back": "Dancers"
+    },
+    "DJF:10000": {
+      "currency": "DJF",
+      "value": 10000,
+      "pick": "P-45",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/DJI/DJI0045.htm",
+      "front": "President Hassan Gouled Aptidon",
+      "back": "Banque Centrale building, Djibouti"
+    },
+    "ERN:1": {
+      "currency": "ERN",
+      "value": 1,
+      "pick": "P-13",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/ERI/ERI0013.htm",
+      "front": "Girls",
+      "back": "Bush school"
+    },
+    "ERN:5": {
+      "currency": "ERN",
+      "value": 5,
+      "pick": "P-14",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/ERI/ERI0014.htm",
+      "front": "Boy, men",
+      "back": "Jacaranda tree"
+    },
+    "ERN:10": {
+      "currency": "ERN",
+      "value": 10,
+      "pick": "P-15",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/ERI/ERI0015.htm",
+      "front": "Women",
+      "back": "Dogali River railroad viaduct (cargo train pulled by truck type URAL 375-D; built in the Soviet Union 1960-1970)"
+    },
+    "ERN:20": {
+      "currency": "ERN",
+      "value": 20,
+      "pick": "P-16",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/ERI/ERI0016.htm",
+      "front": "Girls",
+      "back": "Fieldwork"
+    },
+    "ERN:50": {
+      "currency": "ERN",
+      "value": 50,
+      "pick": "P-17",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/ERI/ERI0017.htm",
+      "front": "Girl and boys",
+      "back": "Cargo ships in the port of Massaua"
+    },
+    "ERN:100": {
+      "currency": "ERN",
+      "value": 100,
+      "pick": "P-18",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/ERI/ERI0018.htm",
+      "front": "Girls",
+      "back": "Fieldwork"
+    },
+    "SDG:500": {
+      "currency": "SDG",
+      "value": 500,
+      "pick": "P-W86",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/SUD/SUDW0086.htm",
+      "front": "Old Republican Palace, Khartoum",
+      "back": "Confluence of Blue and White Nile, Khartoum"
+    },
+    "SDG:1000": {
+      "currency": "SDG",
+      "value": 1000,
+      "pick": "P-W87",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/SUD/SUDW0087.htm",
+      "front": "Minaret, grain silos and ship at Port Sudan, gold bars",
+      "back": "Bank of Sudan building, Khartoum"
+    },
+    "SDG:2000": {
+      "currency": "SDG",
+      "value": 2000,
+      "pick": "P-W88",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/SUD/SUDW0088.htm",
+      "front": "Camel, sheep, goat, cow",
+      "back": "Kiosk of Naqa/Naga (Wadi Awareib)"
+    },
+    "BIF:100": {
+      "currency": "BIF",
+      "value": 100,
+      "pick": "P-44",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/BUR/BUR0044.htm",
+      "front": "Independence monument (Bujumbura), Prince Rwagasore",
+      "back": "Home construction"
+    },
+    "BIF:500": {
+      "currency": "BIF",
+      "value": 500,
+      "pick": "P-50",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/BUR/BUR0050.htm",
+      "front": "Crocodile, arms, flag, coffee branch",
+      "back": "Outline of Burundi, boat on Lake Tanganiyka"
+    },
+    "BIF:1000": {
+      "currency": "BIF",
+      "value": 1000,
+      "pick": "P-51",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/BUR/BUR0051.htm",
+      "front": "Bird, arms, flag, cattle",
+      "back": "Outline of Burundi, banana trees"
+    },
+    "BIF:2000": {
+      "currency": "BIF",
+      "value": 2000,
+      "pick": "P-52",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/BUR/BUR0052.htm",
+      "front": "Antelope, arms, flag, pineapple",
+      "back": "Outline of Burundi, fieldwork"
+    },
+    "BIF:5000": {
+      "currency": "BIF",
+      "value": 5000,
+      "pick": "P-W58",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/BUR/BURW0058.htm",
+      "front": "Buffalo, arms, flag, dancers with drums",
+      "back": "Outline of Burundi, landscape"
+    },
+    "BIF:10000": {
+      "currency": "BIF",
+      "value": 10000,
+      "pick": "P-W59",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/BUR/BURW0059.htm",
+      "front": "Hippo, arms, flag, Prince Rwagasore, President Melchior Ndadaye",
+      "back": "Outline of Burundi, plants"
+    },
+    "MGA:100": {
+      "currency": "MGA",
+      "value": 100,
+      "pick": "P-97",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/MAD/MAD0097.htm",
+      "front": "Ambozontany cathedral (Fianarantsoa)",
+      "back": "Frog"
+    },
+    "MGA:200": {
+      "currency": "MGA",
+      "value": 200,
+      "pick": "P-98",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/MAD/MAD0098.htm",
+      "front": "Waterfall, Amber Mountain National Park",
+      "back": "Madagascar palm (bachypodium baronii), National Park of Nosy Hara island"
+    },
+    "MGA:500": {
+      "currency": "MGA",
+      "value": 500,
+      "pick": "P-99",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/MAD/MAD0099.htm",
+      "front": "Village",
+      "back": "Rock formation"
+    },
+    "MGA:1000": {
+      "currency": "MGA",
+      "value": 1000,
+      "pick": "P-100",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/MAD/MAD0100.htm",
+      "front": "Kamoro bridge on RN 4 (Boeny Region)",
+      "back": "Rock formation"
+    },
+    "MGA:2000": {
+      "currency": "MGA",
+      "value": 2000,
+      "pick": "P-101",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/MAD/MAD0101.htm",
+      "front": "Monkey, flower",
+      "back": "Flowers"
+    },
+    "MGA:5000": {
+      "currency": "MGA",
+      "value": 5000,
+      "pick": "P-102",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/MAD/MAD0102.htm",
+      "front": "Waterfall",
+      "back": "Whale"
+    },
+    "MGA:10000": {
+      "currency": "MGA",
+      "value": 10000,
+      "pick": "P-103",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/MAD/MAD0103.htm",
+      "front": "Port of Tôlanaro (Tolagnaro, Ft. Dauphin)",
+      "back": "Artefacts"
+    },
+    "MGA:20000": {
+      "currency": "MGA",
+      "value": 20000,
+      "pick": "P-104",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/MAD/MAD0104.htm",
+      "front": "Plants and fruits",
+      "back": "Oil industry"
+    },
+    "CDF:50": {
+      "currency": "CDF",
+      "value": 50,
+      "pick": "P-W97B",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/CDR/CDRW0097B2.htm",
+      "front": "Tshokwe mask \"Mwana Pwo\"",
+      "back": "Fishermens' village along Congo River"
+    },
+    "CDF:100": {
+      "currency": "CDF",
+      "value": 100,
+      "pick": "P-W98B",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/CDR/CDRW0098B2.htm",
+      "front": "Elephant, Virunga National Park",
+      "back": "\"Inga II\" hydroelectric dam"
+    },
+    "CDF:200": {
+      "currency": "CDF",
+      "value": 200,
+      "pick": "P-W99B",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/CDR/CDRW0099B2.htm",
+      "front": "Fieldwork",
+      "back": "Drummers"
+    },
+    "CDF:500": {
+      "currency": "CDF",
+      "value": 500,
+      "pick": "P-W96D",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/CDR/CDR0096D2.htm",
+      "front": "Diamond exploitation",
+      "back": "Diamond exploitation, Etroite Valley"
+    },
+    "CDF:1000": {
+      "currency": "CDF",
+      "value": 1000,
+      "pick": "P-101",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/CDR/CDR0101.htm",
+      "front": "Okapi, Kanioka box",
+      "back": "Parrot, yellow corn"
+    },
+    "CDF:5000": {
+      "currency": "CDF",
+      "value": 5000,
+      "pick": "P-102",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/CDR/CDR0102.htm",
+      "front": "Zebras, Hemba statuette",
+      "back": "Bowl, maniok, Congolese peacocks"
+    },
+    "CDF:10000": {
+      "currency": "CDF",
+      "value": 10000,
+      "pick": "P-103",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/CDR/CDR0103.htm",
+      "front": "Buffalos, carved statuette (\"Chef Kuba\")",
+      "back": "Bird, banana trees"
+    },
+    "CDF:20000": {
+      "currency": "CDF",
+      "value": 20000,
+      "pick": "P-104",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/CDR/CDR0104.htm",
+      "front": "Giraffes, carved head \"Bashilele\"",
+      "back": "Palm trees, crowned cranes"
     }
   },
   "failures": [
@@ -3541,31 +4325,6 @@
     {
       "key": "YER:100",
       "page": "https://www.banknote.ws/COLLECTION/countries/ASI/YEM/YEMW0037.htm",
-      "error": "HTTP Error 404: Not Found"
-    },
-    {
-      "key": "KES:50",
-      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/KEN/KENW0052.htm",
-      "error": "HTTP Error 404: Not Found"
-    },
-    {
-      "key": "KES:100",
-      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/KEN/KENW0053.htm",
-      "error": "HTTP Error 404: Not Found"
-    },
-    {
-      "key": "KES:200",
-      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/KEN/KENW0054.htm",
-      "error": "HTTP Error 404: Not Found"
-    },
-    {
-      "key": "KES:500",
-      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/KEN/KENW0055.htm",
-      "error": "HTTP Error 404: Not Found"
-    },
-    {
-      "key": "KES:1000",
-      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/KEN/KENW0056.htm",
       "error": "HTTP Error 404: Not Found"
     }
   ]
