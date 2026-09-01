@@ -25,3 +25,4 @@
 })();
 // Keep the Africa chain synchronous without changing the historical index ordering.
 document.write('<script src="/africa-wave8.js?v=162"></script>');
+document.write('<script src="/africa-wave8-local-fix.js?v=163"></script>');
