@@ -1,14 +1,9 @@
 {
   "notes": [
-    {"currency":"XOF","value":500,"page":"https://www.banknote.ws/COLLECTION/countries/AFR/WAS/WAS0119A.htm","pick":"Africa-XOF-current"},
-    {"currency":"XOF","value":1000,"page":"https://www.banknote.ws/COLLECTION/countries/AFR/WAS/WAS0115A.htm","pick":"Africa-XOF-current"},
-    {"currency":"XOF","value":2000,"page":"https://www.banknote.ws/COLLECTION/countries/AFR/WAS/WAS0116A.htm","pick":"Africa-XOF-current"},
-    {"currency":"XOF","value":5000,"page":"https://www.banknote.ws/COLLECTION/countries/AFR/WAS/WAS0117A.htm","pick":"Africa-XOF-current"},
-    {"currency":"XOF","value":10000,"page":"https://www.banknote.ws/COLLECTION/countries/AFR/WAS/WAS0118A.htm","pick":"Africa-XOF-current"},
-    {"currency":"XAF","value":500,"page":"https://www.banknote.ws/COLLECTION/countries/AFR/CAS/CASW0700.htm","pick":"Africa-XAF-current"},
-    {"currency":"XAF","value":1000,"page":"https://www.banknote.ws/COLLECTION/countries/AFR/CAS/CASW0701.htm","pick":"Africa-XAF-current"},
-    {"currency":"XAF","value":2000,"page":"https://www.banknote.ws/COLLECTION/countries/AFR/CAS/CASW0702.htm","pick":"Africa-XAF-current"},
-    {"currency":"XAF","value":5000,"page":"https://www.banknote.ws/COLLECTION/countries/AFR/CAS/CASW0703.htm","pick":"Africa-XAF-current"},
-    {"currency":"XAF","value":10000,"page":"https://www.banknote.ws/COLLECTION/countries/AFR/CAS/CASW0704.htm","pick":"Africa-XAF-current"}
+    {"currency":"XOF","value":500,"section":"https://www.banknote.ws/COLLECTION/countries/AFR/WAS/WAS.htm","pick":"P-119A"},
+    {"currency":"XOF","value":1000,"section":"https://www.banknote.ws/COLLECTION/countries/AFR/WAS/WAS.htm","pick":"P-115A"},
+    {"currency":"XOF","value":2000,"section":"https://www.banknote.ws/COLLECTION/countries/AFR/WAS/WAS.htm","pick":"P-116A"},
+    {"currency":"XOF","value":5000,"section":"https://www.banknote.ws/COLLECTION/countries/AFR/WAS/WAS.htm","pick":"P-117A"},
+    {"currency":"XOF","value":10000,"section":"https://www.banknote.ws/COLLECTION/countries/AFR/WAS/WAS.htm","pick":"P-118A"}
   ]
 }
