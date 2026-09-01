@@ -3,8 +3,9 @@ import json,re,ssl,time,urllib.request,html,pathlib,os
 from html.parser import HTMLParser
 ROOT=pathlib.Path(__file__).resolve().parents[1]
 SRC=ROOT/'data/banknotews-sources.json'; OUT=ROOT/'data/banknote-context-raw.json'
-CTX=ssl._create_unverified_context(); UA='Notas-do-Mundo/0.10.32 context audit'
+CTX=ssl._create_unverified_context(); UA='Notas-do-Mundo/0.12 context audit'
 LIMIT=int(os.environ.get('CONTEXT_LIMIT','0') or 0);DEBUG=os.environ.get('CONTEXT_DEBUG','0')=='1'
+TARGET_MANIFEST=os.environ.get('CONTEXT_TARGET_MANIFEST','').strip()
 class TextParser(HTMLParser):
     def __init__(self): super().__init__(); self.parts=[]
     def handle_data(self,d):
@@ -28,7 +29,6 @@ def extract_table_captions(raw,n):
         fams=[image_family(x) for x in imgs]
         of=[(j,f) for j,f in enumerate(fams) if f and f[1]=='o']; rf=[(j,f) for j,f in enumerate(fams) if f and f[1]=='r']
         if not of or not rf:continue
-        # Description row is immediately below the paired banknote images on Banknote Museum pages.
         cells=re.findall(r'<td\b[^>]*>(.*?)</td\s*>',rows[i+1],re.I|re.S)
         if len(cells)<2:continue
         front=clean_markup(cells[0]);back=clean_markup(cells[1])
@@ -39,14 +39,34 @@ def extract_table_captions(raw,n):
             if wanted[0] in bases:score+=100
             root=re.sub(r'[-_]?(?:19|20)\d{2}.*$','',wanted[0])
             if root and any(b.startswith(root) for b in bases):score+=50
-        # Prefer descriptive text over issue/Pick rows.
         if re.search(r'[A-Za-z]{3,}',front) and re.search(r'[A-Za-z]{3,}',back):score+=20
         if re.fullmatch(r'[PW]?[-W]?\d+[A-Z]?',front,re.I):score-=100
         candidates.append((score,front,back))
     if not candidates:return {}
     candidates.sort(key=lambda x:x[0],reverse=True)
     return {'front':candidates[0][1],'back':candidates[0][2]}
-payload=json.loads(SRC.read_text(encoding='utf-8'));rows={};fails=[];items=list(payload.get('notes',{}).items());items=items[:LIMIT] if LIMIT else items
+
+payload=json.loads(SRC.read_text(encoding='utf-8'))
+source_notes=payload.get('notes',{})
+selected_keys=None
+if TARGET_MANIFEST:
+    mp=ROOT/TARGET_MANIFEST
+    target=json.loads(mp.read_text(encoding='utf-8'))
+    selected_keys=set()
+    for n in target.get('notes',[]):
+        v=n.get('value')
+        try:
+            fv=float(v); vs=str(int(fv)) if fv.is_integer() else str(fv)
+        except Exception: vs=str(v)
+        selected_keys.add(f"{n.get('currency')}:{vs}")
+items=[(k,v) for k,v in source_notes.items() if selected_keys is None or k in selected_keys]
+items=items[:LIMIT] if LIMIT else items
+existing={}
+if OUT.exists():
+    try: existing=json.loads(OUT.read_text(encoding='utf-8')).get('notes',{})
+    except Exception: existing={}
+rows=dict(existing) if selected_keys is not None else {}
+fails=[]
 for i,(key,n) in enumerate(items,1):
     page=n.get('page')
     if not page:continue
@@ -59,4 +79,5 @@ for i,(key,n) in enumerate(items,1):
         print(f'{i}: {key}:','front' in sides,'back' in sides, sides.get('front','')[:80],'|',sides.get('back','')[:80])
     except Exception as e:fails.append({'key':key,'page':page,'error':str(e)});print('FAIL',key,e)
     time.sleep(.15)
-OUT.write_text(json.dumps({'source':'Banknote Museum · banknote.ws','notes':rows,'failures':fails},ensure_ascii=False,indent=2),encoding='utf-8');print('pages',len(rows),'incomplete',len(fails))
+OUT.write_text(json.dumps({'source':'Banknote Museum · banknote.ws','notes':rows,'failures':fails,'targeted':bool(TARGET_MANIFEST)},ensure_ascii=False,indent=2),encoding='utf-8')
+print('pages updated',len(items),'catalog rows',len(rows),'incomplete',len(fails))
