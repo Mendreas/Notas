@@ -1,0 +1,23 @@
+(()=>{
+ const GROUPS={
+  Europe:['AND','LIE','MCO','SMR','VAT','MLT','LUX'],
+  Africa:['STP','COM','SYC','MUS','CPV'],
+  'North America':['ATG','BRB','DMA','GRD','KNA','LCA','VCT'],
+  'South America':[],
+  Asia:['SGP','MDV','BHR','BRN'],
+  Oceania:['FJI','KIR','MHL','FSM','NRU','PLW','WSM','TON','TUV','VUT']
+ };
+ const isoNumeric={AND:'020',LIE:'438',MCO:'492',SMR:'674',VAT:'336',MLT:'470',LUX:'442',STP:'678',COM:'174',SYC:'690',MUS:'480',CPV:'132',ATG:'028',BRB:'052',DMA:'212',GRD:'308',KNA:'659',LCA:'662',VCT:'670',SGP:'702',MDV:'462',BHR:'048',BRN:'096',FJI:'242',KIR:'296',MHL:'584',FSM:'583',NRU:'520',PLW:'585',WSM:'882',TON:'776',TUV:'798',VUT:'548'};
+ let detailedWorld=null;
+ function style(){if(document.getElementById('mapInsetStyle'))return;const s=document.createElement('style');s.id='mapInsetStyle';s.textContent=`
+ .map-card{position:relative}.map-insets{position:absolute;left:14px;top:14px;z-index:8;width:min(250px,32%);max-height:calc(100% - 64px);overflow:auto;display:grid;gap:7px;pointer-events:auto}.map-insets-title{font-size:11px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:#b9cad6;background:rgba(8,17,27,.94);border:1px solid #294155;border-radius:10px;padding:8px 10px}.map-inset{display:grid;grid-template-columns:64px 1fr;align-items:center;gap:8px;width:100%;padding:6px 8px;background:rgba(8,17,27,.94);border:1px solid #294155;border-radius:10px;color:#eef5f8;cursor:pointer;text-align:left;box-shadow:0 7px 18px rgba(0,0,0,.18)}.map-inset:hover{border-color:#d9e6ed;background:#102333}.map-inset svg{width:64px;height:42px;border-radius:7px;background:#0b1823}.map-inset strong{display:block;font-size:12px;line-height:1.15}.map-inset small{display:block;color:#92aabc;margin-top:2px;font-size:10px}.map-inset .fallback{display:grid;place-items:center;width:64px;height:42px;font-size:22px;background:#0b1823;border-radius:7px}@media(max-width:780px){.map-insets{width:180px;left:8px;top:8px}.map-inset{grid-template-columns:46px 1fr;padding:5px 6px}.map-inset svg,.map-inset .fallback{width:46px;height:34px}.map-inset strong{font-size:11px}.map-inset small{display:none}.map-insets-title{font-size:10px;padding:6px 8px}}`;
+ document.head.appendChild(s)}
+ async function world(){if(detailedWorld)return detailedWorld;try{detailedWorld=await fetch('https://cdn.jsdelivr.net/npm/world-atlas@2/countries-50m.json').then(r=>r.json())}catch(_){detailedWorld=null}return detailedWorld}
+ function featureFor(features,id){const n=isoNumeric[id];return features.find(f=>String(f.id).padStart(3,'0')===n)}
+ function colorFor(c){try{const pseudo={id:Number(isoNumeric[c.id])};if(window.NOTAS_MAP_CURRENCY_CODE){const code=window.NOTAS_MAP_CURRENCY_CODE(pseudo);let h=2166136261;for(const ch of code){h^=ch.charCodeAt(0);h=Math.imul(h,16777619)}const p=['#7f78bd','#d79a6a','#9baa63','#ce7899','#67a89b','#d3aa4c','#6e8bd5','#b06ca7','#57a6cf','#d28550','#78b18d','#a68b5b','#bf719e','#73a8c5','#8f79ba','#d9b553','#5fa9a6','#c87b5a','#88a76d','#a86fa0','#628bc2','#d89b58','#70a591','#b9826d'];return p[(h>>>0)%p.length]}}catch(_){}return '#d3aa4c'}
+ async function add(continent){document.querySelectorAll('.map-insets').forEach(x=>x.remove());if(!continent)return;const ids=GROUPS[continent]||[],items=ids.map(id=>DB.countries.find(c=>c.id===id)).filter(Boolean);if(!items.length)return;style();const card=document.querySelector('.map-card');if(!card)return;const panel=document.createElement('div');panel.className='map-insets';panel.innerHTML='<div class="map-insets-title">Territórios pequenos · ampliar</div>';card.appendChild(panel);
+  let features=[];const data=await world();if(data)features=topojson.feature(data,data.objects.countries).features;
+  for(const c of items){const b=document.createElement('button');b.className='map-inset';b.type='button';b.title=`Abrir ${c.name}`;const f=featureFor(features,c.id);if(f){const svg=d3.create('svg').attr('viewBox','0 0 64 42'),proj=d3.geoMercator().fitExtent([[5,5],[59,37]],f),path=d3.geoPath(proj);svg.append('path').datum(f).attr('d',path).attr('fill',colorFor(c)).attr('stroke','#fff').attr('stroke-width',.8);b.appendChild(svg.node())}else{const fb=document.createElement('span');fb.className='fallback';fb.textContent=c.flag||'•';b.appendChild(fb)}const txt=document.createElement('span');txt.innerHTML=`<strong>${c.name}</strong><small>${c.currency}</small>`;b.appendChild(txt);b.onclick=()=>state.mapMode==='country'?showCountry(c.id):showCurrency(c.currency);panel.appendChild(b)}
+ }
+ const prev=window.renderWorldMap;if(typeof prev!=='function')return;window.renderWorldMap=async function(continent=null){await prev(continent);await add(continent)};
+})();
