@@ -2678,6 +2678,454 @@
       "page": "https://www.banknote.ws/COLLECTION/countries/ASI/KON/KON0067.htm",
       "front": "Mangyongdae (Birthplace of Kim Il Sung)",
       "back": "International Friendship Exhibition building, Myohyang-san"
+    },
+    "BWP:20": {
+      "currency": "BWP",
+      "value": 20,
+      "pick": "Africa-current",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/BOT/BOT0031.htm",
+      "front": "Kgalemang Tumedisco Motsete",
+      "back": "Mining equipment"
+    },
+    "BWP:50": {
+      "currency": "BWP",
+      "value": 50,
+      "pick": "Africa-current",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/BOT/BOT0032.htm",
+      "front": "President Sir Seretse Khama",
+      "back": "Boat, fish eagle"
+    },
+    "BWP:100": {
+      "currency": "BWP",
+      "value": 100,
+      "pick": "Africa-current",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/BOT/BOT0033.htm",
+      "front": "Three Chiefs (Sebele I, Bathoen I, Khama III)",
+      "back": "Sorting diamonds, diamond mine"
+    },
+    "BWP:200": {
+      "currency": "BWP",
+      "value": 200,
+      "pick": "Africa-current",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/BOT/BOT0034.htm",
+      "front": "Teacher, children",
+      "back": "Zebras"
+    },
+    "NAD:10": {
+      "currency": "NAD",
+      "value": 10,
+      "pick": "Africa-current",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/NAM/NAMW0020.htm",
+      "front": "Dr. Sam Nujoma, Parliament building (Windhoek)",
+      "back": "Springbok"
+    },
+    "NAD:20": {
+      "currency": "NAD",
+      "value": 20,
+      "pick": "Africa-current",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/NAM/NAMW0021.htm",
+      "front": "Dr. Sam Nujoma, Parliament building (Windhoek)",
+      "back": "Red Hartebeest"
+    },
+    "NAD:50": {
+      "currency": "NAD",
+      "value": 50,
+      "pick": "Africa-current",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/NAM/NAMW0022.htm",
+      "front": "Captain Hendrik Witbooi, Parliament building (Windhoek)",
+      "back": "Kudus"
+    },
+    "NAD:100": {
+      "currency": "NAD",
+      "value": 100,
+      "pick": "Africa-current",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/NAM/NAMW0023.htm",
+      "front": "Captain Hendrik Witbooi, Parliament building (Windhoek)",
+      "back": "Oryx"
+    },
+    "NAD:200": {
+      "currency": "NAD",
+      "value": 200,
+      "pick": "Africa-current",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/NAM/NAMW0024.htm",
+      "front": "Captain Hendrik Witbooi, Parliament building (Windhoek)",
+      "back": "Roan antelope"
+    },
+    "ZAR:10": {
+      "currency": "ZAR",
+      "value": 10,
+      "pick": "Africa-current",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/SAF/SAFW0148.htm",
+      "front": "Nelson Rolihlahla Mandela",
+      "back": "Rhinoceros"
+    },
+    "ZAR:20": {
+      "currency": "ZAR",
+      "value": 20,
+      "pick": "Africa-current",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/SAF/SAFW0149.htm",
+      "front": "Nelson Rolihlahla Mandela",
+      "back": "Elephants"
+    },
+    "ZAR:50": {
+      "currency": "ZAR",
+      "value": 50,
+      "pick": "Africa-current",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/SAF/SAFW0150.htm",
+      "front": "Nelson Rolihlahla Mandela",
+      "back": "Lions"
+    },
+    "ZAR:100": {
+      "currency": "ZAR",
+      "value": 100,
+      "pick": "Africa-current",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/SAF/SAFW0151.htm",
+      "front": "Nelson Rolihlahla Mandela",
+      "back": "Cape buffalos"
+    },
+    "ZAR:200": {
+      "currency": "ZAR",
+      "value": 200,
+      "pick": "Africa-current",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/SAF/SAFW0152.htm",
+      "front": "Nelson Rolihlahla Mandela",
+      "back": "Leopards"
+    },
+    "MAD:20": {
+      "currency": "MAD",
+      "value": 20,
+      "pick": "Africa-current",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/MRQ/MRQW0079.htm",
+      "front": "University Al Quaraouiyine (Fez); King Mohamed VI",
+      "back": "Kasbah (fortress) of Ait-Ben-Haddou (near Ouarzazate), Mohamed VI Art Museum, Grand Theatre (Rabat), sports compound"
+    },
+    "MAD:50": {
+      "currency": "MAD",
+      "value": 50,
+      "pick": "Africa-current",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/MRQ/MRQW0080.htm",
+      "front": "King Mohammed VI, Ouzoud Falls",
+      "back": "Saffron flowers, wind turbines, solar station Noor Ouarzatate, Ouirgane dam, desalinization station in Agadir"
+    },
+    "MAD:100": {
+      "currency": "MAD",
+      "value": 100,
+      "pick": "Africa-current",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/MRQ/MRQW0081.htm",
+      "front": "King Mohammed VI, arcades of Hassan II mosque (Casablanca), arms",
+      "back": "Tiznet-Dakhla expressway; Place Mechouar monument (Laayoune/El Aaiún); Tan-Tan Moussem festival (traditional annual gathering of tribes of the Sahara)"
+    },
+    "MAD:200": {
+      "currency": "MAD",
+      "value": 200,
+      "pick": "Africa-current",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/MRQ/MRQW0082.htm",
+      "front": "King Mohammed VI, Mohammed VI bridge over river Bouregreg (Rabat), arms",
+      "back": "Mohammed VI tower (Bouregreg Valley Development Project, Salé, Rabat); Marrakech-Menara International Airport"
+    },
+    "EGP:5": {
+      "currency": "EGP",
+      "value": 5,
+      "pick": "Africa-current",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/EGY/EGY0072.htm",
+      "front": "Ahmad Bin Tulun mosque, Cairo",
+      "back": "Frieze (Bounty of River Nile)"
+    },
+    "EGP:50": {
+      "currency": "EGP",
+      "value": 50,
+      "pick": "Africa-current",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/EGY/EGY0075.htm",
+      "front": "75a(2)",
+      "back": "11.02.2016 - 29.02.2016; signature"
+    },
+    "XAF:500": {
+      "currency": "XAF",
+      "value": 500,
+      "pick": "Africa-XAF-current",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/CAS/CASW0700.htm",
+      "front": "Banque des États de l'Afrique Centrale building (Yaoundé, Cameroun); CEMAC (Communeauté économique et monétaire d'Afrique Centrale) logo; stylized map of Africa",
+      "back": "Agriculture; Farmer, irrigation system, tractor, cattle"
+    },
+    "XAF:1000": {
+      "currency": "XAF",
+      "value": 1000,
+      "pick": "Africa-XAF-current",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/CAS/CASW0701.htm",
+      "front": "Banque des États de l'Afrique Centrale building (Yaoundé, Cameroun); CEMAC (Communeauté économique et monétaire d'Afrique Centrale) logo; stylized map of Africa",
+      "back": "Health care; patient, nurse with monitoring device, medical-technical laboratory assistant with microscope"
+    },
+    "XAF:2000": {
+      "currency": "XAF",
+      "value": 2000,
+      "pick": "Africa-XAF-current",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/CAS/CASW0702.htm",
+      "front": "Banque des États de l'Afrique Centrale building (Yaoundé, Cameroun); CEMAC (Communeauté économique et monétaire d'Afrique Centrale) logo; stylized map of Africa",
+      "back": "Environmental protection (Flora); jungle, gray parrot"
+    },
+    "XAF:5000": {
+      "currency": "XAF",
+      "value": 5000,
+      "pick": "Africa-XAF-current",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/CAS/CASW0703.htm",
+      "front": "Banque des États de l'Afrique Centrale building (Yaoundé, Cameroun); CEMAC (Communeauté économique et monétaire d'Afrique Centrale) logo; stylized map of Africa",
+      "back": "Environmental protection (Fauna); Antelopes, ostriches, elephants"
+    },
+    "XAF:10000": {
+      "currency": "XAF",
+      "value": 10000,
+      "pick": "Africa-XAF-current",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/CAS/CASW0704.htm",
+      "front": "Banque des États de l'Afrique Centrale building (Yaoundé, Cameroun); CEMAC (Communeauté économique et monétaire d'Afrique Centrale) logo; stylized map of Africa",
+      "back": "Education; classroom"
+    },
+    "XOF:500": {
+      "currency": "XOF",
+      "value": 500,
+      "pick": "P-119A",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/WAS/WAS0119A2.htm",
+      "front": "Catfish shaped brass weight of the Ashanti people for weighing gold dust , outline of Africa, tablet PC",
+      "back": "Hippopotami"
+    },
+    "XOF:1000": {
+      "currency": "XOF",
+      "value": 1000,
+      "pick": "P-115A",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/WAS/WAS0115A2.htm",
+      "front": "115Ab",
+      "back": "2004"
+    },
+    "XOF:2000": {
+      "currency": "XOF",
+      "value": 2000,
+      "pick": "P-116A",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/WAS/WAS0116A2.htm",
+      "front": "116Ab",
+      "back": "2004"
+    },
+    "XOF:5000": {
+      "currency": "XOF",
+      "value": 5000,
+      "pick": "P-117A",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/WAS/WAS0117A2.htm",
+      "front": "117Ab",
+      "back": "2004"
+    },
+    "XOF:10000": {
+      "currency": "XOF",
+      "value": 10000,
+      "pick": "P-118A",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/WAS/WAS0118A2.htm",
+      "front": "118Ab",
+      "back": "2004"
+    },
+    "GHS:1": {
+      "currency": "GHS",
+      "value": 1,
+      "pick": "P-W45",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/GHA/GHAW2019-01.htm",
+      "front": "Independence Arch (Accra), arms; \"Big Six\" (six leaders of Ghana: Francis Nwia Kofie Kwame Nkrumah, Ebenezer Ako Adjei, Edward Akufo-Addo, Joseph Boakye Danquah, Emmanuel Odarkwei Obetsebi-Lamptey, William Ofori Atta)",
+      "back": "Akosombo dam (Volta Lake)"
+    },
+    "GHS:5": {
+      "currency": "GHS",
+      "value": 5,
+      "pick": "P-W46",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/GHA/GHAW2019-05.htm",
+      "front": "Independence Arch (Accra), arms; \"Big Six\" (six leaders of Ghana: Francis Nwia Kofie Kwame Nkrumah, Ebenezer Ako Adjei, Edward Akufo-Addo, Joseph Boakye Danquah, Emmanuel Odarkwei Obetsebi-Lamptey, William Ofori Atta)",
+      "back": "University of Ghana, Accra"
+    },
+    "GHS:10": {
+      "currency": "GHS",
+      "value": 10,
+      "pick": "P-W47",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/GHA/GHAW2019-10.htm",
+      "front": "Independence Arch (Accra), arms; \"Big Six\" (six leaders of Ghana: Francis Nwia Kofie Kwame Nkrumah, Ebenezer Ako Adjei, Edward Akufo-Addo, Joseph Boakye Danquah, Emmanuel Odarkwei Obetsebi-Lamptey, William Ofori Atta)",
+      "back": "Bank of Ghana building, Accra"
+    },
+    "GHS:20": {
+      "currency": "GHS",
+      "value": 20,
+      "pick": "P-W48",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/GHA/GHAW2019-20.htm",
+      "front": "Independence Arch (Accra), arms; \"Big Six\" (six leaders of Ghana: Francis Nwia Kofie Kwame Nkrumah, Ebenezer Ako Adjei, Edward Akufo-Addo, Joseph Boakye Danquah, Emmanuel Odarkwei Obetsebi-Lamptey, William Ofori Atta)",
+      "back": "Supreme Court building, Accra"
+    },
+    "GHS:50": {
+      "currency": "GHS",
+      "value": 50,
+      "pick": "P-W49",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/GHA/GHAW2019-50.htm",
+      "front": "Independence Arch (Accra), arms; \"Big Six\" (six leaders of Ghana: Francis Nwia Kofie Kwame Nkrumah, Ebenezer Ako Adjei, Edward Akufo-Addo, Joseph Boakye Danquah, Emmanuel Odarkwei Obetsebi-Lamptey, William Ofori Atta)",
+      "back": "Christianborg castle (Seat of Government)"
+    },
+    "GHS:100": {
+      "currency": "GHS",
+      "value": 100,
+      "pick": "P-W50",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/GHA/GHAW2019-100.htm",
+      "front": "Independence Arch (Accra), arms; \"Big Six\" (six leaders of Ghana: Francis Nwia Kofie Kwame Nkrumah, Ebenezer Ako Adjei, Edward Akufo-Addo, Joseph Boakye Danquah, Emmanuel Odarkwei Obetsebi-Lamptey, William Ofori Atta)",
+      "back": "Parliament of Ghana, Accra"
+    },
+    "GHS:200": {
+      "currency": "GHS",
+      "value": 200,
+      "pick": "P-W51",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/GHA/GHAW2019-200.htm",
+      "front": "Independence Arch (Accra), arms; \"Big Six\" (six leaders of Ghana: Francis Nwia Kofie Kwame Nkrumah, Ebenezer Ako Adjei, Edward Akufo-Addo, Joseph Boakye Danquah, Emmanuel Odarkwei Obetsebi-Lamptey, William Ofori Atta)",
+      "back": "Jubilee House, Accra"
+    },
+    "UGX:1000": {
+      "currency": "UGX",
+      "value": 1000,
+      "pick": "P-49",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/UGA/UGA0049.htm",
+      "front": "Stone, forest",
+      "back": "Antelopes"
+    },
+    "UGX:2000": {
+      "currency": "UGX",
+      "value": 2000,
+      "pick": "P-50",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/UGA/UGA0050.htm",
+      "front": "John Hanning Speke monument, Jinja; source of Victoria Nile",
+      "back": "Fish"
+    },
+    "UGX:5000": {
+      "currency": "UGX",
+      "value": 5000,
+      "pick": "P-51",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/UGA/UGA0051.htm",
+      "front": "World War II Memorial, Kampala",
+      "back": "Weaver birds with nest"
+    },
+    "UGX:10000": {
+      "currency": "UGX",
+      "value": 10000,
+      "pick": "P-52",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/UGA/UGA0052.htm",
+      "front": "Independence monument (Kampala), waterfall",
+      "back": "Banana trees, monument"
+    },
+    "UGX:20000": {
+      "currency": "UGX",
+      "value": 20000,
+      "pick": "P-53",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/UGA/UGA0053.htm",
+      "front": "\"Social-Economic Growth of Kampala City\" (Centenary Monument), Centenary Park, Kampala",
+      "back": "Buffalos"
+    },
+    "UGX:50000": {
+      "currency": "UGX",
+      "value": 50000,
+      "pick": "P-54",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/UGA/UGA0054.htm",
+      "front": "'\"Stride\" or \"Commonwealth\" monument, Kampala",
+      "back": "Gorillas"
+    },
+    "TZS:500": {
+      "currency": "TZS",
+      "value": 500,
+      "pick": "P-40",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/TAN/TAN0040.htm",
+      "front": "Amani Abeid Karume",
+      "back": "University of Daressalam, group of students Aesculap's rod"
+    },
+    "TZS:1000": {
+      "currency": "TZS",
+      "value": 1000,
+      "pick": "P-41",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/TAN/TAN0041.htm",
+      "front": "President Julius Kambarage Nyerere",
+      "back": "State House, Daressalam"
+    },
+    "TZS:2000": {
+      "currency": "TZS",
+      "value": 2000,
+      "pick": "P-42",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/TAN/TAN0042.htm",
+      "front": "Lion's head",
+      "back": "Ngome Kongwe fortress, Zanzibar"
+    },
+    "TZS:5000": {
+      "currency": "TZS",
+      "value": 5000,
+      "pick": "P-43",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/TAN/TAN0043.htm",
+      "front": "Rhinoceros",
+      "back": "Cyanid Leaching plant of the gold mines of Geita"
+    },
+    "TZS:10000": {
+      "currency": "TZS",
+      "value": 10000,
+      "pick": "P-44",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/TAN/TAN0044.htm",
+      "front": "Elephant's head",
+      "back": "Bank of Tanzania building, Daressalam"
+    },
+    "ETB:10": {
+      "currency": "ETB",
+      "value": 10,
+      "pick": "P-W55",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/ETH/ETHW2020-010.htm",
+      "front": "Camel, coffee harvest",
+      "back": "Two couples"
+    },
+    "ETB:50": {
+      "currency": "ETB",
+      "value": 50,
+      "pick": "P-W56",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/ETH/ETHW2020-050.htm",
+      "front": "Tractor",
+      "back": "Factory"
+    },
+    "ETB:100": {
+      "currency": "ETB",
+      "value": 100,
+      "pick": "P-W57",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/ETH/ETHW2020-100.htm",
+      "front": "Enqulal Gemb fortress (Gondar)",
+      "back": "Sof Omar caves; City gate, Harar"
+    },
+    "ETB:200": {
+      "currency": "ETB",
+      "value": 200,
+      "pick": "P-W58",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/ETH/ETHW2020-200.htm",
+      "front": "Pigeon",
+      "back": "Capricorn"
+    },
+    "RWF:500": {
+      "currency": "RWF",
+      "value": 500,
+      "pick": "P-W42",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/RWA/RWAW2019-0500.htm",
+      "front": "Muregeya suspension footbridge",
+      "back": "Students"
+    },
+    "RWF:1000": {
+      "currency": "RWF",
+      "value": 1000,
+      "pick": "P-W43",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/RWA/RWAW0043.htm",
+      "front": "National Museum of Rwanda, Butare",
+      "back": "Golden monkey, Volcanoes National Park"
+    },
+    "RWF:2000": {
+      "currency": "RWF",
+      "value": 2000,
+      "pick": "P-W44",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/RWA/RWAW0044.htm",
+      "front": "Kibuye landscape and Lake Kivu",
+      "back": "Roasted coffee beans"
+    },
+    "RWF:5000": {
+      "currency": "RWF",
+      "value": 5000,
+      "pick": "P-W45",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/RWA/RWAW0045.htm",
+      "front": "Kigali Convention Centre building",
+      "back": "Basket with calabash inside traditional house"
     }
   },
   "failures": [
@@ -2709,6 +3157,31 @@
     {
       "key": "YER:100",
       "page": "https://www.banknote.ws/COLLECTION/countries/ASI/YEM/YEMW0037.htm",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "key": "KES:50",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/KEN/KENW0052.htm",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "key": "KES:100",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/KEN/KENW0053.htm",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "key": "KES:200",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/KEN/KENW0054.htm",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "key": "KES:500",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/KEN/KENW0055.htm",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "key": "KES:1000",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/KEN/KENW0056.htm",
       "error": "HTTP Error 404: Not Found"
     }
   ]
