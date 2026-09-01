@@ -5484,6 +5484,222 @@
       "page": "https://www.banknote.ws/COLLECTION/countries/AUS/COK/COKW2021-03.htm",
       "front": "\"Ina and the Shark\" (Polynesian legend)",
       "back": "Canoe, figurine"
+    },
+    "GTQ:5": {
+      "currency": "GTQ",
+      "value": 5,
+      "pick": "P-W122A",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AME/GTM/GTMW2014-005.htm",
+      "front": "General Justo Rufino Barrios",
+      "back": "Classroom"
+    },
+    "GTQ:10": {
+      "currency": "GTQ",
+      "value": 10,
+      "pick": "P-123A",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AME/GTM/GTM0123A2.htm",
+      "front": "123A",
+      "back": "28.01.2015*; Printer: Oberthur Fiduciaire, France; * not listed in catalog"
+    },
+    "GTQ:20": {
+      "currency": "GTQ",
+      "value": 20,
+      "pick": "P-124",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AME/GTM/GTM0124.htm",
+      "front": "Dr. Mariano Gálvez",
+      "back": "Signing of the Central American Independence Act"
+    },
+    "GTQ:50": {
+      "currency": "GTQ",
+      "value": 50,
+      "pick": "P-125",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AME/GTM/GTM0125.htm",
+      "front": "Carlos O. Zachrisson",
+      "back": "Coffee harvest"
+    },
+    "GTQ:100": {
+      "currency": "GTQ",
+      "value": 100,
+      "pick": "P-126",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AME/GTM/GTM0126.htm",
+      "front": "Francisco Marroquín",
+      "back": "San Carlos de Borromeo University - formerly \"Major College\" (Antigua Guatemala, founded 1676)"
+    },
+    "GTQ:200": {
+      "currency": "GTQ",
+      "value": 200,
+      "pick": "P-W127",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AME/GTM/GTMW0127.htm",
+      "front": "Germán Alcántara, Mariano Valverde, Sebastián Hurtado",
+      "back": "Musical notes of \"La Flor del Café\" (by G. Alcántara); Marimba (xylophon) of S. Hurtado; Weathered façade; allegory to \"Noche de Luna entre Ruinas\" (by M. Valverde)"
+    },
+    "HNL:1": {
+      "currency": "HNL",
+      "value": 1,
+      "pick": "P-96",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AME/HON/HON0096.htm",
+      "front": "Arms, Lempira",
+      "back": "Pelota game arena, ruins of Copán"
+    },
+    "HNL:2": {
+      "currency": "HNL",
+      "value": 2,
+      "pick": "P-97",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AME/HON/HON0097.htm",
+      "front": "Arms, Marco Aurelio Soto",
+      "back": "Tigre Island, Puerto de Amapala (Golfo de Fonseca, Pacific Coast)"
+    },
+    "HNL:5": {
+      "currency": "HNL",
+      "value": 5,
+      "pick": "P-98",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AME/HON/HON0098.htm",
+      "front": "Arms, José Francisco Morazán Quezada",
+      "back": "Battle of Trinidad"
+    },
+    "HNL:10": {
+      "currency": "HNL",
+      "value": 10,
+      "pick": "P-99",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AME/HON/HON0099.htm",
+      "front": "Arms, President José Trinidad Cabañas",
+      "back": "University complex, Tegucigalpa"
+    },
+    "HNL:20": {
+      "currency": "HNL",
+      "value": 20,
+      "pick": "P-100",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AME/HON/HON0100.htm",
+      "front": "Arms, José Dionisio de la Trinidad de Herrera y Díaz del Valle",
+      "back": "Old Presidential Building, Tegucigalpa"
+    },
+    "HNL:50": {
+      "currency": "HNL",
+      "value": 50,
+      "pick": "P-W104",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AME/HON/HONW2016-050.htm",
+      "front": "Juan Manuel Gálvez Duron",
+      "back": "Banco Central de Honduras building, Tegucigalpa"
+    },
+    "HNL:100": {
+      "currency": "HNL",
+      "value": 100,
+      "pick": "P-W112",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AME/HON/HONW0112.htm",
+      "front": "José Cecilio del Valle; Río Choluteca suspension bridge (Choluteca)",
+      "back": "House where Del Valle was born, Choluteca"
+    },
+    "HNL:200": {
+      "currency": "HNL",
+      "value": 200,
+      "pick": "P-W114",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AME/HON/HONW0114.htm",
+      "front": "Bertha Isabel Cáceres Flores, river",
+      "back": "La Esperanza, Intibuca"
+    },
+    "HNL:500": {
+      "currency": "HNL",
+      "value": 500,
+      "pick": "P-W113",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AME/HON/HONW0113.htm",
+      "front": "Dr. Ramón Rosa, La Merced church",
+      "back": "Mines of Rosario de San Jacinto (1893)"
+    },
+    "NIO:10": {
+      "currency": "NIO",
+      "value": 10,
+      "pick": "P-209",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AME/NIC/NIC0209.htm",
+      "front": "Puerto Salvador Allende, Managua",
+      "back": "La Vaquita (Patron Saint festivities of Managua)"
+    },
+    "NIO:20": {
+      "currency": "NIO",
+      "value": 20,
+      "pick": "P-210",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AME/NIC/NIC0210.htm",
+      "front": "Moravian church, Laguna de Perlas",
+      "back": "Mayo Ya Festival"
+    },
+    "NIO:50": {
+      "currency": "NIO",
+      "value": 50,
+      "pick": "P-211",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AME/NIC/NIC0211.htm",
+      "front": "Artisan Market, Masaya",
+      "back": "Folkloristic ballet"
+    },
+    "NIO:100": {
+      "currency": "NIO",
+      "value": 100,
+      "pick": "P-212",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AME/NIC/NIC0212.htm",
+      "front": "Cathedral of Granada",
+      "back": "Horse chart"
+    },
+    "NIO:200": {
+      "currency": "NIO",
+      "value": 200,
+      "pick": "P-213",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AME/NIC/NIC0213.htm",
+      "front": "Ruben Dario National Theater, Managua",
+      "back": "El Güegüense comedy ballet"
+    },
+    "NIO:500": {
+      "currency": "NIO",
+      "value": 500,
+      "pick": "P-W217",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AME/NIC/NICW2017-0500.htm",
+      "front": "Cathedral of León",
+      "back": "Momotombo volcano"
+    },
+    "NIO:1000": {
+      "currency": "NIO",
+      "value": 1000,
+      "pick": "P-W218",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AME/NIC/NICW2017-1000.htm",
+      "front": "Hacienda San Jacinto",
+      "back": "San Juan River"
+    },
+    "CRC:1000": {
+      "currency": "CRC",
+      "value": 1000,
+      "pick": "P-W280",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AME/CRI/CRIW2019-01000.htm",
+      "front": "Braulio Carillo Colina",
+      "back": "Dry forest (\"Bosque seco\"); Guanacaste tree ( E nterolobium cyclocarpum), white tailed deer ( O docoileus virginianus), Costa Rica Pitahaya cactus flower ( H ylocerus costaricensis)"
+    },
+    "CRC:2000": {
+      "currency": "CRC",
+      "value": 2000,
+      "pick": "P-W281",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AME/CRI/CRIW2018-02000.htm",
+      "front": "Mauro Fernández Acuña, Colegio Superior de Señoritas, San José",
+      "back": "Bull shark ( C archarhinus leucas), sea star (asteroidea), sea pens (pennatulacea)"
+    },
+    "CRC:5000": {
+      "currency": "CRC",
+      "value": 5000,
+      "pick": "P-W282",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AME/CRI/CRIW2018-05000.htm",
+      "front": "Alfredo González Flores, Banco Internacional de Costa Rica building (San José)",
+      "back": "Mangrove swamp, flowers, crab, monkey"
+    },
+    "CRC:10000": {
+      "currency": "CRC",
+      "value": 10000,
+      "pick": "P-W283",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AME/CRI/CRIW2019-10000.htm",
+      "front": "José Figueres Ferrer, Abolition of the Army",
+      "back": "Rainforest (\"Bosque Lluvioso\"), orchid flower, mushroom cop, three-toed sloth, birds"
+    },
+    "CRC:20000": {
+      "currency": "CRC",
+      "value": 20000,
+      "pick": "P-W284",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AME/CRI/CRIW2018-20000.htm",
+      "front": "Maria Isabel Carvajal (alias Carmen Lyra), outline of Costa Rica,; rabbit stroking a wolf - from Lyra's \"Cuentos De Mi Tía Panchita\" (Tales of My Aunt Panchita)",
+      "back": "Chispita hummingbird, mountainous landscape, sunflower, coffee plants"
     }
   },
   "failures": [],
