@@ -1,2 +1,2 @@
-run=2026-09-01T22:20:00+01:00
-scope=oceania-full-banknotews
+run=2026-09-01T22:50:00+01:00
+scope=central-america-full-banknotews
