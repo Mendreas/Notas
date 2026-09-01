@@ -8256,6 +8256,18 @@
       "back": "/assets/notes/banknotews/ckd/3-back.jpg",
       "frontBytes": 119552,
       "backBytes": 119473
+    },
+    "VUV:100": {
+      "currency": "VUV",
+      "value": 100,
+      "pick": "P-1",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AUS/VTU/VTU0001.htm",
+      "frontSource": "https://www.banknote.ws/COLLECTION/countries/AUS/VTU/VTU0001ao.JPG",
+      "backSource": "https://www.banknote.ws/COLLECTION/countries/AUS/VTU/VTU0001ar.JPG",
+      "front": "/assets/notes/banknotews/vuv/100-front.jpg",
+      "back": "/assets/notes/banknotews/vuv/100-back.jpg",
+      "frontBytes": 146633,
+      "backBytes": 130733
     }
   },
   "failures": []
