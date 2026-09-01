@@ -16,6 +16,7 @@
  };
  const euroMembers=new Set(['AND','AUT','BEL','HRV','CYP','EST','FIN','FRA','DEU','GRC','IRL','ITA','LVA','LTU','LUX','MLT','MCO','MNE','NLD','PRT','SMR','SVK','SVN','ESP','VAT','XKX']);
  const dollarUsers=new Set(['USA','TLS','ECU','SLV','PAN','MHL','FSM','PLW']);
+ function normalizeIsoMap(){if(!DB.isoMap)return;for(const [key,value] of Object.entries({...DB.isoMap})){const raw=String(key),padded=raw.padStart(3,'0');if(!DB.isoMap[padded])DB.isoMap[padded]=value;if(!DB.isoMap[String(Number(raw))])DB.isoMap[String(Number(raw))]=value}for(const [padded,value] of Object.entries(numericIso3)){if(!DB.isoMap[padded])DB.isoMap[padded]=value;const raw=String(Number(padded));if(!DB.isoMap[raw])DB.isoMap[raw]=value}}
  function featureCountryId(feature){const raw=String(feature.id||''),padded=raw.padStart(3,'0');return DB.isoMap?.[raw]||DB.isoMap?.[padded]||numericIso3[padded]||null}
  function knownCountry(feature){const id=featureCountryId(feature);return DB.countries?.find(c=>c.id===id)||null}
  function belongs(country,continent){if(!country)return false;if(country.id==='RUS')return continent==='Europe'||continent==='Asia';return country.continent===continent}
@@ -28,15 +29,15 @@
  function keepContinentLabelsOnTop(map){map.selectAll('g.cont-label').raise()}
  if(!window.__NOTAS_MAP_TIP_GUARD__){window.__NOTAS_MAP_TIP_GUARD__=true;document.addEventListener('pointerdown',hideTooltip,true);document.addEventListener('wheel',hideTooltip,{passive:true,capture:true});window.addEventListener('blur',hideTooltip);window.addEventListener('scroll',hideTooltip,true);document.addEventListener('keydown',e=>{if(e.key==='Escape')hideTooltip()},true)}
  const previous=window.renderWorldMap;if(typeof previous!=='function')return;
- window.renderWorldMap=async function(continent=null){hideTooltip();await previous(continent);const map=d3.select('#worldMap'),tip=tooltip();map.selectAll('path.country-path')
+ window.renderWorldMap=async function(continent=null){hideTooltip();normalizeIsoMap();await previous(continent);const map=d3.select('#worldMap'),tip=tooltip();map.selectAll('path.country-path')
   .attr('fill',d=>{const c=knownCountry(d);if(!continent)return countryColor(d);return(c&&belongs(c,continent))?countryColor(d):muted})
   .attr('opacity',d=>{if(!continent)return 1;const c=knownCountry(d);return(c&&belongs(c,continent))?1:.22})
   .attr('stroke','#d4e0e6').attr('stroke-width',0.62).attr('stroke-opacity',0.78)
   .style('cursor',d=>{const c=knownCountry(d);return c&&(!continent||belongs(c,continent))?'pointer':'default'})
-  .on('mouseenter.mapui',function(event,d){const c=knownCountry(d);if(continent&&(!c||!belongs(c,continent))){hideTooltip();return}d3.select(this).raise().attr('stroke','#fff').attr('stroke-width',1.55).attr('stroke-opacity',1).style('filter','brightness(1.16) drop-shadow(0 0 4px rgba(255,255,255,.28))');keepContinentLabelsOnTop(map);if(c){tip.innerHTML=tooltipHtml(c);tip.style.display='block'}})
+  .on('mouseenter.mapui',function(event,d){const c=knownCountry(d);if(!c||(continent&&!belongs(c,continent))){hideTooltip();return}d3.select(this).attr('stroke','#fff').attr('stroke-width',1.55).attr('stroke-opacity',1).style('filter','brightness(1.16) drop-shadow(0 0 4px rgba(255,255,255,.28))');keepContinentLabelsOnTop(map);tip.innerHTML=tooltipHtml(c);tip.style.display='block'})
   .on('mousemove.mapui',function(event,d){const c=knownCountry(d);if(!c||(continent&&!belongs(c,continent))){hideTooltip();return}tip.style.left=Math.min(window.innerWidth-tip.offsetWidth-12,event.clientX+14)+'px';tip.style.top=Math.min(window.innerHeight-tip.offsetHeight-12,event.clientY+14)+'px'})
-  .on('mouseleave.mapui',function(){d3.select(this).attr('stroke','#d4e0e6').attr('stroke-width',0.62).attr('stroke-opacity',0.78).style('filter',null);keepContinentLabelsOnTop(map);hideTooltip()})
-  .on('click.mapui',function(){hideTooltip()});
+  .on('mouseleave.mapui',function(){d3.select(this).attr('stroke','#d4e0e6').attr('stroke-width',0.62).attr('stroke-opacity',0.78).style('filter','none');keepContinentLabelsOnTop(map);hideTooltip()})
+  .on('click',function(event,d){hideTooltip();const c=knownCountry(d);if(!c||(continent&&!belongs(c,continent)))return;if(continent)showCountry(c.id);else showContinent(c.continent)});
  map.selectAll('g.cont-label rect').attr('fill','#0c1823').attr('stroke','#3b5367').attr('opacity',0.94);map.selectAll('g.cont-label text').attr('fill','#eef5f8').attr('font-weight',700).attr('font-size',13);keepContinentLabelsOnTop(map)};
  window.NOTAS_MAP_CURRENCY_CODE=currencyCode;
 })();
