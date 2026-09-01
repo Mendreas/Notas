@@ -27,3 +27,5 @@ jobs:
           done
       - name: Run project audit
         run: node scripts/audit.mjs
+      - name: Check sovereign-state coverage
+        run: node scripts/global-coverage-audit.mjs
