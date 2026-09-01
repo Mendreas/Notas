@@ -1,2 +1,2 @@
-run=2026-09-01T22:50:00+01:00
-scope=central-america-full-banknotews
+run=2026-09-01T23:05:00+01:00
+scope=central-america-context-refresh-after-import
