@@ -1,2 +1,2 @@
-run=2026-09-01T22:45:00+01:00
-scope=central-america-full-banknotews
+run=2026-09-01T23:03:00+01:00
+scope=global-review-xcg-nad
