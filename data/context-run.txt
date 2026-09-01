@@ -1,2 +1,2 @@
-run=2026-09-01T09:36:00+01:00
-scope=africa-wave3-ghs-ugx-tzs-etb-rwf
+run=2026-09-01T11:20:00+01:00
+scope=africa-wave5-zmw-mwk-mzn-aoa-sle
