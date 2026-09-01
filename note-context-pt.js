@@ -33,23 +33,18 @@
   out=out.replace(/\bCongo rio\b/gi,'rio Congo').replace(/\bNew Guinea\b/gi,'Nova Guiné').replace(/\bSouth Sudan\b/gi,'Sudão do Sul').replace(/\bCape Verde\b/gi,'Cabo Verde');
   return out.replace(/\s+([,.;:])/g,'$1').replace(/\s{2,}/g,' ').trim();
  }
- function cleanResidual(text,side,field){
-  if(typeof text!=='string')return text;
-  let out=pt(text);
-  if(!suspicious.test(out))return out;
-  // Última barreira: nunca deixar uma frase inglesa crua chegar ao utilizador.
-  const label=side==='front'?'Frente':'Verso';
-  if(field==='title')return `${label} da nota`;
-  if(field==='summary')return `${label}: composição e motivos apresentados na nota.`;
-  return 'O motivo integra a identidade visual e cultural da emissão.';
- }
- function normalizeEntry(entry){
+ const leftovers=[];
+ function normalizeEntry(entry,key=''){
   if(!entry||typeof entry!=='object')return;
   for(const side of ['front','back']){
    const x=entry[side];if(!x||typeof x!=='object')continue;
-   for(const f of ['title','summary','more'])if(typeof x[f]==='string')x[f]=cleanResidual(x[f],side,f);
+   for(const f of ['title','summary','more']){
+    if(typeof x[f]!=='string')continue;
+    x[f]=pt(x[f]);
+    if(suspicious.test(x[f]))leftovers.push({key,side,field:f,text:x[f]});
+   }
   }
  }
- function run(){for(const store of stores())for(const entry of Object.values(store))normalizeEntry(entry)}
- run();window.NOTE_CONTEXT_PT={translate:pt,run};
+ function run(){leftovers.length=0;for(const store of stores())for(const [key,entry] of Object.entries(store))normalizeEntry(entry,key);window.NOTE_CONTEXT_UNTRANSLATED=[...leftovers];return leftovers}
+ run();window.NOTE_CONTEXT_PT={translate:pt,run,leftovers};
 })();
