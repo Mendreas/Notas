@@ -5100,43 +5100,392 @@
       "page": "https://www.banknote.ws/COLLECTION/countries/AME/BER/BER0062.htm",
       "front": "Red Cardinal (Cardinalis cardinalis)",
       "back": "House of Assembly, Hamilton"
+    },
+    "AUD:5": {
+      "currency": "AUD",
+      "value": 5,
+      "pick": "P-62",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AUS/AUS/AUS0062.htm",
+      "front": "Elizabeth II, prickly Moses wattle (Acacia verticillata) and eastern spinebill (Acanthorhynchus tenuirostris)",
+      "back": "Parliament house, Canberra"
+    },
+    "AUD:10": {
+      "currency": "AUD",
+      "value": 10,
+      "pick": "P-63",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AUS/AUS/AUS0063.htm",
+      "front": "Andrew Barton \"Banjo\" Paterson",
+      "back": "Mary Gilmore"
+    },
+    "AUD:20": {
+      "currency": "AUD",
+      "value": 20,
+      "pick": "P-W64",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AUS/AUS/AUSW2019-020.htm",
+      "front": "Mary Reibey, sailing ship \"Mercury\"",
+      "back": "Airplane \"L. M. Pattinson\" (Havillard DH.84 Dragon, call sign VH-URE) ; John Flynn, radio operator"
+    },
+    "AUD:50": {
+      "currency": "AUD",
+      "value": 50,
+      "pick": "P-W65",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AUS/AUS/AUSW2018-050.htm",
+      "front": "David Unaipon, artefacts",
+      "back": "Edith Dircksey Cowan"
+    },
+    "AUD:100": {
+      "currency": "AUD",
+      "value": 100,
+      "pick": "P-W66",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AUS/AUS/AUSW2020-100.htm",
+      "front": "Dame Nellie Melba",
+      "back": "Sir John Monash, Shrine of Remembrance (Melbourne), Sir John surveying"
+    },
+    "NZD:5": {
+      "currency": "NZD",
+      "value": 5,
+      "pick": "P-191",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AUS/NZL/NZL0191.htm",
+      "front": "Mt. Cook, Sir Edmund Hillary",
+      "back": "Scene of Campbell Island, Hoiho (yellow-eyed penguin),; Daisy (Pleurophyllum speciosum), Ross lilly (Bulbinella rossii)"
+    },
+    "NZD:10": {
+      "currency": "NZD",
+      "value": 10,
+      "pick": "P-192",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AUS/NZL/NZL0192.htm",
+      "front": "Kate Sheppard, w hite camellia (camellia japonica \"alba plena\")",
+      "back": "Whio (blue ducks); Kiokio fern (Blechnum novae-zelandiae), pineapple scrub (Dracophyllum menziesii)"
+    },
+    "NZD:20": {
+      "currency": "NZD",
+      "value": 20,
+      "pick": "P-193",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AUS/NZL/NZL0193.htm",
+      "front": "Elizabeth II, Parliament buildings",
+      "back": "Karearea (New Zealand falcon); Mount Tapuaenuku, Marlborough Rock daisy (Pachystegia insignis)"
+    },
+    "NZD:50": {
+      "currency": "NZD",
+      "value": 50,
+      "pick": "P-194",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AUS/NZL/NZL0194.htm",
+      "front": "Sir Apirana Ngata, Maori meeting house",
+      "back": "Kokako; Pureora Forest Park, sky blue mushroom (Entoloma hochstetteri)"
+    },
+    "NZD:100": {
+      "currency": "NZD",
+      "value": 100,
+      "pick": "P-195",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AUS/NZL/NZL0195.htm",
+      "front": "Lord Ernest Rutherford of Nelson; Nobel Prize medal",
+      "back": "Mohua (yellowhead) perched on a red beech (Fuscospora fusca) twig,; South Island Lichen moth (Declana egregia), Eglington Valley"
+    },
+    "PGK:2": {
+      "currency": "PGK",
+      "value": 2,
+      "pick": "P-W50",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AUS/PNG/PNGW2017-002.htm",
+      "front": "Parliament building, Port Moresby",
+      "back": "Artifacts"
+    },
+    "PGK:5": {
+      "currency": "PGK",
+      "value": 5,
+      "pick": "P-51",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AUS/PNG/PNG0051.htm",
+      "front": "Parliament building, Port Moresby",
+      "back": "Mask"
+    },
+    "PGK:10": {
+      "currency": "PGK",
+      "value": 10,
+      "pick": "P-W52",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AUS/PNG/PNGW2020-010.htm",
+      "front": "Parliament building, Port Moresby",
+      "back": "Bowl, ring, artifacts"
+    },
+    "PGK:20": {
+      "currency": "PGK",
+      "value": 20,
+      "pick": "P-W53",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AUS/PNG/PNGW0053.htm",
+      "front": "Parliament building, Port Moresby",
+      "back": "Boar, conches"
+    },
+    "PGK:50": {
+      "currency": "PGK",
+      "value": 50,
+      "pick": "P-W54",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AUS/PNG/PNGW2017-050.htm",
+      "front": "Parliament building, Port Moresby",
+      "back": "Prime Minister Michael Somare"
+    },
+    "PGK:100": {
+      "currency": "PGK",
+      "value": 100,
+      "pick": "P-W55",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AUS/PNG/PNGW2021-100.htm",
+      "front": "Parliament building, Port Moresby",
+      "back": "Tanker, airplane, truck, radio tower"
+    },
+    "FJD:5": {
+      "currency": "FJD",
+      "value": 5,
+      "pick": "P-W125",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AUS/FIJ/FIJW0125.htm",
+      "front": "Kulawai parrot",
+      "back": "Vonu Dina turtle (Chelona mydas)"
+    },
+    "FJD:10": {
+      "currency": "FJD",
+      "value": 10,
+      "pick": "P-W126",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AUS/FIJ/FIJW0126.htm",
+      "front": "Beli fish",
+      "back": "Mangrove planting"
+    },
+    "FJD:20": {
+      "currency": "FJD",
+      "value": 20,
+      "pick": "P-W127",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AUS/FIJ/FIJW0127.htm",
+      "front": "\"Foa\" artefact, Kacau ni Gau (Fiji petrel)",
+      "back": "Reserve Bank of Fiji building, Suva"
+    },
+    "FJD:50": {
+      "currency": "FJD",
+      "value": 50,
+      "pick": "P-W128",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AUS/FIJ/FIJW0128.htm",
+      "front": "Tagimoucia flower",
+      "back": "Sailing ship, Girmitiya woman (Girmitiyas were Indian indentured laborers who left India in the mid to late 19th century to work in British colonies)"
+    },
+    "FJD:100": {
+      "currency": "FJD",
+      "value": 100,
+      "pick": "P-W129",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AUS/FIJ/FIJW0129.htm",
+      "front": "Nanai (Fiji cicada)",
+      "back": "Tu Yaqona (Fijian kava ceremony)"
+    },
+    "SBD:5": {
+      "currency": "SBD",
+      "value": 5,
+      "pick": "P-W38",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AUS/SOL/SOLW2019-005.htm",
+      "front": "Arms",
+      "back": "Tuna fishing"
+    },
+    "SBD:10": {
+      "currency": "SBD",
+      "value": 10,
+      "pick": "P-33",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AUS/SOL/SOL0033.htm",
+      "front": "Flag, arms",
+      "back": "Weaver"
+    },
+    "SBD:20": {
+      "currency": "SBD",
+      "value": 20,
+      "pick": "P-34",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AUS/SOL/SOL0034.htm",
+      "front": "Flag, arms",
+      "back": "Dancers, flute player"
+    },
+    "SBD:50": {
+      "currency": "SBD",
+      "value": 50,
+      "pick": "P-35",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AUS/SOL/SOL0035.htm",
+      "front": "Flag, arms",
+      "back": "Geckos, shell"
+    },
+    "SBD:100": {
+      "currency": "SBD",
+      "value": 100,
+      "pick": "P-36",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AUS/SOL/SOL0036.htm",
+      "front": "Flag, arms",
+      "back": "Coconut harvest"
+    },
+    "VUV:200": {
+      "currency": "VUV",
+      "value": 200,
+      "pick": "P-12",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AUS/VTU/VTU0012.htm",
+      "front": "Melanesian chief",
+      "back": "Family"
+    },
+    "VUV:500": {
+      "currency": "VUV",
+      "value": 500,
+      "pick": "P-18",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AUS/VTU/VTU0018.htm",
+      "front": "Melanesian chief",
+      "back": "Dancers"
+    },
+    "VUV:1000": {
+      "currency": "VUV",
+      "value": 1000,
+      "pick": "P-13",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AUS/VTU/VTU0013.htm",
+      "front": "Melanesian chief",
+      "back": "Farmers, cattle"
+    },
+    "VUV:2000": {
+      "currency": "VUV",
+      "value": 2000,
+      "pick": "P-14",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AUS/VTU/VTU0014.htm",
+      "front": "Melanesian chief",
+      "back": "Birds, trees"
+    },
+    "VUV:5000": {
+      "currency": "VUV",
+      "value": 5000,
+      "pick": "P-19",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AUS/VTU/VTU0019.htm",
+      "front": "Melanesian chief",
+      "back": "Children in canoe, mountain, \"Gol\" diving from log tower"
+    },
+    "VUV:10000": {
+      "currency": "VUV",
+      "value": 10000,
+      "pick": "P-16",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AUS/VTU/VTU0016.htm",
+      "front": "Melanesian chief",
+      "back": "Building, totems"
+    },
+    "WST:5": {
+      "currency": "WST",
+      "value": 5,
+      "pick": "P-W47",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AUS/SAM/SAMW0047.htm",
+      "front": "Beach",
+      "back": "Former residence of Robert Louis Stevenson - current official residence of Head of State"
+    },
+    "WST:10": {
+      "currency": "WST",
+      "value": 10,
+      "pick": "P-W48",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AUS/SAM/SAMW0048.htm",
+      "front": "Rugby Champions of \"Hongkong Sevens 2007\"",
+      "back": "Children"
+    },
+    "WST:20": {
+      "currency": "WST",
+      "value": 20,
+      "pick": "P-W49",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AUS/SAM/SAMW0049.htm",
+      "front": "Papapapaitai waterfall",
+      "back": "Manumea bird (Didunculus strigirostris)"
+    },
+    "WST:50": {
+      "currency": "WST",
+      "value": 50,
+      "pick": "P-W50",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AUS/SAM/SAMW0050.htm",
+      "front": "Samoa Government building, Apia",
+      "back": "Central Bank of Samoa building, Apia"
+    },
+    "WST:100": {
+      "currency": "WST",
+      "value": 100,
+      "pick": "P-W51",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AUS/SAM/SAMW0051.htm",
+      "front": "Head of State Malietoa Susuga Tanumafili II",
+      "back": "Cathedral of Apia"
+    },
+    "TOP:2": {
+      "currency": "TOP",
+      "value": 2,
+      "pick": "P-W50",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AUS/TON/TONW0050.htm",
+      "front": "King Tupou VI, arms",
+      "back": "Whale watching"
+    },
+    "TOP:5": {
+      "currency": "TOP",
+      "value": 5,
+      "pick": "P-W51",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AUS/TON/TONW0051.htm",
+      "front": "King Tupou VI, arms",
+      "back": "Haamonga a Maui trilithon"
+    },
+    "TOP:10": {
+      "currency": "TOP",
+      "value": 10,
+      "pick": "P-W52",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AUS/TON/TONW0052.htm",
+      "front": "King Tupou VI, arms",
+      "back": "Princess Angelika Latufuipeka Tukuaho performing Kava Ceremony Milolua"
+    },
+    "TOP:20": {
+      "currency": "TOP",
+      "value": 20,
+      "pick": "P-W53",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AUS/TON/TONW0053.htm",
+      "front": "King Tupou VI, arms",
+      "back": "National Reserve Bank of Tonga building"
+    },
+    "TOP:50": {
+      "currency": "TOP",
+      "value": 50,
+      "pick": "P-W54",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AUS/TON/TONW0054.htm",
+      "front": "King Tupou VI, arms",
+      "back": "Saint George Government building"
+    },
+    "TOP:100": {
+      "currency": "TOP",
+      "value": 100,
+      "pick": "P-W55",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AUS/TON/TONW0055.htm",
+      "front": "King Tupou VI, arms",
+      "back": "Royal Palace, Nuku'Alofa"
+    },
+    "XPF:500": {
+      "currency": "XPF",
+      "value": 500,
+      "pick": "P-5",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AUS/FPY/FPY0005.htm",
+      "front": "Tapa cloth pattern (Wallis Island), Kava leaves, Bird od Paradise flower (Strelitzia reginae)",
+      "back": "Plumeria (Frangipani) flower, Tahitian gardenia, Siapo cloth pattern (Futuna Island)"
+    },
+    "XPF:1000": {
+      "currency": "XPF",
+      "value": 1000,
+      "pick": "P-6",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AUS/FPY/FPY0006.htm",
+      "front": "Tapa cloth pattern (Wallis Island), stingray (manta), tortoise",
+      "back": "Horned parakeet (Eunymphicus cornutus), Kagu (Rhynochetos jubatus), white terns, Siapo cloth pattern (Futuna Island)"
+    },
+    "XPF:5000": {
+      "currency": "XPF",
+      "value": 5000,
+      "pick": "P-7",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AUS/FPY/FPY0007.htm",
+      "front": "Tapa cloth pattern (Wallis Island), Nautilus macromphalus, ; Pennant coralfish (Heniochus acuminatus), coral",
+      "back": "Coral, oyster, humphead wrasse (Cheilinus undulatus), Siapo cloth pattern (Futuna Island)"
+    },
+    "XPF:10000": {
+      "currency": "XPF",
+      "value": 10000,
+      "pick": "P-8",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AUS/FPY/FPY0008.htm",
+      "front": "Tapa cloth pattern (Wallis Island), oars, Faré (thatched hut), palm trees",
+      "back": "Round huts, Jean-Marie Tj i abou Cultural Center (Tina peninsula, New Caledonia), Siapo cloth pattern (Futuna Island), stone pestle"
+    },
+    "CKD:3": {
+      "currency": "CKD",
+      "value": 3,
+      "pick": "P-W11",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AUS/COK/COKW2021-03.htm",
+      "front": "\"Ina and the Shark\" (Polynesian legend)",
+      "back": "Canoe, figurine"
     }
   },
-  "failures": [
-    {
-      "key": "NPR:5",
-      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/NEP/NEP0076.htm",
-      "found": []
-    },
-    {
-      "key": "LBP:5000",
-      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/LEB/LEB0091.htm",
-      "found": []
-    },
-    {
-      "key": "LBP:10000",
-      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/LEB/LEB0092.htm",
-      "found": []
-    },
-    {
-      "key": "LBP:20000",
-      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/LEB/LEB0093.htm",
-      "found": []
-    },
-    {
-      "key": "LBP:50000",
-      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/LEB/LEB0094.htm",
-      "found": []
-    },
-    {
-      "key": "YER:100",
-      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/YEM/YEMW0037.htm",
-      "error": "HTTP Error 404: Not Found"
-    },
-    {
-      "key": "AWG:25",
-      "page": "https://www.banknote.ws/COLLECTION/countries/AME/ARU/ARUW2019-025.htm",
-      "found": []
-    }
-  ]
+  "failures": [],
+  "targeted": true
 }
