@@ -1,6 +1,6 @@
 (()=>{
  const esc=s=>String(s||'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
- const sources=()=>[window.NOTE_CONTEXT_MANUAL,window.NOTE_CONTEXT_WAVE3,window.NOTE_CONTEXT_WAVE2,window.NOTE_CONTEXT_AFRICA1,window.NOTE_CONTEXT_CATALOG,window.NOTE_CONTEXT_WAVE5,window.NOTE_CONTEXT_WAVE4].filter(Boolean);
+ const sources=()=>[window.NOTE_CONTEXT_MANUAL,window.NOTE_CONTEXT_AFRICA3,window.NOTE_CONTEXT_WAVE3,window.NOTE_CONTEXT_WAVE2,window.NOTE_CONTEXT_AFRICA1,window.NOTE_CONTEXT_CATALOG,window.NOTE_CONTEXT_WAVE5,window.NOTE_CONTEXT_WAVE4].filter(Boolean);
  function infoFor(note,side){
    const k=`${note.currency}:${Number(note.value)}`;
    for(const s of sources()){const i=s?.[k]?.[side];if(i)return i;}
