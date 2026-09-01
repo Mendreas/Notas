@@ -8592,6 +8592,90 @@
       "back": "/assets/notes/banknotews/crc/20000-back.jpg",
       "frontBytes": 127868,
       "backBytes": 125036
+    },
+    "XCG:10": {
+      "currency": "XCG",
+      "value": 10,
+      "pick": "P-W1",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AME/CSM/CSMW0001.htm",
+      "frontSource": "https://www.banknote.ws/COLLECTION/countries/AME/CSM/CSMW0001o.jpg",
+      "backSource": "https://www.banknote.ws/COLLECTION/countries/AME/CSM/CSMW0001r.jpg",
+      "front": "/assets/notes/banknotews/xcg/10-front.jpg",
+      "back": "/assets/notes/banknotews/xcg/10-back.jpg",
+      "frontBytes": 109549,
+      "backBytes": 92058
+    },
+    "XCG:20": {
+      "currency": "XCG",
+      "value": 20,
+      "pick": "P-W2",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AME/CSM/CSMW0002.htm",
+      "frontSource": "https://www.banknote.ws/COLLECTION/countries/AME/CSM/CSMW0002o.jpg",
+      "backSource": "https://www.banknote.ws/COLLECTION/countries/AME/CSM/CSMW0002r.jpg",
+      "front": "/assets/notes/banknotews/xcg/20-front.jpg",
+      "back": "/assets/notes/banknotews/xcg/20-back.jpg",
+      "frontBytes": 126928,
+      "backBytes": 99660
+    },
+    "XCG:50": {
+      "currency": "XCG",
+      "value": 50,
+      "pick": "P-W3",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AME/CSM/CSMW0003.htm",
+      "frontSource": "https://www.banknote.ws/COLLECTION/countries/AME/CSM/CSMW0003o.jpg",
+      "backSource": "https://www.banknote.ws/COLLECTION/countries/AME/CSM/CSMW0003r.jpg",
+      "front": "/assets/notes/banknotews/xcg/50-front.jpg",
+      "back": "/assets/notes/banknotews/xcg/50-back.jpg",
+      "frontBytes": 116931,
+      "backBytes": 90421
+    },
+    "XCG:100": {
+      "currency": "XCG",
+      "value": 100,
+      "pick": "P-W4",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AME/CSM/CSMW0004.htm",
+      "frontSource": "https://www.banknote.ws/COLLECTION/countries/AME/CSM/CSMW0004o.jpg",
+      "backSource": "https://www.banknote.ws/COLLECTION/countries/AME/CSM/CSMW0004r.jpg",
+      "front": "/assets/notes/banknotews/xcg/100-front.jpg",
+      "back": "/assets/notes/banknotews/xcg/100-back.jpg",
+      "frontBytes": 121241,
+      "backBytes": 99870
+    },
+    "XCG:200": {
+      "currency": "XCG",
+      "value": 200,
+      "pick": "P-W5",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AME/CSM/CSMW0005.htm",
+      "frontSource": "https://www.banknote.ws/COLLECTION/countries/AME/CSM/CSMW0005o.jpg",
+      "backSource": "https://www.banknote.ws/COLLECTION/countries/AME/CSM/CSMW0005r.jpg",
+      "front": "/assets/notes/banknotews/xcg/200-front.jpg",
+      "back": "/assets/notes/banknotews/xcg/200-back.jpg",
+      "frontBytes": 119087,
+      "backBytes": 99343
+    },
+    "NAD:30": {
+      "currency": "NAD",
+      "value": 30,
+      "pick": "P-W18",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/NAM/NAMW2020-030.htm",
+      "frontSource": "https://www.banknote.ws/COLLECTION/countries/AFR/NAM/NAMW2020-0030o.jpg",
+      "backSource": "https://www.banknote.ws/COLLECTION/countries/AFR/NAM/NAMW2020-0030r.jpg",
+      "front": "/assets/notes/banknotews/nad/30-front.jpg",
+      "back": "/assets/notes/banknotews/nad/30-back.jpg",
+      "frontBytes": 145919,
+      "backBytes": 122975
+    },
+    "NAD:60": {
+      "currency": "NAD",
+      "value": 60,
+      "pick": "P-W19",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/NAM/NAMW0019.htm",
+      "frontSource": "https://www.banknote.ws/COLLECTION/countries/AFR/NAM/NAMW0019o.jpg",
+      "backSource": "https://www.banknote.ws/COLLECTION/countries/AFR/NAM/NAMW0019r.jpg",
+      "front": "/assets/notes/banknotews/nad/60-front.jpg",
+      "back": "/assets/notes/banknotews/nad/60-back.jpg",
+      "frontBytes": 138808,
+      "backBytes": 108102
     }
   },
   "failures": []
