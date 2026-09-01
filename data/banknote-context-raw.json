@@ -4470,6 +4470,636 @@
       "page": "https://www.banknote.ws/COLLECTION/countries/AFR/ZIM/ZIMW0117.htm",
       "front": "Rhinoceros, Chiremba balancing rock formation",
       "back": "Kariba dam"
+    },
+    "BSD:0": {
+      "currency": "BSD",
+      "value": 0,
+      "pick": "P-WA77",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AME/BAH/BAHW2019-0-5.htm",
+      "front": "Elizabeth II, flower, outline of the Bahamas",
+      "back": "Sister Sarah, Nassau Market"
+    },
+    "BSD:1": {
+      "currency": "BSD",
+      "value": 1,
+      "pick": "P-77",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AME/BAH/BAH0077.htm",
+      "front": "Outline of the Bahamas, flower, Sir Lynden O. Pindling",
+      "back": "Police Band, arms"
+    },
+    "BSD:3": {
+      "currency": "BSD",
+      "value": 3,
+      "pick": "P-W78",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AME/BAH/BAHW2019-003.htm",
+      "front": "Elizabeth II, flower, outline of the Bahamas",
+      "back": "Sailing boats"
+    },
+    "BSD:5": {
+      "currency": "BSD",
+      "value": 5,
+      "pick": "P-W78A",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AME/BAH/BAHW2020-005.htm",
+      "front": "Sir Cecil Wallace-Whitfield",
+      "back": "Junkanoo dance"
+    },
+    "BSD:10": {
+      "currency": "BSD",
+      "value": 10,
+      "pick": "P-W87",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AME/BAH/BAHW0087.htm",
+      "front": "Sir Stafford Lofthouse Sands",
+      "back": "Hope Town lighthouse (British Admiralty number J4572), flamingoes"
+    },
+    "BSD:20": {
+      "currency": "BSD",
+      "value": 20,
+      "pick": "P-80",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AME/BAH/BAH0080.htm",
+      "front": "Map of the Bahamas, flower, Sir Milo B. Butler",
+      "back": "Nassau Port Tower, Bridges connecting Nassau with Paradise Island, Nassau Harbour"
+    },
+    "BSD:50": {
+      "currency": "BSD",
+      "value": 50,
+      "pick": "P-W81",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AME/BAH/BAHW2019-050.htm",
+      "front": "Sir Roland T. Symonette",
+      "back": "Central Bank building"
+    },
+    "BSD:100": {
+      "currency": "BSD",
+      "value": 100,
+      "pick": "P-W82",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AME/BAH/BAHW2021-100.htm",
+      "front": "Arthur Dion Hanna",
+      "back": "Blue marlin"
+    },
+    "BBD:2": {
+      "currency": "BBD",
+      "value": 2,
+      "pick": "P-W80",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AME/BBD/BBDW0080.htm",
+      "front": "John Redman Bovell",
+      "back": "Morgan Lewis windmill, St. Andrew"
+    },
+    "BBD:5": {
+      "currency": "BBD",
+      "value": 5,
+      "pick": "P-W81",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AME/BBD/BBDW0081.htm",
+      "front": "Sir Frank Mortimer Maglinne Worrell",
+      "back": "3Ws Oval cricket facility at the University of the West Indies, Cave Hill Campus"
+    },
+    "BBD:10": {
+      "currency": "BBD",
+      "value": 10,
+      "pick": "P-W82",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AME/BBD/BBDW0082.htm",
+      "front": "Charles Duncan O'Neal",
+      "back": "Charles Duncan ONeal Bridge over the Careenage in Bridgetown"
+    },
+    "BBD:20": {
+      "currency": "BBD",
+      "value": 20,
+      "pick": "P-W83",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AME/BBD/BBDW0083.htm",
+      "front": "Samuel Jackman Prescod",
+      "back": "Parliament building, Bridgetown"
+    },
+    "BBD:50": {
+      "currency": "BBD",
+      "value": 50,
+      "pick": "P-W84",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AME/BBD/BBDW0084.htm",
+      "front": "Errol Barrow",
+      "back": "Independence Square, Bridgetown"
+    },
+    "BBD:100": {
+      "currency": "BBD",
+      "value": 100,
+      "pick": "P-W85",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AME/BBD/BBDW0085.htm",
+      "front": "Sir Grantley Adams",
+      "back": "Grantley Adams International Airport, Christ Church"
+    },
+    "JMD:50": {
+      "currency": "JMD",
+      "value": 50,
+      "pick": "P-W96",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AME/JAM/JAMW0096.htm",
+      "front": "George William Gordon, Paul Bogle",
+      "back": "Doctor's Cave beach"
+    },
+    "JMD:100": {
+      "currency": "JMD",
+      "value": 100,
+      "pick": "P-W97",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AME/JAM/JAMW0097.htm",
+      "front": "Marcus Garvey",
+      "back": "Dunn's River falls"
+    },
+    "JMD:500": {
+      "currency": "JMD",
+      "value": 500,
+      "pick": "P-W98",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AME/JAM/JAMW0098.htm",
+      "front": "Nanny of the Maroons, Samuel Sharpe",
+      "back": "Port Royal"
+    },
+    "JMD:1000": {
+      "currency": "JMD",
+      "value": 1000,
+      "pick": "P-W99",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AME/JAM/JAMW0099.htm",
+      "front": "Sir Alexander Bustamante, Norman Manley",
+      "back": "Jamaica House"
+    },
+    "JMD:2000": {
+      "currency": "JMD",
+      "value": 2000,
+      "pick": "P-W100",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AME/JAM/JAMW0100.htm",
+      "front": "Michael Manley, Edward Seaga",
+      "back": "Students of Central Branch Primary School (Kingston), representing the different races which make up the Jamaican population"
+    },
+    "JMD:5000": {
+      "currency": "JMD",
+      "value": 5000,
+      "pick": "P-W101",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AME/JAM/JAMW0101.htm",
+      "front": "Sir Donald Sangster, Hugh Shearer",
+      "back": "Highway 2000"
+    },
+    "TTD:1": {
+      "currency": "TTD",
+      "value": 1,
+      "pick": "P-W60",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AME/TRT/TRTW2020-001.htm",
+      "front": "Scarlet ibis, arms, flag",
+      "back": "Central Bank building in Eric Williams Financial Complex, Parliament building (\"Red House\"), Port of Spain"
+    },
+    "TTD:5": {
+      "currency": "TTD",
+      "value": 5,
+      "pick": "P-W61",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AME/TRT/TRTW2020-005.htm",
+      "front": "Blue-crowned motmot, arms, flag",
+      "back": "Central Bank building in Eric Williams Financial Complex, produce market"
+    },
+    "TTD:10": {
+      "currency": "TTD",
+      "value": 10,
+      "pick": "P-W62",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AME/TRT/TRTW2020-010.htm",
+      "front": "Cocrico (Ortalis ruficauda), arms, flag",
+      "back": "Central Bank building in Eric Williams Financial Complex, Container Port (Port of Spain)"
+    },
+    "TTD:20": {
+      "currency": "TTD",
+      "value": 20,
+      "pick": "P-W63",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AME/TRT/TRTW2020-020.htm",
+      "front": "Hummingbird, arms, flag",
+      "back": "Central Bank building in Eric Williams Financial Complex, arrangement of steel pans"
+    },
+    "TTD:50": {
+      "currency": "TTD",
+      "value": 50,
+      "pick": "P-W64",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AME/TRT/TRTW2020-050.htm",
+      "front": "Red capped cardinal bird, arms, flag",
+      "back": "Central Bank building in Eric Williams Financial Complex, dancer"
+    },
+    "TTD:100": {
+      "currency": "TTD",
+      "value": 100,
+      "pick": "P-W65",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AME/TRT/TRTW2019-100.htm",
+      "front": "Greater bird of paradise, arms, flag",
+      "back": "Central Bank building in Eric Williams Financial Complex; oil rig \"Kapok\" (Cassia Oil Field SE of Trinidad)"
+    },
+    "HTG:10": {
+      "currency": "HTG",
+      "value": 10,
+      "pick": "P-279",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AME/HAI/HAI0279.htm",
+      "front": "Sanité Belair",
+      "back": "Fort Cap Rouge (Jacmel)"
+    },
+    "HTG:25": {
+      "currency": "HTG",
+      "value": 25,
+      "pick": "P-273",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AME/HAI/HAI0273.htm",
+      "front": "General Nicolas Geffrard (Governor of Southern Haiti)",
+      "back": "Des Platons fortress (Dussis)"
+    },
+    "HTG:50": {
+      "currency": "HTG",
+      "value": 50,
+      "pick": "P-274",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AME/HAI/HAI0274.htm",
+      "front": "François Cappiox",
+      "back": "Fort Jalousière (Marmelade)"
+    },
+    "HTG:100": {
+      "currency": "HTG",
+      "value": 100,
+      "pick": "P-275",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AME/HAI/HAI0275.htm",
+      "front": "Henri Christophe (President of Northern Haiti, later King Henri I of Haiti)",
+      "back": "Henry Citadel (Milot)"
+    },
+    "HTG:250": {
+      "currency": "HTG",
+      "value": 250,
+      "pick": "P-276",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AME/HAI/HAI0276.htm",
+      "front": "Jean-Jacques Dessalines (Emperor Jacques I of Haiti)",
+      "back": "Fort Décidé (Marchand)"
+    },
+    "HTG:500": {
+      "currency": "HTG",
+      "value": 500,
+      "pick": "P-277",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AME/HAI/HAI0277.htm",
+      "front": "Alexandre Sabès Pétion (President of Southern Haiti)",
+      "back": "Fort Jacques (Fermathe)"
+    },
+    "HTG:1000": {
+      "currency": "HTG",
+      "value": 1000,
+      "pick": "P-278",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AME/HAI/HAI0278.htm",
+      "front": "President Florvil Hyppolite",
+      "back": "Marché Vallière"
+    },
+    "DOP:50": {
+      "currency": "DOP",
+      "value": 50,
+      "pick": "P-189",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AME/DOR/DOR0189.htm",
+      "front": "Primada de America / Santa Maria la Menor cathedral, Santo Domingo",
+      "back": "Basilica Nuestra Señora de la Altagracia"
+    },
+    "DOP:100": {
+      "currency": "DOP",
+      "value": 100,
+      "pick": "P-190",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AME/DOR/DOR0190.htm",
+      "front": "Francisco del Rosario Sanchez, Juan Pablo Duarte y Díez, Matiás Ramón Mella",
+      "back": "Puerta del Conde"
+    },
+    "DOP:200": {
+      "currency": "DOP",
+      "value": 200,
+      "pick": "P-191",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AME/DOR/DOR0191.htm",
+      "front": "Patria Mirabal, Minerva Mirabal, María Teresa Mirabal",
+      "back": "Mirabal Sisters monument"
+    },
+    "DOP:500": {
+      "currency": "DOP",
+      "value": 500,
+      "pick": "P-192",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AME/DOR/DOR0192.htm",
+      "front": "Salome Ureña de Henriquez, Pedro Henriquez Ureña",
+      "back": "Banco Central building, Santo Domingo"
+    },
+    "DOP:1000": {
+      "currency": "DOP",
+      "value": 1000,
+      "pick": "P-193",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AME/DOR/DOR0193.htm",
+      "front": "National Palace, Santo Domingo",
+      "back": "Fortress of Don Diego Colón (son of Christopher Columbus)"
+    },
+    "DOP:2000": {
+      "currency": "DOP",
+      "value": 2000,
+      "pick": "P-194",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AME/DOR/DOR0194.htm",
+      "front": "Emilio Prud-Homme & José Reyes",
+      "back": "National Theater"
+    },
+    "CUP:1": {
+      "currency": "CUP",
+      "value": 1,
+      "pick": "P-121",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AME/CUB/CUB0121.htm",
+      "front": "José Martí",
+      "back": "Fidel Castro and his men entering Havanna, 08.01.1959"
+    },
+    "CUP:3": {
+      "currency": "CUP",
+      "value": 3,
+      "pick": "P-127",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AME/CUB/CUB0127.htm",
+      "front": "Ernesto Rafael Guevara Lynch de la Serna (\"Che\" Guevara)",
+      "back": "\"Che\" Guevara cutting sugar cane"
+    },
+    "CUP:5": {
+      "currency": "CUP",
+      "value": 5,
+      "pick": "P-116",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AME/CUB/CUB0116.htm",
+      "front": "Antonio Maceo",
+      "back": "Conference between Antonio Maceo and Spanish General A. Martinez Campos at Mangos de Baragua (1878)"
+    },
+    "CUP:10": {
+      "currency": "CUP",
+      "value": 10,
+      "pick": "P-117",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AME/CUB/CUB0117.htm",
+      "front": "Máximo Gómez",
+      "back": "Guerra de todo el Pueblo (War of the whole people)"
+    },
+    "CUP:20": {
+      "currency": "CUP",
+      "value": 20,
+      "pick": "P-122",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AME/CUB/CUB0122.htm",
+      "front": "Camilo Cienfuegos",
+      "back": "Banana harvest, field work (\"Development of Agriculture\")"
+    },
+    "CUP:50": {
+      "currency": "CUP",
+      "value": 50,
+      "pick": "P-123",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AME/CUB/CUB0123.htm",
+      "front": "Calixto García Iñiguez",
+      "back": "Genetic and Biotechnological Centre"
+    },
+    "CUP:100": {
+      "currency": "CUP",
+      "value": 100,
+      "pick": "P-124",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AME/CUB/CUB0124.htm",
+      "front": "Carlos Manuel de Céspedes",
+      "back": "Anti-imperialistic tribune \"José Martí\", Havanna"
+    },
+    "CUP:200": {
+      "currency": "CUP",
+      "value": 200,
+      "pick": "P-130",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AME/CUB/CUB0130.htm",
+      "front": "Frank País",
+      "back": "Ciudad Escolar 26 de Julio (formerly Cuartel Moncada), Santiago de Cuba"
+    },
+    "CUP:500": {
+      "currency": "CUP",
+      "value": 500,
+      "pick": "P-131",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AME/CUB/CUB0131.htm",
+      "front": "Ignacio Agramonte",
+      "back": "Asamblea Constituyente, Guáimaro"
+    },
+    "CUP:1000": {
+      "currency": "CUP",
+      "value": 1000,
+      "pick": "P-132",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AME/CUB/CUB0132.htm",
+      "front": "Julio Antonio Mella",
+      "back": "University of Havanna"
+    },
+    "CUP:2000": {
+      "currency": "CUP",
+      "value": 2000,
+      "pick": "P-W145",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AME/CUB/CUBW0145.htm",
+      "front": "Mariana Grajales Cuello (Madre de La Patria)",
+      "back": "Madre de La Patria monument (Santa Ifigenia cemetery)"
+    },
+    "CUP:5000": {
+      "currency": "CUP",
+      "value": 5000,
+      "pick": "P-W146",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AME/CUB/CUBW0146.htm",
+      "front": "Celia Sánchez Manduley (Heroína de la Sierra Maestra)",
+      "back": "Celia Sánchez Manduley memorial (Parque Lenin)"
+    },
+    "BZD:2": {
+      "currency": "BZD",
+      "value": 2,
+      "pick": "P-W73",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AME/BLZ/BLZW0073.htm",
+      "front": "Philip Goldson, arms, Antelope waterfall (Mayflower Bocawina National Park)",
+      "back": "Sapodilla waterfall (Elijio Panti National Park), 1000 Foot Falls (Cayo)"
+    },
+    "BZD:5": {
+      "currency": "BZD",
+      "value": 5,
+      "pick": "P-W74",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AME/BLZ/BLZW0074.htm",
+      "front": "George Cadle Price, arms, National Assembly building (Belmopan)",
+      "back": "Belize City Peninsula and Haulover Creek; Supreme Court building (Belize City), Saint Johns Cathedral (Belize City)"
+    },
+    "BZD:10": {
+      "currency": "BZD",
+      "value": 10,
+      "pick": "P-W75",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AME/BLZ/BLZW0075.htm",
+      "front": "Philip Goldson, arms, green heron (Butorides virescens)",
+      "back": "Keel-billed toucan, long-billed hermit hummingbird collecting pollen, scaly-breasted hummingbird in flight"
+    },
+    "BZD:20": {
+      "currency": "BZD",
+      "value": 20,
+      "pick": "P-W76",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AME/BLZ/BLZW0076.htm",
+      "front": "George Cadle Price, arms, Bairds tapir",
+      "back": "Jaguar (Panthera onca), green iguana"
+    },
+    "BZD:50": {
+      "currency": "BZD",
+      "value": 50,
+      "pick": "P-W77",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AME/BLZ/BLZW0077.htm",
+      "front": "Philip Goldson, arms, Mask Temple (Lamanai)",
+      "back": "Top of Caana Mayan ruins (Caracol), El Castillo Mayan ruin (Xunantunich), segment of the Xunantunich east frieze"
+    },
+    "BZD:100": {
+      "currency": "BZD",
+      "value": 100,
+      "pick": "P-W78",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AME/BLZ/BLZW0078.htm",
+      "front": "George Cadle Price, arms, Queen triggerfish (Balistes vetula)",
+      "back": "Hawksbill sea turtle, Great Blue Hole, two French angelfish, nurse shark (Ginglymostoma cirratum), grooved brain coral (Diploria labyrinthiformis)"
+    },
+    "XCD:5": {
+      "currency": "XCD",
+      "value": 5,
+      "pick": "P-W56",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AME/XCD/XCDW2021-005.htm",
+      "front": "Elizabeth II, Eastern Caribbean Central Bank building (Basseterre, St. Kitts), hummingbird",
+      "back": "Trafalgar Falls (Dominica) , Admiral's House (Antigua)"
+    },
+    "XCD:10": {
+      "currency": "XCD",
+      "value": 10,
+      "pick": "P-W57",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AME/XCD/XCDW2019-010.htm",
+      "front": "Elizabeth II, Eastern Caribbean Central Bank building (Basseterre, St. Kitts), hummingbird",
+      "back": "Admiralty Bay (St. Vincent), The \"Warspite\" (Anguilla)"
+    },
+    "XCD:20": {
+      "currency": "XCD",
+      "value": 20,
+      "pick": "P-W58",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AME/XCD/XCDW2019-020.htm",
+      "front": "Elizabeth II, Eastern Caribbean Central Bank building (Basseterre, St. Kitts)",
+      "back": "Government House (Montserrat), nutmeg (Grenada)"
+    },
+    "XCD:50": {
+      "currency": "XCD",
+      "value": 50,
+      "pick": "P-W59",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AME/XCD/XCDW2019-050.htm",
+      "front": "Elizabeth II, Eastern Caribbean Central Bank building (Basseterre, St. Kitts)",
+      "back": "Brimstone Hill (St. Kitts), Sir K. Dwight Venner"
+    },
+    "XCD:100": {
+      "currency": "XCD",
+      "value": 100,
+      "pick": "P-W60",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AME/XCD/XCDW2019-100.htm",
+      "front": "Elizabeth II, Eastern Caribbean Central Bank building (Basseterre, St. Kitts)",
+      "back": "Sir Arthur Lewis, Les Pitons volcano (St. Lucia)"
+    },
+    "AWG:10": {
+      "currency": "AWG",
+      "value": 10,
+      "pick": "P-W21",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AME/ARU/ARUW2019-010.htm",
+      "front": "Turtle",
+      "back": "Bushiribana gold mill ruins"
+    },
+    "AWG:25": {
+      "currency": "AWG",
+      "value": 25,
+      "pick": "P-W22",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AME/ARU/ARUW2019-025.htm"
+    },
+    "AWG:50": {
+      "currency": "AWG",
+      "value": 50,
+      "pick": "P-W23",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AME/ARU/ARUW2019-050.htm",
+      "front": "Crab",
+      "back": "Willem III Tower, Fort Zoutman (Oranjestad)"
+    },
+    "AWG:100": {
+      "currency": "AWG",
+      "value": 100,
+      "pick": "P-W24",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AME/ARU/ARUW2019-100.htm",
+      "front": "Iguana verde",
+      "back": "Dancers"
+    },
+    "AWG:200": {
+      "currency": "AWG",
+      "value": 200,
+      "pick": "P-W25",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AME/ARU/ARUW2019-200.htm",
+      "front": "Crested Caracara",
+      "back": "Barrel organ, drum"
+    },
+    "KYD:1": {
+      "currency": "KYD",
+      "value": 1,
+      "pick": "P-38",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AME/CAY/CAY0038.htm",
+      "front": "Elizabeth II, fish",
+      "back": "Rocky cliff \"The Bluff\""
+    },
+    "KYD:5": {
+      "currency": "KYD",
+      "value": 5,
+      "pick": "P-39",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AME/CAY/CAY0039.htm",
+      "front": "Elizabeth II, turtles",
+      "back": "Cayman parrots"
+    },
+    "KYD:10": {
+      "currency": "KYD",
+      "value": 10,
+      "pick": "P-40",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AME/CAY/CAY0040.htm",
+      "front": "Elizabeth II, crabs",
+      "back": "Banana orchid"
+    },
+    "KYD:25": {
+      "currency": "KYD",
+      "value": 25,
+      "pick": "P-41",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AME/CAY/CAY0041.htm",
+      "front": "Elizabeth II, shells",
+      "back": "Turtle"
+    },
+    "KYD:50": {
+      "currency": "KYD",
+      "value": 50,
+      "pick": "P-42",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AME/CAY/CAY0042.htm",
+      "front": "Elizabeth II, stingrays",
+      "back": "Stingray"
+    },
+    "KYD:100": {
+      "currency": "KYD",
+      "value": 100,
+      "pick": "P-43",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AME/CAY/CAY0043.htm",
+      "front": "Elizabeth II, sailing ship",
+      "back": "George Town"
+    },
+    "BMD:2": {
+      "currency": "BMD",
+      "value": 2,
+      "pick": "P-W63",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AME/BER/BERW0063.htm",
+      "front": "Bluebird (Sialia sialis)",
+      "back": "Dockyard's Clock Tower (Hamilton); Neptune"
+    },
+    "BMD:5": {
+      "currency": "BMD",
+      "value": 5,
+      "pick": "P-W64",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AME/BER/BERW0064.htm",
+      "front": "Blue marlin (Makaira nigricans)",
+      "back": "Somerset bridge"
+    },
+    "BMD:10": {
+      "currency": "BMD",
+      "value": 10,
+      "pick": "P-59",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AME/BER/BER0059.htm",
+      "front": "Blue Angel fish (pomacanthidae)",
+      "back": "Commissioner's house; \"Deliverance\""
+    },
+    "BMD:20": {
+      "currency": "BMD",
+      "value": 20,
+      "pick": "P-60",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AME/BER/BER0060.htm",
+      "front": "Whistling frog (Eleutheradactylus johnstonei)",
+      "back": "Gibb's Hill lighthouse; St. Mark's church"
+    },
+    "BMD:50": {
+      "currency": "BMD",
+      "value": 50,
+      "pick": "P-61",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AME/BER/BER0061.htm",
+      "front": "Red billed tropic bird (Phaethon aethereus)",
+      "back": "St. Peter's (\"Their Majesties\") church, St. George's"
+    },
+    "BMD:100": {
+      "currency": "BMD",
+      "value": 100,
+      "pick": "P-62",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AME/BER/BER0062.htm",
+      "front": "Red Cardinal (Cardinalis cardinalis)",
+      "back": "House of Assembly, Hamilton"
     }
   },
   "failures": [
@@ -4502,6 +5132,11 @@
       "key": "YER:100",
       "page": "https://www.banknote.ws/COLLECTION/countries/ASI/YEM/YEMW0037.htm",
       "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "key": "AWG:25",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AME/ARU/ARUW2019-025.htm",
+      "found": []
     }
   ]
 }
