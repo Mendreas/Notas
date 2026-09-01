@@ -5700,6 +5700,110 @@
       "page": "https://www.banknote.ws/COLLECTION/countries/AME/CRI/CRIW2018-20000.htm",
       "front": "Maria Isabel Carvajal (alias Carmen Lyra), outline of Costa Rica,; rabbit stroking a wolf - from Lyra's \"Cuentos De Mi Tía Panchita\" (Tales of My Aunt Panchita)",
       "back": "Chispita hummingbird, mountainous landscape, sunflower, coffee plants"
+    },
+    "XCG:10": {
+      "currency": "XCG",
+      "value": 10,
+      "pick": "P-W1",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AME/CSM/CSMW0001.htm",
+      "front": "Gray anglefish (zwarte keizervis)",
+      "back": "Klein Curaçao lighthouse (British Admiralty No. J6399)"
+    },
+    "XCG:20": {
+      "currency": "XCG",
+      "value": 20,
+      "pick": "P-W2",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AME/CSM/CSMW0002.htm",
+      "front": "Spotted eagle ray (geflekte adelaarsrog)",
+      "back": "Simpson Bay, Sint Maarten"
+    },
+    "XCG:50": {
+      "currency": "XCG",
+      "value": 50,
+      "pick": "P-W3",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AME/CSM/CSMW0003.htm",
+      "front": "Green sea turle (groene zeeschildpad)",
+      "back": "Grote Knip, Curaçao"
+    },
+    "XCG:100": {
+      "currency": "XCG",
+      "value": 100,
+      "pick": "P-W4",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AME/CSM/CSMW0004.htm",
+      "front": "Stoplight parrotfish (spotlicht papagaaivis)",
+      "back": "Court House, Sint Maarten"
+    },
+    "XCG:200": {
+      "currency": "XCG",
+      "value": 200,
+      "pick": "P-W5",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AME/CSM/CSMW0005.htm",
+      "front": "Longsnout seahorse (langsnuitzeepaardje)",
+      "back": "Queen Emma bridge, Curaçao"
+    },
+    "NAD:30": {
+      "currency": "NAD",
+      "value": 30,
+      "pick": "P-W18",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/NAM/NAMW2020-030.htm",
+      "front": "Presidents Dr. Sam Nujoma, Dr. Hifikepunye Lucas Pohamba, Dr. Hage G. Geingob",
+      "back": "Rhinoceros, arms"
+    },
+    "NAD:60": {
+      "currency": "NAD",
+      "value": 60,
+      "pick": "P-W19",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AFR/NAM/NAMW0019.htm",
+      "front": "President Dr. Hage Gottfried Geingob, crowd",
+      "back": "Wind turbines, hydrogen tank, biomass, solar panels<; President Geingob holding football cup at his inauguration on 21.03.2015 at Independence Stadium in Windhoek"
+    },
+    "FKP:5": {
+      "currency": "FKP",
+      "value": 5,
+      "pick": "P-W20",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AME/FKL/FKLW0020.htm",
+      "front": "Outline of Falkland Islands, black browed albatrosses, Charles III, arms",
+      "back": "Pale maiden flower (Olsynium filifolium), Steeple Jason Island, penguins"
+    },
+    "FKP:10": {
+      "currency": "FKP",
+      "value": 10,
+      "pick": "P-W21",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AME/FKL/FKLW0021.htm",
+      "front": "Outline of Falkland Islands, black browed albatrosses, Charles III, arms",
+      "back": "Pale maiden flower (Olsynium filifolium), Steeple Jason Island, penguins"
+    },
+    "FKP:20": {
+      "currency": "FKP",
+      "value": 20,
+      "pick": "P-W22",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AME/FKL/FKLW0022.htm",
+      "front": "Outline of Falkland Islands, black browed albatrosses, Charles III, arms",
+      "back": "Pale maiden flower (Olsynium filifolium), Steeple Jason Island, penguins"
+    },
+    "FKP:50": {
+      "currency": "FKP",
+      "value": 50,
+      "pick": "P-16",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AME/FKL/FKL0016.htm",
+      "front": "Elizabeth II",
+      "back": "Governor's house, Cathedral and Whale Bone monument in Stanley"
+    },
+    "GTQ:1": {
+      "currency": "GTQ",
+      "value": 1,
+      "pick": "P-W129",
+      "page": "https://www.banknote.ws/COLLECTION/countries/AME/GTM/GTMW0129.htm",
+      "front": "Quetzal bird, 1-Quetzal coin, General José María Orellana, Temple I (Tikal)",
+      "back": "Banco de Guatemala building"
+    },
+    "BDT:5": {
+      "currency": "BDT",
+      "value": 5,
+      "pick": "P-W75",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/BDE/BDEW0075.htm",
+      "front": "Star mosque (Dhaka/Dacca), water lily",
+      "back": "Scenes"
     }
   },
   "failures": [],
