@@ -1,9 +1,34 @@
 {
   "notes": [
-    {"currency":"XOF","value":500,"section":"https://www.banknote.ws/COLLECTION/countries/AFR/WAS/WAS.htm","pick":"P-119A"},
-    {"currency":"XOF","value":1000,"section":"https://www.banknote.ws/COLLECTION/countries/AFR/WAS/WAS.htm","pick":"P-115A"},
-    {"currency":"XOF","value":2000,"section":"https://www.banknote.ws/COLLECTION/countries/AFR/WAS/WAS.htm","pick":"P-116A"},
-    {"currency":"XOF","value":5000,"section":"https://www.banknote.ws/COLLECTION/countries/AFR/WAS/WAS.htm","pick":"P-117A"},
-    {"currency":"XOF","value":10000,"section":"https://www.banknote.ws/COLLECTION/countries/AFR/WAS/WAS.htm","pick":"P-118A"}
+    {"currency":"GHS","value":1,"section":"https://www.banknote.ws/COLLECTION/countries/AFR/GHA/GHA.htm","pick":"P-W45"},
+    {"currency":"GHS","value":5,"section":"https://www.banknote.ws/COLLECTION/countries/AFR/GHA/GHA.htm","pick":"P-W46"},
+    {"currency":"GHS","value":10,"section":"https://www.banknote.ws/COLLECTION/countries/AFR/GHA/GHA.htm","pick":"P-W47"},
+    {"currency":"GHS","value":20,"section":"https://www.banknote.ws/COLLECTION/countries/AFR/GHA/GHA.htm","pick":"P-W48"},
+    {"currency":"GHS","value":50,"section":"https://www.banknote.ws/COLLECTION/countries/AFR/GHA/GHA.htm","pick":"P-W49"},
+    {"currency":"GHS","value":100,"section":"https://www.banknote.ws/COLLECTION/countries/AFR/GHA/GHA.htm","pick":"P-W50"},
+    {"currency":"GHS","value":200,"section":"https://www.banknote.ws/COLLECTION/countries/AFR/GHA/GHA.htm","pick":"P-W51"},
+
+    {"currency":"UGX","value":1000,"section":"https://www.banknote.ws/COLLECTION/countries/AFR/UGA/UGA.htm","pick":"P-49"},
+    {"currency":"UGX","value":2000,"section":"https://www.banknote.ws/COLLECTION/countries/AFR/UGA/UGA.htm","pick":"P-50"},
+    {"currency":"UGX","value":5000,"section":"https://www.banknote.ws/COLLECTION/countries/AFR/UGA/UGA.htm","pick":"P-51"},
+    {"currency":"UGX","value":10000,"section":"https://www.banknote.ws/COLLECTION/countries/AFR/UGA/UGA.htm","pick":"P-52"},
+    {"currency":"UGX","value":20000,"section":"https://www.banknote.ws/COLLECTION/countries/AFR/UGA/UGA.htm","pick":"P-53"},
+    {"currency":"UGX","value":50000,"section":"https://www.banknote.ws/COLLECTION/countries/AFR/UGA/UGA.htm","pick":"P-54"},
+
+    {"currency":"TZS","value":500,"section":"https://www.banknote.ws/COLLECTION/countries/AFR/TAN/TAN.htm","pick":"P-40"},
+    {"currency":"TZS","value":1000,"section":"https://www.banknote.ws/COLLECTION/countries/AFR/TAN/TAN.htm","pick":"P-41"},
+    {"currency":"TZS","value":2000,"section":"https://www.banknote.ws/COLLECTION/countries/AFR/TAN/TAN.htm","pick":"P-42"},
+    {"currency":"TZS","value":5000,"section":"https://www.banknote.ws/COLLECTION/countries/AFR/TAN/TAN.htm","pick":"P-43"},
+    {"currency":"TZS","value":10000,"section":"https://www.banknote.ws/COLLECTION/countries/AFR/TAN/TAN.htm","pick":"P-44"},
+
+    {"currency":"ETB","value":10,"section":"https://www.banknote.ws/COLLECTION/countries/AFR/ETH/ETH.htm","pick":"P-W55"},
+    {"currency":"ETB","value":50,"section":"https://www.banknote.ws/COLLECTION/countries/AFR/ETH/ETH.htm","pick":"P-W56"},
+    {"currency":"ETB","value":100,"section":"https://www.banknote.ws/COLLECTION/countries/AFR/ETH/ETH.htm","pick":"P-W57"},
+    {"currency":"ETB","value":200,"section":"https://www.banknote.ws/COLLECTION/countries/AFR/ETH/ETH.htm","pick":"P-W58"},
+
+    {"currency":"RWF","value":500,"section":"https://www.banknote.ws/COLLECTION/countries/AFR/RWA/RWA.htm","pick":"P-W42"},
+    {"currency":"RWF","value":1000,"section":"https://www.banknote.ws/COLLECTION/countries/AFR/RWA/RWA.htm","pick":"P-W43"},
+    {"currency":"RWF","value":2000,"section":"https://www.banknote.ws/COLLECTION/countries/AFR/RWA/RWA.htm","pick":"P-W44"},
+    {"currency":"RWF","value":5000,"section":"https://www.banknote.ws/COLLECTION/countries/AFR/RWA/RWA.htm","pick":"P-W45"}
   ]
 }
