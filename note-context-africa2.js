@@ -12,4 +12,4 @@ window.NOTE_CONTEXT_AFRICA2={
 };
 Object.assign(window.NOTE_CONTEXT_MANUAL||(window.NOTE_CONTEXT_MANUAL={}),window.NOTE_CONTEXT_AFRICA2);
 document.write('<script src="/note-context-africa-review.js?v=164"><\/script><script src="/note-context-caribbean.js?v=166"><\/script><script src="/note-context-oceania.js?v=167"><\/script><script src="/note-context-central-america.js?v=168"><\/script>');
-const _afFoot=document.querySelector('.sidebar-foot');if(_afFoot){const s=_afFoot.querySelector('small'),t=_afFoot.querySelector('span');if(s)s.textContent='v0.14.1 · 1 set 2026';if(t)t.textContent='Revisão mundial concluída';}
+const _afFoot=document.querySelector('.sidebar-foot');if(_afFoot){const s=_afFoot.querySelector('small'),t=_afFoot.querySelector('span');if(s)s.textContent='v0.14.2 · 2 set 2026';if(t)t.textContent='Revisão mundial concluída';}
