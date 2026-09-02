@@ -7,15 +7,22 @@
  ].filter(Boolean);
 
  const prePhrases=[
-  [/William Lyon Mackenzie King/g,'William Lyon Mackenzie King'],
-  [/New Guinea/g,'Nova Guiné'],[/South Sudan/g,'Sudão do Sul'],[/Cape Verde/g,'Cabo Verde'],
+  [/William Lyon Mackenzie King/g,'William Lyon Mackenzie King'],[/William Lyon Mackenzie Rei/g,'William Lyon Mackenzie King'],
+  [/New Guinea/g,'Nova Guiné'],[/South Sudan/g,'Sudão do Sul'],[/Cape Verde/g,'Cabo Verde'],[/Bicol region/gi,'região de Bicol'],
   [/Banaue rice terraces/gi,'terraços de arroz de Banaue'],[/rice terraces of Banaue/gi,'terraços de arroz de Banaue'],
   [/Puerto Princesa Subterranean River National Park/gi,'Parque Nacional do Rio Subterrâneo de Puerto Princesa'],
   [/Kinabalu National Park/gi,'Parque Nacional de Kinabalu'],[/Wakatobi National Park/gi,'Parque Nacional de Wakatobi'],
   [/Komodo National Park/gi,'Parque Nacional de Komodo'],[/Malacañang Palace/gi,'Palácio de Malacañang'],
   [/Taal Lake/gi,'lago Taal'],[/Mayon Volcano/gi,'vulcão Mayon'],[/Bohol Chocolate Hills/gi,'Colinas de Chocolate de Bohol'],
   [/Derawan Islands/gi,'ilhas Derawan'],[/Raja Ampat archipelago/gi,'arquipélago de Raja Ampat'],[/Banda Island/gi,'ilha de Banda'],
-  [/Fort Belgica/gi,'Forte Belgica']
+  [/Fort Belgica/gi,'Forte Belgica'],
+  [/"Under the Great Wave off Kanagawa"/gi,'"A Grande Onda de Kanagawa"'],
+  [/Thirty-six Views of Mount Fuji/gi,'Trinta e seis vistas do monte Fuji'],
+  [/Thirty-six Views de Mount Fuji/gi,'Trinta e seis vistas do monte Fuji'],
+  [/Tale of Prince Genji/gi,'Conto de Genji'],[/Tale de Príncipe Genji/gi,'Conto de Genji'],[/The Tale of Genji/gi,'O Conto de Genji'],
+  [/Lady Murasaki Shikibu/gi,'Murasaki Shikibu'],[/author de "Genji Monogatari"/gi,'autora de "Genji Monogatari"'],
+  [/the oldest novel de World's literature/gi,'considerado um dos primeiros romances da literatura mundial'],
+  [/"Three Ponds, Reflecting the Moon"/gi,'"Três Espelhos de Água Refletindo a Lua"'],[/Western Lake/gi,'Lago Oeste'],[/Western lago/gi,'Lago Oeste']
  ];
  const phrases=[
   [/fishermen'?s village along Congo (?:river|rio)/gi,'aldeia de pescadores ao longo do rio Congo'],
@@ -41,16 +48,17 @@
  ];
  const suspicious=/\b(the|and|with|from|near|along|village|fishermen|fisherman|dragging|log|bridge|temple|palace|mountain|river|lake|island|forest|elephant|king|queen|president|portrait|building|church|mosque|fortress|waterfall|national park|reserve|front|back|reverse|obverse|city|road|school|children|farmer|worker|boat|ship|train|railway|dam|market|statue|monument|flowers|trees|birds|fish|turtle|deer|horse|camel|later|region)\b/i;
  const malformed=[
+  [/William Lyon Mackenzie Rei/g,'William Lyon Mackenzie King'],
   [/\bKinabalu parque(?: nacional)?\b/gi,'Parque Nacional de Kinabalu'],[/\bWakatobi parque(?: nacional)?\b/gi,'Parque Nacional de Wakatobi'],[/\bKomodo parque(?: nacional)?\b/gi,'Parque Nacional de Komodo'],
   [/\bTaal lago\b/gi,'lago Taal'],[/\bMayon vulcão\b/gi,'vulcão Mayon'],[/\bBohol Chocolate colinas\b/gi,'Colinas de Chocolate de Bohol'],
   [/\bMalacañang palace\b/gi,'Palácio de Malacañang'],[/\bterraços de arroz of Banaue\b/gi,'terraços de arroz de Banaue'],
   [/\bDerawan ilha(?:s)?\b/gi,'ilhas Derawan'],[/\bRaja Ampat arquipélago\b/gi,'arquipélago de Raja Ampat'],[/\bBanda ilha\b/gi,'ilha de Banda'],
-  [/\bnovo Guinea\b/gi,'Nova Guiné']
+  [/\bnovo Guinea\b/gi,'Nova Guiné'],[/\bBicol region\b/gi,'região de Bicol']
  ];
  function pt(text){
   if(typeof text!=='string'||!text.trim())return text;
   let out=text.replace(/[’‘]/g,"'");
-  out=out.replace(/William Lyon Mackenzie King/g,'William Lyon Mackenzie __SURNAME_KING__');
+  out=out.replace(/William Lyon Mackenzie King/g,'William Lyon Mackenzie __SURNAME_KING__').replace(/William Lyon Mackenzie Rei/g,'William Lyon Mackenzie __SURNAME_KING__');
   for(const [rx,repl] of prePhrases)out=out.replace(rx,repl);
   for(const [rx,repl] of phrases)out=out.replace(rx,repl);
   for(const [rx,repl] of malformed)out=out.replace(rx,repl);
