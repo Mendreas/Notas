@@ -1,6 +1,5 @@
 // Revisão mundial · correções de circulação e territórios · 02-09-2026
 (()=>{
- const placeholder=(code,value,label='IMAGEM ATUAL NÃO INCORPORADA')=>'data:image/svg+xml;charset=UTF-8,'+encodeURIComponent(`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 320"><rect width="720" height="320" rx="18" fill="#0c1824"/><rect x="18" y="18" width="684" height="284" rx="14" fill="none" stroke="#526170" stroke-width="2"/><text x="360" y="112" text-anchor="middle" fill="#d7e2ea" font-family="Arial,sans-serif" font-size="42" font-weight="700">${code} ${value}</text><text x="360" y="170" text-anchor="middle" fill="#90a1ae" font-family="Arial,sans-serif" font-size="22">${label}</text><text x="360" y="214" text-anchor="middle" fill="#6f8392" font-family="Arial,sans-serif" font-size="18">CONSULTAR FONTE OFICIAL</text></svg>`);
  const local=(code,value)=>({front:`/assets/notes/banknotews/${code.toLowerCase()}/${value}-front.jpg`,back:`/assets/notes/banknotews/${code.toLowerCase()}/${value}-back.jpg`,imageStatus:'local-reference',imageSource:'Bank Note Museum · cópia local'});
  const countries=[
   {id:'CUW',name:'Curaçau',flag:'🇨🇼',continent:'North America',region:'Caraíbas',currency:'XCG',capital:'Willemstad',population:'≈ 185 mil',language:'Papiamentu / Neerlandês / Inglês',history:[['até 2025','Florim das Antilhas Neerlandesas (ANG)'],['31 mar 2025–hoje','Florim das Caraíbas (XCG)']]},
@@ -55,9 +54,9 @@
    for(const [code,patch] of Object.entries(currencyUpdates))for(const value of patch.notes||[]){
     let n=data.find(x=>x.currency===code&&Number(x.value)===Number(value));if(!n){n={currency:code,value:Number(value)};data.push(n)}
     const base={status:'circulating',statusLabel:'Em circulação',source:patch.source||n.source,material:patch.material||n.material,imageSourceUrl:museum[code]||n.imageSourceUrl,officialUrl:official[code]||n.officialUrl,officialLabel:`Ver ${code} ${value} na fonte oficial`};
-    if(code==='XCG')base.series='World Under the Sea · 2025';
+    if(code==='XCG')base.series='Mundo sob o mar · 2025';
     if(code==='FKP')base.series=value===50?'Série anterior · £50 ainda em circulação':'Nova família de polímero · 2025';
-    if(code==='NAD')base.series=value===30?'30.º aniversário da Independência · 2020 · comemorativa':value===60?'Hage Geingob · 60 Years of Excellence · 2025 · comemorativa':'Série regular 2025–2026';
+    if(code==='NAD')base.series=value===30?'30.º aniversário da Independência · 2020 · comemorativa':value===60?'Hage Geingob · 60 anos de excelência · 2025 · comemorativa':'Série regular 2025–2026';
     if(code==='GTQ'&&value===1)base.series='100.º aniversário do quetzal · emissão comemorativa';
     if(code==='BDT')base.series=value===2?'Série Sheikh Mujibur Rahman · 2011–2024':value===200?'Centenário de Sheikh Mujibur Rahman · 2020–2024 · comemorativa circulante':'Arquitetura histórica e arqueológica · 2025–2026';
     Object.assign(n,base);
