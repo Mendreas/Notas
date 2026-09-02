@@ -49,21 +49,30 @@ const response=await sandbox.window.fetch('/data/notes.json');
 const notes=await response.json();
 const current=notes.filter(n=>String(n.status||'circulating').toLowerCase()!=='withdrawn' && String(n.statusLabel||'').toLowerCase()!=='retirada');
 const isMuseum=n=>String(n.front||'').startsWith('/assets/notes/banknotews/') && String(n.back||'').startsWith('/assets/notes/banknotews/');
+const museumPairExists=n=>{
+  const code=String(n.currency||'').toLowerCase();
+  const value=String(n.value);
+  return fs.existsSync(new URL(`assets/notes/banknotews/${code}/${value}-front.jpg`,root)) && fs.existsSync(new URL(`assets/notes/banknotews/${code}/${value}-back.jpg`,root));
+};
 const external=current.filter(n=>!isMuseum(n));
+const reusable=external.filter(museumPairExists);
+const missing=external.filter(n=>!museumPairExists(n));
 const byCurrency=new Map();
 for(const n of external){
   const c=n.currency||'?';
   if(!byCurrency.has(c))byCurrency.set(c,[]);
-  byCurrency.get(c).push({value:n.value,front:n.front||'',back:n.back||'',imageSource:n.imageSource||''});
+  byCurrency.get(c).push({value:n.value,front:n.front||'',back:n.back||'',imageSource:n.imageSource||'',localMuseum:museumPairExists(n)});
 }
 
 console.log(`Effective notes: ${current.length}`);
-console.log(`Bank Note Museum local pairs: ${current.length-external.length}`);
+console.log(`Bank Note Museum local pairs in use: ${current.length-external.length}`);
 console.log(`Non-Museum effective notes: ${external.length}`);
+console.log(`Already have unused local Museum pair: ${reusable.length}`);
+console.log(`Still need Museum import: ${missing.length}`);
 console.log(`Currencies with non-Museum effective images: ${byCurrency.size}`);
 for(const [currency,rows] of [...byCurrency].sort((a,b)=>a[0].localeCompare(b[0]))){
-  console.log(`NON_MUSEUM ${currency}: ${rows.map(x=>x.value).join(', ')}`);
-  for(const x of rows) console.log(`  ${currency}:${x.value} | ${x.imageSource||'sem imageSource'} | ${x.front}`);
+  console.log(`NON_MUSEUM ${currency}: ${rows.map(x=>`${x.value}${x.localMuseum?'*':''}`).join(', ')}`);
+  for(const x of rows) console.log(`  ${currency}:${x.value} | ${x.localMuseum?'LOCAL_MUSEUM_EXISTS':'IMPORT_NEEDED'} | ${x.imageSource||'sem imageSource'} | ${x.front}`);
 }
 if(skipped.length){
   console.log(`Scripts skipped during simulation: ${skipped.length}`);
