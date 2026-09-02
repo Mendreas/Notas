@@ -1,2 +1,2 @@
-run=2026-09-02T06:32:00+01:00
-scope=bangladesh-2-200-banknotews
+run=2026-09-02T15:36:00+01:00
+scope=turkey-czechia-banknotews
