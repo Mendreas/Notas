@@ -3,7 +3,7 @@ import vm from 'node:vm';
 
 const sandbox={window:{},console};
 vm.createContext(sandbox);
-for(const file of ['note-context-catalog.js','note-context-pt.js']){
+for(const file of ['note-context-catalog.js','note-context-pt.js','note-context-editorial-audit-fixes.js']){
   vm.runInContext(fs.readFileSync(file,'utf8'),sandbox,{filename:file});
 }
 const catalog=sandbox.window.NOTE_CONTEXT_CATALOG||{};
@@ -26,7 +26,8 @@ const fatalPatterns=[
   [/\bBohol Chocolate colinas\b/i,'topónimo traduzido literalmente'],
   [/\bMalacañang palace\b/i,'resíduo inglês em nome de monumento'],
   [/\bterraços de arroz of Banaue\b/i,'resíduo inglês “of”'],
-  [/\bnovo Guinea\b/i,'topónimo Nova Guiné corrompido']
+  [/\bnovo Guinea\b/i,'topónimo Nova Guiné corrompido'],
+  [/\bpontetown\b/i,'Bridgetown corrompido por tradução literal']
 ];
 const residualEnglish=/\b(the|and|with|from|near|along|village|fishermen|fisherman|dragging|bridge|temple|palace|mountain|river|lake|island|forest|elephant|portrait|building|church|mosque|fortress|waterfall|front|back|reverse|obverse|city|road|school|children|farmer|worker|boat|ship|train|railway|market|later|region)\b/i;
 const fatals=[];const residual=[];
