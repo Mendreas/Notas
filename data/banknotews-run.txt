@@ -1,2 +1,2 @@
-run=2026-09-02T15:56:00+01:00
-scope=norway-sweden-banknotews
+run=2026-09-02T16:04:00+01:00
+scope=poland-romania-banknotews
