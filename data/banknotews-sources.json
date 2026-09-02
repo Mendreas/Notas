@@ -1840,7 +1840,7 @@
     "BDT:200": {
       "currency": "BDT",
       "value": 200,
-      "pick": "P-W80",
+      "pick": "P-W2020-200",
       "page": "https://www.banknote.ws/COLLECTION/countries/ASI/BDE/BDEW2020-0200.htm",
       "frontSource": "https://www.banknote.ws/COLLECTION/countries/ASI/BDE/BDEW2020-0200o.jpg",
       "backSource": "https://www.banknote.ws/COLLECTION/countries/ASI/BDE/BDEW2020-0200r.jpg",
@@ -8748,6 +8748,18 @@
       "back": "/assets/notes/banknotews/bdt/5-back.jpg",
       "frontBytes": 121787,
       "backBytes": 130694
+    },
+    "BDT:2": {
+      "currency": "BDT",
+      "value": 2,
+      "pick": "P-52",
+      "page": "https://www.banknote.ws/COLLECTION/countries/ASI/BDE/BDE0052.htm",
+      "frontSource": "https://www.banknote.ws/COLLECTION/countries/ASI/BDE/BDE0052o.jpg",
+      "backSource": "https://www.banknote.ws/COLLECTION/countries/ASI/BDE/BDE0052r.jpg",
+      "front": "/assets/notes/banknotews/bdt/2-front.jpg",
+      "back": "/assets/notes/banknotews/bdt/2-back.jpg",
+      "frontBytes": 108308,
+      "backBytes": 108807
     }
   },
   "failures": []
