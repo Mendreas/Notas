@@ -21,7 +21,7 @@
   'BDT:50':{back:{title:'“The Struggle” (“A Luta”), de Zainul Abedin',summary:'Verso: “The Struggle” (“A Luta”), pintura de Shilpacharya Zainul Abedin.'}},
   'LKR:50':{front:{
    title:'Ponte de Manampitiya, com a ponte antiga, papa-moscas-azul-do-Sri-Lanka e borboleta-folha-azul',
-   summary:'Frente: nova ponte de Manampitiya ao lado da ponte antiga; papa-moscas-azul-do-Sri-Lanka (Eumyias sordida) e borboleta-folha-azul (Kallima horsfieldii).'
+   summary:'Frente: nova ponte de Manampitiya ao lado da ponte antiga; papa-moscas-azul-do-Sri-Lanka (Eumyias sordida) e borboleta-folha-azul (Kallima horscampoi).'
   }},
   'LKR:1000':{front:{
    title:'Túnel de Ramboda e fauna do Sri Lanka',
