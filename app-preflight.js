@@ -9,7 +9,7 @@ document.write('<link rel="stylesheet" href="/glossary.css?v=172"><link rel="sty
   const egpFallback={
     10:[commons('10 EGP obverse 2014-8-13.jpg'),commons('10 EGP reverse 2014-8-13.jpg')],
     20:[commons('20 EGP 2022 Polymer - front 01.jpg'),commons('20 EGP 2022 Polymer - rear.jpg')],
-    100:[commons('100 EGP obverse 2014-1-26.jpg'),commons('100 EGP reverse 2010-1-2.jpg')],
+    100:[commons('100 EGP obverse 2014-1-26.jpg'),commons('100 EGP reverse 2014-1-26.jpg')],
     200:[commons('200 EGP obverse 2010-1-2.jpg'),commons('200 EGP reverse 2010-1-2.jpg')]
   };
   const placeholderFront='/assets/notes/placeholder-front.svg',placeholderBack='/assets/notes/placeholder-back.svg';
