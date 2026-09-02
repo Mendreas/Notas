@@ -36,17 +36,35 @@
       window.showCollection?.();
     });
   }
+  function addSidebarEntry(){
+    const nav=q('#sidebar nav');
+    if(!nav||q('[data-ndm-tool="collection"]'))return;
+    const btn=document.createElement('button');
+    btn.className='nav-item';
+    btn.dataset.ndmTool='collection';
+    btn.innerHTML='▣ <span>Coleção pessoal</span>';
+    btn.addEventListener('click',()=>{
+      q('#sidebar')?.classList.remove('open');
+      window.showCollection?.();
+    });
+    const advanced=q('[data-ndm-tool="advanced"]');
+    const favorites=nav.querySelector('[data-nav="favorites"]');
+    if(advanced)advanced.parentNode.insertBefore(btn,advanced);
+    else if(favorites?.nextSibling)favorites.parentNode.insertBefore(btn,favorites.nextSibling);
+    else nav.appendChild(btn);
+  }
   function patch(){
-    if(typeof window.showCollection!=='function'||window.showCollection.__management177)return false;
+    addSidebarEntry();
+    if(typeof window.showCollection!=='function'||window.showCollection.__management177)return typeof window.showCollection==='function';
     const old=window.showCollection;
-    function wrapped(...args){const r=old(...args);requestAnimationFrame(renderPanel);return r}
+    function wrapped(...args){const r=old(...args);requestAnimationFrame(()=>{renderPanel();addSidebarEntry()});return r}
     wrapped.__management177=true;
     window.showCollection=wrapped;
     if(window.state?.currentKind==='collection')requestAnimationFrame(renderPanel);
     return true;
   }
   if(!patch()){
-    let tries=0;const timer=setInterval(()=>{tries++;if(patch()||tries>100)clearInterval(timer)},50);
+    let tries=0;const timer=setInterval(()=>{tries++;addSidebarEntry();if(patch()||tries>100)clearInterval(timer)},50);
   }
-  window.addEventListener('load',patch);
+  window.addEventListener('load',()=>{patch();addSidebarEntry()});
 })();
