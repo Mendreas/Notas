@@ -3,7 +3,7 @@ import vm from 'node:vm';
 
 const sandbox={window:{},console};
 vm.createContext(sandbox);
-for(const file of ['note-context-catalog.js','note-context-pt.js','note-context-editorial-audit-fixes.js']){
+for(const file of ['note-context-catalog.js','note-context-pt.js','note-context-editorial-audit-fixes.js','note-context-editorial-audit-fixes-bbd.js']){
   vm.runInContext(fs.readFileSync(file,'utf8'),sandbox,{filename:file});
 }
 const catalog=sandbox.window.NOTE_CONTEXT_CATALOG||{};
@@ -30,10 +30,15 @@ const fatalPatterns=[
   [/\bpontetown\b/i,'Bridgetown corrompido por tradução literal']
 ];
 const residualEnglish=/\b(the|and|with|from|near|along|village|fishermen|fisherman|dragging|bridge|temple|palace|mountain|river|lake|island|forest|elephant|portrait|building|church|mosque|fortress|waterfall|front|back|reverse|obverse|city|road|school|children|farmer|worker|boat|ship|train|railway|market|later|region)\b/i;
+const officialNames=[
+ 'The Struggle','Zayed Sports City','Expo City Dubai','Central Branch Primary School','Belize City','The Bluff',
+ 'Union Museum','Eric Williams Financial Complex','Admiralty Bay','Saint John','Haulover Creek'
+];
+const stripOfficialNames=text=>officialNames.reduce((s,name)=>s.replaceAll(name,''),text);
 const fatals=[];const residual=[];
 for(const row of rows){
   for(const [rx,label] of fatalPatterns)if(rx.test(row.text))fatals.push({...row,label});
-  if(residualEnglish.test(row.text))residual.push(row);
+  if(residualEnglish.test(stripOfficialNames(row.text)))residual.push(row);
 }
 const william=rows.filter(r=>/William Lyon Mackenzie/i.test(r.text));
 if(william.length && william.some(r=>!r.text.includes('William Lyon Mackenzie King'))){
