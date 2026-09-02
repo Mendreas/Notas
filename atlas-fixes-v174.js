@@ -1,10 +1,11 @@
 (()=>{
- const esc=s=>String(s??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
+ const esc=s=>String(s??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot',"'":'&#39;'}[m]));
  const norm=s=>String(s??'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase();
  const q=s=>document.querySelector(s),qa=s=>[...document.querySelectorAll(s)];
  const noteKey=(c,v)=>`${c}:${Number(v)}`;
  const storageKey='ndm-collection-v1';
  const collection=()=>{try{return JSON.parse(localStorage.getItem(storageKey)||'{}')}catch{return {}}};
+ const saveCollection=o=>localStorage.setItem(storageKey,JSON.stringify(o));
  const contextStores=()=>[
   window.NOTE_CONTEXT_MANUAL,window.NOTE_CONTEXT_AFRICA3,window.NOTE_CONTEXT_AFRICA2,
   window.NOTE_CONTEXT_AFRICA1,window.NOTE_CONTEXT_CATALOG,window.NOTE_CONTEXT_ENRICHMENT,
@@ -77,10 +78,24 @@
    if(typeof window.showCountry==='function')window.showCountry(id);
   });
  }
+ function restoreManualSeenState(code,value,wasSeen){
+  if(wasSeen)return;
+  const all=collection(),k=noteKey(code,value),st=all[k]||{};
+  st.seen=false;
+  if(!st.owned&&!st.wanted)delete all[k];else all[k]=st;
+  saveCollection(all);
+  const btn=q(`[data-collection="seen"][data-ck="${code}:${Number(value)}"]`);
+  if(btn)btn.classList.remove('on');
+ }
  function wrapOpenNote(){
   if(typeof window.openNote!=='function'||window.openNote.__countryFlagFix)return;
   const old=window.openNote;
-  function wrapped(code,value){const r=old(code,value);requestAnimationFrame(()=>patchModalCountries(code));return r}
+  function wrapped(code,value){
+   const before=collection()[noteKey(code,value)]||{},wasSeen=!!before.seen;
+   const r=old(code,value);
+   requestAnimationFrame(()=>{restoreManualSeenState(code,value,wasSeen);patchModalCountries(code)});
+   return r;
+  }
   wrapped.__countryFlagFix=true;window.openNote=wrapped;
  }
  function isCommemorative(n){
@@ -90,17 +105,17 @@
  function renderAdvancedSearchFixed(){
   if(!window.DB)return;
   state.currentKind='advanced';state.currentId=null;crumbs.textContent='Pesquisa avançada';setActive('notes');
-  view.innerHTML=hero('Pesquisa avançada','Procure por país, moeda, valor, série, pessoa, monumento, animal, material, estado ou nota comemorativa.')+`<div class="advanced-search-grid"><input id="advQ" placeholder="Ex.: Franklin, comemorativa, polímero, tigre, 100, XPF…"><select id="advCont"><option value="">Todos os continentes</option>${Object.entries(CONTINENTS).map(([k,v])=>`<option value="${k}">${v.name}</option>`).join('')}</select><select id="advMat"><option value="">Todos os materiais</option><option value="pol">Polímero</option><option value="pap">Papel</option></select><select id="advState"><option value="">Todos os estados</option><option value="circulating">Em circulação</option><option value="commemorative">Comemorativa</option><option value="owned">Na minha coleção</option><option value="wanted">Quero adquirir</option></select></div><div id="advResults"></div>`;
+  view.innerHTML=hero('Pesquisa avançada','Procure por país, moeda, valor, série, pessoa, monumento, animal, material, estado ou nota comemorativa.')+`<div class="advanced-search-grid"><input id="advQ" placeholder="Ex.: Franklin, comemorativa, polímero, tigre, 100, XPF…"><select id="advCont"><option value="">Todos os continentes</option>${Object.entries(CONTINENTS).map(([k,v])=>`<option value="${k}">${v.name}</option>`).join('')}</select><select id="advMat"><option value="">Todos os materiais</option><option value="pol">Polímero</option><option value="pap">Papel</option></select><select id="advState"><option value="">Todos os estados</option><option value="circulating">Em circulação</option><option value="commemorative">Comemorativa</option><option value="owned">Na minha coleção</option><option value="wanted">Quero adquirir</option><option value="seen">Já vi / tive contacto</option></select></div><div id="advResults"></div>`;
   const render=()=>{
    const text=norm(q('#advQ').value),cont=q('#advCont').value,mat=q('#advMat').value,st=q('#advState').value,col=collection();
    const arr=DB.notes.filter(n=>{
     const cur=DB.currencies[n.currency]||{},countries=DB.countries.filter(x=>x.currency===n.currency),f=contextFor(n,'front'),b=contextFor(n,'back'),comm=isCommemorative(n),cstate=col[noteKey(n.currency,n.value)]||{};
-    const hay=norm([n.currency,n.value,n.series,n.statusLabel,n.status,n.material,cur.name,cur.group,...countries.map(x=>x.name),f?.title,f?.summary,f?.more,b?.title,b?.summary,b?.more,comm?'comemorativa comemorativo comemorative':''].filter(Boolean).join(' '));
+    const hay=norm([n.currency,n.value,n.series,n.statusLabel,n.status,n.material,cur.name,cur.group,...countries.map(x=>x.name),f?.title,f?.summary,f?.more,b?.title,b?.summary,b?.more,comm?'comemorativa comemorativo commemorative':''].filter(Boolean).join(' '));
     const stateOK=!st||(st==='circulating'?n.status==='circulating':st==='commemorative'?comm:!!cstate[st]);
     const material=norm(n.material||cur.material);
     return(!text||hay.includes(text))&&(!cont||countries.some(x=>x.continent===cont))&&(!mat||(mat==='pol'?material.includes('pol'):material.includes('pap')))&&stateOK;
    });
-   q('#advResults').innerHTML=`<div class="section-head"><div><h2>${arr.length} resultados</h2><p>${st==='commemorative'?'Filtro: notas comemorativas identificadas pelo estado, série ou classificação editorial.':''}</p></div></div><div class="note-grid">${arr.map(noteCard).join('')}</div>`;
+   q('#advResults').innerHTML=`<div class="section-head"><div><h2>${arr.length} resultados</h2><p>${st==='commemorative'?'Filtro: notas comemorativas identificadas pelo estado, série ou classificação editorial.':st==='seen'?'Filtro: notas que marcou manualmente como já vistas ou com as quais teve contacto.':''}</p></div></div><div class="note-grid">${arr.map(noteCard).join('')}</div>`;
    bindNoteCards();if(window.GLOSSARY?.enhance)window.GLOSSARY.enhance(q('#advResults'));
   };
   ['advQ','advCont','advMat','advState'].forEach(id=>q('#'+id).addEventListener('input',render));render();
