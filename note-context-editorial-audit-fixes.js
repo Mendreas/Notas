@@ -1,5 +1,9 @@
 (()=>{
  const fixes={
+  'AUD:20':{back:{
+   title:'John Flynn e a aviação médica',
+   summary:'Verso: aeronave De Havilland DH.84 Dragon e o reverendo John Flynn, ligado ao Royal Flying Doctor Service.'
+  }},
   'CHF:100':{back:{
    title:'“Suone” — aqueduto tradicional de madeira nos Alpes, conduzindo água do degelo glaciar por uma escarpa até aos campos',
    summary:'Verso: “Suone”, aqueduto tradicional de madeira nos Alpes, conduzindo água do degelo glaciar por uma escarpa até aos campos; simboliza o desafio permanente de garantir o abastecimento de água.'
