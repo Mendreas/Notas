@@ -1,4 +1,4 @@
-document.write('<link rel="stylesheet" href="/glossary.css?v=172"><link rel="stylesheet" href="/atlas-features.css?v=173"><script src="/africa-wave9.js?v=163"><\/script><script src="/note-context-africa3.js?v=164"><\/script><script src="/caribbean-wave1.js?v=165"><\/script><script src="/oceania-wave1.js?v=167"><\/script><script src="/central-america-wave.js?v=168"><\/script><script src="/global-review-wave.js?v=170"><\/script><script src="/currency-context.js?v=171"><\/script><script src="/currency-context-ui.js?v=171"><\/script><script src="/glossary.js?v=172" defer><\/script><script src="/note-technical-data.js?v=175" defer><\/script><script src="/note-technical-data-wave2.js?v=176" defer><\/script><script src="/atlas-features.js?v=173" defer><\/script><script src="/atlas-technical-ui.js?v=175" defer><\/script><script src="/atlas-fixes-v174.js?v=174" defer><\/script>');
+document.write('<link rel="stylesheet" href="/glossary.css?v=172"><link rel="stylesheet" href="/atlas-features.css?v=173"><script src="/africa-wave9.js?v=163"><\/script><script src="/note-context-africa3.js?v=164"><\/script><script src="/caribbean-wave1.js?v=165"><\/script><script src="/oceania-wave1.js?v=167"><\/script><script src="/central-america-wave.js?v=168"><\/script><script src="/global-review-wave.js?v=170"><\/script><script src="/currency-context.js?v=171"><\/script><script src="/currency-context-ui.js?v=171"><\/script><script src="/glossary.js?v=172" defer><\/script><script src="/note-technical-data.js?v=175" defer><\/script><script src="/note-technical-data-wave2.js?v=176" defer><\/script><script src="/atlas-features.js?v=173" defer><\/script><script src="/atlas-technical-ui.js?v=175" defer><\/script><script src="/atlas-fixes-v174.js?v=174" defer><\/script><script src="/atlas-advanced-search-v176.js?v=176" defer><\/script>');
 (() => {
   const nativeFetch=window.fetch.bind(window);
   const imported={
@@ -9,7 +9,7 @@ document.write('<link rel="stylesheet" href="/glossary.css?v=172"><link rel="sty
   const egpFallback={
     10:[commons('10 EGP obverse 2014-8-13.jpg'),commons('10 EGP reverse 2014-8-13.jpg')],
     20:[commons('20 EGP 2022 Polymer - front 01.jpg'),commons('20 EGP 2022 Polymer - rear.jpg')],
-    100:[commons('100 EGP obverse 2014-1-26.jpg'),commons('100 EGP reverse 2014-1-26.jpg')],
+    100:[commons('100 EGP obverse 2014-1-26.jpg'),commons('100 EGP reverse 2010-1-2.jpg')],
     200:[commons('200 EGP obverse 2010-1-2.jpg'),commons('200 EGP reverse 2010-1-2.jpg')]
   };
   const placeholderFront='/assets/notes/placeholder-front.svg',placeholderBack='/assets/notes/placeholder-back.svg';
