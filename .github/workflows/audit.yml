@@ -27,5 +27,7 @@ jobs:
           done
       - name: Run project audit
         run: node scripts/audit.mjs
+      - name: Check editorial context
+        run: node scripts/editorial-context-audit.mjs
       - name: Check sovereign-state coverage
         run: node scripts/global-coverage-audit.mjs
