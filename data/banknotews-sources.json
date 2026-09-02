@@ -9038,5 +9038,76 @@
       "backBytes": 84834
     }
   },
-  "failures": []
+  "failures": [
+    {
+      "key": "PLN:10",
+      "pick": "P-183",
+      "error": "<urlopen error [Errno 101] Network is unreachable>"
+    },
+    {
+      "key": "PLN:20",
+      "pick": "P-184",
+      "error": "<urlopen error [Errno 101] Network is unreachable>"
+    },
+    {
+      "key": "PLN:50",
+      "pick": "P-185",
+      "error": "<urlopen error [Errno 101] Network is unreachable>"
+    },
+    {
+      "key": "PLN:100",
+      "pick": "P-186",
+      "error": "<urlopen error [Errno 101] Network is unreachable>"
+    },
+    {
+      "key": "PLN:200",
+      "pick": "P-189",
+      "error": "<urlopen error [Errno 101] Network is unreachable>"
+    },
+    {
+      "key": "PLN:500",
+      "pick": "P-190",
+      "error": "<urlopen error [Errno 101] Network is unreachable>"
+    },
+    {
+      "key": "RON:1",
+      "pick": "P-117",
+      "error": "<urlopen error [Errno 101] Network is unreachable>"
+    },
+    {
+      "key": "RON:5",
+      "pick": "P-118",
+      "error": "<urlopen error [Errno 101] Network is unreachable>"
+    },
+    {
+      "key": "RON:10",
+      "pick": "P-119",
+      "error": "<urlopen error [Errno 101] Network is unreachable>"
+    },
+    {
+      "key": "RON:20",
+      "pick": "P-W119A",
+      "error": "<urlopen error [Errno 101] Network is unreachable>"
+    },
+    {
+      "key": "RON:50",
+      "pick": "P-120",
+      "error": "<urlopen error [Errno 101] Network is unreachable>"
+    },
+    {
+      "key": "RON:100",
+      "pick": "P-121",
+      "error": "<urlopen error [Errno 101] Network is unreachable>"
+    },
+    {
+      "key": "RON:200",
+      "pick": "P-122",
+      "error": "<urlopen error [Errno 101] Network is unreachable>"
+    },
+    {
+      "key": "RON:500",
+      "pick": "P-123",
+      "error": "<urlopen error [Errno 101] Network is unreachable>"
+    }
+  ]
 }
