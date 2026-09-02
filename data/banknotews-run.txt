@@ -1,2 +1,2 @@
-run=2026-09-02T15:36:00+01:00
-scope=turkey-czechia-banknotews
+run=2026-09-02T15:56:00+01:00
+scope=norway-sweden-banknotews
