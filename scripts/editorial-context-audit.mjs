@@ -40,8 +40,8 @@ if(william.length && william.some(r=>!r.text.includes('William Lyon Mackenzie Ki
 }
 console.log(`Auditoria editorial: ${Object.keys(catalog).length} notas, ${rows.length} campos textuais.`);
 console.log(`Resíduos ingleses a rever: ${residual.length}.`);
-for(const r of residual.slice(0,20))console.log(`  REVIEW ${r.key} ${r.side}.${r.field}: ${r.text}`);
-if(residual.length>20)console.log(`  ... +${residual.length-20} ocorrências.`);
+for(const r of residual.slice(0,200))console.log(`  REVIEW ${r.key} ${r.side}.${r.field}: ${r.text}`);
+if(residual.length>200)console.log(`  ... +${residual.length-200} ocorrências.`);
 if(fatals.length){
   console.error(`Erros editoriais bloqueantes: ${fatals.length}`);
   for(const r of fatals)console.error(`  ERROR ${r.key} ${r.side}.${r.field} [${r.label}]: ${r.text}`);
