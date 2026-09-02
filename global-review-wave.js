@@ -1,4 +1,4 @@
-// Revisão mundial · correções de circulação e territórios · 01-09-2026
+// Revisão mundial · correções de circulação e territórios · 02-09-2026
 (()=>{
  const placeholder=(code,value,label='IMAGEM ATUAL NÃO INCORPORADA')=>'data:image/svg+xml;charset=UTF-8,'+encodeURIComponent(`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 320"><rect width="720" height="320" rx="18" fill="#0c1824"/><rect x="18" y="18" width="684" height="284" rx="14" fill="none" stroke="#526170" stroke-width="2"/><text x="360" y="112" text-anchor="middle" fill="#d7e2ea" font-family="Arial,sans-serif" font-size="42" font-weight="700">${code} ${value}</text><text x="360" y="170" text-anchor="middle" fill="#90a1ae" font-family="Arial,sans-serif" font-size="22">${label}</text><text x="360" y="214" text-anchor="middle" fill="#6f8392" font-family="Arial,sans-serif" font-size="18">CONSULTAR FONTE OFICIAL</text></svg>`);
  const local=(code,value)=>({front:`/assets/notes/banknotews/${code.toLowerCase()}/${value}-front.jpg`,back:`/assets/notes/banknotews/${code.toLowerCase()}/${value}-back.jpg`,imageStatus:'local-reference',imageSource:'Bank Note Museum · cópia local'});
@@ -12,7 +12,7 @@
   FKP:{name:'Libra das Ilhas Falkland',symbol:'£',group:'Ilhas Falkland',source:'Falkland Islands Government · Commissioners of Currency',material:'Polímero / papel',notes:[5,10,20,50],countries:['FLK'],focus:false,rate:0.86},
   NAD:{notes:[10,20,30,50,60,100,200],source:'Bank of Namibia',material:'Papel / polímero',countries:['NAM']},
   GTQ:{notes:[1,5,10,20,50,100,200]},
-  BDT:{name:'Taka do Bangladesh',symbol:'৳',group:'Bangladesh',source:'Bangladesh Bank',material:'Papel',notes:[2,5,10,20,50,100,200,500,1000],countries:['BGD'],series:'Arquitetura histórica e arqueológica · 2025–2026'}
+  BDT:{name:'Taka do Bangladesh',symbol:'৳',group:'Bangladesh',source:'Bangladesh Bank',material:'Papel',notes:[2,5,10,20,50,100,200,500,1000],countries:['BGD']}
  };
  const iso={'531':'CUW','534':'SXM','238':'FLK'};
  const official={
@@ -34,7 +34,7 @@
   FKP:new Set([5,10,20,50]),
   NAD:new Set([10,20,30,50,60,100,200]),
   GTQ:new Set([1,5,10,20,50,100,200]),
-  BDT:new Set([5,10,20,50,100,500,1000])
+  BDT:new Set([2,5,10,20,50,100,200,500,1000])
  };
  const oldFetch=window.fetch.bind(window);
  window.fetch=async(...args)=>{
@@ -59,10 +59,9 @@
     if(code==='FKP')base.series=value===50?'Série anterior · £50 ainda em circulação':'Nova família de polímero · 2025';
     if(code==='NAD')base.series=value===30?'30.º aniversário da Independência · 2020 · comemorativa':value===60?'Hage Geingob · 60 Years of Excellence · 2025 · comemorativa':'Série regular 2025–2026';
     if(code==='GTQ'&&value===1)base.series='100.º aniversário do quetzal · emissão comemorativa';
-    if(code==='BDT')base.series='Arquitetura histórica e arqueológica · 2025–2026';
+    if(code==='BDT')base.series=value===2?'Série Sheikh Mujibur Rahman · 2011–2024':value===200?'Centenário de Sheikh Mujibur Rahman · 2020–2024 · comemorativa circulante':'Arquitetura histórica e arqueológica · 2025–2026';
     Object.assign(n,base);
     if(localValues[code]?.has(Number(value)))Object.assign(n,local(code,value));
-    else if(code==='BDT'&&(value===2||value===200))Object.assign(n,{front:placeholder(code,value),back:placeholder(code,value),imageStatus:'official-link',imageSource:'Bangladesh Bank · imagem da emissão atual ainda não incorporada',imageSourceUrl:official.BDT});
    }
    return new Response(JSON.stringify(data),{status:r.status,statusText:r.statusText,headers:{'Content-Type':'application/json; charset=utf-8'}});
   }
