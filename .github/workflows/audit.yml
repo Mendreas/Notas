@@ -33,3 +33,5 @@ jobs:
         run: node scripts/note-technical-audit.mjs
       - name: Check sovereign-state coverage
         run: node scripts/global-coverage-audit.mjs
+      - name: Report effective image sources
+        run: node scripts/effective-image-source-audit.mjs
