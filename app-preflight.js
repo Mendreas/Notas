@@ -1,4 +1,4 @@
-document.write('<script src="/africa-wave9.js?v=163"><\/script><script src="/note-context-africa3.js?v=164"><\/script><script src="/caribbean-wave1.js?v=165"><\/script><script src="/oceania-wave1.js?v=167"><\/script><script src="/central-america-wave.js?v=168"><\/script><script src="/global-review-wave.js?v=170"><\/script><script src="/currency-context.js?v=171"><\/script><script src="/currency-context-ui.js?v=171"><\/script>');
+document.write('<link rel="stylesheet" href="/glossary.css?v=172"><script src="/africa-wave9.js?v=163"><\/script><script src="/note-context-africa3.js?v=164"><\/script><script src="/caribbean-wave1.js?v=165"><\/script><script src="/oceania-wave1.js?v=167"><\/script><script src="/central-america-wave.js?v=168"><\/script><script src="/global-review-wave.js?v=170"><\/script><script src="/currency-context.js?v=171"><\/script><script src="/currency-context-ui.js?v=171"><\/script><script src="/glossary.js?v=172" defer><\/script>');
 (() => {
   const nativeFetch=window.fetch.bind(window);
   const imported={
